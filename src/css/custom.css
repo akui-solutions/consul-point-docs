@@ -1,0 +1,66 @@
+/**
+ * Estilos de la documentación de Consul Point.
+ * Ajustad la paleta a los colores de marca definitivos.
+ */
+
+:root {
+  --ifm-color-primary: #1f6feb;
+  --ifm-color-primary-dark: #1a63d4;
+  --ifm-color-primary-darker: #185dc8;
+  --ifm-color-primary-darkest: #144da4;
+  --ifm-color-primary-light: #3a80ee;
+  --ifm-color-primary-lighter: #4789ef;
+  --ifm-color-primary-lightest: #6da2f2;
+
+  --ifm-code-font-size: 95%;
+  --ifm-font-family-base: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.08);
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #58a6ff;
+  --ifm-color-primary-dark: #3d97ff;
+  --ifm-color-primary-darker: #2f8fff;
+  --ifm-color-primary-darkest: #0074f0;
+  --ifm-color-primary-light: #73b5ff;
+  --ifm-color-primary-lighter: #81bcff;
+  --ifm-color-primary-lightest: #aad2ff;
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.12);
+}
+
+/* Tablas: la documentación se apoya mucho en ellas */
+.markdown table {
+  display: table;
+  width: 100%;
+  font-size: 0.92rem;
+}
+
+.markdown table thead tr {
+  background-color: var(--ifm-color-emphasis-100);
+}
+
+.markdown table th {
+  font-weight: 600;
+}
+
+/* Encabezados con algo más de aire */
+.markdown h2 {
+  margin-top: 2.4rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.markdown h3 {
+  margin-top: 1.8rem;
+}
+
+/* Tarjetas de la portada */
+.card {
+  height: 100%;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  transition: border-color 0.2s ease;
+}
+
+.card:hover {
+  border-color: var(--ifm-color-primary);
+}
