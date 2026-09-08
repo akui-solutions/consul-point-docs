@@ -9,13 +9,13 @@ Documentación oficial de la plataforma **Consul Point**, construida con [Docusa
 ## Requisitos
 
 - Node.js 20 o superior
-- npm
+- pnpm ([instálalo](https://pnpm.io/installation) con `npm install -g pnpm` o `brew install pnpm`)
 
 ## Puesta en marcha
 
 ```bash
-npm install
-npm start
+pnpm install
+pnpm start
 ```
 
 El sitio queda disponible en `http://localhost:3000` y se recarga automáticamente al guardar cambios.
@@ -24,10 +24,10 @@ El sitio queda disponible en `http://localhost:3000` y se recarga automáticamen
 
 | Comando | Función |
 |---|---|
-| `npm start` | Servidor de desarrollo con recarga en caliente |
-| `npm run build` | Genera el sitio estático en `build/` |
-| `npm run serve` | Sirve localmente el sitio ya construido |
-| `npm run clear` | Limpia la caché de Docusaurus |
+| `pnpm start` | Servidor de desarrollo con recarga en caliente |
+| `pnpm run build` | Genera el sitio estático en `build/` |
+| `pnpm run serve` | Sirve localmente el sitio ya construido |
+| `pnpm run clear` | Limpia la caché de Docusaurus |
 
 ---
 
@@ -110,7 +110,7 @@ flowchart TD
 
 1. Crea una rama desde `main`.
 2. Haz tus cambios en `docs/`.
-3. Comprueba en local con `npm start`.
+3. Comprueba en local con `pnpm start`.
 4. Abre un Pull Request. Se verifica automáticamente que el sitio construya.
 5. Al fusionar en `main`, el sitio se despliega solo.
 
@@ -143,7 +143,7 @@ El sitio está preparado para [Algolia DocSearch](https://docsearch.algolia.com/
 El sitio está configurado en español. Para añadir inglés:
 
 1. Añade `'en'` al array `locales` en `docusaurus.config.ts`.
-2. Ejecuta `npm run write-translations -- --locale en`.
+2. Ejecuta `pnpm run write-translations -- --locale en`.
 3. Traduce el contenido en `i18n/en/`.
 
 ---
