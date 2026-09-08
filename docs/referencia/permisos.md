@@ -3,7 +3,7 @@ id: permisos
 title: Matriz de permisos
 sidebar_label: Matriz de permisos
 sidebar_position: 2
-description: Operaciones disponibles por módulo y rol en Consul Point.
+description: Operaciones disponibles por módulo y rol en ConsulPoint.
 ---
 
 # Matriz de permisos

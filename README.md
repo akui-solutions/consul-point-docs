@@ -1,6 +1,6 @@
-# Documentación de Consul Point
+# Documentación de ConsulPoint
 
-Documentación oficial de la plataforma **Consul Point**, construida con [Docusaurus](https://docusaurus.io/).
+Documentación oficial de la plataforma **ConsulPoint**, construida con [Docusaurus](https://docusaurus.io/).
 
 🌐 **Sitio publicado:** https://akui-solutions.github.io/consul-point-docs
 
@@ -148,4 +148,4 @@ El sitio está configurado en español. Para añadir inglés:
 
 ---
 
-*Akui Solutions · Consul Point*
+*Akui Solutions · ConsulPoint*

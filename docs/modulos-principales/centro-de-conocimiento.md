@@ -3,7 +3,7 @@ id: centro-de-conocimiento
 title: Centro de Conocimiento
 sidebar_label: Centro de Conocimiento
 sidebar_position: 2
-description: Gestión documental de Consul Point. Carga de documentos, procesamiento automático, tipos de carpeta, compartición y Extracción Inteligente.
+description: Gestión documental de ConsulPoint. Carga de documentos, procesamiento automático, tipos de carpeta, compartición y Extracción Inteligente.
 ---
 
 # Centro de Conocimiento

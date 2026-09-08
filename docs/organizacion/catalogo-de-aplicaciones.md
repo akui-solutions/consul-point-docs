@@ -3,7 +3,7 @@ id: catalogo-de-aplicaciones
 title: Catálogo de Aplicaciones
 sidebar_label: Catálogo de Aplicaciones
 sidebar_position: 3
-description: Aplicaciones y agentes preconfigurados instalables en Consul Point. Tipos de Mini App y Centro de Agentes.
+description: Aplicaciones y agentes preconfigurados instalables en ConsulPoint. Tipos de Mini App y Centro de Agentes.
 ---
 
 # Catálogo de Aplicaciones

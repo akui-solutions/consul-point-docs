@@ -3,7 +3,7 @@ id: auditoria-y-reportes
 title: Auditoría y Reportes
 sidebar_label: Auditoría y Reportes
 sidebar_position: 1
-description: Control de consumo, actividad y registros en Consul Point. Métricas de tokens, créditos y actividad por usuario.
+description: Control de consumo, actividad y registros en ConsulPoint. Métricas de tokens, créditos y actividad por usuario.
 ---
 
 # Auditoría y Reportes

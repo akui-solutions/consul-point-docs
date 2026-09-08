@@ -3,7 +3,7 @@ id: configuracion
 title: Configuración
 sidebar_label: Configuración
 sidebar_position: 2
-description: "Administración de la organización en Consul Point: proveedores de IA, almacenamiento, API keys, facturación y planes."
+description: "Administración de la organización en ConsulPoint: proveedores de IA, almacenamiento, API keys, facturación y planes."
 ---
 
 # Configuración

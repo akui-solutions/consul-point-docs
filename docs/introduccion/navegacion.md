@@ -3,7 +3,7 @@ id: navegacion
 title: Navegación
 sidebar_label: Navegación
 sidebar_position: 3
-description: Estructura del menú lateral de Consul Point y visibilidad de módulos según rol.
+description: Estructura del menú lateral de ConsulPoint y visibilidad de módulos según rol.
 ---
 
 # Navegación

@@ -3,12 +3,12 @@ id: vision-general
 title: Visión general de la plataforma
 sidebar_label: Visión general
 sidebar_position: 1
-description: Arquitectura funcional de Consul Point y relación entre sus cuatro capas.
+description: Arquitectura funcional de ConsulPoint y relación entre sus cuatro capas.
 ---
 
 # Visión general de la plataforma
 
-Consul Point es una plataforma de agentes de inteligencia artificial empresarial. Permite a una organización crear asistentes de IA que operan sobre su propia documentación, se conectan a canales de comunicación reales y funcionan bajo supervisión humana y control de consumo.
+ConsulPoint es una plataforma de agentes de inteligencia artificial empresarial. Permite a una organización crear asistentes de IA que operan sobre su propia documentación, se conectan a canales de comunicación reales y funcionan bajo supervisión humana y control de consumo.
 
 ## Arquitectura funcional
 

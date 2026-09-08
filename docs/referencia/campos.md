@@ -3,7 +3,7 @@ id: campos
 title: Referencia de campos
 sidebar_label: Referencia de campos
 sidebar_position: 1
-description: Tabla de referencia de todos los campos de formulario de Consul Point con sus tipos, obligatoriedad y restricciones.
+description: Tabla de referencia de todos los campos de formulario de ConsulPoint con sus tipos, obligatoriedad y restricciones.
 ---
 
 # Referencia de campos

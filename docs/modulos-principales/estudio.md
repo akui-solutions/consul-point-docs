@@ -3,7 +3,7 @@ id: estudio
 title: Estudio
 sidebar_label: Estudio
 sidebar_position: 1
-description: Módulo de creación y administración de agentes de IA en Consul Point. Tipos de agente, formulario de creación, capacidades y configuración de modelo.
+description: Módulo de creación y administración de agentes de IA en ConsulPoint. Tipos de agente, formulario de creación, capacidades y configuración de modelo.
 ---
 
 # Estudio

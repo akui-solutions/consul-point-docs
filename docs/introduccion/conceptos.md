@@ -3,7 +3,7 @@ id: conceptos
 title: Conceptos fundamentales
 sidebar_label: Conceptos fundamentales
 sidebar_position: 2
-description: "Terminología esencial de Consul Point: agente, capacidades, modelo, token, espacio de trabajo e integración."
+description: "Terminología esencial de ConsulPoint: agente, capacidades, modelo, token, espacio de trabajo e integración."
 ---
 
 # Conceptos fundamentales

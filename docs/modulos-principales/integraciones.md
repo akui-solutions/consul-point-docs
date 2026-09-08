@@ -3,7 +3,7 @@ id: integraciones
 title: Integraciones y Canales
 sidebar_label: Integraciones y Canales
 sidebar_position: 5
-description: "Configuración de canales externos en Consul Point: WhatsApp Business, Telegram, Gmail, Outlook, IMAP y aplicaciones externas. Supervisión humana."
+description: "Configuración de canales externos en ConsulPoint: WhatsApp Business, Telegram, Gmail, Outlook, IMAP y aplicaciones externas. Supervisión humana."
 ---
 
 # Integraciones y Canales

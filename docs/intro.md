@@ -1,15 +1,15 @@
 ---
 id: intro
-title: Documentación de Consul Point
+title: Documentación de ConsulPoint
 sidebar_label: Inicio
 sidebar_position: 1
 slug: /
-description: Guía de referencia completa de la plataforma Consul Point, la plataforma de agentes de inteligencia artificial empresarial.
+description: Guía de referencia completa de la plataforma ConsulPoint, la plataforma de agentes de inteligencia artificial empresarial.
 ---
 
-# Documentación de Consul Point
+# Documentación de ConsulPoint
 
-Bienvenido a la documentación de **Consul Point**, la plataforma de agentes de inteligencia artificial empresarial.
+Bienvenido a la documentación de **ConsulPoint**, la plataforma de agentes de inteligencia artificial empresarial.
 
 Aquí encontrarás la referencia completa de todos los módulos: qué hacen, cómo se configuran y cómo se relacionan entre sí.
 

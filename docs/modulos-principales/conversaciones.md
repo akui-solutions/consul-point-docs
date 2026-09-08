@@ -3,7 +3,7 @@ id: conversaciones
 title: Conversaciones
 sidebar_label: Conversaciones
 sidebar_position: 3
-description: Interfaz de chat con los agentes de Consul Point. Fuentes del mensaje, ventana de contexto, conversaciones colaborativas y segunda conversación.
+description: Interfaz de chat con los agentes de ConsulPoint. Fuentes del mensaje, ventana de contexto, conversaciones colaborativas y segunda conversación.
 ---
 
 # Conversaciones

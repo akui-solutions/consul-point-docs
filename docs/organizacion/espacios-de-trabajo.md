@@ -3,7 +3,7 @@ id: espacios-de-trabajo
 title: Espacios de Trabajo
 sidebar_label: Espacios de Trabajo
 sidebar_position: 1
-description: Segmentación interna de Consul Point por equipo, departamento o proyecto, agrupando usuarios, agentes y aplicaciones.
+description: Segmentación interna de ConsulPoint por equipo, departamento o proyecto, agrupando usuarios, agentes y aplicaciones.
 ---
 
 # Espacios de Trabajo

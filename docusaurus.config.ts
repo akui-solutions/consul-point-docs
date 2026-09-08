@@ -6,7 +6,7 @@ const ORG = 'akui-solutions';
 const REPO = 'consul-point-docs';
 
 const config: Config = {
-  title: 'Consul Point',
+  title: 'ConsulPoint',
   tagline: 'Documentación de la plataforma de agentes de IA empresarial',
   favicon: 'img/favicon.ico',
 
@@ -64,9 +64,9 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'Consul Point',
+      title: 'ConsulPoint',
       logo: {
-        alt: 'Consul Point',
+        alt: 'ConsulPoint',
         src: 'img/logo.png',
       },
       items: [
@@ -111,7 +111,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Akui Solutions · Consul Point`,
+      copyright: `Copyright © ${new Date().getFullYear()} Akui Solutions · ConsulPoint`,
     },
     prism: {
       theme: prismThemes.github,

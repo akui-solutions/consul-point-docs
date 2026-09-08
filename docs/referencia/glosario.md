@@ -3,7 +3,7 @@ id: glosario
 title: Glosario
 sidebar_label: Glosario
 sidebar_position: 3
-description: Definición de los términos empleados en Consul Point y en esta documentación.
+description: Definición de los términos empleados en ConsulPoint y en esta documentación.
 ---
 
 # Glosario

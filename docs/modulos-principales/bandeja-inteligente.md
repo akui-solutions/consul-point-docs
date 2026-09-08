@@ -3,7 +3,7 @@ id: bandeja-inteligente
 title: Bandeja Inteligente
 sidebar_label: Bandeja Inteligente
 sidebar_position: 4
-description: Gestión de correo corporativo en Consul Point con procesamiento automático de adjuntos y reglas de filtrado.
+description: Gestión de correo corporativo en ConsulPoint con procesamiento automático de adjuntos y reglas de filtrado.
 ---
 
 # Bandeja Inteligente

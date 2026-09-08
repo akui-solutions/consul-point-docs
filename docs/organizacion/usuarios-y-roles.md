@@ -3,7 +3,7 @@ id: usuarios-y-roles
 title: Usuarios y Roles
 sidebar_label: Usuarios y Roles
 sidebar_position: 2
-description: Gestión de personas y permisos en Consul Point. Modelo de roles, operaciones por módulo y principio de mínimo privilegio.
+description: Gestión de personas y permisos en ConsulPoint. Modelo de roles, operaciones por módulo y principio de mínimo privilegio.
 ---
 
 # Usuarios y Roles

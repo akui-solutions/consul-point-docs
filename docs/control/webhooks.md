@@ -3,7 +3,7 @@ id: webhooks
 title: Webhooks
 sidebar_label: Webhooks
 sidebar_position: 3
-description: Notificación automática a sistemas externos ante eventos de Consul Point. Modos síncrono, asíncrono y cola.
+description: Notificación automática a sistemas externos ante eventos de ConsulPoint. Modos síncrono, asíncrono y cola.
 ---
 
 # Webhooks
@@ -13,7 +13,7 @@ description: Notificación automática a sistemas externos ante eventos de Consu
 
 ## Descripción
 
-Mecanismo de notificación a sistemas externos ante eventos de la plataforma. Permite integrar Consul Point con sistemas propios.
+Mecanismo de notificación a sistemas externos ante eventos de la plataforma. Permite integrar ConsulPoint con sistemas propios.
 
 ## Tipos de ejecución
 
