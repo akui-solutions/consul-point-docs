@@ -1,9 +1,10 @@
 ---
-id: estudio
+id: estudio-overview
 title: Estudio
-sidebar_label: Estudio
+sidebar_label: Resumen
 sidebar_position: 1
-description: Módulo de creación y administración de agentes de IA en ConsulPoint. Tipos de agente, formulario de creación, capacidades y configuración de modelo.
+slug: /modulos/estudio
+description: Módulo de creación y administración de agentes de IA en ConsulPoint. Organización del módulo, formulario de creación, capacidades y configuración de modelo.
 ---
 
 # Estudio
@@ -38,40 +39,7 @@ flowchart LR
     M[Micro Agente] -->|devuelve JSON| S[Sistema externo]
 ```
 
-### Agente
-
-El asistente principal. Conversa con personas a través de Conversaciones o de un canal conectado. Es el único tipo que puede invocar Especialistas.
-
-**Casos de uso:** atención al cliente, soporte, consulta interna de documentación.
-
-### Especialista
-
-Un agente auxiliar al que un Agente principal delega consultas de un dominio concreto. El Agente decide cuándo invocarlo.
-
-Requiere dos campos adicionales:
-
-| Campo | Función | Límite |
-|---|---|---|
-| **Nombre técnico** | Identificador interno | Máx. 20 caracteres |
-| **Descripción técnica** | Texto que el Agente principal evalúa para decidir la invocación | Obligatorio |
-
-:::warning La descripción técnica no es documentación
-Es el criterio de decisión que lee el Agente principal para determinar si activa al Especialista. Debe describir con precisión **cuándo** corresponde invocarlo, no qué hace en general.
-:::
-
-**Casos de uso:** un agente comercial que delega consultas de facturación en un especialista de facturación.
-
-### Micro Agente
-
-Ejecuta una instrucción predefinida y devuelve el resultado conforme a un **esquema JSON** definido por el usuario. No mantiene conversación.
-
-Requiere:
-
-- **Instrucción de ejecución**: la orden que se ejecuta al invocarlo (máx. 5.000 caracteres)
-- **Esquema de respuesta**: objeto JSON válido con las propiedades esperadas
-- **Ejemplo del esquema**: obligatorio
-
-**Casos de uso:** extraer campos normalizados de documentos o correos para su procesamiento por otro sistema.
+Cada tipo tiene su propia página de referencia: [Agentes](/modulos/estudio/agentes), [Especialistas](/modulos/estudio/especialistas) y [Microagentes](/modulos/estudio/microagentes).
 
 ## Crear un agente
 
@@ -93,7 +61,7 @@ El tipo se define en el primer paso y **no puede modificarse después de crear e
 | Categorías | Sí | Mínimo una |
 | Imagen del agente | No | JPG, PNG o WEBP |
 
-Para Especialistas se añaden los campos de información técnica descritos arriba.
+Para Especialistas se añaden los campos de información técnica descritos en [Especialistas](/modulos/estudio/especialistas).
 
 :::tip Asistencia de IA en la creación
 La plataforma puede generar y mejorar automáticamente el nombre, la descripción, la imagen, las instrucciones del sistema y los iniciadores de conversación. Resulta útil como punto de partida cuando no se tiene claro el planteamiento inicial.
@@ -101,7 +69,7 @@ La plataforma puede generar y mejorar automáticamente el nombre, la descripció
 
 ### Paso 2 — Respuestas y personalización
 
-Define el comportamiento del agente.
+Define el comportamiento del agente. Para **Agentes** y **Especialistas**, este paso incluye:
 
 #### Tono de comunicación
 
@@ -109,7 +77,7 @@ Estilo y actitud de las respuestas. **Máximo 3 tonos** simultáneos.
 
 #### Instrucciones del sistema
 
-Instrucciones permanentes que definen comportamiento y propósito. **Máximo 4.000 caracteres** (5.000 en Micro Agentes).
+Instrucciones permanentes que definen comportamiento y propósito. **Máximo 4.000 caracteres**.
 
 Es el parámetro de mayor impacto en la calidad del resultado. Estructura recomendada:
 
@@ -184,6 +152,8 @@ Sin la capacidad **Acceso al centro de conocimiento**, el agente no consultará 
 | 0,4 – 0,7 | Uso general, consulta interna |
 | 0,8 – 1 | Generación creativa, redacción, ideación |
 
+Para **Microagentes**, el paso 2 sustituye estos campos por la instrucción de ejecución y el esquema de datos de salida — ver [Microagentes](/modulos/estudio/microagentes) y [Esquemas de datos](/modulos/estudio/esquemas-de-datos).
+
 ### Paso 3 — Documentos
 
 Vincula las carpetas del Centro de Conocimiento que el agente puede consultar.
@@ -209,4 +179,4 @@ Cada agente define quién puede utilizarlo. Con permisos personalizados debe ind
 
 ## Verificación
 
-Tras crear o modificar un agente, se recomienda probarlo desde [Conversaciones](/modulos-principales/conversaciones) antes de exponerlo en un canal externo, comprobando mediante **Fuentes del mensaje** que responde a partir de la documentación vinculada.
+Tras crear o modificar un agente, se recomienda probarlo desde [Conversaciones](/modulos/conversaciones) antes de exponerlo en un canal externo, comprobando mediante **Fuentes del mensaje** que responde a partir de la documentación vinculada.

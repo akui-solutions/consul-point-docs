@@ -1,9 +1,22 @@
-import type { Config } from '@docusaurus/types';
+import type { Config, PluginConfig } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 import { themes as prismThemes } from 'prism-react-renderer';
+import tailwindcss from 'tailwindcss';
+import autoprefixer from 'autoprefixer';
 
 const ORG = 'akui-solutions';
 const REPO = 'consul-point-docs';
+
+// Inyecta Tailwind CSS en el pipeline de PostCSS de Docusaurus.
+const tailwindPlugin: PluginConfig = function tailwindPlugin() {
+  return {
+    name: 'tailwind-plugin',
+    configurePostCss(postcssOptions) {
+      postcssOptions.plugins.push(tailwindcss, autoprefixer);
+      return postcssOptions;
+    },
+  };
+};
 
 const config: Config = {
   title: 'ConsulPoint',
@@ -38,6 +51,14 @@ const config: Config = {
     },
   },
   themes: ['@docusaurus/theme-mermaid'],
+  plugins: [tailwindPlugin],
+
+  stylesheets: [
+    {
+      href: 'https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap',
+      type: 'text/css',
+    },
+  ],
 
   presets: [
     [
@@ -60,14 +81,18 @@ const config: Config = {
   themeConfig: {
     image: 'img/logo.png',
     colorMode: {
-      defaultMode: 'light',
+      defaultMode: 'dark',
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'ConsulPoint',
       logo: {
         alt: 'ConsulPoint',
-        src: 'img/logo.png',
+        src: 'img/logo-wordmark-navy.png',
+        srcDark: 'img/logo-wordmark-light.png',
+        // 32px (2rem), el mismo tamaño de logo que usa docs.iota.org
+        // (también sobre Docusaurus). Sin `width` fijo: el ancho se escala
+        // en proporción (271x67 reales) para no deformar el logo.
+        height: 32,
       },
       items: [
         {
@@ -91,15 +116,15 @@ const config: Config = {
           items: [
             { label: 'Visión general', to: '/introduccion/vision-general' },
             { label: 'Conceptos fundamentales', to: '/introduccion/conceptos' },
-            { label: 'Estudio', to: '/modulos-principales/estudio' },
+            { label: 'Estudio', to: '/modulos/estudio' },
           ],
         },
         {
           title: 'Módulos',
           items: [
-            { label: 'Centro de Conocimiento', to: '/modulos-principales/centro-de-conocimiento' },
-            { label: 'Conversaciones', to: '/modulos-principales/conversaciones' },
-            { label: 'Integraciones', to: '/modulos-principales/integraciones' },
+            { label: 'Centro de Conocimiento', to: '/modulos/centro-de-conocimiento' },
+            { label: 'Conversaciones', to: '/modulos/conversaciones' },
+            { label: 'Integraciones', to: '/modulos/integraciones' },
           ],
         },
         {

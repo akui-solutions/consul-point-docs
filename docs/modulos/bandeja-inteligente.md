@@ -15,7 +15,7 @@ description: Gestión de correo corporativo en ConsulPoint con procesamiento aut
 Gestión del correo corporativo con procesamiento automático de adjuntos. Requiere una integración de correo configurada (Gmail, Microsoft o IMAP).
 
 :::info Distinción entre módulos
-La Bandeja Inteligente gestiona **correo electrónico**. Las conversaciones de mensajería instantánea (WhatsApp, Telegram) se gestionan desde [Conversaciones](/modulos-principales/conversaciones).
+La Bandeja Inteligente gestiona **correo electrónico**. Las conversaciones de mensajería instantánea (WhatsApp, Telegram) se gestionan desde [Conversaciones](/modulos/conversaciones).
 :::
 
 ## Vistas
@@ -37,7 +37,7 @@ Cada mensaje presenta un estado de procesamiento:
 | **Fallido** | Error durante el procesamiento |
 | **No procesado** | Fuera del alcance de las reglas |
 
-Los adjuntos procesados se depositan automáticamente en la carpeta configurada del [Centro de Conocimiento](/modulos-principales/centro-de-conocimiento).
+Los adjuntos procesados se depositan automáticamente en la carpeta configurada del [Centro de Conocimiento](/modulos/centro-de-conocimiento).
 
 ```mermaid
 flowchart LR

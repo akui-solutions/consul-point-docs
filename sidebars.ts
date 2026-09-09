@@ -1,5 +1,35 @@
 import type { SidebarsConfig } from '@docusaurus/plugin-content-docs';
 
+// Estudio se muestra como subcategoría tanto en "Módulos" como en
+// "Control y Auditoría"; se define una vez y se reutiliza en ambas.
+const estudioCategory = {
+  type: 'category' as const,
+  label: 'Estudio',
+  link: { type: 'doc' as const, id: 'modulos/estudio/estudio-overview' },
+  items: [
+    'modulos/estudio/agentes',
+    'modulos/estudio/especialistas',
+    'modulos/estudio/microagentes',
+    'modulos/estudio/esquemas-de-datos',
+  ],
+};
+
+// El complemento Portal incluye Espacios de Trabajo como parte de su documentación.
+const portalCategory = {
+  type: 'category' as const,
+  label: 'Portal',
+  link: { type: 'doc' as const, id: 'modulos/complementos/portal/portal-overview' },
+  items: ['modulos/complementos/portal/espacios-de-trabajo'],
+};
+
+// Configuración integra Webhooks, Usuarios y Roles, e Integraciones y Canales.
+const configuracionCategory = {
+  type: 'category' as const,
+  label: 'Configuración',
+  link: { type: 'doc' as const, id: 'control/configuracion/configuracion-overview' },
+  items: ['control/webhooks', 'organizacion/usuarios-y-roles', 'modulos/integraciones'],
+};
+
 const sidebars: SidebarsConfig = {
   docsSidebar: [
     'intro',
@@ -15,32 +45,32 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'Módulos principales',
+      label: 'Módulos',
       collapsed: false,
       items: [
-        'modulos-principales/estudio',
-        'modulos-principales/centro-de-conocimiento',
-        'modulos-principales/conversaciones',
-        'modulos-principales/bandeja-inteligente',
-        'modulos-principales/integraciones',
+        'modulos/centro-de-conocimiento',
+        'modulos/conversaciones',
+        'modulos/bandeja-inteligente',
+        {
+          type: 'category',
+          label: 'Complementos',
+          items: [
+            'modulos/complementos/comms',
+            portalCategory,
+            'modulos/complementos/automatizaciones',
+            'modulos/complementos/advanced-control',
+          ],
+        },
       ],
     },
     {
       type: 'category',
-      label: 'Organización',
+      label: 'Control y Auditoría',
       items: [
-        'organizacion/espacios-de-trabajo',
-        'organizacion/usuarios-y-roles',
+        estudioCategory,
+        configuracionCategory,
         'organizacion/catalogo-de-aplicaciones',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Control',
-      items: [
         'control/auditoria-y-reportes',
-        'control/configuracion',
-        'control/webhooks',
       ],
     },
     {
@@ -50,6 +80,7 @@ const sidebars: SidebarsConfig = {
         'referencia/campos',
         'referencia/permisos',
         'referencia/glosario',
+        'referencia/sistema-de-diseno',
       ],
     },
   ],

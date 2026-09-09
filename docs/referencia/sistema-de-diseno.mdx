@@ -1,0 +1,51 @@
+---
+id: sistema-de-diseno
+title: Sistema de diseño
+sidebar_label: Sistema de diseño
+sidebar_position: 4
+description: Componentes React con Tailwind CSS disponibles para enriquecer la documentación de ConsulPoint.
+---
+
+Estos componentes están disponibles en cualquier archivo `.md`/`.mdx` de `docs/` sin necesidad de importarlos: están registrados globalmente en [`src/theme/MDXComponents.tsx`](https://github.com/akui-solutions/consul-point-docs/blob/main/src/theme/MDXComponents.tsx).
+
+## Callout
+
+<Callout type="info" title="Nota">
+  Este es un aviso informativo con borde lateral cian.
+</Callout>
+
+<Callout type="success" title="Buena práctica">
+  Este es un aviso de éxito con borde lateral verde.
+</Callout>
+
+<Callout type="warning" title="Advertencia">
+  Este es un aviso de advertencia con borde lateral ámbar.
+</Callout>
+
+<Callout type="danger" title="Peligro">
+  Este es un aviso de peligro con borde lateral rojo.
+</Callout>
+
+```mdx
+<Callout type="info" title="Nota">
+  Contenido del aviso.
+</Callout>
+```
+
+## EndpointCard
+
+<EndpointCard method="GET" path="/api/v1/spaces/{id}" summary="Obtiene el detalle de un espacio colaborativo." />
+
+<EndpointCard method="POST" path="/api/v1/knowledge/documents" summary="Sube un nuevo documento al Centro de Conocimiento." />
+
+```mdx
+<EndpointCard method="GET" path="/api/v1/spaces/{id}" summary="Obtiene el detalle de un espacio colaborativo." />
+```
+
+## MethodBadge
+
+<MethodBadge method="GET" /> <MethodBadge method="POST" /> <MethodBadge method="PUT" /> <MethodBadge method="PATCH" /> <MethodBadge method="DELETE" />
+
+## Logo
+
+<Logo height={40} />

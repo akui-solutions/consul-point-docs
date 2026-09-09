@@ -1,0 +1,226 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "metadata": {
+    "title": "ConsulPoint Documentation Design System",
+    "description": "Especificación técnica completa, paleta de colores, tipografía, arquitectura de layout, assets SVG y configuración para Tailwind CSS / CSS Variables para la creación del portal de documentación de ConsulPoint.",
+    "version": "1.0.0",
+    "target_audience": "LLM / Frontend Developer / UI-UX Engineer",
+    "brand_name": "ConsulPoint",
+    "industry": "Enterprise AI & Organizational Knowledge Platform",
+    "official_website": "https://consulpoint.com/es"
+  },
+  "brand_guidelines": {
+    "visual_tone": "Enterprise, Inteligencia Artificial Activa, Alta Seguridad, Técnico, Claro, Limpio y de Alto Contraste",
+    "theme_support": [
+      "dark (predeterminado)",
+      "light"
+    ],
+    "design_philosophy": "Legibilidad de código impecable, estructura jerárquica clara de 3 columnas, resplandores tecnológicos cian/púrpura para elementos de IA activa."
+  },
+  "color_palette": {
+    "brand_identity": {
+      "primary_navy": "#0F2C59",
+      "accent_cyan": "#00D2FF",
+      "accent_purple": "#8B5CF6",
+      "accent_blue": "#3B82F6",
+      "gradient_ai_glow": "linear-gradient(135deg, #00D2FF 0%, #3B82F6 50%, #8B5CF6 100%)"
+    },
+    "dark_theme": {
+      "background_main": "#0B0F19",
+      "background_surface": "#111827",
+      "background_card": "#1E293B",
+      "background_code": "#0F172A",
+      "border": "#1E293B",
+      "border_focus": "#38BDF8",
+      "text_primary": "#F8FAFC",
+      "text_secondary": "#94A3B8",
+      "text_muted": "#64748B",
+      "text_accent": "#38BDF8"
+    },
+    "light_theme": {
+      "background_main": "#F8FAFC",
+      "background_surface": "#FFFFFF",
+      "background_card": "#FFFFFF",
+      "background_code": "#0D1117",
+      "border": "#E2E8F0",
+      "border_focus": "#0066FF",
+      "text_primary": "#0F172A",
+      "text_secondary": "#475569",
+      "text_muted": "#94A3B8",
+      "text_accent": "#0066FF"
+    },
+    "status_callouts": {
+      "info": {
+        "border": "#3B82F6",
+        "bg_dark": "rgba(59, 130, 246, 0.1)",
+        "bg_light": "#EFF6FF",
+        "text_dark": "#60A5FA",
+        "text_light": "#1D4ED8"
+      },
+      "success": {
+        "border": "#10B981",
+        "bg_dark": "rgba(16, 185, 129, 0.1)",
+        "bg_light": "#ECFDF5",
+        "text_dark": "#34D399",
+        "text_light": "#047857"
+      },
+      "warning": {
+        "border": "#F59E0B",
+        "bg_dark": "rgba(245, 158, 11, 0.1)",
+        "bg_light": "#FEF3C7",
+        "text_dark": "#FBBF24",
+        "text_light": "#B45309"
+      },
+      "danger": {
+        "border": "#EF4444",
+        "bg_dark": "rgba(239, 68, 68, 0.1)",
+        "bg_light": "#FEF2F2",
+        "text_dark": "#F87171",
+        "text_light": "#B91C1C"
+      }
+    }
+  },
+  "typography": {
+    "primary_font": {
+      "font_family": "'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif",
+      "usage": "Encabezados, navegaciones, botones y cuerpo de texto general",
+      "weights": {
+        "regular": 400,
+        "medium": 500,
+        "semibold": 600,
+        "bold": 700
+      }
+    },
+    "monospace_font": {
+      "font_family": "'JetBrains Mono', 'Fira Code', Consolas, monospace",
+      "usage": "Bloques de código, comandos cURL, respuestas JSON, nombres de variables inline",
+      "weights": {
+        "regular": 400,
+        "semibold": 600
+      }
+    },
+    "type_scale": {
+      "h1": {
+        "font_size": "2.25rem",
+        "line_height": "2.5rem",
+        "font_weight": 700,
+        "letter_spacing": "-0.025em"
+      },
+      "h2": {
+        "font_size": "1.5rem",
+        "line_height": "2rem",
+        "font_weight": 600,
+        "letter_spacing": "-0.02em"
+      },
+      "h3": {
+        "font_size": "1.25rem",
+        "line_height": "1.75rem",
+        "font_weight": 600,
+        "letter_spacing": "0em"
+      },
+      "body": {
+        "font_size": "1rem",
+        "line_height": "1.625rem",
+        "font_weight": 400
+      },
+      "caption": {
+        "font_size": "0.875rem",
+        "line_height": "1.25rem",
+        "font_weight": 400
+      },
+      "code_inline": {
+        "font_size": "0.875em",
+        "font_family": "monospace",
+        "background": "rgba(110,118,129,0.1)",
+        "padding": "0.2em 0.4em",
+        "border_radius": "6px"
+      }
+    }
+  },
+  "layout_architecture": {
+    "structure": "Layout Clásico de Documentación en 3 Columnas",
+    "header": {
+      "height": "64px",
+      "position": "sticky top-0 z-50",
+      "elements": [
+        "Logo ConsulPoint con insignia DOCS activable",
+        "Barra de Búsqueda Global (CMD+K / CTRL+K)",
+        "Selector de Versión de API / Documentación",
+        "Selector de Idioma (ES/EN)",
+        "Alternador de Tema (Modo Oscuro / Claro)"
+      ]
+    },
+    "sidebar_left": {
+      "width": "280px",
+      "type": "Navegación Jerárquica Desplegable",
+      "categories": [
+        "Introducción y Primeros Pasos",
+        "Arquitectura y Seguridad de Datos",
+        "Espacios Colaborativos",
+        "Centro de Conocimiento y RAG",
+        "Agentes e Integración de Modelos (50+ LLMs)",
+        "Referencia de API REST & Webhooks",
+        "SDKs (Python, TypeScript, Go)"
+      ]
+    },
+    "main_content": {
+      "max_width": "820px",
+      "padding": "2rem 3rem",
+      "elements": [
+        "Miga de pan (Breadcrumbs)",
+        "Título principal H1 y badge de última actualización",
+        "Resumen ejecutivo del artículo",
+        "Llamadas de atención / Admonitions (Notas, Advertencias, Tips)",
+        "Bloques de código interactivos con botón para copiar",
+        "Tarjetas de endpoints de API (GET, POST, PUT, DELETE)",
+        "Navegación inferior (Anterior / Siguiente página)"
+      ]
+    },
+    "sidebar_right": {
+      "width": "240px",
+      "title": "En esta página",
+      "behavior": "Scrollspy dinámico que resalta la sección activa de la pantalla"
+    }
+  },
+  "css_variables_code": "\n:root {\n  --cp-primary: #0F2C59;\n  --cp-cyan: #00D2FF;\n  --cp-purple: #8B5CF6;\n  --cp-bg: #0B0F19;\n  --cp-surface: #111827;\n  --cp-card: #1E293B;\n  --cp-border: #1E293B;\n  --cp-text-main: #F8FAFC;\n  --cp-text-muted: #94A3B8;\n  --cp-font-sans: 'Plus Jakarta Sans', 'Inter', sans-serif;\n  --cp-font-mono: 'JetBrains Mono', monospace;\n}\n[data-theme=\"light\"] {\n  --cp-bg: #F8FAFC;\n  --cp-surface: #FFFFFF;\n  --cp-card: #FFFFFF;\n  --cp-border: #E2E8F0;\n  --cp-text-main: #0F172A;\n  --cp-text-muted: #475569;\n}\n",
+  "tailwind_config": {
+    "theme": {
+      "extend": {
+        "colors": {
+          "cp": {
+            "navy": "#0F2C59",
+            "cyan": "#00D2FF",
+            "purple": "#8B5CF6",
+            "dark": "#0B0F19",
+            "surface": "#111827",
+            "card": "#1E293B",
+            "border": "#1E293B"
+          }
+        },
+        "fontFamily": {
+          "sans": [
+            "'Plus Jakarta Sans'",
+            "Inter",
+            "sans-serif"
+          ],
+          "mono": [
+            "'JetBrains Mono'",
+            "monospace"
+          ]
+        }
+      }
+    }
+  },
+  "svg_assets": {
+    "full_logo_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 70\" width=\"350\" height=\"70\"><defs><linearGradient id=\"cpGrad\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\"><stop offset=\"0%\" stop-color=\"#00D2FF\"/><stop offset=\"50%\" stop-color=\"#3B82F6\"/><stop offset=\"100%\" stop-color=\"#8B5CF6\"/></linearGradient><filter id=\"glow\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\"><feGaussianBlur stdDeviation=\"3\" result=\"blur\"/><feComposite in=\"SourceGraphic\" in2=\"blur\" operator=\"over\"/></filter></defs><g transform=\"translate(10, 10)\"><path d=\"M 25 5 L 42 15 L 42 35 L 25 45 L 8 35 L 8 15 Z\" fill=\"none\" stroke=\"url(#cpGrad)\" stroke-width=\"2.5\" opacity=\"0.5\"/><circle cx=\"25\" cy=\"25\" r=\"14\" fill=\"none\" stroke=\"url(#cpGrad)\" stroke-width=\"3\" filter=\"url(#glow)\"/><circle cx=\"25\" cy=\"25\" r=\"7\" fill=\"url(#cpGrad)\"/><circle cx=\"25\" cy=\"5\" r=\"3\" fill=\"#00D2FF\"/><circle cx=\"42\" cy=\"35\" r=\"3\" fill=\"#8B5CF6\"/><circle cx=\"8\" cy=\"35\" r=\"3\" fill=\"#3B82F6\"/></g><text x=\"65\" y=\"42\" font-family=\"'Plus Jakarta Sans', sans-serif\" font-weight=\"700\" font-size=\"26\" fill=\"#FFFFFF\" letter-spacing=\"-0.5\">Consul<tspan fill=\"url(#cpGrad)\">Point</tspan></text><rect x=\"235\" y=\"24\" width=\"56\" height=\"20\" rx=\"4\" fill=\"rgba(0,210,255,0.12)\" stroke=\"#00D2FF\" stroke-width=\"0.8\"/><text x=\"244\" y=\"38\" font-family=\"'JetBrains Mono', monospace\" font-weight=\"600\" font-size=\"10\" fill=\"#00D2FF\" letter-spacing=\"1\">DOCS</text></svg>",
+    "icon_only_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 50 50\" width=\"50\" height=\"50\"><defs><linearGradient id=\"cpGradIcon\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\"><stop offset=\"0%\" stop-color=\"#00D2FF\"/><stop offset=\"100%\" stop-color=\"#8B5CF6\"/></linearGradient></defs><path d=\"M 25 5 L 42 15 L 42 35 L 25 45 L 8 35 L 8 15 Z\" fill=\"none\" stroke=\"url(#cpGradIcon)\" stroke-width=\"2.5\" opacity=\"0.5\"/><circle cx=\"25\" cy=\"25\" r=\"14\" fill=\"none\" stroke=\"url(#cpGradIcon)\" stroke-width=\"3\"/><circle cx=\"25\" cy=\"25\" r=\"7\" fill=\"url(#cpGradIcon)\"/></svg>"
+  },
+  "llm_prompt_instructions": [
+    "1. Aplica un layout responsivo de 3 columnas (Sidebar de navegación a la izquierda, Contenido central de lectura y Tabla de contenidos a la derecha).",
+    "2. Soporta cambio de tema entre Dark (predeterminado para estética de IA) y Light.",
+    "3. Incorpora un atajo de teclado global (Cmd+K / Ctrl+K) para abrir el buscador instantáneo.",
+    "4. Usa las variables CSS o la extensión de Tailwind proporcionada para mantener coherencia cromática y tipográfica estricta con ConsulPoint.",
+    "5. Renderiza los bloques de código usando JetBrains Mono con resaltado de sintaxis y un botón de copiado al portapapeles.",
+    "6. Los componentes de llamada de atención (Admonitions) deben tener bordes laterales gruesos y fondos sutiles semitransparentes."
+  ]
+}

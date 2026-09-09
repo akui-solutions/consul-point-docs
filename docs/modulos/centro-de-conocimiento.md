@@ -68,7 +68,7 @@ La acción **Compartir** admite tres destinatarios:
 | **Espacios de trabajo** | Acceso para todos los miembros del espacio |
 
 :::info Dos rutas, un mismo resultado
-Compartir una carpeta con un agente es equivalente a vincularla desde el paso 3 del formulario del [Estudio](/modulos-principales/estudio). Ambas operaciones producen el mismo efecto.
+Compartir una carpeta con un agente es equivalente a vincularla desde el paso 3 del formulario del [Estudio](/modulos/estudio). Ambas operaciones producen el mismo efecto.
 :::
 
 ## Extracción Inteligente

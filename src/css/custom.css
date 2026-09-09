@@ -1,31 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /**
- * Estilos de la documentación de Consul Point.
- * Ajustad la paleta a los colores de marca definitivos.
+ * Sistema de Diseño de ConsulPoint Docs.
+ * Variables y overrides de Infima (Docusaurus) generados a partir de
+ * resources/consulpoint-docs-design-system.json
  */
 
 :root {
-  --ifm-color-primary: #1f6feb;
-  --ifm-color-primary-dark: #1a63d4;
-  --ifm-color-primary-darker: #185dc8;
-  --ifm-color-primary-darkest: #144da4;
-  --ifm-color-primary-light: #3a80ee;
-  --ifm-color-primary-lighter: #4789ef;
-  --ifm-color-primary-lightest: #6da2f2;
+  /* Identidad de marca */
+  --cp-primary: #0f2c59;
+  --cp-cyan: #00d2ff;
+  --cp-purple: #8b5cf6;
+  --cp-blue: #3b82f6;
+  --cp-font-sans: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --cp-font-mono: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
 
-  --ifm-code-font-size: 95%;
-  --ifm-font-family-base: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.08);
+  /* Tema claro */
+  --cp-bg: #f8fafc;
+  --cp-surface: #ffffff;
+  --cp-card: #ffffff;
+  --cp-code-bg: #0d1117;
+  --cp-border: #e2e8f0;
+  --cp-border-focus: #0066ff;
+  --cp-text-main: #0f172a;
+  --cp-text-secondary: #475569;
+  --cp-text-muted: #94a3b8;
+  --cp-text-accent: #0066ff;
+
+  /* Mapeo a variables de Infima para que el tema completo de Docusaurus
+     (header, sidebar, TOC, tablas, etc.) herede la paleta de ConsulPoint */
+  --ifm-font-family-base: var(--cp-font-sans);
+  --ifm-font-family-monospace: var(--cp-font-mono);
+  --ifm-color-primary: var(--cp-blue);
+  --ifm-color-primary-dark: #2f6ef0;
+  --ifm-color-primary-darker: #2464e8;
+  --ifm-color-primary-darkest: #1a4fc2;
+  --ifm-color-primary-light: #5a97f7;
+  --ifm-color-primary-lighter: #6ea1f8;
+  --ifm-color-primary-lightest: #a2c2fb;
+  --ifm-background-color: var(--cp-bg);
+  --ifm-navbar-background-color: var(--cp-surface);
+  --ifm-toc-border-color: var(--cp-border);
+  --ifm-code-font-size: 92%;
+  --docusaurus-highlighted-code-line-bg: rgba(59, 130, 246, 0.08);
 }
 
 [data-theme='dark'] {
-  --ifm-color-primary: #58a6ff;
-  --ifm-color-primary-dark: #3d97ff;
-  --ifm-color-primary-darker: #2f8fff;
-  --ifm-color-primary-darkest: #0074f0;
-  --ifm-color-primary-light: #73b5ff;
-  --ifm-color-primary-lighter: #81bcff;
-  --ifm-color-primary-lightest: #aad2ff;
-  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.12);
+  --cp-bg: #0b0f19;
+  --cp-surface: #111827;
+  --cp-card: #1e293b;
+  --cp-code-bg: #0f172a;
+  --cp-border: #1e293b;
+  --cp-border-focus: #38bdf8;
+  --cp-text-main: #f8fafc;
+  --cp-text-secondary: #94a3b8;
+  --cp-text-muted: #64748b;
+  --cp-text-accent: #38bdf8;
+
+  --ifm-color-primary: var(--cp-cyan);
+  --ifm-color-primary-dark: #00b8e0;
+  --ifm-color-primary-darker: #00acd1;
+  --ifm-color-primary-darkest: #008dac;
+  --ifm-color-primary-light: #1adaff;
+  --ifm-color-primary-lighter: #33deff;
+  --ifm-color-primary-lightest: #75e9ff;
+  --ifm-background-color: var(--cp-bg);
+  --ifm-navbar-background-color: var(--cp-surface);
+  --ifm-toc-border-color: var(--cp-border);
+  --ifm-background-surface-color: var(--cp-surface);
+  --docusaurus-highlighted-code-line-bg: rgba(0, 210, 255, 0.1);
+}
+
+body {
+  font-family: var(--cp-font-sans);
+}
+
+code,
+pre,
+kbd,
+samp {
+  font-family: var(--cp-font-mono);
+}
+
+/* Desplaza el menú de navegación como en docs.iota.org: la marca ocupa una
+   columna de ancho fijo en vez de ajustarse al ancho natural del logo,
+   así el resto de los items del navbar arrancan siempre en el mismo punto. */
+.navbar__brand {
+  width: 17%;
 }
 
 /* Tablas: la documentación se apoya mucho en ellas */
@@ -47,7 +110,7 @@
 .markdown h2 {
   margin-top: 2.4rem;
   padding-top: 0.6rem;
-  border-top: 1px solid var(--ifm-color-emphasis-200);
+  border-top: 1px solid var(--cp-border);
 }
 
 .markdown h3 {
@@ -57,10 +120,10 @@
 /* Tarjetas de la portada */
 .card {
   height: 100%;
-  border: 1px solid var(--ifm-color-emphasis-200);
+  border: 1px solid var(--cp-border);
   transition: border-color 0.2s ease;
 }
 
 .card:hover {
-  border-color: var(--ifm-color-primary);
+  border-color: var(--cp-cyan);
 }
