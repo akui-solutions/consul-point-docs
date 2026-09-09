@@ -39,7 +39,7 @@ flowchart LR
     M[Micro Agente] -->|devuelve JSON| S[Sistema externo]
 ```
 
-Cada tipo tiene su propia página de referencia: [Agentes](/modulos/estudio/agentes), [Especialistas](/modulos/estudio/especialistas) y [Microagentes](/modulos/estudio/microagentes).
+Cada tipo tiene su propia página de referencia: [Agentes](/control/estudio/agentes), [Especialistas](/control/estudio/especialistas) y [Microagentes](/control/estudio/microagentes).
 
 ## Crear un agente
 
@@ -61,7 +61,7 @@ El tipo se define en el primer paso y **no puede modificarse después de crear e
 | Categorías | Sí | Mínimo una |
 | Imagen del agente | No | JPG, PNG o WEBP |
 
-Para Especialistas se añaden los campos de información técnica descritos en [Especialistas](/modulos/estudio/especialistas).
+Para Especialistas se añaden los campos de información técnica descritos en [Especialistas](/control/estudio/especialistas).
 
 :::tip Asistencia de IA en la creación
 La plataforma puede generar y mejorar automáticamente el nombre, la descripción, la imagen, las instrucciones del sistema y los iniciadores de conversación. Resulta útil como punto de partida cuando no se tiene claro el planteamiento inicial.
@@ -152,7 +152,7 @@ Sin la capacidad **Acceso al centro de conocimiento**, el agente no consultará 
 | 0,4 – 0,7 | Uso general, consulta interna |
 | 0,8 – 1 | Generación creativa, redacción, ideación |
 
-Para **Microagentes**, el paso 2 sustituye estos campos por la instrucción de ejecución y el esquema de datos de salida — ver [Microagentes](/modulos/estudio/microagentes) y [Esquemas de datos](/modulos/estudio/esquemas-de-datos).
+Para **Microagentes**, el paso 2 sustituye estos campos por la instrucción de ejecución y el esquema de datos de salida — ver [Microagentes](/control/estudio/microagentes) y [Esquemas de datos](/control/estudio/esquemas-de-datos).
 
 ### Paso 3 — Documentos
 

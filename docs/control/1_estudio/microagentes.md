@@ -25,6 +25,6 @@ flowchart LR
 | **Esquema de respuesta** | Objeto JSON válido con las propiedades esperadas | — |
 | **Ejemplo del esquema** | Ejemplo del objeto de respuesta | Obligatorio |
 
-El esquema de respuesta y su ejemplo se definen con el mismo criterio que cualquier otro esquema de datos de la plataforma — ver [Esquemas de datos](/modulos/estudio/esquemas-de-datos).
+El esquema de respuesta y su ejemplo se definen con el mismo criterio que cualquier otro esquema de datos de la plataforma — ver [Esquemas de datos](/control/estudio/esquemas-de-datos).
 
 Para el resto del formulario de creación (información básica y documentos), ver [Crear un agente](/modulos/estudio#crear-un-agente).
