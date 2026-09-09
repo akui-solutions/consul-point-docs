@@ -8,7 +8,7 @@ description: El esquema de datos define la estructura JSON que un Microagente de
 
 # Esquemas de datos
 
-El esquema de datos define la estructura que debe tener la respuesta de un [Microagente](/modulos/estudio/microagentes): qué propiedades incluye, y con qué forma, el objeto JSON que devuelve al ejecutarse.
+El esquema de datos define la estructura que debe tener la respuesta de un [Microagente](/control/estudio/microagentes): qué propiedades incluye, y con qué forma, el objeto JSON que devuelve al ejecutarse.
 
 ## Campos
 
