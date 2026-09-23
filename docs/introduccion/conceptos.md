@@ -18,11 +18,11 @@ La entidad contratante. Todos los datos —documentos, agentes, usuarios, conver
 
 Un asistente de IA configurado por la organización. Existen tres tipos, no intercambiables entre sí:
 
-| Tipo | Función | Interactúa con personas | Devuelve |
-|---|---|---|---|
-| **Agente** | Asistente principal de conversación | Sí | Texto conversacional |
-| **Especialista** | Ayudante invocado por un Agente | No, indirectamente | Texto al Agente |
-| **Micro Agente** | Tarea puntual automatizada | No | Datos estructurados (JSON) |
+| Tipo             | Función                             | Interactúa con personas | Devuelve                   |
+| ---------------- | ----------------------------------- | ----------------------- | -------------------------- |
+| **Agente**       | Asistente principal de conversación | Sí                      | Texto conversacional       |
+| **Especialista** | Ayudante invocado por un Agente     | No, indirectamente      | Texto al Agente            |
+| **Micro Agente** | Tarea puntual automatizada          | No                      | Datos estructurados (JSON) |
 
 :::warning Restricción
 El tipo se define en la creación y **no puede modificarse después**.
@@ -51,3 +51,24 @@ Agrupación interna que aísla usuarios, agentes y aplicaciones por equipo, depa
 ## Integración
 
 Conexión configurada con un canal externo (WhatsApp, Telegram, correo) o con un sistema de terceros.
+
+```mermaid
+graph TB
+    subgraph Browser["🌐 Navegador (ConsulPoint)"]
+        style Browser fill:#f8f9fa,stroke:#333,stroke-width:2px
+
+        subgraph MainContent["Contenido Principal - ConsulPoint"]
+            style MainContent stroke:none,fill:none
+            ComunicacionMadre["📜 Comunicación ConsulPoint<br/><code>window.addEventListener('message')</code>"]
+        end
+
+        subgraph IFrame["🖼️ iframe (Ocupa 50% de la superficie)"]
+            style IFrame fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px,stroke-dasharray: 5 5
+            ComunicacionFrame["📜 Comunicación iframe<br/><code>window.parent.postMessage()</code>"]
+        end
+    end
+
+    %% Comunicación
+    ComunicacionMadre -- "1. postMessage(data, targetOrigin)" --> ComunicacionFrame
+    ComunicacionFrame -- "2. postMessage(data, targetOrigin)" --> ComunicacionMadre
+```
