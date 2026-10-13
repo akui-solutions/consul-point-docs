@@ -12,6 +12,8 @@ description: Gestión documental de ConsulPoint. Carga de documentos, procesamie
 
 Repositorio documental de la organización. Los archivos que se cargan aquí se procesan, indexan y quedan disponibles para consulta por parte de los agentes.
 
+<Screenshot src="/img/modulos/centro-de-conocimiento.png" alt="Pantalla de Centro de Conocimiento en ConsulPoint" caption="Pantalla de Centro de Conocimiento" />
+
 ## Organización del módulo
 
 | Pestaña                 | Contenido                               |

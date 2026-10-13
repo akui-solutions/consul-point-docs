@@ -14,6 +14,8 @@ description: Gestión de correo corporativo en ConsulPoint con procesamiento aut
 
 Gestión del correo corporativo con procesamiento automático de adjuntos. Requiere una integración de correo configurada (Gmail, Microsoft o IMAP).
 
+<Screenshot src="/img/modulos/bandeja-inteligente.png" alt="Pantalla de Bandeja Inteligente en ConsulPoint" caption="Pantalla de Bandeja Inteligente" />
+
 :::info Distinción entre módulos
 La Bandeja Inteligente gestiona **correo electrónico**. Las conversaciones de mensajería instantánea (WhatsApp, Telegram) se gestionan desde [Conversaciones](/modulos/conversaciones).
 :::

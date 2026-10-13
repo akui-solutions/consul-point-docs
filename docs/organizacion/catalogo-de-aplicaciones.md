@@ -1,25 +1,28 @@
 ---
 id: catalogo-de-aplicaciones
-title: Catálogo de Aplicaciones
-sidebar_label: Catálogo de Aplicaciones
+title: Catálogo de integraciones
+sidebar_label: Catálogo de integraciones
 sidebar_position: 3
 description: Aplicaciones y agentes preconfigurados instalables en ConsulPoint. Tipos de Mini App y Centro de Agentes.
 ---
 
-# Catálogo de Aplicaciones
+# Catálogo de integraciones
 
 **Rutas:** `/store/apps` · `/store/agents`
 
 ## Descripción
 
-Repositorio de aplicaciones y agentes preconfigurados que la organización puede incorporar sin construirlos desde cero.
+Repositorio de aplicaciones, conectores y agentes preconfigurados que la organización puede incorporar sin construirlos desde cero.
 
-## Catálogo de aplicaciones
+<Screenshot src="/img/modulos/catalogo-de-integraciones.png" alt="Pantalla del Catálogo de integraciones en ConsulPoint" caption="Pantalla del Catálogo de integraciones" />
+
+## Organización del módulo
 
 | Pestaña | Contenido |
 |---|---|
-| **Disponibles** | Aplicaciones instalables |
-| **Instaladas** | Aplicaciones ya incorporadas |
+| **Aplicaciones** | Aplicaciones instalables, con búsqueda y filtro por categoría |
+| **Conectores** | Conectores disponibles para integrar servicios externos |
+| **Instaladas** | Aplicaciones y conectores ya incorporados |
 
 ### Tipos de aplicación
 

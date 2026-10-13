@@ -114,5 +114,5 @@ El principio general es:
 **la App proporciona la experiencia de usuario; ConsulPoint proporciona la inteligencia, el conocimiento, las integraciones y el control.**
 
 :::tip Antes de crear desde cero
-Conviene revisar el [Catálogo de Aplicaciones](/organizacion/catalogo-de-aplicaciones) antes de construir una App compleja: es posible que ya exista una equivalente.
+Conviene revisar el [Catálogo de integraciones](/organizacion/catalogo-de-aplicaciones) antes de construir una App compleja: es posible que ya exista una equivalente.
 :::

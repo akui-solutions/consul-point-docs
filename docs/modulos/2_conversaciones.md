@@ -12,6 +12,8 @@ description: Interfaz de chat con los agentes de ConsulPoint. Fuentes del mensaj
 
 Interfaz de chat con los agentes de la organización. Es también el entorno de prueba recomendado antes de exponer un agente en un canal externo.
 
+<Screenshot src="/img/modulos/conversaciones.png" alt="Pantalla de Conversaciones en ConsulPoint" caption="Pantalla de Conversaciones" />
+
 ## Arquitectura funcional
 
 ConsulPoint se organiza en varios elementos funcionales que trabajan de forma coordinada. La capa de control actúa de forma transversal sobre el resto de la plataforma.
