@@ -5,12 +5,12 @@ import type { SidebarsConfig } from '@docusaurus/plugin-content-docs';
 const estudioCategory = {
   type: 'category' as const,
   label: 'Estudio',
-  link: { type: 'doc' as const, id: 'modulos/estudio/estudio-overview' },
+  link: { type: 'doc' as const, id: 'control/estudio/estudio-overview' },
   items: [
-    'modulos/estudio/agentes',
-    'modulos/estudio/especialistas',
-    'modulos/estudio/microagentes',
-    'modulos/estudio/esquemas-de-datos',
+    'control/estudio/agentes',
+    'control/estudio/especialistas',
+    'control/estudio/microagentes',
+    'control/estudio/esquemas-de-datos',
   ],
 };
 
@@ -51,6 +51,8 @@ const sidebars: SidebarsConfig = {
         'modulos/centro-de-conocimiento',
         'modulos/conversaciones',
         'modulos/bandeja-inteligente',
+        'modulos/apps',
+        'modulos/articulos-y-novedades',
         {
           type: 'category',
           label: 'Complementos',

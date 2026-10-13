@@ -8,7 +8,7 @@ description: El Especialista es un agente auxiliar al que un Agente principal de
 
 # Especialistas
 
-Un **Especialista** es un agente auxiliar al que un [Agente](/modulos/estudio/agentes) principal delega consultas de un dominio concreto. El Agente decide cuándo invocarlo.
+Un **Especialista** es un agente auxiliar al que un [Agente](/control/estudio/agentes) principal delega consultas de un dominio concreto. El Agente decide cuándo invocarlo.
 
 **Casos de uso:** un agente comercial que delega consultas de facturación en un especialista de facturación.
 

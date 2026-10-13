@@ -8,7 +8,7 @@ description: El Agente es el asistente principal del Estudio de ConsulPoint. Con
 
 # Agentes
 
-El **Agente** es el asistente principal. Conversa con personas a través de [Conversaciones](/modulos/conversaciones) o de un canal conectado. Es el único tipo que puede invocar [Especialistas](/modulos/estudio/especialistas).
+El **Agente** es el asistente principal. Conversa con personas a través de [Conversaciones](/modulos/conversaciones) o de un canal conectado. Es el único tipo que puede invocar [Especialistas](/control/estudio/especialistas).
 
 **Casos de uso:** atención al cliente, soporte, consulta interna de documentación.
 
