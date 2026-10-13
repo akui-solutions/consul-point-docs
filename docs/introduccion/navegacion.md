@@ -37,7 +37,7 @@ description: Estructura del menú lateral de ConsulPoint y visibilidad de módul
 El menú lateral se divide en dos bloques: en la parte superior, los módulos de uso diario; en la inferior, los de creación y administración.
 
 <ModuleGrid>
-  <ModuleCard icon="dashboard" title="Inicio" module="Dashboard">
+  <ModuleCard icon="dashboard" title="Inicio" module="Dashboard" href="/modulos/inicio">
     Novedades destacadas, calendario, accesos a las aplicaciones y conversaciones recientes.
   </ModuleCard>
   <ModuleCard icon="chat" title="Conversaciones" module="Chat" href="/modulos/conversaciones">
