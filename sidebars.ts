@@ -48,6 +48,7 @@ const sidebars: SidebarsConfig = {
       label: 'Módulos',
       collapsed: false,
       items: [
+        'modulos/inicio',
         'modulos/centro-de-conocimiento',
         'modulos/conversaciones',
         'modulos/bandeja-inteligente',

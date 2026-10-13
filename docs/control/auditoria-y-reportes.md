@@ -3,7 +3,7 @@ id: auditoria-y-reportes
 title: Auditoría y Reportes
 sidebar_label: Auditoría y Reportes
 sidebar_position: 1
-description: Control de consumo, actividad y registros en ConsulPoint. Métricas de tokens, créditos y actividad por usuario.
+description: Control del consumo de créditos y de la actividad de los usuarios en ConsulPoint.
 ---
 
 # Auditoría y Reportes
@@ -12,18 +12,16 @@ description: Control de consumo, actividad y registros en ConsulPoint. Métricas
 
 ## Descripción
 
-Módulo de control del consumo, la actividad y los registros del sistema.
+Módulo de control del consumo de créditos de la plataforma y de la actividad de los usuarios.
+
+<Screenshot src="/img/modulos/auditoria-y-reportes.png" alt="Pantalla de Auditoría y Reportes en ConsulPoint" caption="Pantalla de Auditoría y Reportes" />
 
 ## Secciones
 
 | Pestaña | Contenido |
 |---|---|
-| **Estadísticas** | Resumen y tendencias de consumo |
-| **Gestión de Tokens** | Consumo detallado por usuario |
+| **Estadísticas** | Créditos de la organización, consumo del usuario y límites de la suscripción |
 | **Actividad de Usuarios** | Uso de la plataforma por persona |
-| **Bonos de Consumo** | Créditos disponibles |
-| **Historial de Conversaciones** | Registro de conversaciones |
-| **Sistema de Logs** | Registros técnicos del sistema |
 
 ## Métricas
 
@@ -40,11 +38,9 @@ Módulo de control del consumo, la actividad y los registros del sistema.
 
 ### Estadísticas
 
-Resumen de consumo mensual, tendencia semanal, distribución entre tokens de entrada y salida, y saldo global de la organización.
-
-### Gestión de Tokens
-
-Desglose del consumo por usuario, con tokens de entrada, salida y total del mes.
+- **Créditos de la organización:** créditos disponibles, créditos usados y porcentaje consumido.
+- **Consumo del usuario:** créditos usados en el mes, conversaciones y mensajes enviados.
+- **Límites de la suscripción:** uso actual frente al máximo incluido en la suscripción (conversaciones, almacenamiento, agentes, usuarios, roles, carpetas, webhooks, etiquetas y modelos de IA propios).
 
 ### Actividad de Usuarios
 

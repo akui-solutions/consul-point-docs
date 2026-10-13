@@ -16,15 +16,18 @@ description: Módulo de creación y administración de agentes de IA en ConsulPo
 
 El Estudio es el módulo de creación y administración de agentes. Desde aquí se define qué agentes existen, cómo se comportan, qué conocimiento consultan y quién puede utilizarlos.
 
+<Screenshot src="/img/modulos/estudio.png" alt="Pantalla de Estudio en ConsulPoint" caption="Pantalla de Estudio" />
+
 ## Organización del módulo
 
-La vista principal presenta tres pestañas, una por tipo de agente:
+La vista principal presenta cuatro pestañas: una por tipo de agente y otra para los esquemas de datos que utilizan los Microagentes.
 
 | Pestaña | Contenido |
 |---|---|
 | **Agentes** | Asistentes principales |
 | **Especialistas** | Agentes auxiliares invocables |
 | **Microagentes** | Agentes de extracción estructurada |
+| **Esquemas de datos** | Estructura JSON que devuelven los Microagentes |
 
 Cada listado muestra: nombre, modelo, estado, descripción, especialistas asociados y acciones. Dispone de filtros por **nombre** y por **modelo**.
 

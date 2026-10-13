@@ -50,7 +50,7 @@ El objetivo es ofrecer una visión clara tanto funcional como técnica de Consul
 | ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | **Introducción**        | Visión general, conceptos fundamentales y navegación                                                                                      |
 | **Módulos**             | Centro de Conocimiento, Conversaciones, Bandeja Inteligente, Apps, y los complementos (Comms, Portal, Automatizaciones, Advanced Control) |
-| **Control y Auditoría** | Estudio, Configuración (webhooks, usuarios y roles, integraciones y canales), catálogo de aplicaciones, y auditoría y reportes            |
+| **Control y Auditoría** | Estudio, Configuración (webhooks, usuarios y roles, integraciones y canales), catálogo de integraciones, y auditoría y reportes            |
 | **Referencia**          | Campos, permisos, glosario y sistema de diseño                                                                                            |
 
 :::tip La regla de oro
