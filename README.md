@@ -2,7 +2,7 @@
 
 Documentación oficial de la plataforma **ConsulPoint**, construida con [Docusaurus](https://docusaurus.io/).
 
-🌐 **Sitio publicado:** https://akui-solutions.github.io/consul-point-docs
+🌐 **Sitio publicado:** https://docs.consulpoint.com
 
 ---
 
@@ -124,11 +124,20 @@ El despliegue es automático mediante GitHub Actions al hacer push a `main`.
 
 ### Dominio propio
 
-Para publicar en un dominio como `docs.consulpoint.com`:
+El sitio se publica en `https://docs.consulpoint.com`. El repositorio ya está preparado
+(`url` y `baseUrl` en `docusaurus.config.ts`, y `static/CNAME`). Fuera del repositorio hacen falta:
 
-1. Añade un archivo `static/CNAME` con el dominio.
-2. En `docusaurus.config.ts`, cambia `url` al dominio y `baseUrl` a `'/'`.
-3. Configura el DNS apuntando a GitHub Pages.
+1. **DNS** (en el proveedor del dominio `consulpoint.com`): un registro `CNAME` para `docs`
+   apuntando a `akui-solutions.github.io`. Si ya existe un registro `A` para `docs`, hay que
+   eliminarlo o sustituirlo.
+2. **GitHub**: en *Settings → Pages → Custom domain* escribir `docs.consulpoint.com`, guardar y,
+   cuando la verificación del DNS termine, activar **Enforce HTTPS**. GitHub emite el certificado
+   automáticamente (puede tardar hasta una hora).
+3. (Recomendado) Verificar el dominio en la organización: *Organization settings → Pages →
+   Verified domains*, para que nadie más pueda reclamarlo.
+
+Mientras el DNS no esté cambiado, el sitio seguirá publicándose en GitHub Pages pero las rutas
+dejarán de funcionar en `akui-solutions.github.io/consul-point-docs`, porque `baseUrl` es `/`.
 
 ---
 

@@ -23,9 +23,11 @@ const config: Config = {
   tagline: 'Documentación de la plataforma de agentes de IA empresarial',
   favicon: 'img/favicon.ico',
 
-  // Ajusta `url` si configuráis un dominio propio (ej. https://docs.consulpoint.com)
-  url: `https://${ORG}.github.io`,
-  baseUrl: `/${REPO}/`,
+  // Dominio propio. El DNS de docs.consulpoint.com debe apuntar a GitHub Pages
+  // (CNAME → akui-solutions.github.io) y el dominio debe estar configurado en
+  // Settings → Pages del repositorio. Ver README, sección "Dominio propio".
+  url: 'https://docs.consulpoint.com',
+  baseUrl: '/',
 
   organizationName: ORG,
   projectName: REPO,
