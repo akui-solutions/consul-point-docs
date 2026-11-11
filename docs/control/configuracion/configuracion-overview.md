@@ -24,7 +24,7 @@ description: "Administración de la organización en ConsulPoint: proveedores de
 | **Integraciones** | `/settings/integrations` | Canales de comunicación — ver [Integraciones y Canales](/modulos/integraciones) |
 | **Proveedores** | `/settings/providers` | Proveedores de IA |
 | **API Keys** | `/settings/apikeys` | Claves de acceso programático |
-| **Apps** | `/settings/applications` | Aplicaciones de la organización |
+| **Aplicaciones** | `/settings/applications` | [Aplicaciones integradas](/aplicaciones-integradas) instaladas y propias de la organización |
 | **Almacenamiento** | `/settings/s3storage` | Almacenamiento en la nube |
 | **Webhooks** | `/settings/webhooks` | Notificaciones a sistemas externos — ver [Webhooks](/control/webhooks) |
 | **Facturación** | `/settings/billing` | Plan, consumo y pagos |

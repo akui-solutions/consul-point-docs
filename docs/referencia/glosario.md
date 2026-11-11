@@ -27,6 +27,7 @@ description: Definición de los términos empleados en ConsulPoint y en esta doc
 | **Integración** | Conexión configurada con un canal o sistema externo |
 | **Supervisión humana** | Asunción del control de una conversación por una persona |
 | **Espacio de trabajo** | Agrupación interna de usuarios, agentes y aplicaciones |
-| **Mini App** | Aplicación instalable: extensión, visor o filtro |
+| **Aplicación integrada** | Aplicación con interfaz propia que se muestra dentro de ConsulPoint y trabaja con los datos de la organización. Puede ser una extensión, un visualizador o un filtro |
+| **Mini App** | Nombre técnico de una aplicación integrada en la API y en el código |
 | **Webhook** | Notificación automática a un sistema externo ante un evento |
 | **Organización** | Entidad contratante; ámbito de aislamiento de los datos |

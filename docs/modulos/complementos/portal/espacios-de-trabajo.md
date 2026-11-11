@@ -20,7 +20,7 @@ Unidad de segmentación interna que agrupa usuarios, agentes y aplicaciones por 
 |---|---|
 | **Usuarios** | Miembros, internos o externos |
 | **Agentes** | Agentes disponibles en el espacio |
-| **Aplicaciones** | Mini Apps habilitadas |
+| **Aplicaciones** | Aplicaciones integradas habilitadas |
 
 ## Estados
 
