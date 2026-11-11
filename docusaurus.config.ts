@@ -53,7 +53,15 @@ const config: Config = {
     },
   },
   themes: ['@docusaurus/theme-mermaid'],
-  plugins: [tailwindPlugin],
+  plugins: [
+    tailwindPlugin,
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [{ from: '/modulos/apps', to: '/aplicaciones-integradas' }],
+      },
+    ],
+  ],
 
   stylesheets: [
     {
