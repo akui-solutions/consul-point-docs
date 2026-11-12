@@ -75,7 +75,7 @@ La sección **Fijados** reúne las aplicaciones ancladas a la barra lateral para
 La barra superior da acceso a los elementos que acompañan a cualquier módulo:
 
 <ModuleGrid>
-  <ModuleCard icon="workspaces" title="Espacios de trabajo" module="Workspaces" href="/modulos/complementos/portal/espacios-de-trabajo">
+  <ModuleCard icon="workspaces" title="Espacios de trabajo" module="Workspaces" href="/modulos/espacios-de-trabajo">
     Selector para cambiar de organización o espacio de trabajo.
   </ModuleCard>
   <ModuleCard icon="inbox" title="Bandeja Inteligente" module="Smart Inbox" href="/modulos/bandeja-inteligente">

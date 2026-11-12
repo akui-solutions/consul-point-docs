@@ -49,9 +49,9 @@ El objetivo es ofrecer una visión clara tanto funcional como técnica de Consul
 | Sección                 | Contenido                                                                                                                                 |
 | ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | **Introducción**        | Visión general, conceptos fundamentales y navegación                                                                                      |
-| **Módulos**             | Centro de Conocimiento, Conversaciones, Bandeja Inteligente, Apps, y los complementos (Comms, Portal, Automatizaciones, Advanced Control) |
+| **Módulos**             | Inicio, Centro de Conocimiento, Conversaciones, Bandeja Inteligente, Apps, Artículos y novedades y Espacios de Trabajo |
 | **Control y Auditoría** | Estudio, Configuración (webhooks, usuarios y roles, integraciones y canales), catálogo de integraciones, y auditoría y reportes            |
-| **Referencia**          | Campos, permisos, glosario y sistema de diseño                                                                                            |
+| **Referencia**          | Campos, permisos y glosario                                                                                            |
 
 :::tip La regla de oro
 El orden de configuración recomendado es siempre **conocimiento → agente → canal**. Un agente sin conocimiento vinculado responde de forma genérica; un canal sin agente asignado no responde.
