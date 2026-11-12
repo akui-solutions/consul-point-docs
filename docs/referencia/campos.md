@@ -10,23 +10,27 @@ description: Tabla de referencia de todos los campos de formulario de ConsulPoin
 
 ## Formulario de agente
 
-| Campo | Tipo | Obligatorio | Restricción |
-|---|---|---|---|
-| Tipo de agente | Selección | Sí | Inmutable tras creación |
-| Nombre | Texto | Sí | 3–50 car., sin caracteres especiales |
-| Descripción | Texto | Sí | Máx. 300 car. |
-| Categorías | Selección múltiple | Sí | Mínimo 1 |
-| Imagen | Archivo | No | JPG, PNG, WEBP |
-| Nombre técnico | Texto | Solo Especialistas | Máx. 20 car. |
-| Descripción técnica | Texto | Solo Especialistas | — |
-| Tono | Selección múltiple | No | Máx. 3 |
-| Instrucciones del sistema | Texto largo | Sí | Máx. 4.000 car. |
-| Instrucción de ejecución | Texto largo | Solo Micro Agentes | Máx. 5.000 car. |
-| Iniciadores | Lista | No | Máx. 5, de 3–150 car. |
-| Capacidades | Selección múltiple | No | — |
-| Modelo | Selección | Sí | — |
-| Temperatura | Numérico | Sí | 0–1 |
-| Esquema JSON | JSON | Solo Micro Agentes | Objeto válido con propiedades |
+Detalle y contexto de cada campo en [Crear un agente](/control/estudio/crear-un-agente) y [Microagentes](/control/estudio/microagentes).
+
+| Campo | Obligatorio | Restricción |
+|---|---|---|
+| Tipo de agente | Sí | No se puede cambiar tras la creación |
+| Nombre | Sí | 3–50 caracteres, único en la organización |
+| Descripción | Sí | Máx. 400 caracteres |
+| Imagen | No | Solo agentes. JPG, PNG o WEBP, máx. 500 KB |
+| Nombre técnico | Solo especialistas | Máx. 20 caracteres: letras, números y guion bajo |
+| Descripción técnica | Solo especialistas | Máx. 10.000 caracteres |
+| Instrucciones del sistema | Sí | Máx. 50.000 caracteres; en microagentes, máx. 20.000 |
+| Tono de comunicación | No | Solo agentes. Máx. 3 |
+| Iniciadores de conversación | No | Solo agentes. Máx. 5, de 3–150 caracteres |
+| Capacidades | No | Los especialistas solo admiten Acceso al centro de conocimiento. Los microagentes no tienen |
+| Modelo | Sí | — |
+| Temperatura | Sí | 0–1, por defecto 0 |
+| Documentos de conocimiento | No | PDF, DOCX, ODT o TXT, máx. 30 MB por archivo |
+| Tipo de microagente | Solo microagentes | No se puede cambiar tras la creación |
+| Instrucción de ejecución | Solo microagentes | Máx. 20.000 caracteres |
+| Esquema de respuesta | Solo microagentes con esquema | Al menos 1 propiedad, máx. 4 niveles de anidamiento |
+| Ejemplo de respuesta | Solo microagentes con esquema | Obligatorio |
 
 ## Formulario de webhook
 

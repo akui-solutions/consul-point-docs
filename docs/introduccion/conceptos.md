@@ -22,7 +22,7 @@ Un asistente de IA configurado por la organización. Existen tres tipos, no inte
 | ---------------- | ----------------------------------- | ----------------------- | -------------------------- |
 | **Agente**       | Asistente principal de conversación | Sí                      | Texto conversacional       |
 | **Especialista** | Ayudante invocado por un Agente     | No, indirectamente      | Texto al Agente            |
-| **Micro Agente** | Tarea puntual automatizada          | No                      | Datos estructurados (JSON) |
+| **Microagente**  | Tarea puntual automatizada          | No                      | Datos estructurados (JSON) |
 
 :::warning Restricción
 El tipo se define en la creación y **no puede modificarse después**.

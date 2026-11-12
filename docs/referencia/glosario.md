@@ -10,9 +10,10 @@ description: Definición de los términos empleados en ConsulPoint y en esta doc
 
 | Término | Definición |
 |---|---|
-| **Agente** | Asistente de IA configurado por la organización |
-| **Especialista** | Agente auxiliar invocado por un Agente principal |
-| **Micro Agente** | Agente que devuelve datos estructurados según un esquema |
+| **Agente** | Asistente de IA que conversa con las personas. Ver [Agentes](/control/estudio/agentes) |
+| **Especialista** | Agente experto en un tema al que un agente consulta durante una conversación. Ver [Especialistas](/control/estudio/especialistas) |
+| **Microagente** | Agente que hace una tarea concreta y devuelve datos con una estructura fija. Ver [Microagentes](/control/estudio/microagentes) |
+| **Esquema de datos** | Estructura que define qué datos se extraen y con qué forma. Ver [Biblioteca de esquemas](/control/estudio/esquemas-de-datos) |
 | **Capacidad** | Funcionalidad opcional activable por agente |
 | **Instrucciones del sistema** | Texto que define el comportamiento permanente del agente |
 | **Iniciador de conversación** | Frase sugerida para iniciar la interacción |

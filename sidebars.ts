@@ -25,10 +25,12 @@ const estudioCategory = {
   label: 'Estudio',
   link: { type: 'doc' as const, id: 'control/estudio/estudio-overview' },
   items: [
+    'control/estudio/crear-un-agente',
     'control/estudio/agentes',
     'control/estudio/especialistas',
     'control/estudio/microagentes',
     'control/estudio/esquemas-de-datos',
+    'control/estudio/problemas-frecuentes',
   ],
 };
 
