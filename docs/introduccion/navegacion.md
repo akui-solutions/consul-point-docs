@@ -38,7 +38,7 @@ El menú lateral se divide en dos bloques: en la parte superior, los módulos de
 
 <ModuleGrid>
   <ModuleCard icon="dashboard" title="Inicio" module="Dashboard" href="/modulos/inicio">
-    Novedades destacadas, calendario, accesos a las aplicaciones y conversaciones recientes.
+    Artículos destacados, aplicaciones, accesos rápidos y conversaciones recientes.
   </ModuleCard>
   <ModuleCard icon="chat" title="Conversaciones" module="Chat" href="/modulos/conversaciones">
     Interacción con los agentes.
