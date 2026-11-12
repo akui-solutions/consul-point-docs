@@ -1,7 +1,25 @@
 import type { SidebarsConfig } from '@docusaurus/plugin-content-docs';
 
-// Estudio se muestra como subcategoría tanto en "Módulos" como en
-// "Control y Auditoría"; se define una vez y se reutiliza en ambas.
+// Centro de Conocimiento: documentos que consultan los agentes.
+const centroDeConocimientoCategory = {
+  type: 'category' as const,
+  label: 'Centro de Conocimiento',
+  link: {
+    type: 'doc' as const,
+    id: 'centro-de-conocimiento/centro-de-conocimiento-overview',
+  },
+  items: [
+    'centro-de-conocimiento/carpetas-y-archivos',
+    'centro-de-conocimiento/subir-documentos',
+    'centro-de-conocimiento/conocimiento-de-los-agentes',
+    'centro-de-conocimiento/compartir-y-permisos',
+    'centro-de-conocimiento/extraccion-inteligente',
+    'centro-de-conocimiento/multimedia',
+    'centro-de-conocimiento/problemas-frecuentes',
+  ],
+};
+
+// Estudio: creación de agentes, especialistas, microagentes y esquemas de datos.
 const estudioCategory = {
   type: 'category' as const,
   label: 'Estudio',
@@ -68,24 +86,24 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'Módulos',
+      label: 'Uso diario',
       collapsed: false,
       items: [
         'modulos/inicio',
-        'modulos/centro-de-conocimiento',
         'modulos/conversaciones',
         'modulos/bandeja-inteligente',
         'modulos/articulos-y-novedades',
-        'modulos/espacios-de-trabajo',
       ],
     },
+    centroDeConocimientoCategory,
+    estudioCategory,
     aplicacionesIntegradasCategory,
     {
       type: 'category',
-      label: 'Control y Auditoría',
+      label: 'Administración',
       items: [
-        estudioCategory,
         configuracionCategory,
+        'modulos/espacios-de-trabajo',
         'organizacion/catalogo-de-aplicaciones',
         'control/auditoria-y-reportes',
       ],

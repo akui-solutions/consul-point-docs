@@ -22,8 +22,9 @@ description: Definición de los términos empleados en ConsulPoint y en esta doc
 | **Token** | Unidad de medida y facturación del consumo de IA |
 | **Ventana de contexto** | Volumen de conversación que el agente retiene |
 | **Fuentes del mensaje** | Información consultada para generar una respuesta |
-| **Extracción Inteligente** | Extracción automática de datos de los documentos de una carpeta |
-| **Esquema de metadatos** | Definición de campos de clasificación documental |
+| **Preparar para agentes** | Proceso que convierte un archivo en fragmentos buscables para que los agentes lo lean. Ver [Conocimiento de los agentes](/centro-de-conocimiento/conocimiento-de-los-agentes) |
+| **Versión en texto** | Copia de un PDF convertida a texto, guardada junto al original |
+| **Extracción inteligente** | Tipo de carpeta del Centro de Conocimiento que extrae datos estructurados de cada documento. Ver [Extracción inteligente](/centro-de-conocimiento/extraccion-inteligente) |
 | **Integración** | Conexión configurada con un canal o sistema externo |
 | **Supervisión humana** | Asunción del control de una conversación por una persona |
 | **Espacio de trabajo** | Agrupación interna de usuarios, agentes y aplicaciones |
