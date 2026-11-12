@@ -1,155 +1,125 @@
 import type { SidebarsConfig } from '@docusaurus/plugin-content-docs';
 
-// Conversaciones: chat con los agentes y atención de canales.
-const conversacionesCategory = {
+/**
+ * Tres menús, uno por pestaña de la barra superior: Guía de uso, Desarrolladores
+ * y Administración. Dentro de cada uno, los grupos son títulos fijos (no se
+ * pliegan) con sus páginas siempre a la vista. Cada página está en un solo menú.
+ */
+/** Módulo con subpáginas: desplegable que abre su resumen al pulsarlo. */
+const module = (label: string, overview: string, items: string[]) => ({
   type: 'category' as const,
-  label: 'Conversaciones',
-  link: { type: 'doc' as const, id: 'conversaciones/conversaciones-overview' },
-  items: [
-    'conversaciones/conversar-con-un-agente',
-    'conversaciones/compartir-y-colaborar',
-    'conversaciones/canales-y-atencion-humana',
-    'conversaciones/problemas-frecuentes',
+  label,
+  collapsed: true,
+  link: { type: 'doc' as const, id: overview },
+  items,
+});
+
+/** Apartado dentro de un grupo, sin página propia: desplegable que empieza abierto. */
+const section = (label: string, items: string[]) => ({
+  type: 'category' as const,
+  label,
+  collapsed: false,
+  items,
+});
+
+const group = (
+  label: string,
+  items: (string | ReturnType<typeof module> | ReturnType<typeof section>)[],
+) => ({
+  type: 'category' as const,
+  label,
+  collapsible: false,
+  className: 'sidebar-group',
+  items,
+});
+
+
+const sidebars: SidebarsConfig = {
+  usoSidebar: [
+    group('Primeros pasos', [
+      'intro',
+      'introduccion/vision-general',
+      'introduccion/conceptos',
+      'introduccion/navegacion',
+    ]),
+    group('Módulos', [
+      'modulos/inicio',
+      'modulos/articulos-y-novedades',
+      module('Conversaciones', 'conversaciones/conversaciones-overview', [
+        'conversaciones/conversar-con-un-agente',
+        'conversaciones/compartir-y-colaborar',
+        'conversaciones/canales-y-atencion-humana',
+        'conversaciones/problemas-frecuentes',
+      ]),
+      module('Bandeja Inteligente', 'bandeja-inteligente/bandeja-inteligente-overview', [
+        'bandeja-inteligente/conectar-una-cuenta',
+        'bandeja-inteligente/leer-el-correo',
+        'bandeja-inteligente/reglas-de-correo',
+        'bandeja-inteligente/analisis-con-ia',
+        'bandeja-inteligente/problemas-frecuentes',
+      ]),
+      module('Centro de Conocimiento', 'centro-de-conocimiento/centro-de-conocimiento-overview', [
+        'centro-de-conocimiento/carpetas-y-archivos',
+        'centro-de-conocimiento/subir-documentos',
+        'centro-de-conocimiento/conocimiento-de-los-agentes',
+        'centro-de-conocimiento/compartir-y-permisos',
+        'centro-de-conocimiento/extraccion-inteligente',
+        'centro-de-conocimiento/multimedia',
+        'centro-de-conocimiento/problemas-frecuentes',
+      ]),
+      module('Estudio', 'control/estudio/estudio-overview', [
+        'control/estudio/crear-un-agente',
+        'control/estudio/agentes',
+        'control/estudio/especialistas',
+        'control/estudio/microagentes',
+        'control/estudio/esquemas-de-datos',
+        'control/estudio/problemas-frecuentes',
+      ]),
+      module('Aplicaciones integradas', 'aplicaciones-integradas/aplicaciones-integradas-overview', [
+        'aplicaciones-integradas/como-funcionan',
+        'aplicaciones-integradas/donde-aparecen',
+        'aplicaciones-integradas/problemas-frecuentes',
+      ]),
+    ]),
+    group('Referencia', ['referencia/campos', 'referencia/glosario']),
   ],
-};
 
-// Bandeja Inteligente: correo, reglas y análisis con IA.
-const bandejaInteligenteCategory = {
-  type: 'category' as const,
-  label: 'Bandeja Inteligente',
-  link: {
-    type: 'doc' as const,
-    id: 'bandeja-inteligente/bandeja-inteligente-overview',
-  },
-  items: [
-    'bandeja-inteligente/conectar-una-cuenta',
-    'bandeja-inteligente/leer-el-correo',
-    'bandeja-inteligente/reglas-de-correo',
-    'bandeja-inteligente/analisis-con-ia',
-    'bandeja-inteligente/problemas-frecuentes',
-  ],
-};
-
-// Centro de Conocimiento: documentos que consultan los agentes.
-const centroDeConocimientoCategory = {
-  type: 'category' as const,
-  label: 'Centro de Conocimiento',
-  link: {
-    type: 'doc' as const,
-    id: 'centro-de-conocimiento/centro-de-conocimiento-overview',
-  },
-  items: [
-    'centro-de-conocimiento/carpetas-y-archivos',
-    'centro-de-conocimiento/subir-documentos',
-    'centro-de-conocimiento/conocimiento-de-los-agentes',
-    'centro-de-conocimiento/compartir-y-permisos',
-    'centro-de-conocimiento/extraccion-inteligente',
-    'centro-de-conocimiento/multimedia',
-    'centro-de-conocimiento/problemas-frecuentes',
-  ],
-};
-
-// Estudio: creación de agentes, especialistas, microagentes y esquemas de datos.
-const estudioCategory = {
-  type: 'category' as const,
-  label: 'Estudio',
-  link: { type: 'doc' as const, id: 'control/estudio/estudio-overview' },
-  items: [
-    'control/estudio/crear-un-agente',
-    'control/estudio/agentes',
-    'control/estudio/especialistas',
-    'control/estudio/microagentes',
-    'control/estudio/esquemas-de-datos',
-    'control/estudio/problemas-frecuentes',
-  ],
-};
-
-// Configuración integra Webhooks, Usuarios y Roles, e Integraciones y Canales.
-const configuracionCategory = {
-  type: 'category' as const,
-  label: 'Configuración',
-  link: { type: 'doc' as const, id: 'control/configuracion/configuracion-overview' },
-  items: ['control/webhooks', 'organizacion/usuarios-y-roles', 'modulos/integraciones'],
-};
-
-// Guía de aplicaciones integradas: qué son, cómo se desarrollan y cómo se administran.
-const aplicacionesIntegradasCategory = {
-  type: 'category' as const,
-  label: 'Aplicaciones integradas',
-  link: {
-    type: 'doc' as const,
-    id: 'aplicaciones-integradas/aplicaciones-integradas-overview',
-  },
-  items: [
-    'aplicaciones-integradas/como-funcionan',
-    'aplicaciones-integradas/donde-aparecen',
-    {
-      type: 'category' as const,
-      label: 'Desarrollar',
-      items: [
+  // Un grupo por tema técnico. Hoy solo aplicaciones integradas; otros temas
+  // (por ejemplo, una API pública) irían como grupos hermanos.
+  desarrolladoresSidebar: [
+    group('Aplicaciones integradas', [
+      section('Primeros pasos', [
         'aplicaciones-integradas/desarrollar/primera-aplicacion',
         'aplicaciones-integradas/desarrollar/plantilla-de-inicio',
+        'aplicaciones-integradas/desarrollar/probar',
+        'aplicaciones-integradas/publicar',
+      ]),
+      section('Trabajar con la plataforma', [
         'aplicaciones-integradas/desarrollar/contexto',
         'aplicaciones-integradas/desarrollar/api-y-sesion',
         'aplicaciones-integradas/desarrollar/datos-propios',
         'aplicaciones-integradas/desarrollar/archivos-y-extracciones',
         'aplicaciones-integradas/desarrollar/comunicacion',
-        'aplicaciones-integradas/desarrollar/probar',
-      ],
-    },
-    'aplicaciones-integradas/publicar',
-    'aplicaciones-integradas/instalar-y-administrar',
-    'aplicaciones-integradas/referencia',
-    'aplicaciones-integradas/problemas-frecuentes',
+      ]),
+      'aplicaciones-integradas/referencia',
+    ]),
   ],
-};
 
-const sidebars: SidebarsConfig = {
-  docsSidebar: [
-    'intro',
-    {
-      type: 'category',
-      label: 'Introducción',
-      collapsed: false,
-      items: [
-        'introduccion/vision-general',
-        'introduccion/conceptos',
-        'introduccion/navegacion',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Uso diario',
-      collapsed: false,
-      items: [
-        'modulos/inicio',
-        'modulos/articulos-y-novedades',
-      ],
-    },
-    conversacionesCategory,
-    bandejaInteligenteCategory,
-    centroDeConocimientoCategory,
-    estudioCategory,
-    aplicacionesIntegradasCategory,
-    {
-      type: 'category',
-      label: 'Administración',
-      items: [
-        configuracionCategory,
-        'modulos/espacios-de-trabajo',
-        'organizacion/catalogo-de-aplicaciones',
-        'control/auditoria-y-reportes',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Referencia',
-      items: [
-        'referencia/campos',
-        'referencia/permisos',
-        'referencia/glosario',
-      ],
-    },
+  administracionSidebar: [
+    group('Organización', [
+      'control/configuracion/configuracion-overview',
+      'organizacion/usuarios-y-roles',
+      'modulos/espacios-de-trabajo',
+    ]),
+    group('Canales e integraciones', [
+      'modulos/integraciones',
+      'control/webhooks',
+    ]),
+    group('Aplicaciones', [
+      'organizacion/catalogo-de-aplicaciones',
+      'aplicaciones-integradas/instalar-y-administrar',
+    ]),
+    group('Control', ['control/auditoria-y-reportes', 'referencia/permisos']),
   ],
 };
 

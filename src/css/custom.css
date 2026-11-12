@@ -86,9 +86,13 @@ samp {
 
 /* Desplaza el menú de navegación como en docs.iota.org: la marca ocupa una
    columna de ancho fijo en vez de ajustarse al ancho natural del logo,
-   así el resto de los items del navbar arrancan siempre en el mismo punto. */
-.navbar__brand {
-  width: 17%;
+   así el resto de los items del navbar arrancan siempre en el mismo punto.
+   Solo en escritorio: en el panel del móvil encogía el logo y el botón de
+   modo claro/oscuro quedaba encima. */
+@media (min-width: 997px) {
+  .navbar__brand {
+    width: 17%;
+  }
 }
 
 /* Tablas: la documentación se apoya mucho en ellas */
@@ -126,4 +130,61 @@ samp {
 
 .card:hover {
   border-color: var(--cp-cyan);
+}
+
+/* ── Menú lateral: grupos con título fijo ──────────────────────────────────
+   Cada grupo (ver `group` en sidebars.ts) es una categoría no plegable: su
+   título se muestra como encabezado y sus páginas siempre a la vista. */
+.theme-doc-sidebar-menu > .sidebar-group {
+  margin-top: 1.75rem;
+}
+
+.theme-doc-sidebar-menu > .sidebar-group:first-child {
+  margin-top: 0.5rem;
+}
+
+.sidebar-group > .menu__list-item-collapsible,
+.sidebar-group > .menu__list-item-collapsible:hover {
+  background: none;
+}
+
+.sidebar-group > .menu__list-item-collapsible > .menu__link {
+  padding-bottom: 0.35rem;
+  font-weight: 700;
+  color: var(--cp-text-main);
+  background: none;
+  cursor: default;
+  pointer-events: none;
+}
+
+.sidebar-group > .menu__list {
+  margin-top: 0;
+  padding-left: 0;
+}
+
+/* ── Barra superior: pestañas Guía de uso · Desarrolladores · Administración ── */
+.navbar__item.navbar__link {
+  font-weight: 500;
+}
+
+.navbar__item.navbar__link--active {
+  font-weight: 600;
+  box-shadow: inset 0 -2px 0 currentColor;
+}
+
+/* Etiqueta de los enlaces que llevan a otra pestaña (src/components/TabHint). */
+.tab-hint {
+  display: inline-block;
+  margin-left: 0.35em;
+  padding: 0 0.45em;
+  border: 1px solid var(--cp-border);
+  border-radius: 999px;
+  font-size: 0.68em;
+  font-weight: 600;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  vertical-align: 0.15em;
+  color: var(--cp-text-muted);
+  background: var(--cp-bg);
 }

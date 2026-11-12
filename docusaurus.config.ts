@@ -110,39 +110,50 @@ const config: Config = {
         height: 32,
       },
       items: [
+        { type: 'docSidebar', sidebarId: 'usoSidebar', position: 'left', label: 'Guía de uso' },
         {
           type: 'docSidebar',
-          sidebarId: 'docsSidebar',
+          sidebarId: 'desarrolladoresSidebar',
           position: 'left',
-          label: 'Documentación',
+          label: 'Desarrolladores',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'administracionSidebar',
+          position: 'left',
+          label: 'Administración',
         },
       ],
     },
     footer: {
       style: 'dark',
+      // Una columna por pestaña de la barra superior, con sus páginas más consultadas.
       links: [
         {
-          title: 'Documentación',
+          title: 'Guía de uso',
           items: [
-            { label: 'Visión general', to: '/introduccion/vision-general' },
             { label: 'Conceptos fundamentales', to: '/introduccion/conceptos' },
-            { label: 'Estudio', to: '/modulos/estudio' },
-          ],
-        },
-        {
-          title: 'Módulos',
-          items: [
             { label: 'Centro de Conocimiento', to: '/modulos/centro-de-conocimiento' },
-            { label: 'Conversaciones', to: '/modulos/conversaciones' },
-            { label: 'Integraciones', to: '/modulos/integraciones' },
+            { label: 'Estudio', to: '/modulos/estudio' },
+            { label: 'Glosario', to: '/referencia/glosario' },
           ],
         },
         {
-          title: 'Referencia',
+          title: 'Administración',
           items: [
-            { label: 'Referencia de campos', to: '/referencia/campos' },
+            { label: 'Usuarios y roles', to: '/organizacion/usuarios-y-roles' },
+            { label: 'Integraciones y canales', to: '/modulos/integraciones' },
+            { label: 'Auditoría y Reportes', to: '/control/auditoria-y-reportes' },
             { label: 'Matriz de permisos', to: '/referencia/permisos' },
-            { label: 'Glosario', to: '/referencia/glosario' },
+          ],
+        },
+        {
+          title: 'Desarrolladores',
+          items: [
+            { label: 'Tu primera aplicación', to: '/aplicaciones-integradas/desarrollar/primera-aplicacion' },
+            { label: 'Contexto que recibe', to: '/aplicaciones-integradas/desarrollar/contexto' },
+            { label: 'Publicar', to: '/aplicaciones-integradas/publicar' },
+            { label: 'Referencia', to: '/aplicaciones-integradas/referencia' },
           ],
         },
       ],

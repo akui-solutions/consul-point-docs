@@ -1,7 +1,7 @@
 ---
 id: configuracion-overview
 title: Configuración
-sidebar_label: Resumen
+sidebar_label: Configuración
 sidebar_position: 1
 slug: /control/configuracion
 description: "Administración de la organización en ConsulPoint: proveedores de IA, almacenamiento, API keys, facturación y planes."
