@@ -128,8 +128,15 @@ const config: Config = {
       ],
     },
     footer: {
-      style: 'dark',
-      // Una columna por pestaña de la barra superior, con sus páginas más consultadas.
+      style: 'light',
+      logo: {
+        alt: 'ConsulPoint',
+        src: 'img/logo-wordmark.svg',
+        srcDark: 'img/logo-wordmark-dark.svg',
+        height: 22,
+      },
+      // Una columna por tema, con sus páginas más consultadas (Guía de uso,
+      // Administración y, de Desarrolladores, las aplicaciones integradas).
       links: [
         {
           title: 'Guía de uso',
@@ -150,12 +157,12 @@ const config: Config = {
           ],
         },
         {
-          title: 'Desarrolladores',
+          title: 'Aplicaciones integradas',
           items: [
             { label: 'Tu primera aplicación', to: '/aplicaciones-integradas/desarrollar/primera-aplicacion' },
             { label: 'Contexto que recibe', to: '/aplicaciones-integradas/desarrollar/contexto' },
             { label: 'Publicar', to: '/aplicaciones-integradas/publicar' },
-            { label: 'Referencia', to: '/aplicaciones-integradas/referencia' },
+            { label: 'Referencia técnica', to: '/aplicaciones-integradas/referencia' },
           ],
         },
       ],

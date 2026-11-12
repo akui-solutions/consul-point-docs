@@ -596,3 +596,133 @@ samp {
   color: var(--cp-text-muted);
   background: var(--cp-bg);
 }
+
+/* ── Pie de página (src/theme/Footer/Layout) ─────────────────────────────────
+   Claro con línea superior, como la barra de arriba; en oscuro, el mismo azul
+   marino. La marca se alinea con el logo de la barra y los enlaces con el
+   contenido (a la altura del menú lateral). */
+.cp-footer {
+  padding: 2.5rem var(--ifm-navbar-padding-horizontal) 1.5rem;
+  border-top: 1px solid var(--cp-border);
+  background: var(--cp-surface);
+  color: var(--cp-text-secondary);
+}
+
+.cp-footer__inner {
+  display: grid;
+  grid-template-columns: var(--doc-sidebar-width, 300px) 1fr;
+  gap: 2rem 0;
+}
+
+.cp-footer__brand .footer__logo {
+  max-width: none;
+  margin-bottom: 0.6rem;
+}
+
+.cp-footer__tagline {
+  max-width: 15rem;
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--cp-text-muted);
+}
+
+.cp-footer__links .footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem 4rem;
+  margin: 0;
+}
+
+.cp-footer__links .footer__col {
+  flex: 0 0 auto;
+  width: auto;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cp-footer .footer__title {
+  margin-bottom: 0.6rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--cp-text-main);
+}
+
+.cp-footer .footer__item {
+  margin: 0;
+  line-height: 1.9;
+}
+
+.cp-footer .footer__link-item {
+  font-size: 0.875rem;
+  color: var(--cp-text-secondary);
+}
+
+.cp-footer .footer__link-item:hover {
+  text-decoration: none;
+  color: var(--ifm-color-primary);
+}
+
+.cp-footer__bottom {
+  margin-top: 2.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--cp-border);
+  font-size: 0.8rem;
+  color: var(--cp-text-muted);
+}
+
+/* Móvil: la marca encima y los enlaces en dos columnas */
+@media (max-width: 996px) {
+  .cp-footer__inner {
+    grid-template-columns: 1fr;
+  }
+
+  .cp-footer__links .footer__links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem 1rem;
+  }
+}
+
+/* ── Anterior / Siguiente y fecha de actualización ───────────────────────── */
+.pagination-nav__link {
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--cp-border);
+  border-radius: 12px;
+  background: var(--cp-card);
+  transition: border-color 0.2s ease;
+}
+
+.pagination-nav__link:hover {
+  border-color: var(--cp-cyan);
+}
+
+.pagination-nav__sublabel {
+  margin-bottom: 0.15rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--cp-text-muted);
+}
+
+.pagination-nav__label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--cp-text-main);
+}
+
+.pagination-nav__link--prev .pagination-nav__label::before {
+  content: '← ';
+}
+
+.pagination-nav__link--next .pagination-nav__label::after {
+  content: ' →';
+}
+
+.theme-last-updated,
+.theme-last-updated * {
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  color: var(--cp-text-muted);
+}
