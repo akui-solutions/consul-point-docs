@@ -9,10 +9,7 @@ description: Qué es el Estudio de ConsulPoint, los tres tipos de agente (agente
 
 # Estudio
 
-**Ruta:** `/studio`
-**Permiso requerido:** el que corresponda sobre **Estudio**
-
-## Descripción
+<PageMeta route="/studio">el que corresponda sobre **Estudio**</PageMeta>
 
 El Estudio es donde se crean y configuran los agentes de la organización: qué hacen, cómo responden, qué modelo de IA usan, qué documentos consultan y quién puede usarlos.
 
@@ -32,12 +29,12 @@ Esta sección no requiere conocimientos de programación.
 
 ```mermaid
 flowchart LR
-    U(["<b>PERSONA</b>"]) <--> A["<b>AGENTE</b><br/><i>conversa y decide</i>"]
-    A -->|consulta| E1["<b>ESPECIALISTA</b><br/><i>facturación</i>"]
-    A -->|consulta| E2["<b>ESPECIALISTA</b><br/><i>soporte técnico</i>"]
+    U(["<b>Persona</b>"]) <--> A["<b>Agente</b><br/><i>conversa y decide</i>"]
+    A -->|consulta| E1["<b>Especialista</b><br/><i>facturación</i>"]
+    A -->|consulta| E2["<b>Especialista</b><br/><i>soporte técnico</i>"]
     A -.->|busca en| K[("<b>CENTRO DE<br/>CONOCIMIENTO</b>")]
-    D["<b>DOCUMENTO</b><br/><i>factura, correo…</i>"] --> M["<b>MICROAGENTE</b><br/><i>extrae datos</i>"]
-    M --> J["<b>DATOS</b><br/><i>con estructura fija</i>"]
+    D["<b>Documento</b><br/><i>factura, correo…</i>"] --> M["<b>Microagente</b><br/><i>extrae datos</i>"]
+    M --> J["<b>Datos</b><br/><i>con estructura fija</i>"]
 ```
 
 El tipo se elige al crear el agente y no se puede cambiar después.

@@ -8,10 +8,7 @@ description: Cómo instalar, actualizar y desinstalar aplicaciones integradas en
 
 # Instalar y administrar
 
-**Rutas:** `/store/apps` · `/settings/applications`
-**Permiso requerido:** el que corresponda sobre **Aplicaciones**
-
-## Descripción
+<PageMeta route="/store/apps · /settings/applications">el que corresponda sobre **Aplicaciones**</PageMeta>
 
 Las aplicaciones del [Catálogo de integraciones](/organizacion/catalogo-de-aplicaciones) se instalan en la organización con un clic. Una vez instaladas, se administran desde **Configuración → Aplicaciones**, junto con las aplicaciones propias.
 

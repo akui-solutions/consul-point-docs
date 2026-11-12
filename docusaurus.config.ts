@@ -53,6 +53,7 @@ const config: Config = {
     },
   },
   themes: ['@docusaurus/theme-mermaid'],
+  clientModules: ['./src/clientModules/tableLabels.ts'],
   plugins: [
     tailwindPlugin,
     [
@@ -60,6 +61,8 @@ const config: Config = {
       {
         redirects: [
           { from: '/modulos/apps', to: '/aplicaciones-integradas' },
+          // Los límites de cada formulario están en la página de ese formulario.
+          { from: '/referencia/campos', to: '/control/estudio/crear-un-agente' },
           {
             from: '/modulos/complementos/portal/espacios-de-trabajo',
             to: '/modulos/espacios-de-trabajo',
@@ -158,6 +161,15 @@ const config: Config = {
         },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Akui Solutions · ConsulPoint`,
+    },
+    // Diagramas: texto algo más pequeño que el de Mermaid por defecto. Se deja su
+    // tipografía: con la del sitio mide mal el texto y lo corta en las cajas.
+    mermaid: {
+      options: {
+        themeVariables: {
+          fontSize: '14px',
+        },
+      },
     },
     prism: {
       theme: prismThemes.github,

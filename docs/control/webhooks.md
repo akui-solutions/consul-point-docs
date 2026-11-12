@@ -8,10 +8,7 @@ description: Notificación automática a sistemas externos ante eventos de Consu
 
 # Webhooks
 
-**Ruta:** `/settings/webhooks`
-**Permiso requerido:** administrador
-
-## Descripción
+<PageMeta route="/settings/webhooks">administrador</PageMeta>
 
 Mecanismo de notificación a sistemas externos ante eventos de la plataforma. Permite integrar ConsulPoint con sistemas propios.
 
@@ -29,13 +26,16 @@ Utilizar **Asíncrono** salvo que la operación dependa de la respuesta del sist
 
 ## Configuración
 
+En **Configuración → Webhooks**, pulsar **Crear webhook**:
+
 | Campo | Descripción |
 |---|---|
-| **Nombre** | Identificador del webhook |
-| **URL** | Destino de la notificación |
-| **Eventos** | Sucesos que lo activan |
-| **Tipo** | Modo de ejecución |
-| **Estado** | Activo o Inactivo |
+| **Nombre** | Obligatorio, entre 3 y 50 caracteres |
+| **URL** | Obligatoria. Dirección a la que se envían los eventos |
+| **Descripción** | Opcional; si se rellena, entre 10 y 255 caracteres |
+| **Eventos** | Uno o más de la lista siguiente |
+| **Chat** | Solo con el evento **Conversación específica actualizada**: la conversación que lo activa |
+| **Tipo** | **Síncrono**, **Asíncrono** o **Cola**. Por defecto, **Asíncrono** |
 
 ## Eventos disponibles
 

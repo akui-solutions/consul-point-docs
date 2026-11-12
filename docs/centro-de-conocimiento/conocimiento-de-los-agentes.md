@@ -8,8 +8,6 @@ description: Cómo un agente de ConsulPoint lee los documentos del Centro de Con
 
 # Conocimiento de los agentes
 
-## Descripción
-
 Un agente responde con los documentos de las carpetas que se comparten con él. Esta página explica cómo darle ese acceso, cómo comprobar que un archivo ya está disponible y qué límites tiene.
 
 ## Dar acceso a un agente

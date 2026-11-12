@@ -8,8 +8,6 @@ description: Mensajes que una aplicación integrada intercambia con ConsulPoint 
 
 # Comunicarse con la plataforma
 
-## Descripción
-
 La aplicación y ConsulPoint están en dominios distintos, por lo que solo se comunican mediante **mensajes** (`postMessage`). Con ellos la aplicación pide a la plataforma acciones que no puede hacer por sí misma.
 
 ## Cuatro reglas

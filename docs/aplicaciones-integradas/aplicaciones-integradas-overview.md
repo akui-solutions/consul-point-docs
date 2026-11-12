@@ -9,8 +9,6 @@ description: Guía para crear, probar, publicar e instalar aplicaciones integrad
 
 # Aplicaciones integradas
 
-## Descripción
-
 Una **aplicación integrada** es una aplicación web pequeña que se muestra dentro de ConsulPoint y trabaja con los datos de la organización: documentos, contactos, conversaciones o registros propios. Resuelve una tarea concreta con una pantalla hecha a medida, por ejemplo revisar pedidos recibidos por correo o gestionar solicitudes.
 
 En [Conversaciones](/modulos/conversaciones) la persona habla con un agente. En una aplicación integrada trabaja con una pantalla diseñada para una tarea concreta, y lo que la plataforma ya resolvió, como la extracción de datos de un documento o el análisis de una conversación, le llega como información lista para usar.
@@ -25,22 +23,51 @@ En la API y en el código, una aplicación integrada se llama **mini app**. Son 
 
 ## Por dónde empezar
 
-| Perfil | Qué necesita | Páginas |
-|---|---|---|
-| **Quien decide o administra** | Entender qué son, instalarlas y controlar qué pueden hacer | [Cómo funcionan](/aplicaciones-integradas/como-funcionan) · [Dónde aparecen](/aplicaciones-integradas/donde-aparecen) · [Instalar y administrar](/aplicaciones-integradas/instalar-y-administrar) |
-| **Quien desarrolla** | Construir una aplicación, probarla y publicarla | [Tu primera aplicación](/aplicaciones-integradas/desarrollar/primera-aplicacion) · [Plantilla de inicio](/aplicaciones-integradas/desarrollar/plantilla-de-inicio) y el resto de **Desarrollar** · [Publicar](/aplicaciones-integradas/publicar) |
-| **Quien da soporte** | Resolver un problema concreto | [Problemas frecuentes](/aplicaciones-integradas/problemas-frecuentes) · [Referencia](/aplicaciones-integradas/referencia) |
+<div className="profile-grid">
+<div>
+
+**Quien decide o administra**
+
+Entender qué son, instalarlas y controlar qué pueden hacer.
+
+- [Cómo funcionan](/aplicaciones-integradas/como-funcionan)
+- [Dónde aparecen](/aplicaciones-integradas/donde-aparecen)
+- [Instalar y administrar](/aplicaciones-integradas/instalar-y-administrar)
+
+</div>
+<div className="same-tab">
+
+**Quien desarrolla** <TabHint label="Desarrolladores" />
+
+Construir una aplicación, probarla y publicarla.
+
+- [Tu primera aplicación](/aplicaciones-integradas/desarrollar/primera-aplicacion)
+- [Plantilla de inicio](/aplicaciones-integradas/desarrollar/plantilla-de-inicio)
+- [Publicar](/aplicaciones-integradas/publicar)
+
+</div>
+<div>
+
+**Quien da soporte**
+
+Resolver un problema concreto.
+
+- [Problemas frecuentes](/aplicaciones-integradas/problemas-frecuentes)
+- [Referencia técnica](/aplicaciones-integradas/referencia)
+
+</div>
+</div>
 
 ## El recorrido completo
 
 ```mermaid
 flowchart LR
 
-    A["<b>DESARROLLAR</b><br/><i>Proyecto web</i>"]
-    B["<b>PROBAR</b><br/><i>En local y en la plataforma</i>"]
-    C["<b>PUBLICAR</b><br/><i>Paquete ZIP · Versión</i>"]
-    D["<b>INSTALAR</b><br/><i>Catálogo · Permisos</i>"]
-    E["<b>USAR</b><br/><i>Dentro de ConsulPoint</i>"]
+    A["<b>Desarrollar</b><br/><i>Proyecto web</i>"]
+    B["<b>Probar</b><br/><i>En local y en la plataforma</i>"]
+    C["<b>Publicar</b><br/><i>Paquete ZIP · Versión</i>"]
+    D["<b>Instalar</b><br/><i>Catálogo · Permisos</i>"]
+    E["<b>Usar</b><br/><i>Dentro de ConsulPoint</i>"]
 
     A --> B --> C --> D --> E
     E -.->|mejoras| A

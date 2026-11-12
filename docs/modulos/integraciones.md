@@ -3,13 +3,10 @@ id: integraciones
 title: Integraciones y Canales
 sidebar_label: Integraciones y Canales
 sidebar_position: 5
-description: "Configuración de canales externos en ConsulPoint: WhatsApp Business, Telegram, Gmail, Outlook, IMAP y aplicaciones externas. Supervisión humana."
+description: "Configuración de canales externos en ConsulPoint: WhatsApp Business, Telegram, Gmail, Outlook, IMAP y aplicaciones externas. Atención humana."
 ---
 
-**Ruta:** `/settings/integrations`
-**Permiso requerido:** administrador
-
-## Descripción
+<PageMeta route="/settings/connectors">administrador</PageMeta>
 
 Configuración de las conexiones con canales de comunicación externos. Una integración vincula un canal con un agente y con un responsable.
 
@@ -39,7 +36,7 @@ Las autorizaciones de correo y de WhatsApp caducan. Ante el estado **Acción req
 
 ## Conexión de WhatsApp Business
 
-**Ruta:** `/settings/integrations/whatsapp/new`
+<PageMeta route="/settings/connectors/whatsapp/new" />
 
 Proceso guiado que comienza con la validación de la línea con Meta.
 
@@ -53,41 +50,22 @@ Proceso guiado que comienza con la validación de la línea con Meta.
 
 Gmail y Microsoft Outlook se conectan mediante autorización de la cuenta. Otros proveedores requieren datos de servidor IMAP.
 
-## Asignación
+## Datos de cada integración
 
-Cada integración se configura con:
+Los datos que se piden cambian según el canal:
 
-| Campo                   | Función                                         |
-| ----------------------- | ----------------------------------------------- |
-| **Agente de IA**        | Agente que atiende el canal                     |
-| **Usuario responsable** | Persona a cargo                                 |
-| **Equipo**              | Equipo asignado mediante _Gestionar asignación_ |
+| Canal | Datos | Responsable y agente |
+|---|---|---|
+| **WhatsApp** | Con Meta (guiado) o manual. En manual: **Número de WhatsApp**, **Identificador de tu cuenta de WhatsApp Business**, **Identificador de tu número** y **Clave de acceso**. Nombre y descripción, opcionales | En **¿Quién atenderá este número?**: **Persona a cargo** y **Agente de IA**. Opcionales, pero sin agente el canal no responde |
+| **Telegram** | **Nombre de la integración**, **Descripción** (opcional) y **Token del bot** | **Responsable** y **Agente de IA**, obligatorios |
+| **Gmail y Microsoft** | **Nombre de la integración**, **Descripción** (opcional) y **Visibilidad**: **Privada** o **Global**. La cuenta se autoriza con el proveedor | No se asignan |
+| **IMAP** | **Nombre de la integración**, **Descripción** (opcional), **Proveedor de correo**, **Correo electrónico**, **Contraseña**, **Servidor IMAP**, **Puerto** y **Conexión segura** | No se asignan |
+| **Aplicación externa** | **Nombre de la integración**, **Descripción** (opcional), **Tiempo sin actividad antes de abrir un chat nuevo (minutos)** (30 por defecto) y **Exigir firma a la plataforma externa**. Opcionalmente, en **Configurar salida**: **URL de entrega de respuestas** y **API Key de entrega** | En el paso **Equipo**: **Responsable**, **Agente de IA** y equipo o personas. Opcionales |
 
-## Supervisión humana
+El nombre admite hasta 50 caracteres y la descripción, si se rellena, entre 10 y 255.
 
-En cualquier conversación procedente de un canal, un usuario puede asumir el control.
+Para cambiar después el responsable, el agente o el equipo, usar **Gestionar equipo** en la lista de integraciones.
 
-```mermaid
-sequenceDiagram
-    participant C as Cliente
-    participant A as Agente IA
-    participant P as Persona
+## Atención humana
 
-    C->>A: Consulta
-    A->>C: Respuesta automática
-    C->>A: Consulta compleja
-    P->>A: Asume el control
-    Note over A: El agente deja<br/>de responder
-    P->>C: Respuesta humana
-    Note over C: El cliente no percibe<br/>la transición
-```
-
-Al asumir el control:
-
-1. El agente deja de responder automáticamente.
-2. La persona continúa la conversación.
-3. El interlocutor externo no percibe la transición.
-
-:::info Exclusividad garantizada
-La plataforma garantiza que **dos usuarios no pueden asumir el control de la misma conversación simultáneamente**.
-:::
+Las conversaciones de los canales aparecen en Conversaciones. Allí una persona puede **Tomar control** de una conversación o atender las que muestran **Requiere atención**, y el agente deja de responder mientras tanto. Ver [Canales y atención humana](/conversaciones/canales-y-atencion-humana).

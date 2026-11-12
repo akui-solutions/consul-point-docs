@@ -8,8 +8,6 @@ description: Cómo la Bandeja Inteligente de ConsulPoint analiza correos con un 
 
 # Análisis con IA
 
-## Descripción
-
 Un [microagente](/control/estudio/microagentes) asignado a una [regla](/bandeja-inteligente/reglas-de-correo) lee cada correo que la regla captura y genera un análisis: un resumen, los datos importantes, las acciones pendientes… El análisis consume créditos.
 
 Se analizan el remitente, los destinatarios, el asunto, la fecha y el texto del correo. Los adjuntos no forman parte del análisis.

@@ -8,9 +8,7 @@ description: Control del consumo de créditos y de la actividad de los usuarios 
 
 # Auditoría y Reportes
 
-**Ruta:** `/consumption`
-
-## Descripción
+<PageMeta route="/consumption" />
 
 Módulo de control del consumo de créditos de la plataforma y de la actividad de los usuarios.
 

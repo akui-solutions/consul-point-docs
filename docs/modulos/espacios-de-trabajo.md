@@ -7,10 +7,7 @@ description: Espacios de trabajo de ConsulPoint. Separan usuarios, agentes, apli
 
 # Espacios de trabajo
 
-**Ruta:** `/workspaces`
-**Permiso requerido:** el que corresponda sobre **Espacios de trabajo**
-
-## Descripción
+<PageMeta route="/workspaces">el que corresponda sobre **Espacios de trabajo**</PageMeta>
 
 Un espacio de trabajo separa, dentro de una organización, el trabajo de un equipo, un departamento o un proyecto. Cada espacio tiene sus propios miembros, los agentes y las aplicaciones que se le asignan, y su propio contenido. Los miembros eligen en qué espacio trabajan desde la barra superior.
 

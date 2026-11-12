@@ -8,8 +8,6 @@ description: Parámetros que ConsulPoint entrega a una aplicación integrada al 
 
 # Contexto que recibe
 
-## Descripción
-
 Al abrir una aplicación, ConsulPoint le entrega un objeto con todo lo que necesita saber: `window.MINI_APP_PARAMS`. Es la única fuente de contexto, y está disponible antes de que se ejecute el código de la aplicación.
 
 ## Parámetros comunes

@@ -8,8 +8,6 @@ description: Cómo iniciar una conversación con un agente en ConsulPoint, adjun
 
 # Conversar con un agente
 
-## Descripción
-
 Cómo iniciar una conversación, escribir, adjuntar archivos, usar las herramientas del agente y entender sus respuestas.
 
 ## Iniciar una conversación

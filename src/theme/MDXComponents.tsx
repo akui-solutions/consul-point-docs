@@ -8,6 +8,7 @@ import { Logo, LogoIcon } from '@site/src/components/Logo';
 import { MenuIllustration } from '@site/src/components/MenuIllustration';
 import { ModuleCard, ModuleGrid } from '@site/src/components/ModuleCard';
 import { PageHero } from '@site/src/components/PageHero';
+import { PageMeta } from '@site/src/components/PageMeta';
 import { Screenshot } from '@site/src/components/Screenshot';
 import { TabHint, useOtherTab } from '@site/src/components/TabHint';
 
@@ -38,6 +39,7 @@ export default {
   ModuleCard,
   ModuleGrid,
   PageHero,
+  PageMeta,
   Screenshot,
   TabHint,
 };

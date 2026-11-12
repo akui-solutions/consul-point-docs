@@ -8,8 +8,6 @@ description: Funcionamiento de una aplicación integrada en ConsulPoint. Dónde 
 
 # Cómo funcionan
 
-## Descripción
-
 Una aplicación integrada se muestra dentro de ConsulPoint, pero se ejecuta **aislada** de la plataforma. Recibe solo lo necesario para trabajar y accede a los datos de la organización a través de la API, con los permisos que se le hayan concedido.
 
 Esta página no requiere conocimientos de programación.
@@ -21,15 +19,15 @@ Esta página no requiere conocimientos de programación.
 ```mermaid
 flowchart TD
 
-    U["<b>USUARIO</b><br/><i>Persona autorizada</i>"]
+    U["<b>Usuario</b><br/><i>Persona autorizada</i>"]
 
-    P["<b>CONSULPOINT</b><br/><i>Pantalla principal · Sesión del usuario</i>"]
+    P["<b>ConsulPoint</b><br/><i>Pantalla principal · Sesión del usuario</i>"]
 
-    APP["<b>APLICACIÓN INTEGRADA</b><br/><i>Recuadro aislado · Dominio propio</i>"]
+    APP["<b>Aplicación integrada</b><br/><i>Recuadro aislado · Dominio propio</i>"]
 
-    API["<b>API DE CONSULPOINT</b><br/><i>Documentos · Contactos · Conversaciones · Datos propios</i>"]
+    API["<b>API de ConsulPoint</b><br/><i>Documentos · Contactos · Conversaciones · Datos propios</i>"]
 
-    E["<b>CONTROL</b><br/>Permisos de la aplicación · Rol del usuario<br/>Actividad"]
+    E["<b>Control</b><br/>Permisos de la aplicación · Rol del usuario<br/>Actividad"]
 
     U <--> |trabaja en| P
     P --> |muestra y entrega el contexto| APP

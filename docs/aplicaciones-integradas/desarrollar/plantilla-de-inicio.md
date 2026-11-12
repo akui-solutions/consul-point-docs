@@ -8,8 +8,6 @@ description: Repositorio público con una aplicación integrada de ejemplo para 
 
 # Plantilla de inicio
 
-## Descripción
-
 La plantilla de inicio es un repositorio público con una aplicación integrada pequeña y completa: una **agenda de citas** que reserva una cita para un contacto, la confirma o la cancela y prepara el mensaje de confirmación para la conversación.
 
 Sirve para ver cómo se integra una aplicación con ConsulPoint en código real, y como punto de partida para una aplicación propia: se conserva la base y se reemplaza la función de ejemplo.
@@ -65,10 +63,10 @@ El archivo `README.md` del repositorio indica en qué archivo está cada una. Es
 ```mermaid
 flowchart LR
 
-    P["<b>CONSULPOINT</b><br/><i>Contexto · sesión · mensajes</i>"]
-    B["<b>BASE</b><br/><i>src/config · src/services</i>"]
-    F["<b>FUNCIÓN DE EJEMPLO</b><br/><i>src/features/appointments</i>"]
-    N["<b>FUNCIÓN PROPIA</b><br/><i>La que sustituye al ejemplo</i>"]
+    P["<b>ConsulPoint</b><br/><i>Contexto · sesión · mensajes</i>"]
+    B["<b>Base</b><br/><i>src/config · src/services</i>"]
+    F["<b>Función de ejemplo</b><br/><i>src/features/appointments</i>"]
+    N["<b>Función propia</b><br/><i>La que sustituye al ejemplo</i>"]
 
     P --> B --> F
     N -.->|reemplaza| F

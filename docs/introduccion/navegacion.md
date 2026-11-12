@@ -37,31 +37,31 @@ description: Estructura del menú lateral de ConsulPoint y visibilidad de módul
 El menú lateral se divide en dos bloques: en la parte superior, los módulos de uso diario; en la inferior, los de creación y administración.
 
 <ModuleGrid>
-  <ModuleCard icon="dashboard" title="Inicio" module="Dashboard" href="/modulos/inicio">
+  <ModuleCard icon="dashboard" title="Inicio" href="/modulos/inicio">
     Artículos destacados, aplicaciones, accesos rápidos y conversaciones recientes.
   </ModuleCard>
-  <ModuleCard icon="chat" title="Conversaciones" module="Chat" href="/modulos/conversaciones">
+  <ModuleCard icon="chat" title="Conversaciones" href="/modulos/conversaciones">
     Interacción con los agentes.
   </ModuleCard>
-  <ModuleCard icon="articles" title="Artículos y novedades" module="Resources" href="/modulos/articulos-y-novedades">
+  <ModuleCard icon="articles" title="Artículos y novedades" href="/modulos/articulos-y-novedades">
     Contenido interno.
   </ModuleCard>
-  <ModuleCard icon="knowledge" title="Centro de Conocimiento" module="Knowledge Hub" href="/modulos/centro-de-conocimiento">
+  <ModuleCard icon="knowledge" title="Centro de Conocimiento" href="/modulos/centro-de-conocimiento">
     Gestión documental.
   </ModuleCard>
-  <ModuleCard icon="contacts" title="Contactos" module="Contacts">
+  <ModuleCard icon="contacts" title="Contactos">
     Personas y entidades con las que se relaciona la organización, por ejemplo los contactos de WhatsApp o Telegram.
   </ModuleCard>
-  <ModuleCard icon="studio" title="Estudio" module="Studio" href="/modulos/estudio">
+  <ModuleCard icon="studio" title="Estudio" href="/modulos/estudio">
     Creación y configuración de agentes.
   </ModuleCard>
-  <ModuleCard icon="store" title="Catálogo de integraciones" module="Store" href="/organizacion/catalogo-de-aplicaciones">
+  <ModuleCard icon="store" title="Catálogo de integraciones" href="/organizacion/catalogo-de-aplicaciones">
     Aplicaciones y conectores instalables.
   </ModuleCard>
-  <ModuleCard icon="reports" title="Auditoría y Reportes" module="Consumption" href="/control/auditoria-y-reportes">
+  <ModuleCard icon="reports" title="Auditoría y Reportes" href="/control/auditoria-y-reportes">
     Consumo de créditos y actividad de los usuarios.
   </ModuleCard>
-  <ModuleCard icon="settings" title="Configuración" module="Settings" href="/control/configuracion">
+  <ModuleCard icon="settings" title="Configuración" href="/control/configuracion">
     Administración de la organización.
   </ModuleCard>
 </ModuleGrid>
@@ -75,10 +75,10 @@ La sección **Fijados** reúne las aplicaciones ancladas a la barra lateral para
 La barra superior da acceso a los elementos que acompañan a cualquier módulo:
 
 <ModuleGrid>
-  <ModuleCard icon="workspaces" title="Espacios de trabajo" module="Workspaces" href="/modulos/espacios-de-trabajo">
+  <ModuleCard icon="workspaces" title="Espacios de trabajo" href="/modulos/espacios-de-trabajo">
     Selector para cambiar de organización o espacio de trabajo.
   </ModuleCard>
-  <ModuleCard icon="inbox" title="Bandeja Inteligente" module="Smart Inbox" href="/modulos/bandeja-inteligente">
+  <ModuleCard icon="inbox" title="Bandeja Inteligente" href="/modulos/bandeja-inteligente">
     Correo de las cuentas conectadas, con reglas y análisis con IA. Visible para quien tiene permiso sobre ella.
   </ModuleCard>
   <ModuleCard icon="notifications" title="Notificaciones">

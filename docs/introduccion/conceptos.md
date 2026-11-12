@@ -16,12 +16,12 @@ description: "Los conceptos básicos de ConsulPoint y cómo se relacionan: organ
 
 ```mermaid
 flowchart LR
-    M["<b>MICROAGENTE</b><br/><i>extrae datos</i>"] -->|guarda en| K["<b>CONOCIMIENTO</b><br/><i>carpetas y documentos</i>"]
-    K -->|consulta| A["<b>AGENTE</b><br/><i>instrucciones · modelo<br/>capacidades</i>"]
-    A -->|consulta a| E["<b>ESPECIALISTA</b><br/><i>experto en un tema</i>"]
-    A -->|responde en| C["<b>CANAL</b><br/><i>Conversaciones<br/>WhatsApp · Telegram</i>"]
-    C <--> P(["<b>PERSONAS</b>"])
-    A -.->|consume| CR["<b>CRÉDITOS</b>"]
+    M["<b>Microagente</b><br/><i>extrae datos</i>"] -->|guarda en| K["<b>Conocimiento</b><br/><i>carpetas y documentos</i>"]
+    K -->|consulta| A["<b>Agente</b><br/><i>instrucciones · modelo<br/>capacidades</i>"]
+    A -->|consulta a| E["<b>Especialista</b><br/><i>experto en un tema</i>"]
+    A -->|responde en| C["<b>Canal</b><br/><i>Conversaciones<br/>WhatsApp · Telegram</i>"]
+    C <--> P(["<b>Personas</b>"])
+    A -.->|consume| CR["<b>Créditos</b>"]
 ```
 
 Todo ocurre dentro de una **organización**, y puede separarse en **espacios de trabajo**.

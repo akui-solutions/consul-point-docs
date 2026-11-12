@@ -8,8 +8,6 @@ description: Lugares de ConsulPoint donde se muestra una aplicación integrada s
 
 # Dónde aparecen
 
-## Descripción
-
 Una misma aplicación puede abrirse desde varios lugares de ConsulPoint. El **tipo** de la aplicación determina en cuáles se ofrece, y cada lugar le entrega un contexto distinto.
 
 ## Tipos de aplicación

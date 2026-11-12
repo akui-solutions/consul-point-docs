@@ -8,10 +8,7 @@ description: Paso a paso para crear un agente o un especialista en el Estudio de
 
 # Crear un agente
 
-**Ruta:** `/studio/config/add-assistant`
-**Permiso requerido:** creación sobre **Estudio**
-
-## Descripción
+<PageMeta route="/studio/config/add-assistant">creación sobre **Estudio**</PageMeta>
 
 El formulario para crear un agente o un especialista, campo por campo. Los microagentes usan un formulario distinto: ver [Microagentes](/control/estudio/microagentes).
 
@@ -69,19 +66,14 @@ Estructura recomendada:
 
 Ejemplo:
 
-```text
-Eres el asistente comercial de la empresa. Atiendes a clientes
-que preguntan por nuestros productos y servicios.
+```prompt
+Eres el asistente comercial de la empresa. Atiendes a clientes que preguntan por nuestros productos y servicios.
 
-Responde siempre a partir de la documentación disponible. Si un
-dato no consta, dilo claramente en lugar de deducirlo.
+Responde siempre a partir de la documentación disponible. Si un dato no consta, dilo claramente en lugar de deducirlo.
 
-Usa un tono cordial y directo. Respuestas breves, sin
-tecnicismos innecesarios.
+Usa un tono cordial y directo. Respuestas breves, sin tecnicismos innecesarios.
 
-No ofrezcas precios especiales, descuentos ni resoluciones de
-reclamaciones: en esos casos, deriva a una persona del equipo
-comercial.
+No ofrezcas precios especiales, descuentos ni resoluciones de reclamaciones: en esos casos, deriva a una persona del equipo comercial.
 ```
 
 El botón de mejora con IA reescribe las instrucciones y permite elegir el formato: Markdown, XML o JSON.
@@ -145,10 +137,12 @@ Quién puede usar el agente:
 | Opción | Quién lo usa |
 |---|---|
 | **Solo yo** | Solo quien lo crea, ni siquiera los administradores |
-| **Toda la organización** | Todos lo usan; los administradores lo editan. Es la opción por defecto |
-| **Personas y roles concretos** | Solo quien se añada, con su nivel. Solo para agentes, no para especialistas |
+| **Mi organización** | Todos lo usan; los administradores lo editan. Es la opción por defecto |
+| **Permisos personalizados** | Solo quien se añada, con su nivel. Solo para agentes, no para especialistas |
 
-Con **Personas y roles concretos** hay que añadir al menos una persona o un rol y elegir el nivel:
+Después, en la pestaña **Acceso** del agente, las mismas opciones se llaman **Solo yo**, **Toda la organización** y **Personas y roles concretos**.
+
+Con **Permisos personalizados** hay que añadir al menos una persona y elegir el nivel:
 
 | Nivel | Qué permite |
 |---|---|

@@ -8,10 +8,7 @@ description: Cómo crear una aplicación integrada en ConsulPoint y publicar sus
 
 # Publicar
 
-**Ruta:** `/settings/applications`
-**Permiso requerido:** creación sobre **Aplicaciones** y una suscripción activa
-
-## Descripción
+<PageMeta route="/settings/applications">creación sobre **Aplicaciones** y una suscripción activa</PageMeta>
 
 Publicar una aplicación consiste en **crearla** en ConsulPoint, **subir su paquete** como una versión y **concederle** los permisos y modelos de datos que necesita. Esta página describe el caso de una aplicación **Propia**; la publicación en el catálogo se explica al final.
 

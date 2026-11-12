@@ -8,8 +8,6 @@ description: Carpetas multimedia del Centro de Conocimiento de ConsulPoint, para
 
 # Multimedia
 
-## Descripción
-
 Una carpeta de tipo **Multimedia** reúne vídeos y audios de YouTube. La plataforma obtiene la transcripción de cada uno y la divide en segmentos, que se pueden consultar y copiar.
 
 Estas carpetas no admiten archivos: cada recurso es un enlace.

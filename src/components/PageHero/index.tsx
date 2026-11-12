@@ -22,7 +22,7 @@ export function PageHero({ eyebrow, highlights, children }: PageHeroProps): Reac
           <LogoIcon height={48} className="h-12 w-auto shrink-0 self-start" />
           <div className="min-w-0">
             {eyebrow && (
-              <div className="mb-1 font-mono text-xs font-semibold uppercase tracking-widest text-[var(--cp-text-accent)]">
+              <div className="mb-1 font-sans text-sm font-semibold text-[var(--cp-text-accent)]">
                 {eyebrow}
               </div>
             )}

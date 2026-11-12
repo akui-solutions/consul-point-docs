@@ -8,9 +8,7 @@ description: Aplicaciones integradas y agentes preconfigurados instalables en Co
 
 # Catálogo de integraciones
 
-**Rutas:** `/store/apps` · `/store/agents`
-
-## Descripción
+<PageMeta route="/store/apps · /store/agents" />
 
 Repositorio de aplicaciones, conectores y agentes preconfigurados que la organización puede incorporar sin construirlos desde cero.
 

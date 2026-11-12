@@ -8,10 +8,7 @@ description: Esquemas de datos reutilizables en ConsulPoint. Cómo crearlos, ver
 
 # Biblioteca de esquemas
 
-**Ruta:** `/studio/schema-library`
-**Permiso requerido:** el que corresponda sobre **Biblioteca de esquemas**. Con los roles predeterminados, solo administradores
-
-## Descripción
+<PageMeta route="/studio/schema-library">el que corresponda sobre **Biblioteca de esquemas**. Con los roles predeterminados, solo administradores</PageMeta>
 
 Un **esquema de datos** define qué datos se extraen de un documento y con qué forma: por ejemplo, que una factura tiene un proveedor (texto), una fecha (fecha) y un importe (número). La biblioteca guarda esquemas reutilizables, para que varios elementos extraigan siempre los mismos campos.
 

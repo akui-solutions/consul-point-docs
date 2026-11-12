@@ -9,10 +9,7 @@ description: Qué es Conversaciones en ConsulPoint, qué conversaciones se ven e
 
 # Conversaciones
 
-**Ruta:** `/conversations`
-**Permiso requerido:** el que corresponda sobre **Conversaciones**
-
-## Descripción
+<PageMeta route="/conversations">el que corresponda sobre **Conversaciones**</PageMeta>
 
 Conversaciones es donde se habla con los agentes de la organización y donde se atienden las conversaciones que llegan por WhatsApp, Telegram u otras aplicaciones conectadas. También es el lugar para probar un agente antes de abrirlo a más personas o conectarlo a un canal.
 

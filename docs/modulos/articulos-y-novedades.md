@@ -8,10 +8,7 @@ description: Cómo publicar, leer, editar y eliminar artículos y novedades inte
 
 # Artículos y novedades
 
-**Ruta:** `/resources`
-**Permiso requerido:** el que corresponda sobre **Artículos y novedades**
-
-## Descripción
+<PageMeta route="/resources">el que corresponda sobre **Artículos y novedades**</PageMeta>
 
 Un espacio para publicar comunicados, novedades y artículos para toda la organización: una nueva política, el calendario de formación, un anuncio del equipo. Los artículos más recientes aparecen también en el carrusel de [Inicio](/modulos/inicio).
 

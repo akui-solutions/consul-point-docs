@@ -8,8 +8,6 @@ description: Cómo probar una aplicación integrada de ConsulPoint en local, con
 
 # Probar
 
-## Descripción
-
 Una aplicación se prueba en tres niveles, de más rápido a más fiel. Los dos primeros se hacen en el equipo de quien desarrolla; el tercero, dentro de ConsulPoint.
 
 | Nivel | Qué comprueba | Necesita |

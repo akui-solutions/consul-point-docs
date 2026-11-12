@@ -8,17 +8,15 @@ description: Carpetas del Centro de Conocimiento de ConsulPoint que extraen dato
 
 # Extracción inteligente
 
-## Descripción
-
 Una carpeta de tipo **Extracción inteligente** saca datos de cada documento que se sube a ella y los guarda de forma estructurada: por ejemplo, el proveedor, la fecha y el importe de cada factura. La extracción la hace un agente, siguiendo un esquema que define qué datos interesan.
 
 **Casos de uso:** facturas, albaranes, pedidos, formularios y cualquier documentación recurrente de estructura estable.
 
 ```mermaid
 flowchart LR
-    A["<b>DOCUMENTO</b><br/><i>se sube a la carpeta</i>"] --> B["<b>AGENTE</b><br/><i>lee el documento</i>"]
-    B --> C["<b>DATOS</b><br/><i>según el esquema</i>"]
-    C --> D["<b>APLICACIÓN</b><br/><i>opcional, los muestra</i>"]
+    A["<b>Documento</b><br/><i>se sube a la carpeta</i>"] --> B["<b>Agente</b><br/><i>lee el documento</i>"]
+    B --> C["<b>Datos</b><br/><i>según el esquema</i>"]
+    C --> D["<b>Aplicación</b><br/><i>opcional, los muestra</i>"]
 ```
 
 ## Antes de empezar

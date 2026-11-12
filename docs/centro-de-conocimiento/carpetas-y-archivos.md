@@ -8,8 +8,6 @@ description: Crear carpetas, navegar, buscar, filtrar, mover, cambiar de nombre 
 
 # Carpetas y archivos
 
-## Descripción
-
 Cómo organizar el contenido del Centro de Conocimiento: crear carpetas, encontrar archivos y mantener todo en orden. Para subir archivos, ver [Subir documentos](/centro-de-conocimiento/subir-documentos).
 
 ## Crear una carpeta

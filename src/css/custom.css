@@ -23,6 +23,7 @@
   --cp-card: #ffffff;
   --cp-code-bg: #0d1117;
   --cp-border: #e2e8f0;
+  --cp-border-strong: #cbd5e1;
   --cp-border-focus: #0066ff;
   --cp-text-main: #0f172a;
   --cp-text-secondary: #475569;
@@ -45,14 +46,23 @@
   --ifm-toc-border-color: var(--cp-border);
   --ifm-code-font-size: 92%;
   --docusaurus-highlighted-code-line-bg: rgba(59, 130, 246, 0.08);
+
+  /* Escala tipográfica: el título de página manda; las secciones no compiten con él */
+  --ifm-line-height-base: 1.7;
+  --ifm-h1-font-size: 2.4rem;
+  --ifm-h2-font-size: 1.6rem;
+  --ifm-h3-font-size: 1.2rem;
+  --ifm-h4-font-size: 1rem;
 }
 
-[data-theme='dark'] {
+/* `:root[...]` iguala la especificidad de Infima, que si no impone su fondo gris. */
+:root[data-theme='dark'] {
   --cp-bg: #0b0f19;
   --cp-surface: #111827;
   --cp-card: #1e293b;
   --cp-code-bg: #0f172a;
   --cp-border: #1e293b;
+  --cp-border-strong: #334155;
   --cp-border-focus: #38bdf8;
   --cp-text-main: #f8fafc;
   --cp-text-secondary: #94a3b8;
@@ -95,30 +105,273 @@ samp {
   }
 }
 
-/* Tablas: la documentación se apoya mucho en ellas */
+/* ── Lectura ──────────────────────────────────────────────────────────────── */
+
+/* Párrafos y listas a un ancho cómodo (unos 80 caracteres); tablas y capturas
+   usan todo el ancho de la columna. */
+.markdown > p,
+.markdown > ul,
+.markdown > ol {
+  max-width: 42rem;
+}
+
+/* Párrafo de entrada: el primero tras el título o tras la franja de datos */
+.markdown > header + p,
+.markdown > .page-meta + p {
+  font-size: 1.125rem;
+  line-height: 1.65;
+  color: var(--cp-text-secondary);
+}
+
+/* ── Títulos ────────────────────────────────────────────────────────────────
+   Separación por espacio, no por líneas. */
+.markdown header h1 {
+  font-size: 2.4rem;
+  letter-spacing: -0.02em;
+}
+
+.markdown > h2 {
+  margin-top: 3rem;
+  font-size: 1.6rem;
+  letter-spacing: -0.01em;
+}
+
+.markdown > h3 {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+
+.markdown > h4 {
+  font-size: 1rem;
+}
+
+/* ── Franja de datos bajo el título (src/components/PageMeta) ───────────────── */
+.page-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.75rem;
+  margin: 0 0 1.5rem;
+  padding: 0.7rem 0;
+  border-top: 1px solid var(--cp-border);
+  border-bottom: 1px solid var(--cp-border);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--cp-text-secondary);
+}
+
+.page-meta__item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.page-meta__icon {
+  color: var(--cp-text-muted);
+}
+
+.page-meta__label {
+  font-weight: 600;
+  color: var(--cp-text-main);
+}
+
+.page-meta code {
+  font-size: 0.8rem;
+}
+
+/* ── Tablas ─────────────────────────────────────────────────────────────────
+   Solo líneas horizontales; cabecera discreta alineada con las celdas; la
+   primera columna (el nombre de la fila) algo más marcada. */
 .markdown table {
   display: table;
   width: 100%;
-  font-size: 0.92rem;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  line-height: 1.55;
 }
 
+.markdown table thead,
 .markdown table thead tr {
-  background-color: var(--ifm-color-emphasis-100);
+  background: none;
+  border-bottom: 1px solid var(--cp-border-strong);
+}
+
+.markdown table tr,
+.markdown table tr:nth-child(2n) {
+  background: none;
+  border: 0;
+  border-bottom: 1px solid var(--cp-border);
+}
+
+.markdown table th,
+.markdown table td {
+  border: 0;
+  padding: 0.7rem 1rem 0.7rem 0;
+  text-align: left;
+  vertical-align: top;
+}
+
+.markdown table th:last-child,
+.markdown table td:last-child {
+  padding-right: 0;
 }
 
 .markdown table th {
+  font-size: 0.8rem;
   font-weight: 600;
+  color: var(--cp-text-secondary);
 }
 
-/* Encabezados con algo más de aire */
-.markdown h2 {
-  margin-top: 2.4rem;
-  padding-top: 0.6rem;
-  border-top: 1px solid var(--cp-border);
+.markdown table td {
+  color: var(--cp-text-secondary);
 }
 
-.markdown h3 {
-  margin-top: 1.8rem;
+.markdown table td:first-child {
+  font-weight: 500;
+  color: var(--cp-text-main);
+}
+
+.markdown table td strong {
+  color: var(--cp-text-main);
+}
+
+/* Pantallas estrechas: tablas de 3+ columnas como fichas, una por fila, con el
+   nombre de cada columna encima del valor (ver src/clientModules/tableLabels.ts). */
+@media (max-width: 600px) {
+  .markdown table.table-stack,
+  .markdown table.table-stack tbody,
+  .markdown table.table-stack tr,
+  .markdown table.table-stack td {
+    display: block;
+    width: 100%;
+  }
+
+  .markdown table.table-stack thead {
+    display: none;
+  }
+
+  .markdown table.table-stack tr {
+    padding: 0.6rem 0;
+  }
+
+  .markdown table.table-stack td {
+    padding: 0.2rem 0;
+  }
+
+  .markdown table.table-stack td[data-label]:not(:first-child)::before {
+    content: attr(data-label);
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--cp-text-muted);
+  }
+}
+
+/* ── Bloques por perfil («Por dónde empezar»): tarjetas con texto y enlaces ─── */
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.profile-grid > div {
+  padding: 1rem 1.1rem 0.25rem;
+  border: 1px solid var(--cp-border);
+  border-radius: 12px;
+  background: var(--cp-card);
+  font-size: 0.95rem;
+}
+
+.profile-grid > div > p:first-child {
+  margin-bottom: 0.35rem;
+  color: var(--cp-text-main);
+}
+
+.profile-grid > div p {
+  color: var(--cp-text-secondary);
+}
+
+.profile-grid ul {
+  padding-left: 1.1rem;
+}
+
+/* Tarjeta cuyos enlaces van todos a la misma pestaña: la etiqueta va una vez,
+   junto al título, y no en cada enlace. */
+.profile-grid .same-tab li .tab-hint {
+  display: none;
+}
+
+/* ── Diagramas (Mermaid): centrados, a su tamaño natural ─────────────────── */
+.docusaurus-mermaid-container {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+/* ── Avisos (:::tip, :::warning…) ────────────────────────────────────────────
+   Fondo suave, borde fino, título en minúscula normal; el texto en el color
+   del cuerpo y el color del tipo solo en el borde, el icono y el título. */
+.theme-admonition.alert {
+  --ifm-alert-border-left-width: 3px;
+  --ifm-alert-shadow: none;
+  --ifm-alert-padding-vertical: 0.9rem;
+  --ifm-alert-foreground-color: var(--cp-text-main);
+  --ifm-alert-background-color: color-mix(in srgb, var(--ifm-alert-border-color) 7%, var(--cp-surface));
+  border-radius: 10px;
+}
+
+.theme-admonition [class*='admonitionHeading'] {
+  margin-bottom: 0.3rem;
+  font-size: 0.95rem;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--ifm-alert-border-color);
+}
+
+.theme-admonition [class*='admonitionIcon'] svg {
+  fill: var(--ifm-alert-border-color);
+  color: var(--ifm-alert-border-color);
+}
+
+/* ── Ruta de navegación: la página actual como texto, no como etiqueta ──────── */
+.breadcrumbs__link {
+  font-size: 0.85rem;
+}
+
+.breadcrumbs__item--active .breadcrumbs__link {
+  padding-right: 0;
+  padding-left: 0;
+  background: none;
+  color: var(--cp-text-secondary);
+}
+
+/* ── Bloques de código ───────────────────────────────────────────────────────
+   ```prompt: ejemplos de instrucciones para agentes. Es lenguaje natural, así que
+   va con la letra del texto y ajusta las líneas. */
+.theme-code-block.language-prompt {
+  border: 1px solid var(--cp-border);
+  border-left: 3px solid var(--ifm-color-primary);
+  box-shadow: none;
+}
+
+.theme-code-block.language-prompt pre {
+  background: var(--cp-surface) !important;
+}
+
+.theme-code-block.language-prompt pre code {
+  font-family: var(--cp-font-sans);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  white-space: pre-wrap;
+  color: var(--cp-text-main);
+}
+
+/* ```text: esquemas y fórmulas cortas; en móvil ajustan en lugar de salirse */
+@media (max-width: 600px) {
+  .theme-code-block.language-text pre code {
+    white-space: pre-wrap;
+  }
 }
 
 /* Tarjetas de la portada */
