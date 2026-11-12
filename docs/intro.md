@@ -49,7 +49,7 @@ El objetivo es ofrecer una visión clara tanto funcional como técnica de Consul
 | Sección                 | Contenido                                                                                                                                 |
 | ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | **Introducción**        | Visión general, conceptos fundamentales y navegación                                                                                      |
-| **Módulos**             | Inicio, Centro de Conocimiento, Conversaciones, Bandeja Inteligente, Apps, Artículos y novedades y Espacios de Trabajo |
+| **Módulos**             | Inicio, Centro de Conocimiento, Conversaciones, Bandeja Inteligente, Apps, Artículos y novedades y Espacios de trabajo |
 | **Control y Auditoría** | Estudio, Configuración (webhooks, usuarios y roles, integraciones y canales), catálogo de integraciones, y auditoría y reportes            |
 | **Referencia**          | Campos, permisos y glosario                                                                                            |
 
