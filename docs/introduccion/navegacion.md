@@ -92,9 +92,9 @@ La barra superior da acceso a los elementos que acompañan a cualquier módulo:
   </ModuleCard>
 </ModuleGrid>
 
-<Callout type="info" title="Visibilidad condicionada">
-  El menú muestra únicamente los módulos habilitados para la organización y permitidos por el rol del usuario. Un menú incompleto no indica un error.
-</Callout>
+:::info Visibilidad condicionada
+El menú muestra únicamente los módulos habilitados para la organización y permitidos por el rol del usuario. Un menú incompleto no indica un error.
+:::
 
 ## Idioma
 

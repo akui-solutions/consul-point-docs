@@ -16,8 +16,11 @@ import {
   GearIcon,
   GraduationCapIcon,
   HashIcon,
+  InfoIcon,
+  LightbulbIcon,
   LinkSimpleIcon,
   LockSimpleIcon,
+  NoteIcon,
   LightningIcon,
   PlugIcon,
   QuestionIcon,
@@ -28,6 +31,7 @@ import {
   TranslateIcon,
   TrayIcon,
   TreeStructureIcon,
+  WarningIcon,
   WarningOctagonIcon,
   UserCircleIcon,
   type Icon as PhosphorIcon,
@@ -128,6 +132,11 @@ const PHOSPHOR_ICONS = {
   caretDown: CaretDownIcon,
   route: LinkSimpleIcon,
   lock: LockSimpleIcon,
+  // Avisos (:::note, :::tip, :::info, :::warning, :::danger)
+  note: NoteIcon,
+  tip: LightbulbIcon,
+  info: InfoIcon,
+  warning: WarningIcon,
   danger: WarningOctagonIcon,
 } satisfies Record<string, PhosphorIcon>;
 

@@ -1,6 +1,5 @@
 import React from 'react';
 import MDXComponents from '@theme-original/MDXComponents';
-import { Callout } from '@site/src/components/Callout';
 import { EndpointCard } from '@site/src/components/EndpointCard';
 import { MethodBadge } from '@site/src/components/MethodBadge';
 import { PageHeader } from '@site/src/components/PageHeader';
@@ -29,7 +28,6 @@ function LinkWithTabHint(props: React.ComponentProps<typeof OriginalLink>): Reac
 export default {
   ...MDXComponents,
   a: LinkWithTabHint,
-  Callout,
   EndpointCard,
   MethodBadge,
   PageHeader,

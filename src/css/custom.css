@@ -309,29 +309,76 @@ samp {
   margin: 1.5rem 0;
 }
 
-/* ── Avisos (:::tip, :::warning…) ────────────────────────────────────────────
-   Fondo suave, borde fino, título en minúscula normal; el texto en el color
-   del cuerpo y el color del tipo solo en el borde, el icono y el título. */
+/* ── Avisos (:::note, :::tip, :::info, :::warning, :::danger) ───────────────
+   Misma superficie que las tarjetas; el tipo se ve en el acento izquierdo y en
+   el icono, dentro de un cuadrado tintado como el de las tarjetas. El texto, en
+   los colores del cuerpo y alineado con el título. */
 .theme-admonition.alert {
-  --ifm-alert-border-left-width: 3px;
   --ifm-alert-shadow: none;
-  --ifm-alert-padding-vertical: 0.9rem;
   --ifm-alert-foreground-color: var(--cp-text-main);
-  --ifm-alert-background-color: color-mix(in srgb, var(--ifm-alert-border-color) 7%, var(--cp-surface));
-  border-radius: 10px;
+  --ifm-alert-background-color: var(--cp-card);
+  --cp-alert-indent: 2.4rem;
+  padding: 0.9rem 1.15rem 0.95rem;
+  border: 1px solid var(--cp-border);
+  border-left: 3px solid var(--ifm-alert-border-color);
+  border-radius: 12px;
 }
 
 .theme-admonition [class*='admonitionHeading'] {
-  margin-bottom: 0.3rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.15rem;
   font-size: 0.95rem;
+  font-weight: 600;
   letter-spacing: 0;
   text-transform: none;
+  color: var(--cp-text-main);
+}
+
+.theme-admonition [class*='admonitionIcon'] {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  margin-right: 0.65rem;
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--ifm-alert-border-color) 13%, transparent);
   color: var(--ifm-alert-border-color);
 }
 
 .theme-admonition [class*='admonitionIcon'] svg {
-  fill: var(--ifm-alert-border-color);
-  color: var(--ifm-alert-border-color);
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.theme-admonition [class*='admonitionContent'] {
+  padding-left: var(--cp-alert-indent);
+  font-size: 0.95rem;
+  color: var(--cp-text-secondary);
+}
+
+/* :::note usa el gris de Infima, casi invisible: un gris pizarra en su lugar */
+.theme-admonition.alert--secondary {
+  --ifm-alert-border-color: #64748b;
+}
+
+/* Enlaces de los avisos como los del resto del texto */
+/* (Infima iguala --ifm-link-color al texto dentro de .alert; por eso el primario) */
+.theme-admonition a {
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+}
+
+.theme-admonition a:hover {
+  text-decoration: underline;
+}
+
+.theme-admonition [class*='admonitionContent'] strong,
+.theme-admonition [class*='admonitionContent'] code {
+  color: var(--cp-text-main);
 }
 
 /* ── Ruta de navegación: la página actual como texto, no como etiqueta ──────── */
