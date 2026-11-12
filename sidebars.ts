@@ -58,6 +58,7 @@ const aplicacionesIntegradasCategory = {
       label: 'Desarrollar',
       items: [
         'aplicaciones-integradas/desarrollar/primera-aplicacion',
+        'aplicaciones-integradas/desarrollar/plantilla-de-inicio',
         'aplicaciones-integradas/desarrollar/contexto',
         'aplicaciones-integradas/desarrollar/api-y-sesion',
         'aplicaciones-integradas/desarrollar/datos-propios',
