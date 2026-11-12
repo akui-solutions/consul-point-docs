@@ -28,7 +28,7 @@ En la API y en el código, una aplicación integrada se llama **mini app**. Son 
 | Perfil | Qué necesita | Páginas |
 |---|---|---|
 | **Quien decide o administra** | Entender qué son, instalarlas y controlar qué pueden hacer | [Cómo funcionan](/aplicaciones-integradas/como-funcionan) · [Dónde aparecen](/aplicaciones-integradas/donde-aparecen) · [Instalar y administrar](/aplicaciones-integradas/instalar-y-administrar) |
-| **Quien desarrolla** | Construir una aplicación, probarla y publicarla | [Tu primera aplicación](/aplicaciones-integradas/desarrollar/primera-aplicacion) y el resto de **Desarrollar** · [Publicar](/aplicaciones-integradas/publicar) |
+| **Quien desarrolla** | Construir una aplicación, probarla y publicarla | [Tu primera aplicación](/aplicaciones-integradas/desarrollar/primera-aplicacion) · [Plantilla de inicio](/aplicaciones-integradas/desarrollar/plantilla-de-inicio) y el resto de **Desarrollar** · [Publicar](/aplicaciones-integradas/publicar) |
 | **Quien da soporte** | Resolver un problema concreto | [Problemas frecuentes](/aplicaciones-integradas/problemas-frecuentes) · [Referencia](/aplicaciones-integradas/referencia) |
 
 ## El recorrido completo
