@@ -6,11 +6,11 @@ sidebar_position: 1
 description: Arquitectura funcional de ConsulPoint y relación entre sus cuatro capas.
 ---
 
-**ConsulPoint es una plataforma de productividad empresarial de nueva generación, diseñada con la inteligencia artificial en el centro**. Reúne conocimiento, agentes, comunicaciones, aplicaciones y automatizaciones en un entorno gobernado para resolver las necesidades diarias de empleados y operarios.
+**ConsulPoint es una plataforma de productividad empresarial de nueva generación, diseñada con la inteligencia artificial en el centro**. Reúne conocimiento, agentes, comunicaciones y aplicaciones en un entorno gobernado para resolver las necesidades diarias de empleados y operarios.
 
-Se integra con los ERP, CRM, CMS y demás sistemas que la organización ya utiliza, y permite incorporar aplicaciones ágiles y específicas que aprovechan sus datos y funciones. Estas herramientas pueden complementar los procesos existentes y sustituir progresivamente determinadas funcionalidades cuando resulte conveniente, al ritmo de cada organización.
+Se conecta con los sistemas que la organización ya utiliza mediante conectores y API, y permite incorporar aplicaciones ágiles y específicas que aprovechan sus datos y funciones. Estas herramientas pueden complementar los procesos existentes y sustituir progresivamente determinadas funcionalidades cuando resulte conveniente, al ritmo de cada organización.
 
-Su arquitectura es modular. Cada capacidad puede utilizarse de forma independiente, pero el mayor valor aparece cuando **conocimiento, agentes, canales de comunicación, aplicaciones integradas, conectores, integraciones y automatizaciones** trabajan de forma conjunta bajo un mismo modelo de permisos, trazabilidad, supervisión y control.
+Su arquitectura es modular. Cada capacidad puede utilizarse de forma independiente, pero el mayor valor aparece cuando **conocimiento, agentes, canales de comunicación, aplicaciones integradas, conectores e integraciones** trabajan de forma conjunta bajo un mismo modelo de permisos, trazabilidad, supervisión y control.
 
 ## Arquitectura funcional
 
@@ -109,14 +109,12 @@ Todos los recursos creados o gestionados en la plataforma pertenecen a una organ
 
 Los recursos de una organización no forman parte del entorno de otras organizaciones.
 
-Dentro de una misma organización, el acceso a la información y a las capacidades puede restringirse adicionalmente mediante roles, permisos, espacios de trabajo y los permisos asignados a cada recurso.
-
-En el caso de las aplicaciones integradas y las conversaciones con IA, la versión Enterprise incorpora, mediante Advanced Control, una revisión más profunda de los permisos, las capacidades autorizadas y las políticas aplicables. El acceso efectivo y las acciones permitidas dependen tanto de los permisos del usuario como de las capacidades autorizadas para la aplicación o el agente de IA, siempre bajo las políticas de la organización.
-
-Advanced Control permite que organizaciones con requisitos estrictos de control se acerquen a la agilidad de una startup para adoptar IA y desplegar aplicaciones, manteniendo sus estándares de seguridad y gobierno. Para ello, automatiza las verificaciones y aprobaciones dentro de los límites previamente autorizados y deriva a revisión adicional las solicitudes que los exceden.
-
-De forma conceptual:
+Dentro de una misma organización, el acceso a la información y a las capacidades se restringe además mediante roles, espacios de trabajo y el acceso asignado a cada recurso. Una persona puede hacer algo solo si se cumplen las tres condiciones:
 
 ```text
-Acceso efectivo = Permisos del usuario ∩ Permisos del recurso o aplicación ∩ Políticas de la organización
+Acceso efectivo = Rol del usuario ∩ Acceso al recurso (carpeta, agente, conversación…) ∩ Espacio de trabajo
 ```
+
+Por ejemplo, para que alguien edite una carpeta del Centro de Conocimiento, su rol debe permitir editar en ese módulo, la carpeta debe ser suya o estar compartida con él con permiso de edición, y debe estar trabajando en el espacio al que pertenece.
+
+Para organizaciones con requisitos de control más estrictos, hay opciones adicionales bajo consulta.
