@@ -49,7 +49,8 @@ El objetivo es ofrecer una visión clara tanto funcional como técnica de Consul
 | Sección                 | Contenido                                                                                                                                 |
 | ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | **Introducción**        | Visión general, conceptos fundamentales y navegación                                                                                      |
-| **Uso diario**          | Inicio, Conversaciones y Artículos y novedades |
+| **Uso diario**          | Inicio y Artículos y novedades |
+| **Conversaciones**      | Chat con los agentes, colaboración y atención de WhatsApp, Telegram y otros canales |
 | **Bandeja Inteligente** | Correo de las cuentas conectadas, reglas y análisis con IA |
 | **Centro de Conocimiento** | Carpetas y documentos que consultan los agentes |
 | **Estudio**             | Agentes, especialistas, microagentes y esquemas de datos |

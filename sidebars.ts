@@ -1,5 +1,18 @@
 import type { SidebarsConfig } from '@docusaurus/plugin-content-docs';
 
+// Conversaciones: chat con los agentes y atención de canales.
+const conversacionesCategory = {
+  type: 'category' as const,
+  label: 'Conversaciones',
+  link: { type: 'doc' as const, id: 'conversaciones/conversaciones-overview' },
+  items: [
+    'conversaciones/conversar-con-un-agente',
+    'conversaciones/compartir-y-colaborar',
+    'conversaciones/canales-y-atencion-humana',
+    'conversaciones/problemas-frecuentes',
+  ],
+};
+
 // Bandeja Inteligente: correo, reglas y análisis con IA.
 const bandejaInteligenteCategory = {
   type: 'category' as const,
@@ -110,10 +123,10 @@ const sidebars: SidebarsConfig = {
       collapsed: false,
       items: [
         'modulos/inicio',
-        'modulos/conversaciones',
         'modulos/articulos-y-novedades',
       ],
     },
+    conversacionesCategory,
     bandejaInteligenteCategory,
     centroDeConocimientoCategory,
     estudioCategory,
