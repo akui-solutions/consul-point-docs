@@ -1,7 +1,7 @@
 ---
 id: referencia
 title: Referencia
-sidebar_label: Referencia
+sidebar_label: Referencia técnica
 sidebar_position: 7
 description: Referencia técnica de las aplicaciones integradas de ConsulPoint. Parámetros de contexto, mensajes, rutas de la API, límites y códigos de respuesta.
 ---

@@ -1,7 +1,7 @@
 ---
 id: intro
 title: Documentación de ConsulPoint
-sidebar_label: Inicio
+sidebar_label: Presentación
 sidebar_position: 1
 slug: /
 description: Documentación de ConsulPoint, la plataforma empresarial de inteligencia artificial para crear agentes, gestionar el conocimiento de la organización, atender canales y desplegar aplicaciones integradas.
@@ -9,9 +9,11 @@ description: Documentación de ConsulPoint, la plataforma empresarial de intelig
 
 # Documentación de ConsulPoint
 
-**ConsulPoint** es una plataforma empresarial de inteligencia artificial que conecta agentes, conocimiento, personas y aplicaciones dentro de una organización.
+<PageHero eyebrow="Documentación" highlights={['Agentes', 'Conocimiento', 'Canales', 'Aplicaciones integradas']}>
+  **ConsulPoint** es una plataforma empresarial de inteligencia artificial que conecta agentes, conocimiento, personas y aplicaciones dentro de una organización.
+</PageHero>
 
-Esta documentación explica cada módulo de la plataforma: para qué sirve, cómo se configura y cómo se relaciona con el resto. Las guías de uso no requieren conocimientos de programación; las páginas para desarrolladores lo indican.
+Esta documentación explica cada módulo de la plataforma: para qué sirve, cómo se configura y cómo se relaciona con el resto. Las guías de uso no requieren conocimientos de programación.
 
 ## Primeros pasos
 
@@ -36,18 +38,22 @@ Para poner en marcha un agente que responda con la información de la organizaci
 El orden de configuración es siempre **conocimiento → agente → canal**. Un agente sin conocimiento responde de forma genérica; un canal sin agente asignado no responde.
 :::
 
-Para una visión de conjunto antes de empezar, ver [Visión general](/introduccion/vision-general) y [Conceptos fundamentales](/introduccion/conceptos).
+## Cómo está organizada
 
-## Organización de esta documentación
+La documentación tiene tres pestañas, en la barra superior. Cada una tiene su propio menú.
 
-| Sección | Contenido |
-|---|---|
-| **Introducción** | Visión general, conceptos fundamentales y navegación |
-| **Uso diario** | Inicio y Artículos y novedades |
-| **Conversaciones** | Chat con los agentes, colaboración y atención de WhatsApp, Telegram y otros canales |
-| **Bandeja Inteligente** | Correo de las cuentas conectadas, reglas y análisis con IA |
-| **Centro de Conocimiento** | Carpetas y documentos que consultan los agentes |
-| **Estudio** | Agentes, especialistas, microagentes y esquemas de datos |
-| **Aplicaciones integradas** | Cómo funcionan, dónde aparecen, cómo se desarrollan, se publican y se administran |
-| **Administración** | Configuración (webhooks, usuarios y roles, integraciones y canales), espacios de trabajo, catálogo de integraciones, y auditoría y reportes |
-| **Referencia** | Campos, permisos y glosario |
+<ModuleGrid>
+  <ModuleCard icon="dashboard" title="Guía de uso" href="/introduccion/navegacion">
+    Usar la plataforma en el día a día: conversar con agentes, subir documentos, crear agentes en el Estudio, atender la Bandeja Inteligente.
+  </ModuleCard>
+  <ModuleCard icon="settings" title="Administración" href="/control/configuracion">
+    Para quien configura la organización: lo que en la plataforma está en **Configuración** (usuarios y roles, canales e integraciones), los espacios de trabajo y **Auditoría y Reportes**.
+  </ModuleCard>
+  <ModuleCard icon="schema" title="Desarrolladores" href="/aplicaciones-integradas/desarrollar/primera-aplicacion">
+    Crear y publicar aplicaciones integradas que se muestran dentro de ConsulPoint. Requiere conocimientos de programación.
+  </ModuleCard>
+</ModuleGrid>
+
+Cuando un enlace lleva a otra pestaña, lo indica con una etiqueta con su nombre, por ejemplo <TabHint label="Administración" />.
+
+Para recorrer los módulos y saber dónde está cada uno en la interfaz, ver [Navegación](/introduccion/navegacion). Para una visión de conjunto, ver [Visión general](/introduccion/vision-general) y [Conceptos fundamentales](/introduccion/conceptos).

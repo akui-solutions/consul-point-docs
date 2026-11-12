@@ -2,6 +2,7 @@ import React from 'react';
 import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import { Icon, type IconName } from '../Icon';
+import { TabHint, useOtherTab } from '../TabHint';
 
 type ModuleCardProps = {
   icon: IconName;
@@ -19,6 +20,7 @@ type ModuleCardProps = {
 /** Tarjeta de un módulo de la plataforma: icono, nombre, función y enlace a su documentación. */
 export function ModuleCard({ icon, title, module, href, image, children }: ModuleCardProps): React.JSX.Element {
   const imageUrl = useBaseUrl(image ?? '');
+  const otherTab = useOtherTab(href);
 
   const body = (
     <>
@@ -37,7 +39,7 @@ export function ModuleCard({ icon, title, module, href, image, children }: Modul
           <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[rgba(59,130,246,0.1)] text-[#3B82F6] dark:bg-[rgba(0,210,255,0.1)] dark:text-[#00D2FF]">
             <Icon name={icon} size={20} />
           </span>
-          <div className="min-w-0">
+          <div className="min-w-0 flex-1">
             <div className="font-sans text-base font-semibold leading-snug text-[var(--cp-text-main)]">{title}</div>
             {module && (
               <div className="mt-0.5 font-mono text-[0.7rem] uppercase tracking-wider text-[var(--cp-text-muted)]">
@@ -45,6 +47,7 @@ export function ModuleCard({ icon, title, module, href, image, children }: Modul
               </div>
             )}
           </div>
+          {otherTab && otherTab !== title && <TabHint label={otherTab} />}
         </div>
         <div className="font-sans text-sm leading-relaxed text-[var(--cp-text-secondary)] [&>p]:m-0">{children}</div>
         {href && (
