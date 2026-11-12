@@ -8,12 +8,12 @@ type LogoProps = {
 };
 
 /**
- * Logotipo oficial de ConsulPoint (icono + wordmark). Alterna automáticamente
- * entre la versión navy (tema claro) y blanca (tema oscuro) según [data-theme].
+ * Logotipo de ConsulPoint (icono + wordmark), el mismo SVG y colores que usa la
+ * plataforma. Alterna entre la versión del tema claro y la del oscuro según [data-theme].
  */
 export function Logo({ className, height = 32 }: LogoProps): React.JSX.Element {
-  const navy = useBaseUrl('/img/logo-wordmark-navy.png');
-  const light = useBaseUrl('/img/logo-wordmark-light.png');
+  const navy = useBaseUrl('/img/logo-wordmark.svg');
+  const light = useBaseUrl('/img/logo-wordmark-dark.svg');
   return (
     <>
       <img src={navy} alt="ConsulPoint" height={height} className={`${className ?? ''} dark:hidden`} />
@@ -24,8 +24,8 @@ export function Logo({ className, height = 32 }: LogoProps): React.JSX.Element {
 
 /** Solo el isotipo (sin wordmark), útil para favicons, avatares o espacios reducidos. */
 export function LogoIcon({ className, height = 32 }: LogoProps): React.JSX.Element {
-  const navy = useBaseUrl('/img/logo-icon-navy.png');
-  const light = useBaseUrl('/img/logo-icon-light.png');
+  const navy = useBaseUrl('/img/logo-icon.svg');
+  const light = useBaseUrl('/img/logo-icon-dark.svg');
   return (
     <>
       <img src={navy} alt="ConsulPoint" height={height} className={`${className ?? ''} dark:hidden`} />

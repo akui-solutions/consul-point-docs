@@ -81,7 +81,7 @@ const sidebars: SidebarsConfig = {
         'aplicaciones-integradas/problemas-frecuentes',
       ]),
     ]),
-    group('Referencia', ['referencia/campos', 'referencia/glosario']),
+    group('Referencia', ['referencia/glosario']),
   ],
 
   // Un grupo por tema técnico. Hoy solo aplicaciones integradas; otros temas

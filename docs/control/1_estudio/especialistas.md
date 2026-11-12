@@ -8,8 +8,6 @@ description: Qué es un especialista en ConsulPoint, cómo lo consulta un agente
 
 # Especialistas
 
-## Descripción
-
 Un **especialista** es un agente experto en un tema concreto, al que un [agente](/control/estudio/agentes) consulta durante una conversación. No habla con las personas: el agente le pasa la pregunta, el especialista responde al agente y el agente compone la respuesta final.
 
 **Casos de uso:** un asistente comercial que consulta a un especialista en facturación; un asistente de soporte que consulta a un especialista en cada línea de producto.
@@ -51,7 +49,7 @@ En el Estudio, pestaña **Especialistas**, pulsar **Nuevo especialista**. El for
 | **Imagen** | No tiene |
 | **Personalización** (tono e iniciadores) | No tiene |
 | **Capacidades** | Solo **Acceso al centro de conocimiento** |
-| **Acceso** | **Solo yo** o **Toda la organización** |
+| **Acceso** | **Solo yo** o **Mi organización** |
 
 | Campo | Descripción |
 |---|---|
@@ -64,11 +62,8 @@ No es una descripción para personas: es el criterio del agente. Debe decir con 
 
 Ejemplo de descripción técnica:
 
-```text
-Consulta este especialista cuando la persona pregunte por
-facturas: importes, conceptos, fechas de cobro, duplicados o
-diferencias entre meses. No lo consultes para precios de
-productos nuevos ni para incidencias técnicas.
+```prompt
+Consulta este especialista cuando la persona pregunte por facturas: importes, conceptos, fechas de cobro, duplicados o diferencias entre meses. No lo consultes para precios de productos nuevos ni para incidencias técnicas.
 ```
 
 ## Asignar especialistas a un agente

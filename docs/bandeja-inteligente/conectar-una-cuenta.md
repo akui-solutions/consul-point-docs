@@ -8,10 +8,7 @@ description: Cómo conectar una cuenta de Gmail, Outlook o IMAP a la Bandeja Int
 
 # Conectar una cuenta de correo
 
-**Ruta:** `/settings/connectors`
-**Permiso requerido:** administrador
-
-## Descripción
+<PageMeta route="/settings/connectors">administrador</PageMeta>
 
 La Bandeja Inteligente lee el correo de las cuentas conectadas a la organización. Se admiten tres tipos: **Gmail**, **Outlook** (Microsoft) y cualquier cuenta compatible con **IMAP** (Yahoo, iCloud, Zoho o un servidor propio).
 

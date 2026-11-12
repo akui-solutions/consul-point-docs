@@ -8,8 +8,6 @@ description: Cómo una aplicación integrada trabaja con carpetas, archivos y da
 
 # Archivos y extracciones
 
-## Descripción
-
 Con el permiso **Centro de conocimiento**, una aplicación puede trabajar con las carpetas y archivos de la persona que la usa, y con los datos que la **Extracción inteligente** obtiene de cada documento.
 
 Para los conceptos de carpeta, archivo y extracción, consultar [Centro de Conocimiento](/modulos/centro-de-conocimiento).

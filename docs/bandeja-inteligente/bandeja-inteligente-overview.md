@@ -9,10 +9,7 @@ description: Qué es la Bandeja Inteligente de ConsulPoint, cómo funciona con r
 
 # Bandeja Inteligente
 
-**Ruta:** `/smart-inbox`
-**Permiso requerido:** el que corresponda sobre **Bandeja Inteligente**. Con los roles predeterminados, solo administradores
-
-## Descripción
+<PageMeta route="/smart-inbox">el que corresponda sobre **Bandeja Inteligente**. Con los roles predeterminados, solo administradores</PageMeta>
 
 La Bandeja Inteligente muestra el correo de las cuentas conectadas (Gmail, Outlook o cualquier cuenta IMAP) dentro de ConsulPoint. Con **reglas de correo**, separa los correos que interesan, guarda sus adjuntos en el [Centro de Conocimiento](/modulos/centro-de-conocimiento) y los analiza con IA para obtener un resumen, los datos importantes y las acciones pendientes.
 
@@ -28,9 +25,9 @@ La Bandeja Inteligente trabaja con **correo electrónico**. Las conversaciones d
 
 ```mermaid
 flowchart LR
-    A["<b>CUENTA</b><br/><i>Gmail, Outlook o IMAP</i>"] --> B["<b>REGLA</b><br/><i>qué correos interesan</i>"]
-    B --> C["<b>ADJUNTOS</b><br/><i>a una carpeta</i>"]
-    B --> D["<b>ANÁLISIS CON IA</b><br/><i>un microagente</i>"]
+    A["<b>Cuenta</b><br/><i>Gmail, Outlook o IMAP</i>"] --> B["<b>Regla</b><br/><i>qué correos interesan</i>"]
+    B --> C["<b>Adjuntos</b><br/><i>a una carpeta</i>"]
+    B --> D["<b>Análisis con IA</b><br/><i>un microagente</i>"]
     C --> K[("<b>CENTRO DE<br/>CONOCIMIENTO</b>")]
     D --> K
 ```

@@ -52,7 +52,25 @@ const config: Config = {
       onBrokenMarkdownLinks: 'warn',
     },
   },
-  themes: ['@docusaurus/theme-mermaid'],
+  themes: [
+    '@docusaurus/theme-mermaid',
+    // Buscador local: el índice se genera al compilar y viaja con el sitio; no
+    // depende de ningún servicio externo. Solo funciona en la versión compilada
+    // (pnpm build && pnpm serve), no con pnpm start. Textos en i18n/es/code.json.
+    [
+      '@easyops-cn/docusaurus-search-local',
+      {
+        hashed: true,
+        language: ['es'],
+        indexBlog: false,
+        docsRouteBasePath: '/',
+        highlightSearchTermsOnTargetPage: true,
+        searchBarShortcutHint: true,
+        searchResultLimits: 8,
+      },
+    ],
+  ],
+  clientModules: ['./src/clientModules/tableLabels.ts'],
   plugins: [
     tailwindPlugin,
     [
@@ -60,6 +78,8 @@ const config: Config = {
       {
         redirects: [
           { from: '/modulos/apps', to: '/aplicaciones-integradas' },
+          // Los límites de cada formulario están en la página de ese formulario.
+          { from: '/referencia/campos', to: '/control/estudio/crear-un-agente' },
           {
             from: '/modulos/complementos/portal/espacios-de-trabajo',
             to: '/modulos/espacios-de-trabajo',
@@ -102,12 +122,11 @@ const config: Config = {
     navbar: {
       logo: {
         alt: 'ConsulPoint',
-        src: 'img/logo-wordmark-navy.png',
-        srcDark: 'img/logo-wordmark-light.png',
-        // 32px (2rem), el mismo tamaño de logo que usa docs.iota.org
-        // (también sobre Docusaurus). Sin `width` fijo: el ancho se escala
-        // en proporción (271x67 reales) para no deformar el logo.
-        height: 32,
+        // El mismo SVG que la plataforma (consul-point-fe, LogoConsulPoint), con
+        // sus colores de tema claro y oscuro. Ancho proporcional (742x131).
+        src: 'img/logo-wordmark.svg',
+        srcDark: 'img/logo-wordmark-dark.svg',
+        height: 24,
       },
       items: [
         { type: 'docSidebar', sidebarId: 'usoSidebar', position: 'left', label: 'Guía de uso' },
@@ -123,11 +142,19 @@ const config: Config = {
           position: 'left',
           label: 'Administración',
         },
+        { type: 'search', position: 'right' },
       ],
     },
     footer: {
-      style: 'dark',
-      // Una columna por pestaña de la barra superior, con sus páginas más consultadas.
+      style: 'light',
+      logo: {
+        alt: 'ConsulPoint',
+        src: 'img/logo-wordmark.svg',
+        srcDark: 'img/logo-wordmark-dark.svg',
+        height: 22,
+      },
+      // Una columna por tema, con sus páginas más consultadas (Guía de uso,
+      // Administración y, de Desarrolladores, las aplicaciones integradas).
       links: [
         {
           title: 'Guía de uso',
@@ -148,28 +175,30 @@ const config: Config = {
           ],
         },
         {
-          title: 'Desarrolladores',
+          title: 'Aplicaciones integradas',
           items: [
             { label: 'Tu primera aplicación', to: '/aplicaciones-integradas/desarrollar/primera-aplicacion' },
             { label: 'Contexto que recibe', to: '/aplicaciones-integradas/desarrollar/contexto' },
             { label: 'Publicar', to: '/aplicaciones-integradas/publicar' },
-            { label: 'Referencia', to: '/aplicaciones-integradas/referencia' },
+            { label: 'Referencia técnica', to: '/aplicaciones-integradas/referencia' },
           ],
         },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Akui Solutions · ConsulPoint`,
     },
+    // Diagramas: texto algo más pequeño que el de Mermaid por defecto. Se deja su
+    // tipografía: con la del sitio mide mal el texto y lo corta en las cajas.
+    mermaid: {
+      options: {
+        themeVariables: {
+          fontSize: '14px',
+        },
+      },
+    },
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
-    // Búsqueda: solicitad Algolia DocSearch (gratis para docs públicas)
-    // en https://docsearch.algolia.com/apply/ y descomentad este bloque.
-    // algolia: {
-    //   appId: 'TU_APP_ID',
-    //   apiKey: 'TU_SEARCH_API_KEY',
-    //   indexName: 'consul-point',
-    // },
   } satisfies Preset.ThemeConfig,
 };
 

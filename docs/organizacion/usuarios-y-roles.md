@@ -8,8 +8,7 @@ description: Gestión de personas y permisos en ConsulPoint. Modelo de roles, op
 
 # Usuarios y Roles
 
-**Rutas:** `/settings/users` · `/settings/roles`
-**Permiso requerido:** administrador
+<PageMeta route="/settings/users · /settings/roles">administrador</PageMeta>
 
 ## Gestión de usuarios
 

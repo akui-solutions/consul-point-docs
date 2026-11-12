@@ -8,9 +8,7 @@ description: Qué es un agente en ConsulPoint y cómo gestionarlo desde su detal
 
 # Agentes
 
-**Ruta:** `/studio/assistant/details/general/:id`
-
-## Descripción
+<PageMeta route="/studio/assistant/details/general/:id" />
 
 Un **agente** conversa con las personas: en [Conversaciones](/modulos/conversaciones), en un canal conectado como WhatsApp o a través de la API. Responde con sus instrucciones, los documentos a los que tiene acceso y, si los tiene, consultando a sus [especialistas](/control/estudio/especialistas).
 

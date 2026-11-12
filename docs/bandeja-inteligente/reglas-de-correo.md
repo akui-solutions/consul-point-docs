@@ -8,10 +8,7 @@ description: Cómo crear reglas de correo en la Bandeja Inteligente de ConsulPoi
 
 # Reglas de correo
 
-**Ruta:** `/settings/smart-inbox/rules`
-**Permiso requerido:** el que corresponda sobre **Bandeja Inteligente**
-
-## Descripción
+<PageMeta route="/settings/smart-inbox/rules">el que corresponda sobre **Bandeja Inteligente**</PageMeta>
 
 Una regla dice **qué correos** de una cuenta interesan y **qué hacer** con ellos: guardar sus adjuntos en el Centro de Conocimiento, analizarlos con IA, o ambas cosas. Por ejemplo: "los correos de `facturas@proveedor.com` con 'factura' en el asunto: guardar el PDF en la carpeta Facturas y extraer los datos".
 

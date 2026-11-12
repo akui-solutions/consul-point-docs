@@ -9,8 +9,7 @@ description: "Administración de la organización en ConsulPoint: proveedores de
 
 # Configuración
 
-**Ruta:** `/settings`
-**Permiso requerido:** administrador en la mayoría de secciones
+<PageMeta route="/settings">administrador en la mayoría de secciones</PageMeta>
 
 <Screenshot src="/img/modulos/configuracion.png" alt="Pantalla de Configuración en ConsulPoint, sección Usuarios" caption="Pantalla de Configuración (sección Usuarios)" />
 

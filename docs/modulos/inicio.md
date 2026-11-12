@@ -8,9 +8,7 @@ description: Pantalla de Inicio de ConsulPoint. Artículos destacados, calendari
 
 # Inicio
 
-**Ruta:** `/dashboard`
-
-## Descripción
+<PageMeta route="/dashboard" />
 
 Pantalla principal de la plataforma, titulada **Panel de Control**. Reúne los artículos más recientes, un calendario, las aplicaciones y los enlaces de uso diario, y las últimas conversaciones del usuario. Está siempre disponible en el menú lateral, sea cual sea el rol.
 

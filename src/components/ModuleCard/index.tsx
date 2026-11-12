@@ -8,8 +8,6 @@ type ModuleCardProps = {
   icon: IconName;
   /** Nombre del elemento tal como aparece en el menú. */
   title: string;
-  /** Nombre interno del módulo (p. ej. "Knowledge Hub"). */
-  module?: string;
   /** Ruta de la página de documentación del módulo; sin ella la tarjeta no es enlazable. */
   href?: string;
   /** Captura opcional del módulo, ruta dentro de static/ (p. ej. "/img/navegacion/chat.png"). */
@@ -18,7 +16,7 @@ type ModuleCardProps = {
 };
 
 /** Tarjeta de un módulo de la plataforma: icono, nombre, función y enlace a su documentación. */
-export function ModuleCard({ icon, title, module, href, image, children }: ModuleCardProps): React.JSX.Element {
+export function ModuleCard({ icon, title, href, image, children }: ModuleCardProps): React.JSX.Element {
   const imageUrl = useBaseUrl(image ?? '');
   const otherTab = useOtherTab(href);
 
@@ -41,11 +39,6 @@ export function ModuleCard({ icon, title, module, href, image, children }: Modul
           </span>
           <div className="min-w-0 flex-1">
             <div className="font-sans text-base font-semibold leading-snug text-[var(--cp-text-main)]">{title}</div>
-            {module && (
-              <div className="mt-0.5 font-mono text-[0.7rem] uppercase tracking-wider text-[var(--cp-text-muted)]">
-                {module}
-              </div>
-            )}
           </div>
           {otherTab && otherTab !== title && <TabHint label={otherTab} />}
         </div>

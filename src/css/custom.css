@@ -23,6 +23,7 @@
   --cp-card: #ffffff;
   --cp-code-bg: #0d1117;
   --cp-border: #e2e8f0;
+  --cp-border-strong: #cbd5e1;
   --cp-border-focus: #0066ff;
   --cp-text-main: #0f172a;
   --cp-text-secondary: #475569;
@@ -45,14 +46,23 @@
   --ifm-toc-border-color: var(--cp-border);
   --ifm-code-font-size: 92%;
   --docusaurus-highlighted-code-line-bg: rgba(59, 130, 246, 0.08);
+
+  /* Escala tipográfica: el título de página manda; las secciones no compiten con él */
+  --ifm-line-height-base: 1.7;
+  --ifm-h1-font-size: 2.4rem;
+  --ifm-h2-font-size: 1.6rem;
+  --ifm-h3-font-size: 1.2rem;
+  --ifm-h4-font-size: 1rem;
 }
 
-[data-theme='dark'] {
+/* `:root[...]` iguala la especificidad de Infima, que si no impone su fondo gris. */
+:root[data-theme='dark'] {
   --cp-bg: #0b0f19;
   --cp-surface: #111827;
   --cp-card: #1e293b;
   --cp-code-bg: #0f172a;
   --cp-border: #1e293b;
+  --cp-border-strong: #334155;
   --cp-border-focus: #38bdf8;
   --cp-text-main: #f8fafc;
   --cp-text-secondary: #94a3b8;
@@ -84,41 +94,330 @@ samp {
   font-family: var(--cp-font-mono);
 }
 
-/* Desplaza el menú de navegación como en docs.iota.org: la marca ocupa una
-   columna de ancho fijo en vez de ajustarse al ancho natural del logo,
-   así el resto de los items del navbar arrancan siempre en el mismo punto.
-   Solo en escritorio: en el panel del móvil encogía el logo y el botón de
-   modo claro/oscuro quedaba encima. */
+/* La marca ocupa el ancho del menú lateral, así las pestañas empiezan en la
+   misma línea que el contenido de la página (300 px del menú − 12 px de relleno
+   de la pestaña). Solo en escritorio: en el panel del móvil encogía el logo. */
 @media (min-width: 997px) {
   .navbar__brand {
-    width: 17%;
+    width: calc(var(--doc-sidebar-width, 300px) - 0.75rem);
+    margin-right: 0;
   }
 }
 
-/* Tablas: la documentación se apoya mucho en ellas */
+/* ── Lectura ──────────────────────────────────────────────────────────────── */
+
+/* Párrafos y listas a un ancho cómodo (unos 80 caracteres); tablas y capturas
+   usan todo el ancho de la columna. */
+.markdown > p,
+.markdown > ul,
+.markdown > ol {
+  max-width: 42rem;
+}
+
+/* Párrafo de entrada: el primero tras el título o tras la franja de datos */
+.markdown > header + p,
+.markdown > .page-meta + p {
+  font-size: 1.125rem;
+  line-height: 1.65;
+  color: var(--cp-text-secondary);
+}
+
+/* ── Títulos ────────────────────────────────────────────────────────────────
+   Separación por espacio, no por líneas. */
+.markdown header h1 {
+  font-size: 2.4rem;
+  letter-spacing: -0.02em;
+}
+
+.markdown > h2 {
+  margin-top: 3rem;
+  font-size: 1.6rem;
+  letter-spacing: -0.01em;
+}
+
+.markdown > h3 {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+
+.markdown > h4 {
+  font-size: 1rem;
+}
+
+/* ── Franja de datos bajo el título (src/components/PageMeta) ───────────────── */
+.page-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.75rem;
+  margin: 0 0 1.5rem;
+  padding: 0.7rem 0;
+  border-top: 1px solid var(--cp-border);
+  border-bottom: 1px solid var(--cp-border);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--cp-text-secondary);
+}
+
+.page-meta__item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.page-meta__icon {
+  color: var(--cp-text-muted);
+}
+
+.page-meta__label {
+  font-weight: 600;
+  color: var(--cp-text-main);
+}
+
+.page-meta code {
+  font-size: 0.8rem;
+}
+
+/* ── Tablas ─────────────────────────────────────────────────────────────────
+   Solo líneas horizontales; cabecera discreta alineada con las celdas; la
+   primera columna (el nombre de la fila) algo más marcada. */
 .markdown table {
   display: table;
   width: 100%;
-  font-size: 0.92rem;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  line-height: 1.55;
 }
 
+.markdown table thead,
 .markdown table thead tr {
-  background-color: var(--ifm-color-emphasis-100);
+  background: none;
+  border-bottom: 1px solid var(--cp-border-strong);
+}
+
+.markdown table tr,
+.markdown table tr:nth-child(2n) {
+  background: none;
+  border: 0;
+  border-bottom: 1px solid var(--cp-border);
+}
+
+.markdown table th,
+.markdown table td {
+  border: 0;
+  padding: 0.7rem 1rem 0.7rem 0;
+  text-align: left;
+  vertical-align: top;
+}
+
+.markdown table th:last-child,
+.markdown table td:last-child {
+  padding-right: 0;
 }
 
 .markdown table th {
+  font-size: 0.8rem;
   font-weight: 600;
+  color: var(--cp-text-secondary);
 }
 
-/* Encabezados con algo más de aire */
-.markdown h2 {
-  margin-top: 2.4rem;
-  padding-top: 0.6rem;
-  border-top: 1px solid var(--cp-border);
+.markdown table td {
+  color: var(--cp-text-secondary);
 }
 
-.markdown h3 {
-  margin-top: 1.8rem;
+.markdown table td:first-child {
+  font-weight: 500;
+  color: var(--cp-text-main);
+}
+
+.markdown table td strong {
+  color: var(--cp-text-main);
+}
+
+/* Pantallas estrechas: tablas de 3+ columnas como fichas, una por fila, con el
+   nombre de cada columna encima del valor (ver src/clientModules/tableLabels.ts). */
+@media (max-width: 600px) {
+  .markdown table.table-stack,
+  .markdown table.table-stack tbody,
+  .markdown table.table-stack tr,
+  .markdown table.table-stack td {
+    display: block;
+    width: 100%;
+  }
+
+  .markdown table.table-stack thead {
+    display: none;
+  }
+
+  .markdown table.table-stack tr {
+    padding: 0.6rem 0;
+  }
+
+  .markdown table.table-stack td {
+    padding: 0.2rem 0;
+  }
+
+  .markdown table.table-stack td[data-label]:not(:first-child)::before {
+    content: attr(data-label);
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--cp-text-muted);
+  }
+}
+
+/* ── Bloques por perfil («Por dónde empezar»): tarjetas con texto y enlaces ─── */
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.profile-grid > div {
+  padding: 1rem 1.1rem 0.25rem;
+  border: 1px solid var(--cp-border);
+  border-radius: 12px;
+  background: var(--cp-card);
+  font-size: 0.95rem;
+}
+
+.profile-grid > div > p:first-child {
+  margin-bottom: 0.35rem;
+  color: var(--cp-text-main);
+}
+
+.profile-grid > div p {
+  color: var(--cp-text-secondary);
+}
+
+.profile-grid ul {
+  padding-left: 1.1rem;
+}
+
+/* Tarjeta cuyos enlaces van todos a la misma pestaña: la etiqueta va una vez,
+   junto al título, y no en cada enlace. */
+.profile-grid .same-tab li .tab-hint {
+  display: none;
+}
+
+/* ── Diagramas (Mermaid): centrados, a su tamaño natural ─────────────────── */
+.docusaurus-mermaid-container {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+/* ── Avisos (:::note, :::tip, :::info, :::warning, :::danger) ───────────────
+   Misma superficie que las tarjetas; el tipo se ve en el acento izquierdo y en
+   el icono, dentro de un cuadrado tintado como el de las tarjetas. El texto, en
+   los colores del cuerpo y alineado con el título. */
+.theme-admonition.alert {
+  --ifm-alert-shadow: none;
+  --ifm-alert-foreground-color: var(--cp-text-main);
+  --ifm-alert-background-color: var(--cp-card);
+  --cp-alert-indent: 2.4rem;
+  padding: 0.9rem 1.15rem 0.95rem;
+  border: 1px solid var(--cp-border);
+  border-left: 3px solid var(--ifm-alert-border-color);
+  border-radius: 12px;
+}
+
+.theme-admonition [class*='admonitionHeading'] {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.15rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--cp-text-main);
+}
+
+.theme-admonition [class*='admonitionIcon'] {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  margin-right: 0.65rem;
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--ifm-alert-border-color) 13%, transparent);
+  color: var(--ifm-alert-border-color);
+}
+
+.theme-admonition [class*='admonitionIcon'] svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.theme-admonition [class*='admonitionContent'] {
+  padding-left: var(--cp-alert-indent);
+  font-size: 0.95rem;
+  color: var(--cp-text-secondary);
+}
+
+/* :::note usa el gris de Infima, casi invisible: un gris pizarra en su lugar */
+.theme-admonition.alert--secondary {
+  --ifm-alert-border-color: #64748b;
+}
+
+/* Enlaces de los avisos como los del resto del texto */
+/* (Infima iguala --ifm-link-color al texto dentro de .alert; por eso el primario) */
+.theme-admonition a {
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+}
+
+.theme-admonition a:hover {
+  text-decoration: underline;
+}
+
+.theme-admonition [class*='admonitionContent'] strong,
+.theme-admonition [class*='admonitionContent'] code {
+  color: var(--cp-text-main);
+}
+
+/* ── Ruta de navegación: la página actual como texto, no como etiqueta ──────── */
+.breadcrumbs__link {
+  font-size: 0.85rem;
+}
+
+.breadcrumbs__item--active .breadcrumbs__link {
+  padding-right: 0;
+  padding-left: 0;
+  background: none;
+  color: var(--cp-text-secondary);
+}
+
+/* ── Bloques de código ───────────────────────────────────────────────────────
+   ```prompt: ejemplos de instrucciones para agentes. Es lenguaje natural, así que
+   va con la letra del texto y ajusta las líneas. */
+.theme-code-block.language-prompt {
+  border: 1px solid var(--cp-border);
+  border-left: 3px solid var(--ifm-color-primary);
+  box-shadow: none;
+}
+
+.theme-code-block.language-prompt pre {
+  background: var(--cp-surface) !important;
+}
+
+.theme-code-block.language-prompt pre code {
+  font-family: var(--cp-font-sans);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  white-space: pre-wrap;
+  color: var(--cp-text-main);
+}
+
+/* ```text: esquemas y fórmulas cortas; en móvil ajustan en lugar de salirse */
+@media (max-width: 600px) {
+  .theme-code-block.language-text pre code {
+    white-space: pre-wrap;
+  }
 }
 
 /* Tarjetas de la portada */
@@ -162,14 +461,130 @@ samp {
   padding-left: 0;
 }
 
-/* ── Barra superior: pestañas Guía de uso · Desarrolladores · Administración ── */
+/* ── Barra superior ──────────────────────────────────────────────────────────
+   Separada por la misma línea que el menú lateral (no por sombra). Las pestañas
+   ocupan todo el alto, así el subrayado de la activa toca el borde inferior. */
+.navbar {
+  --ifm-navbar-padding-vertical: 0;
+  box-shadow: none;
+  border-bottom: 1px solid var(--cp-border);
+}
+
+/* Solo en escritorio: en móvil Docusaurus oculta las pestañas (van en el panel
+   lateral) y un `display` aquí las volvería a mostrar sobre el logo. */
+@media (min-width: 997px) {
+  .navbar__item.navbar__link {
+    display: flex;
+    align-items: center;
+    height: var(--ifm-navbar-height);
+  }
+}
+
 .navbar__item.navbar__link {
+  padding: 0 0.75rem;
+  font-size: 0.94rem;
   font-weight: 500;
+  color: var(--cp-text-secondary);
+}
+
+.navbar__item.navbar__link:hover {
+  color: var(--cp-text-main);
 }
 
 .navbar__item.navbar__link--active {
   font-weight: 600;
-  box-shadow: inset 0 -2px 0 currentColor;
+  color: var(--cp-text-main);
+  box-shadow: inset 0 -2px 0 var(--ifm-color-primary);
+}
+
+/* ── Menú lateral ────────────────────────────────────────────────────────────
+   Más ligero que el contenido: letra algo menor, menos aire y gris secundario. */
+.theme-doc-sidebar-menu {
+  font-size: 0.94rem;
+}
+
+.theme-doc-sidebar-menu .menu__link {
+  padding: 0.3rem 0.75rem;
+  border-radius: 8px;
+  color: var(--cp-text-secondary);
+}
+
+.theme-doc-sidebar-menu .menu__link:hover {
+  color: var(--cp-text-main);
+}
+
+.theme-doc-sidebar-menu .menu__link--active:not(.menu__link--sublist) {
+  font-weight: 500;
+  color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 9%, transparent);
+}
+
+.theme-doc-sidebar-menu .menu__link--sublist.menu__link--active {
+  color: var(--cp-text-main);
+}
+
+/* Los títulos de grupo no cambian de color aunque contengan la página activa */
+.theme-doc-sidebar-menu .sidebar-group > .menu__list-item-collapsible > .menu__link,
+.theme-doc-sidebar-menu .sidebar-group > .menu__list-item-collapsible > .menu__link--active {
+  color: var(--cp-text-main);
+  font-weight: 700;
+  background: none;
+}
+
+/* La página activa con margen por los dos lados, no pegada a la línea divisoria */
+.theme-doc-sidebar-container .menu {
+  padding-right: 0.75rem;
+}
+
+/* Flechas de los desplegables más pequeñas */
+.theme-doc-sidebar-menu .menu__caret::before,
+.theme-doc-sidebar-menu .menu__link--sublist-caret::after {
+  background-size: 1rem 1rem;
+  min-width: 1rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+.theme-doc-sidebar-menu .menu__caret {
+  padding: 0 0.5rem;
+}
+
+/* ── Móvil: pestañas siempre visibles en el panel (src/components/TabSwitcher) ── */
+.tab-switcher {
+  display: flex;
+  gap: 0.25rem;
+  margin: 0.5rem 1rem 0.25rem;
+  padding: 0.25rem;
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--cp-text-main) 6%, transparent);
+}
+
+.tab-switcher__item {
+  flex: 1;
+  padding: 0.4rem 0.25rem;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+  color: var(--cp-text-secondary);
+}
+
+.tab-switcher__item:hover {
+  text-decoration: none;
+  color: var(--cp-text-main);
+}
+
+.tab-switcher__item--active {
+  font-weight: 600;
+  color: var(--cp-text-main);
+  background: var(--cp-surface);
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.12);
+}
+
+/* Con las pestañas arriba, «Volver al menú principal» sobra */
+.navbar-sidebar__back {
+  display: none;
 }
 
 /* Etiqueta de los enlaces que llevan a otra pestaña (src/components/TabHint). */
@@ -187,4 +602,176 @@ samp {
   vertical-align: 0.15em;
   color: var(--cp-text-muted);
   background: var(--cp-bg);
+}
+
+/* ── Pie de página (src/theme/Footer/Layout) ─────────────────────────────────
+   Claro con línea superior, como la barra de arriba; en oscuro, el mismo azul
+   marino. La marca se alinea con el logo de la barra y los enlaces con el
+   contenido (a la altura del menú lateral). */
+.cp-footer {
+  padding: 2.5rem var(--ifm-navbar-padding-horizontal) 1.5rem;
+  border-top: 1px solid var(--cp-border);
+  background: var(--cp-surface);
+  color: var(--cp-text-secondary);
+}
+
+.cp-footer__inner {
+  display: grid;
+  grid-template-columns: var(--doc-sidebar-width, 300px) 1fr;
+  gap: 2rem 0;
+}
+
+.cp-footer__brand .footer__logo {
+  max-width: none;
+  margin-bottom: 0.6rem;
+}
+
+.cp-footer__tagline {
+  max-width: 15rem;
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--cp-text-muted);
+}
+
+.cp-footer__links .footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem 4rem;
+  margin: 0;
+}
+
+.cp-footer__links .footer__col {
+  flex: 0 0 auto;
+  width: auto;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cp-footer .footer__title {
+  margin-bottom: 0.6rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--cp-text-main);
+}
+
+.cp-footer .footer__item {
+  margin: 0;
+  line-height: 1.9;
+}
+
+.cp-footer .footer__link-item {
+  font-size: 0.875rem;
+  color: var(--cp-text-secondary);
+}
+
+.cp-footer .footer__link-item:hover {
+  text-decoration: none;
+  color: var(--ifm-color-primary);
+}
+
+.cp-footer__bottom {
+  margin-top: 2.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--cp-border);
+  font-size: 0.8rem;
+  color: var(--cp-text-muted);
+}
+
+/* Móvil: la marca encima y los enlaces en dos columnas */
+@media (max-width: 996px) {
+  .cp-footer__inner {
+    grid-template-columns: 1fr;
+  }
+
+  .cp-footer__links .footer__links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem 1rem;
+  }
+}
+
+/* ── Anterior / Siguiente y fecha de actualización ───────────────────────── */
+.pagination-nav__link {
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--cp-border);
+  border-radius: 12px;
+  background: var(--cp-card);
+  transition: border-color 0.2s ease;
+}
+
+.pagination-nav__link:hover {
+  border-color: var(--cp-cyan);
+}
+
+.pagination-nav__sublabel {
+  margin-bottom: 0.15rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--cp-text-muted);
+}
+
+.pagination-nav__label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--cp-text-main);
+}
+
+.pagination-nav__link--prev .pagination-nav__label::before {
+  content: '← ';
+}
+
+.pagination-nav__link--next .pagination-nav__label::after {
+  content: ' →';
+}
+
+.theme-last-updated,
+.theme-last-updated * {
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  color: var(--cp-text-muted);
+}
+
+/* ── Buscador (@easyops-cn/docusaurus-search-local) ──────────────────────────
+   Con la paleta del sitio en los dos modos: superficie de tarjeta, resultado
+   seleccionado en azul suave (no relleno) y coincidencias en el azul de enlace. */
+:root {
+  --search-local-modal-background: var(--cp-surface);
+  --search-local-modal-shadow: 0 12px 32px rgba(15, 23, 42, 0.16);
+  --search-local-hit-background: var(--cp-card);
+  --search-local-hit-shadow: none;
+  --search-local-hit-color: var(--cp-text-main);
+  --search-local-hit-active-color: var(--cp-text-main);
+  --search-local-highlight-color: var(--ifm-color-primary);
+  --search-local-muted-color: var(--cp-text-muted);
+  --search-local-input-active-border-color: var(--ifm-color-primary);
+}
+
+:root[data-theme='dark'] {
+  --search-local-modal-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+}
+
+.navbar__search-input {
+  border: 1px solid var(--cp-border);
+  background-color: var(--cp-bg);
+  font-size: 0.875rem;
+}
+
+[class*='searchBar'] [class*='dropdownMenu'] {
+  border: 1px solid var(--cp-border);
+  border-radius: 12px;
+}
+
+[class*='searchBar'] [class*='suggestion'] {
+  border: 1px solid var(--cp-border);
+  border-radius: 8px;
+}
+
+/* Resultado seleccionado: azul suave con borde, no relleno fuerte. Supera la
+   regla del plugin (.searchBar .dropdownMenu .suggestion.cursor) */
+html [class*='searchBar'] [class*='dropdownMenu'] [class*='suggestion'][class*='cursor'] {
+  border-color: color-mix(in srgb, var(--ifm-color-primary) 45%, transparent);
+  background-color: color-mix(in srgb, var(--ifm-color-primary) 10%, var(--cp-card));
 }

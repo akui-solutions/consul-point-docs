@@ -8,8 +8,6 @@ description: Modelos de datos de una aplicación integrada en ConsulPoint. Cómo
 
 # Datos propios
 
-## Descripción
-
 Una aplicación no tiene base de datos propia. Para conservar registros (pedidos revisados, incidencias, ajustes) utiliza **modelos**: colecciones de datos que ConsulPoint guarda por ella.
 
 ## Qué es un modelo

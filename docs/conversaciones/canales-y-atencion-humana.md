@@ -8,8 +8,6 @@ description: Cómo se atienden en ConsulPoint las conversaciones de WhatsApp, Te
 
 # Canales y atención humana
 
-## Descripción
-
 Cuando un agente está conectado a un canal (un número de WhatsApp, un bot de Telegram o una aplicación externa), las conversaciones con los contactos aparecen en Conversaciones. El agente responde solo, y una persona del equipo puede tomar el control en cualquier momento.
 
 Para conectar un canal, ver [Integraciones y canales](/modulos/integraciones).
@@ -37,9 +35,9 @@ Una conversación queda marcada como **Requiere atención** cuando el agente det
 
 ```mermaid
 flowchart LR
-    A["<b>REQUIERE ATENCIÓN</b><br/><i>el agente sigue respondiendo</i>"] -->|Atender| B["<b>ATENDIDA</b><br/><i>por una persona, agente apagado</i>"]
+    A["<b>Requiere atención</b><br/><i>el agente sigue respondiendo</i>"] -->|Atender| B["<b>Atendida</b><br/><i>por una persona, agente apagado</i>"]
     B -->|Liberar| A
-    B -->|Marcar como resuelta| C["<b>RESUELTA</b><br/><i>el agente vuelve a responder</i>"]
+    B -->|Marcar como resuelta| C["<b>Resuelta</b><br/><i>el agente vuelve a responder</i>"]
     C -.->|el contacto escribe de nuevo| A
 ```
 

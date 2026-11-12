@@ -19,17 +19,17 @@ ConsulPoint se organiza en varios elementos funcionales que trabajan de forma co
 ```mermaid
 flowchart TD
 
-    A["<b>CENTRO DE CONOCIMIENTO</b><br/><i>Documentos, carpetas y otros contenidos</i>"]
+    A["<b>Centro de Conocimiento</b><br/><i>Documentos, carpetas y otros contenidos</i>"]
 
-    B["<b>AGENTES</b><br/><i>Agentes y Especialistas</i>"]
+    B["<b>Agentes</b><br/><i>Agentes y Especialistas</i>"]
 
-    C["<b>CONECTORES E INTEGRACIONES</b><br/><i>APIs · MCP · Bases de datos · Servicios externos</i>"]
+    C["<b>Conectores e integraciones</b><br/><i>APIs · MCP · Bases de datos · Servicios externos</i>"]
 
-    D["<b>CANALES DE COMUNICACIÓN</b><br/>Conversaciones · WhatsApp · Telegram · Correo · Etc."]
+    D["<b>Canales de comunicación</b><br/>Conversaciones · WhatsApp · Telegram · Correo · Etc."]
 
-    U["<b>INTERLOCUTOR</b><br/><i>Personas · Aplicaciones · Sistemas externos</i>"]
+    U["<b>Interlocutor</b><br/><i>Personas · Aplicaciones · Sistemas externos</i>"]
 
-    E["<b>CONTROL</b><br/>Roles · Espacios de trabajo<br/>Auditoría · Consumo y facturación"]
+    E["<b>Control</b><br/>Roles · Espacios de trabajo<br/>Auditoría · Consumo y facturación"]
 
     A -->|aporta contexto a| B
 

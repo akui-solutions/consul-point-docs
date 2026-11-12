@@ -8,8 +8,6 @@ description: Cómo compartir carpetas del Centro de Conocimiento de ConsulPoint 
 
 # Compartir y permisos
 
-## Descripción
-
 Las carpetas se comparten con personas, con [espacios de trabajo](/modulos/espacios-de-trabajo) y con agentes. Se comparten carpetas, no archivos sueltos: para dar acceso a un archivo, se comparte la carpeta que lo contiene.
 
 ## Compartir una carpeta

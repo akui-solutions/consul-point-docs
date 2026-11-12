@@ -8,8 +8,6 @@ description: Recorrido mínimo para crear una aplicación integrada en ConsulPoi
 
 # Tu primera aplicación
 
-## Descripción
-
 Recorrido mínimo, de principio a fin: una aplicación que saluda en el idioma del usuario y se ve dentro de ConsulPoint. Sirve para comprobar el circuito completo antes de construir algo real.
 
 **Requisitos:** conocimientos básicos de desarrollo web y permiso sobre **Aplicaciones** en una organización de ConsulPoint.

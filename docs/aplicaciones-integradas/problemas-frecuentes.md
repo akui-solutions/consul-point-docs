@@ -8,8 +8,6 @@ description: Síntomas, causas y soluciones de los problemas más habituales al 
 
 # Problemas frecuentes
 
-## Descripción
-
 Problemas habituales, ordenados por el momento en que aparecen. Cada fila indica el síntoma, la causa más probable y la solución.
 
 ## Al abrir la aplicación

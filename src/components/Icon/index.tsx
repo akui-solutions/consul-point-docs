@@ -16,6 +16,11 @@ import {
   GearIcon,
   GraduationCapIcon,
   HashIcon,
+  InfoIcon,
+  LightbulbIcon,
+  LinkSimpleIcon,
+  LockSimpleIcon,
+  NoteIcon,
   LightningIcon,
   PlugIcon,
   QuestionIcon,
@@ -26,6 +31,8 @@ import {
   TranslateIcon,
   TrayIcon,
   TreeStructureIcon,
+  WarningIcon,
+  WarningOctagonIcon,
   UserCircleIcon,
   type Icon as PhosphorIcon,
 } from '@phosphor-icons/react';
@@ -123,6 +130,14 @@ const PHOSPHOR_ICONS = {
   // Interfaz de la documentación
   arrowRight: ArrowRightIcon,
   caretDown: CaretDownIcon,
+  route: LinkSimpleIcon,
+  lock: LockSimpleIcon,
+  // Avisos (:::note, :::tip, :::info, :::warning, :::danger)
+  note: NoteIcon,
+  tip: LightbulbIcon,
+  info: InfoIcon,
+  warning: WarningIcon,
+  danger: WarningOctagonIcon,
 } satisfies Record<string, PhosphorIcon>;
 
 const CUSTOM_ICONS = {

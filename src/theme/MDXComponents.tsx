@@ -1,6 +1,5 @@
 import React from 'react';
 import MDXComponents from '@theme-original/MDXComponents';
-import { Callout } from '@site/src/components/Callout';
 import { EndpointCard } from '@site/src/components/EndpointCard';
 import { MethodBadge } from '@site/src/components/MethodBadge';
 import { PageHeader } from '@site/src/components/PageHeader';
@@ -8,6 +7,7 @@ import { Logo, LogoIcon } from '@site/src/components/Logo';
 import { MenuIllustration } from '@site/src/components/MenuIllustration';
 import { ModuleCard, ModuleGrid } from '@site/src/components/ModuleCard';
 import { PageHero } from '@site/src/components/PageHero';
+import { PageMeta } from '@site/src/components/PageMeta';
 import { Screenshot } from '@site/src/components/Screenshot';
 import { TabHint, useOtherTab } from '@site/src/components/TabHint';
 
@@ -28,7 +28,6 @@ function LinkWithTabHint(props: React.ComponentProps<typeof OriginalLink>): Reac
 export default {
   ...MDXComponents,
   a: LinkWithTabHint,
-  Callout,
   EndpointCard,
   MethodBadge,
   PageHeader,
@@ -38,6 +37,7 @@ export default {
   ModuleCard,
   ModuleGrid,
   PageHero,
+  PageMeta,
   Screenshot,
   TabHint,
 };

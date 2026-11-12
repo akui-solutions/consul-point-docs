@@ -8,9 +8,7 @@ description: Qué es un microagente en ConsulPoint, sus seis tipos, dónde se us
 
 # Microagentes
 
-**Ruta:** `/studio/config/add-micro-agent`
-
-## Descripción
+<PageMeta route="/studio/config/add-micro-agent" />
 
 Un **microagente** hace una tarea concreta y devuelve el resultado con una estructura fija: por ejemplo, leer una factura y devolver el proveedor, la fecha y el importe. No conversa con nadie: lo ejecuta la plataforma cuando hace falta, por ejemplo al subir un documento a una carpeta o al llegar un correo.
 
@@ -73,11 +71,8 @@ Y en ambos casos:
 
 Ejemplo de instrucción de ejecución para un extractor de facturas:
 
-```text
-Lee la factura y devuelve el proveedor, su NIF, la fecha de
-emisión, el número de factura y el importe total con impuestos.
-Si un dato no aparece en el documento, devuélvelo vacío; no lo
-deduzcas.
+```prompt
+Lee la factura y devuelve el proveedor, su NIF, la fecha de emisión, el número de factura y el importe total con impuestos. Si un dato no aparece en el documento, devuélvelo vacío; no lo deduzcas.
 ```
 
 ## El detalle de un microagente

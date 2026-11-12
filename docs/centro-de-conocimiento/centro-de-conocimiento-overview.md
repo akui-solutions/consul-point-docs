@@ -9,10 +9,7 @@ description: Qué es el Centro de Conocimiento de ConsulPoint, cómo llegan los 
 
 # Centro de Conocimiento
 
-**Ruta:** `/knowledge-hub`
-**Permiso requerido:** el que corresponda sobre **Centro de Conocimiento**
-
-## Descripción
+<PageMeta route="/knowledge-hub">el que corresponda sobre **Centro de Conocimiento**</PageMeta>
 
 Repositorio de documentos de la organización, organizado en carpetas. Es la fuente de la que leen los agentes: un agente solo responde con el contenido de las carpetas que se comparten con él.
 
@@ -24,9 +21,9 @@ Esta sección no requiere conocimientos de programación.
 
 ```mermaid
 flowchart LR
-    A["<b>SUBIR</b><br/><i>el archivo a una carpeta</i>"] --> B["<b>COMPARTIR</b><br/><i>la carpeta con el agente</i>"]
-    B --> C["<b>PREPARAR</b><br/><i>automático, unos minutos</i>"]
-    C --> D["<b>RESPONDER</b><br/><i>el agente busca en su contenido</i>"]
+    A["<b>Subir</b><br/><i>el archivo a una carpeta</i>"] --> B["<b>Compartir</b><br/><i>la carpeta con el agente</i>"]
+    B --> C["<b>Preparar</b><br/><i>automático, unos minutos</i>"]
+    C --> D["<b>Responder</b><br/><i>el agente busca en su contenido</i>"]
 ```
 
 1. **Subir** el archivo a una carpeta.

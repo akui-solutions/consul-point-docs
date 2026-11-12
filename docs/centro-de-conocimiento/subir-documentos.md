@@ -8,8 +8,6 @@ description: Cómo subir archivos al Centro de Conocimiento de ConsulPoint, form
 
 # Subir documentos
 
-## Descripción
-
 Cómo cargar archivos en una carpeta, qué formatos se admiten y qué pasa después de subirlos.
 
 ## Subir archivos

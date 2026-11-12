@@ -8,8 +8,6 @@ description: Referencia técnica de las aplicaciones integradas de ConsulPoint. 
 
 # Referencia
 
-## Descripción
-
 Tablas de consulta para quien desarrolla. Cada tema se explica en su página; aquí están solo los datos exactos.
 
 ## Contexto (`window.MINI_APP_PARAMS`)

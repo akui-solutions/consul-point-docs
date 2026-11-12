@@ -8,9 +8,7 @@ description: Cómo buscar, filtrar y leer correos en la Bandeja Inteligente de C
 
 # Leer el correo
 
-**Ruta:** `/smart-inbox`
-
-## Descripción
+<PageMeta route="/smart-inbox" />
 
 La Bandeja Inteligente muestra el correo de la cuenta elegida tal como está en el proveedor (Gmail, Outlook o IMAP), con información añadida: qué regla capturó cada correo y si sus adjuntos o su análisis ya se guardaron.
 

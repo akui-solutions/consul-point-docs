@@ -8,8 +8,6 @@ description: Cómo compartir una conversación en ConsulPoint, abrir una segunda
 
 # Compartir y colaborar
 
-## Descripción
-
 Herramientas para trabajar con otras personas o con varias conversaciones a la vez.
 
 ## Compartir una conversación

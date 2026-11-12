@@ -8,8 +8,6 @@ description: Cómo una aplicación integrada llama a la API de ConsulPoint. Cabe
 
 # Llamar a la API
 
-## Descripción
-
 La aplicación consulta y guarda datos de la organización a través de la API de ConsulPoint. Cada petición se identifica con la sesión temporal que recibió en el contexto.
 
 ## Cabeceras obligatorias
