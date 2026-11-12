@@ -3,55 +3,111 @@ id: conceptos
 title: Conceptos fundamentales
 sidebar_label: Conceptos fundamentales
 sidebar_position: 2
-description: "Terminología esencial de ConsulPoint: agente, capacidades, modelo, token, espacio de trabajo e integración."
+description: "Los conceptos básicos de ConsulPoint y cómo se relacionan: organización, agentes, especialistas, microagentes, conocimiento, canales, modelos y créditos."
 ---
 
 # Conceptos fundamentales
 
-Esta terminología se usa de forma consistente en toda la plataforma y en esta documentación.
+<PageHero eyebrow="Introducción" highlights={['Agentes', 'Conocimiento', 'Canales', 'Créditos']}>
+  Los términos que se usan en toda la plataforma y en esta documentación, y cómo encajan entre sí.
+</PageHero>
+
+## Cómo encaja todo
+
+```mermaid
+flowchart LR
+    M["<b>MICROAGENTE</b><br/><i>extrae datos</i>"] -->|guarda en| K["<b>CONOCIMIENTO</b><br/><i>carpetas y documentos</i>"]
+    K -->|consulta| A["<b>AGENTE</b><br/><i>instrucciones · modelo<br/>capacidades</i>"]
+    A -->|consulta a| E["<b>ESPECIALISTA</b><br/><i>experto en un tema</i>"]
+    A -->|responde en| C["<b>CANAL</b><br/><i>Conversaciones<br/>WhatsApp · Telegram</i>"]
+    C <--> P(["<b>PERSONAS</b>"])
+    A -.->|consume| CR["<b>CRÉDITOS</b>"]
+```
+
+Todo ocurre dentro de una **organización**, y puede separarse en **espacios de trabajo**.
+
+Una organización guarda su **conocimiento** en carpetas. Un **agente** lo consulta para responder a las **personas** a través de un **canal**, y puede apoyarse en **especialistas**. Los **microagentes** trabajan sin conversar: leen documentos o correos y extraen sus datos. Todo el uso de IA consume **créditos**.
 
 ## Organización
 
-La entidad contratante. Todos los datos —documentos, agentes, usuarios, conversaciones— pertenecen a una organización y están aislados de las demás. Corresponde a tu empresa.
+<ModuleGrid>
+  <ModuleCard icon="organization" title="Organización">
+    La entidad que contrata ConsulPoint: la empresa o institución. Todos sus datos (documentos, agentes, usuarios, conversaciones) le pertenecen y están aislados de los de otras organizaciones.
+  </ModuleCard>
+  <ModuleCard icon="workspaces" title="Espacio de trabajo" href="/modulos/espacios-de-trabajo">
+    Una división interna de la organización, por equipo, departamento, proyecto o cliente, con sus propios miembros, agentes y contenido.
+  </ModuleCard>
+  <ModuleCard icon="user" title="Rol" href="/organizacion/usuarios-y-roles">
+    Define qué puede hacer cada persona en cada módulo: ver, crear, editar o eliminar.
+  </ModuleCard>
+</ModuleGrid>
 
-## Agente
+## Agentes
 
-Un asistente de IA configurado por la organización. Existen tres tipos, no intercambiables entre sí:
+<ModuleGrid>
+  <ModuleCard icon="agent" title="Agente" href="/control/estudio/agentes">
+    Asistente de IA que conversa con las personas, en la plataforma o en un canal conectado.
+  </ModuleCard>
+  <ModuleCard icon="specialist" title="Especialista" href="/control/estudio/especialistas">
+    Agente experto en un tema, al que un agente consulta durante una conversación. No habla con las personas.
+  </ModuleCard>
+  <ModuleCard icon="microagent" title="Microagente" href="/control/estudio/microagentes">
+    Agente que hace una tarea concreta, como leer una factura, y devuelve los datos con una estructura fija. No conversa.
+  </ModuleCard>
+  <ModuleCard icon="instructions" title="Instrucciones del sistema" href="/control/estudio/crear-un-agente#comportamiento-instrucciones-del-sistema">
+    El texto que define el papel de un agente, sus límites y cómo responde. Es lo que más influye en la calidad de sus respuestas.
+  </ModuleCard>
+  <ModuleCard icon="capability" title="Capacidad" href="/control/estudio/crear-un-agente#capacidades">
+    Función opcional que se activa en cada agente: consultar el Centro de Conocimiento, buscar en la web, adjuntar archivos, voz…
+  </ModuleCard>
+  <ModuleCard icon="model" title="Modelo">
+    El motor de IA con el que funciona cada agente: de Google, OpenAI o Anthropic, o un modelo propio de la organización si el plan lo incluye.
+  </ModuleCard>
+</ModuleGrid>
 
-| Tipo             | Función                             | Interactúa con personas | Devuelve                   |
-| ---------------- | ----------------------------------- | ----------------------- | -------------------------- |
-| **Agente**       | Asistente principal de conversación | Sí                      | Texto conversacional       |
-| **Especialista** | Ayudante invocado por un Agente     | No, indirectamente      | Texto al Agente            |
-| **Microagente**  | Tarea puntual automatizada          | No                      | Datos estructurados (JSON) |
-
-:::warning Restricción
-El tipo se define en la creación y **no puede modificarse después**.
+:::warning El tipo es para siempre
+Agente, especialista o microagente: el tipo se elige al crearlo y no se puede cambiar después.
 :::
 
-## Instrucciones del sistema
+## Conocimiento
 
-El texto que define el comportamiento permanente de un agente: su rol, sus límites y su forma de responder. Es el parámetro de mayor impacto en la calidad del resultado.
+<ModuleGrid>
+  <ModuleCard icon="knowledge" title="Centro de Conocimiento" href="/modulos/centro-de-conocimiento">
+    El repositorio de documentos de la organización, del que leen los agentes.
+  </ModuleCard>
+  <ModuleCard icon="folder" title="Carpeta" href="/centro-de-conocimiento/carpetas-y-archivos">
+    La unidad con la que se organiza y se comparte el conocimiento. Un agente lee las carpetas que se comparten con él.
+  </ModuleCard>
+  <ModuleCard icon="schema" title="Esquema de datos" href="/control/estudio/esquemas-de-datos">
+    La estructura que define qué datos se extraen de un documento y con qué forma.
+  </ModuleCard>
+</ModuleGrid>
 
-## Capacidades
+## Canales y aplicaciones
 
-Funcionalidades opcionales que se activan por agente: acceso al conocimiento, búsqueda web, generación de imágenes, procesamiento de audio y archivos.
+<ModuleGrid>
+  <ModuleCard icon="integration" title="Integración" href="/modulos/integraciones">
+    Conexión con un canal externo (WhatsApp, Telegram, una cuenta de correo) o con otro sistema.
+  </ModuleCard>
+  <ModuleCard icon="chat" title="Conversación" href="/modulos/conversaciones">
+    Un intercambio de mensajes con un agente, en la plataforma o en un canal.
+  </ModuleCard>
+  <ModuleCard icon="apps" title="Aplicación integrada" href="/aplicaciones-integradas/como-funcionan">
+    Aplicación con interfaz propia que se muestra dentro de ConsulPoint y trabaja con los datos de la organización.
+  </ModuleCard>
+</ModuleGrid>
 
-## Modelo
+## Consumo
 
-El motor de IA que ejecuta al agente. La plataforma soporta modelos de **OpenAI, Anthropic y Google**, seleccionables por agente.
+<ModuleGrid>
+  <ModuleCard icon="credits" title="Créditos" href="/control/auditoria-y-reportes">
+    El saldo con el que la organización paga el uso de IA. Cada respuesta, análisis o búsqueda web los consume. Las respuestas de los modelos propios de la organización no consumen créditos.
+  </ModuleCard>
+  <ModuleCard icon="token" title="Token">
+    La unidad en que los modelos miden el texto: lo que se les envía (entrada) y lo que generan (salida). Los tokens consumidos se descuentan en créditos.
+  </ModuleCard>
+</ModuleGrid>
 
-## Token
-
-Unidad de medida del consumo de IA. Se contabilizan tokens **de entrada** (lo que se envía al modelo) y **de salida** (lo que el modelo genera). Determinan la facturación.
-
-## Espacio de trabajo
-
-Agrupación interna que aísla usuarios, agentes y aplicaciones por equipo, departamento o proyecto dentro de una misma organización. Ver [Espacios de trabajo](/modulos/espacios-de-trabajo).
-
-## Integración
-
-Conexión configurada con un canal externo (WhatsApp, Telegram, correo) o con un sistema de terceros.
-
-## Aplicación integrada
-
-Aplicación con interfaz propia que se muestra dentro de ConsulPoint y trabaja con los datos de la organización. Se instala desde el catálogo o la crea la propia organización. Su funcionamiento se explica en [Aplicaciones integradas](/aplicaciones-integradas/como-funcionan).
+:::info Si se acaban los créditos
+Tras un breve periodo de gracia, los agentes dejan de responder y los análisis se detienen hasta que se recargan.
+:::

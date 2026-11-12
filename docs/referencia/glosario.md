@@ -20,7 +20,8 @@ description: Definición de los términos empleados en ConsulPoint y en esta doc
 | **Temperatura** | Parámetro de determinismo frente a variabilidad (0–1) |
 | **Modelo** | Motor de IA que ejecuta al agente |
 | **Embedding** | Representación vectorial que permite la búsqueda semántica |
-| **Token** | Unidad de medida y facturación del consumo de IA |
+| **Token** | Unidad en que los modelos miden el texto que reciben y generan. Se descuenta en créditos |
+| **Créditos** | Saldo con el que la organización paga el uso de IA |
 | **Ventana de contexto** | Volumen de conversación que el agente retiene |
 | **Fuentes del mensaje** | Información consultada para generar una respuesta |
 | **Preparar para agentes** | Proceso que convierte un archivo en fragmentos buscables para que los agentes lo lean. Ver [Conocimiento de los agentes](/centro-de-conocimiento/conocimiento-de-los-agentes) |

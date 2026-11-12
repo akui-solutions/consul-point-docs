@@ -49,8 +49,8 @@ El menú lateral se divide en dos bloques: en la parte superior, los módulos de
   <ModuleCard icon="knowledge" title="Centro de Conocimiento" module="Knowledge Hub" href="/modulos/centro-de-conocimiento">
     Gestión documental.
   </ModuleCard>
-  <ModuleCard icon="contacts" title="Contactos">
-    Personas y entidades con las que se relaciona la organización.
+  <ModuleCard icon="contacts" title="Contactos" module="Contacts">
+    Personas y entidades con las que se relaciona la organización, por ejemplo los contactos de WhatsApp o Telegram.
   </ModuleCard>
   <ModuleCard icon="studio" title="Estudio" module="Studio" href="/modulos/estudio">
     Creación y configuración de agentes.
@@ -84,8 +84,11 @@ La barra superior da acceso a los elementos que acompañan a cualquier módulo:
   <ModuleCard icon="notifications" title="Notificaciones">
     Avisos de la plataforma.
   </ModuleCard>
+  <ModuleCard icon="help" title="Ayuda y documentación">
+    Abre esta documentación en una pestaña nueva.
+  </ModuleCard>
   <ModuleCard icon="user" title="Menú de usuario">
-    Preferencias personales, como el modo oscuro y el idioma.
+    Configuración de la cuenta, preferencias (modo oscuro e idioma) y cerrar sesión.
   </ModuleCard>
 </ModuleGrid>
 

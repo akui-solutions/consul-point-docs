@@ -4,60 +4,50 @@ title: Documentación de ConsulPoint
 sidebar_label: Inicio
 sidebar_position: 1
 slug: /
-description: Guía de referencia completa de ConsulPoint, la plataforma empresarial de inteligencia artificial para crear, desplegar y gobernar agentes, conocimiento, automatizaciones y aplicaciones integradas.
+description: Documentación de ConsulPoint, la plataforma empresarial de inteligencia artificial para crear agentes, gestionar el conocimiento de la organización, atender canales y desplegar aplicaciones integradas.
 ---
 
-import Link from '@docusaurus/Link';
+# Documentación de ConsulPoint
 
-Bienvenido a la documentación de **ConsulPoint**, la plataforma empresarial de inteligencia artificial diseñada para conectar agentes, conocimiento, personas, aplicaciones y procesos dentro de una organización.
+**ConsulPoint** es una plataforma empresarial de inteligencia artificial que conecta agentes, conocimiento, personas y aplicaciones dentro de una organización.
 
-En esta documentación encontrarás una referencia completa de las capacidades y módulos de la plataforma: qué función cumple cada uno, cómo se configura, cómo interactúa con el resto del sistema y en qué escenarios puede utilizarse.
+Esta documentación explica cada módulo de la plataforma: para qué sirve, cómo se configura y cómo se relaciona con el resto. Las guías de uso no requieren conocimientos de programación; las páginas para desarrolladores lo indican.
 
-El objetivo es ofrecer una visión clara tanto funcional como técnica de ConsulPoint, desde la gestión del conocimiento y los agentes de IA hasta las integraciones, automatizaciones, permisos, auditoría y capacidades de gobierno empresarial.
+## Primeros pasos
 
-## Por dónde empezar
+Para poner en marcha un agente que responda con la información de la organización:
 
-<!-- markdownlint-disable MD033 -->
-<div className="row">
-  <div className="col col--6">
-    <div className="card margin-bottom--lg">
-      <div className="card__header"><h3>🚀 Primeros pasos</h3></div>
-      <div className="card__body">
-        <p>Si es tu primer contacto con la plataforma, empieza por la visión general y los conceptos fundamentales.</p>
-      </div>
-      <div className="card__footer">
-        <Link className="button button--primary button--block" to="/introduccion/vision-general">Visión general</Link>
-      </div>
-    </div>
-  </div>
-  <div className="col col--6">
-    <div className="card margin-bottom--lg">
-      <div className="card__header"><h3>🤖 Crear un agente</h3></div>
-      <div className="card__body">
-        <p>Ve directamente al módulo Estudio para aprender a crear y configurar tu primer agente de IA.</p>
-      </div>
-      <div className="card__footer">
-        <Link className="button button--secondary button--block" to="/modulos/estudio">Ir al Estudio</Link>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- markdownlint-enable MD033 -->
+<ModuleGrid>
+  <ModuleCard icon="knowledge" title="1. Preparar el conocimiento" href="/modulos/centro-de-conocimiento">
+    Subir los documentos que usará el agente a carpetas del Centro de Conocimiento.
+  </ModuleCard>
+  <ModuleCard icon="agent" title="2. Crear el agente" href="/control/estudio/crear-un-agente">
+    Definir en el Estudio sus instrucciones, su modelo y sus capacidades, y darle acceso a las carpetas.
+  </ModuleCard>
+  <ModuleCard icon="chat" title="3. Probarlo" href="/conversaciones/conversar-con-un-agente#probar-un-agente">
+    Conversar con él y revisar en las fuentes de cada respuesta que usa los documentos correctos.
+  </ModuleCard>
+  <ModuleCard icon="integration" title="4. Conectarlo a un canal" href="/modulos/integraciones">
+    Opcional: llevarlo a WhatsApp, Telegram u otras aplicaciones.
+  </ModuleCard>
+</ModuleGrid>
+
+:::tip La regla de oro
+El orden de configuración es siempre **conocimiento → agente → canal**. Un agente sin conocimiento responde de forma genérica; un canal sin agente asignado no responde.
+:::
+
+Para una visión de conjunto antes de empezar, ver [Visión general](/introduccion/vision-general) y [Conceptos fundamentales](/introduccion/conceptos).
 
 ## Organización de esta documentación
 
-| Sección                 | Contenido                                                                                                                                 |
-| ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| **Introducción**        | Visión general, conceptos fundamentales y navegación                                                                                      |
-| **Uso diario**          | Inicio y Artículos y novedades |
-| **Conversaciones**      | Chat con los agentes, colaboración y atención de WhatsApp, Telegram y otros canales |
+| Sección | Contenido |
+|---|---|
+| **Introducción** | Visión general, conceptos fundamentales y navegación |
+| **Uso diario** | Inicio y Artículos y novedades |
+| **Conversaciones** | Chat con los agentes, colaboración y atención de WhatsApp, Telegram y otros canales |
 | **Bandeja Inteligente** | Correo de las cuentas conectadas, reglas y análisis con IA |
 | **Centro de Conocimiento** | Carpetas y documentos que consultan los agentes |
-| **Estudio**             | Agentes, especialistas, microagentes y esquemas de datos |
+| **Estudio** | Agentes, especialistas, microagentes y esquemas de datos |
 | **Aplicaciones integradas** | Cómo funcionan, dónde aparecen, cómo se desarrollan, se publican y se administran |
-| **Administración**      | Configuración (webhooks, usuarios y roles, integraciones y canales), espacios de trabajo, catálogo de integraciones, y auditoría y reportes |
-| **Referencia**          | Campos, permisos y glosario                                                                                            |
-
-:::tip La regla de oro
-El orden de configuración recomendado es siempre **conocimiento → agente → canal**. Un agente sin conocimiento vinculado responde de forma genérica; un canal sin agente asignado no responde.
-:::
+| **Administración** | Configuración (webhooks, usuarios y roles, integraciones y canales), espacios de trabajo, catálogo de integraciones, y auditoría y reportes |
+| **Referencia** | Campos, permisos y glosario |
