@@ -470,10 +470,17 @@ samp {
   border-bottom: 1px solid var(--cp-border);
 }
 
+/* Solo en escritorio: en móvil Docusaurus oculta las pestañas (van en el panel
+   lateral) y un `display` aquí las volvería a mostrar sobre el logo. */
+@media (min-width: 997px) {
+  .navbar__item.navbar__link {
+    display: flex;
+    align-items: center;
+    height: var(--ifm-navbar-height);
+  }
+}
+
 .navbar__item.navbar__link {
-  display: flex;
-  align-items: center;
-  height: var(--ifm-navbar-height);
   padding: 0 0.75rem;
   font-size: 0.94rem;
   font-weight: 500;
@@ -725,4 +732,46 @@ samp {
   font-style: normal;
   font-weight: 400;
   color: var(--cp-text-muted);
+}
+
+/* ── Buscador (@easyops-cn/docusaurus-search-local) ──────────────────────────
+   Con la paleta del sitio en los dos modos: superficie de tarjeta, resultado
+   seleccionado en azul suave (no relleno) y coincidencias en el azul de enlace. */
+:root {
+  --search-local-modal-background: var(--cp-surface);
+  --search-local-modal-shadow: 0 12px 32px rgba(15, 23, 42, 0.16);
+  --search-local-hit-background: var(--cp-card);
+  --search-local-hit-shadow: none;
+  --search-local-hit-color: var(--cp-text-main);
+  --search-local-hit-active-color: var(--cp-text-main);
+  --search-local-highlight-color: var(--ifm-color-primary);
+  --search-local-muted-color: var(--cp-text-muted);
+  --search-local-input-active-border-color: var(--ifm-color-primary);
+}
+
+:root[data-theme='dark'] {
+  --search-local-modal-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+}
+
+.navbar__search-input {
+  border: 1px solid var(--cp-border);
+  background-color: var(--cp-bg);
+  font-size: 0.875rem;
+}
+
+[class*='searchBar'] [class*='dropdownMenu'] {
+  border: 1px solid var(--cp-border);
+  border-radius: 12px;
+}
+
+[class*='searchBar'] [class*='suggestion'] {
+  border: 1px solid var(--cp-border);
+  border-radius: 8px;
+}
+
+/* Resultado seleccionado: azul suave con borde, no relleno fuerte. Supera la
+   regla del plugin (.searchBar .dropdownMenu .suggestion.cursor) */
+html [class*='searchBar'] [class*='dropdownMenu'] [class*='suggestion'][class*='cursor'] {
+  border-color: color-mix(in srgb, var(--ifm-color-primary) 45%, transparent);
+  background-color: color-mix(in srgb, var(--ifm-color-primary) 10%, var(--cp-card));
 }

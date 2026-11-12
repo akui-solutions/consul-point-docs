@@ -52,7 +52,24 @@ const config: Config = {
       onBrokenMarkdownLinks: 'warn',
     },
   },
-  themes: ['@docusaurus/theme-mermaid'],
+  themes: [
+    '@docusaurus/theme-mermaid',
+    // Buscador local: el índice se genera al compilar y viaja con el sitio; no
+    // depende de ningún servicio externo. Solo funciona en la versión compilada
+    // (pnpm build && pnpm serve), no con pnpm start. Textos en i18n/es/code.json.
+    [
+      '@easyops-cn/docusaurus-search-local',
+      {
+        hashed: true,
+        language: ['es'],
+        indexBlog: false,
+        docsRouteBasePath: '/',
+        highlightSearchTermsOnTargetPage: true,
+        searchBarShortcutHint: true,
+        searchResultLimits: 8,
+      },
+    ],
+  ],
   clientModules: ['./src/clientModules/tableLabels.ts'],
   plugins: [
     tailwindPlugin,
@@ -125,6 +142,7 @@ const config: Config = {
           position: 'left',
           label: 'Administración',
         },
+        { type: 'search', position: 'right' },
       ],
     },
     footer: {
@@ -181,13 +199,6 @@ const config: Config = {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
-    // Búsqueda: solicitad Algolia DocSearch (gratis para docs públicas)
-    // en https://docsearch.algolia.com/apply/ y descomentad este bloque.
-    // algolia: {
-    //   appId: 'TU_APP_ID',
-    //   apiKey: 'TU_SEARCH_API_KEY',
-    //   indexName: 'consul-point',
-    // },
   } satisfies Preset.ThemeConfig,
 };
 

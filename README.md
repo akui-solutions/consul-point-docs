@@ -147,7 +147,10 @@ dejarán de funcionar en `akui-solutions.github.io/consul-point-docs`, porque `b
 
 ## Búsqueda
 
-El sitio está preparado para [Algolia DocSearch](https://docsearch.algolia.com/apply/), gratuito para documentación pública. Una vez aprobada la solicitud, descomenta el bloque `algolia` en `docusaurus.config.ts` con las credenciales recibidas.
+El buscador es local ([`@easyops-cn/docusaurus-search-local`](https://github.com/easyops-cn/docusaurus-search-local)): el índice se genera al compilar y viaja con el sitio, sin servicios externos. Se abre con **⌘K** / **Ctrl+K**.
+
+- Solo funciona con la versión compilada: `pnpm build && pnpm serve`. Con `pnpm start` no hay índice.
+- Los textos en español están en `i18n/es/code.json`.
 
 ---
 
