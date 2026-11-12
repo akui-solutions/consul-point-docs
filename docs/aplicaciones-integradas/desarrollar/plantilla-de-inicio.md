@@ -16,7 +16,7 @@ Sirve para ver cómo se integra una aplicación con ConsulPoint en código real,
 
 **Repositorio:** [github.com/akui-solutions/consul-point-app-starter](https://github.com/akui-solutions/consul-point-app-starter)
 
-<Screenshot src="/img/aplicaciones-integradas/plantilla-agenda.png" alt="Agenda de citas de la plantilla de inicio, con las citas próximas agrupadas por día" caption="La agenda de citas de la plantilla, en modo de demostración" />
+<Screenshot src="/img/aplicaciones-integradas/plantilla-agenda.png" maxWidth={680} alt="Agenda de citas de la plantilla de inicio, con las citas próximas agrupadas por día" caption="La agenda de citas de la plantilla, en modo de demostración" />
 
 **Requisitos:** Node.js 20 o superior y **yarn** o **pnpm**.
 
@@ -37,11 +37,11 @@ La terminal indica la dirección en la que se abre. Para probar las variantes ba
 
 Todas las capturas son del modo de demostración: las personas y las citas son inventadas.
 
-<Screenshot src="/img/aplicaciones-integradas/plantilla-form.png" alt="Formulario Nueva cita de la plantilla, con dos contactos sugeridos al escribir" caption="Al reservar, la aplicación sugiere contactos de la organización" />
+<Screenshot src="/img/aplicaciones-integradas/plantilla-form.png" maxWidth={680} alt="Formulario Nueva cita de la plantilla, con dos contactos sugeridos al escribir" caption="Al reservar, la aplicación sugiere contactos de la organización" />
 
-<Screenshot src="/img/aplicaciones-integradas/plantilla-menu.png" alt="Menú de acciones de una cita en la plantilla: insertar confirmación, ver contacto, agregar al calendario, editar, cancelar y eliminar" caption="Las acciones de cada cita, incluidas las que se piden a la plataforma" />
+<Screenshot src="/img/aplicaciones-integradas/plantilla-menu.png" maxWidth={680} alt="Menú de acciones de una cita en la plantilla: insertar confirmación, ver contacto, agregar al calendario, editar, cancelar y eliminar" caption="Las acciones de cada cita, incluidas las que se piden a la plataforma" />
 
-<Screenshot src="/img/aplicaciones-integradas/plantilla-panel.png" alt="Agenda de la plantilla en tema oscuro y con el ancho del panel lateral de una conversación" caption="La misma agenda en tema oscuro, con el ancho del panel lateral de una conversación" />
+<Screenshot src="/img/aplicaciones-integradas/plantilla-panel.png" maxWidth={320} alt="Agenda de la plantilla en tema oscuro y con el ancho del panel lateral de una conversación" caption="La misma agenda en tema oscuro, con el ancho del panel lateral de una conversación" />
 
 ## Qué enseña
 
