@@ -14,6 +14,10 @@ Recorrido mínimo, de principio a fin: una aplicación que saluda en el idioma d
 
 **Requisitos:** conocimientos básicos de desarrollo web y permiso sobre **Aplicaciones** en una organización de ConsulPoint.
 
+:::tip Empezar con una base hecha
+La [plantilla de inicio](/aplicaciones-integradas/desarrollar/plantilla-de-inicio) es un proyecto completo, con sesión, datos propios y pruebas ya resueltos. Este recorrido muestra el mínimo desde cero; la plantilla, un punto de partida para una aplicación real.
+:::
+
 ## Qué es, técnicamente
 
 Una aplicación integrada es un **sitio web estático**: un `index.html` con sus archivos de estilos, código e imágenes. Puede construirse con cualquier herramienta que produzca eso (React, Vue, Svelte o HTML sin más).
@@ -88,6 +92,7 @@ La aplicación saluda en el idioma configurado en ConsulPoint.
 
 | Para | Página |
 |---|---|
+| Partir de un proyecto completo | [Plantilla de inicio](/aplicaciones-integradas/desarrollar/plantilla-de-inicio) |
 | Consultar datos de la organización | [Llamar a la API](/aplicaciones-integradas/desarrollar/api-y-sesion) |
 | Guardar registros propios | [Datos propios](/aplicaciones-integradas/desarrollar/datos-propios) |
 | Trabajar con documentos | [Archivos y extracciones](/aplicaciones-integradas/desarrollar/archivos-y-extracciones) |
