@@ -69,7 +69,7 @@ El detalle tiene dos pestañas: **General** y **Usuarios**. En la cabecera, **Ed
 |---|---|
 | **Información General** | Fecha de creación, última actualización, propietario y descripción |
 | **Agentes** | Agentes disponibles en el espacio. **Añadir agente** asigna uno existente |
-| **Aplicaciones** | [Aplicaciones integradas](/modulos/apps) disponibles en el espacio. **Añadir aplicación** asigna una existente |
+| **Aplicaciones** | [Aplicaciones integradas](/aplicaciones-integradas) disponibles en el espacio. **Añadir aplicación** asigna una existente |
 
 Desde el menú de cada fila, **Desvincular** quita el agente o la aplicación del espacio. No los elimina de la organización.
 

@@ -52,23 +52,6 @@ Agrupación interna que aísla usuarios, agentes y aplicaciones por equipo, depa
 
 Conexión configurada con un canal externo (WhatsApp, Telegram, correo) o con un sistema de terceros.
 
-```mermaid
-graph TB
-    subgraph Browser["🌐 Navegador (ConsulPoint)"]
-        style Browser fill:#f8f9fa,stroke:#333,stroke-width:2px
+## Aplicación integrada
 
-        subgraph MainContent["Contenido Principal - ConsulPoint"]
-            style MainContent stroke:none,fill:none
-            ComunicacionMadre["📜 Comunicación ConsulPoint<br/><code>window.addEventListener('message')</code>"]
-        end
-
-        subgraph IFrame["🖼️ iframe (Ocupa 50% de la superficie)"]
-            style IFrame fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px,stroke-dasharray: 5 5
-            ComunicacionFrame["📜 Comunicación iframe<br/><code>window.parent.postMessage()</code>"]
-        end
-    end
-
-    %% Comunicación
-    ComunicacionMadre -- "1. postMessage(data, targetOrigin)" --> ComunicacionFrame
-    ComunicacionFrame -- "2. postMessage(data, targetOrigin)" --> ComunicacionMadre
-```
+Aplicación con interfaz propia que se muestra dentro de ConsulPoint y trabaja con los datos de la organización. Se instala desde el catálogo o la crea la propia organización. Su funcionamiento se explica en [Aplicaciones integradas](/aplicaciones-integradas/como-funcionan).

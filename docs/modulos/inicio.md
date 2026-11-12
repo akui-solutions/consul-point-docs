@@ -40,7 +40,7 @@ Muestra hasta 6 aplicaciones y 6 accesos rápidos. El botón de ampliar, en la e
 
 ### Mis aplicaciones
 
-Son las [aplicaciones integradas](/modulos/apps) instaladas en la organización. Al pulsar una se abre en una ventana sobre el Inicio, sin salir de la pantalla.
+Son las [aplicaciones integradas](/aplicaciones-integradas) instaladas en la organización. Al pulsar una se abre en una ventana sobre el Inicio, sin salir de la pantalla.
 
 ### Accesos rápidos
 
