@@ -49,9 +49,11 @@ El objetivo es ofrecer una visión clara tanto funcional como técnica de Consul
 | Sección                 | Contenido                                                                                                                                 |
 | ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | **Introducción**        | Visión general, conceptos fundamentales y navegación                                                                                      |
-| **Módulos**             | Inicio, Centro de Conocimiento, Conversaciones, Bandeja Inteligente, Artículos y novedades y Espacios de trabajo |
+| **Uso diario**          | Inicio, Conversaciones, Bandeja Inteligente y Artículos y novedades |
+| **Centro de Conocimiento** | Carpetas y documentos que consultan los agentes |
+| **Estudio**             | Agentes, especialistas, microagentes y esquemas de datos |
 | **Aplicaciones integradas** | Cómo funcionan, dónde aparecen, cómo se desarrollan, se publican y se administran |
-| **Control y Auditoría** | Estudio, Configuración (webhooks, usuarios y roles, integraciones y canales), catálogo de integraciones, y auditoría y reportes            |
+| **Administración**      | Configuración (webhooks, usuarios y roles, integraciones y canales), espacios de trabajo, catálogo de integraciones, y auditoría y reportes |
 | **Referencia**          | Campos, permisos y glosario                                                                                            |
 
 :::tip La regla de oro
