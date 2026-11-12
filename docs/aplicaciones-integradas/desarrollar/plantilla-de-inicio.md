@@ -16,6 +16,8 @@ Sirve para ver cómo se integra una aplicación con ConsulPoint en código real,
 
 **Repositorio:** [github.com/akui-solutions/consul-point-app-starter](https://github.com/akui-solutions/consul-point-app-starter)
 
+<Screenshot src="/img/aplicaciones-integradas/plantilla-agenda.png" alt="Agenda de citas de la plantilla de inicio, con las citas próximas agrupadas por día" caption="La agenda de citas de la plantilla, en modo de demostración" />
+
 **Requisitos:** Node.js 20 o superior y **yarn** o **pnpm**.
 
 ## Verla en local
@@ -30,6 +32,16 @@ yarn dev:mock
 ```
 
 La terminal indica la dirección en la que se abre. Para probar las variantes basta con agregar parámetros a esa dirección: `?theme=dark` o `?language=en`.
+
+## Cómo se ve
+
+Todas las capturas son del modo de demostración: las personas y las citas son inventadas.
+
+<Screenshot src="/img/aplicaciones-integradas/plantilla-form.png" alt="Formulario Nueva cita de la plantilla, con dos contactos sugeridos al escribir" caption="Al reservar, la aplicación sugiere contactos de la organización" />
+
+<Screenshot src="/img/aplicaciones-integradas/plantilla-menu.png" alt="Menú de acciones de una cita en la plantilla: insertar confirmación, ver contacto, agregar al calendario, editar, cancelar y eliminar" caption="Las acciones de cada cita, incluidas las que se piden a la plataforma" />
+
+<Screenshot src="/img/aplicaciones-integradas/plantilla-panel.png" alt="Agenda de la plantilla en tema oscuro y con el ancho del panel lateral de una conversación" caption="La misma agenda en tema oscuro, con el ancho del panel lateral de una conversación" />
 
 ## Qué enseña
 
@@ -49,6 +61,20 @@ Cada función de la agenda corresponde a una parte de la integración.
 El archivo `README.md` del repositorio indica en qué archivo está cada una. Está escrito en inglés, igual que los comentarios del código; la aplicación funciona en español y en inglés.
 
 ## Crear una aplicación a partir de la plantilla
+
+```mermaid
+flowchart LR
+
+    P["<b>CONSULPOINT</b><br/><i>Contexto · sesión · mensajes</i>"]
+    B["<b>BASE</b><br/><i>src/config · src/services</i>"]
+    F["<b>FUNCIÓN DE EJEMPLO</b><br/><i>src/features/appointments</i>"]
+    N["<b>FUNCIÓN PROPIA</b><br/><i>La que sustituye al ejemplo</i>"]
+
+    P --> B --> F
+    N -.->|reemplaza| F
+```
+
+La base se conserva tal cual; lo que cambia es la función.
 
 1. En la página del repositorio, pulsar **Use this template** y crear un repositorio nuevo. Recibe los archivos, no el historial, y puede ser privado.
 2. Cambiar el nombre `consul-point-app-starter` en `package.json`, el identificador por defecto en `src/config/index.ts` y el título en `index.html`.
