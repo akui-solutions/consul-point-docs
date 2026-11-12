@@ -30,6 +30,37 @@ const configuracionCategory = {
   items: ['control/webhooks', 'organizacion/usuarios-y-roles', 'modulos/integraciones'],
 };
 
+// Guía de aplicaciones integradas: qué son, cómo se desarrollan y cómo se administran.
+const aplicacionesIntegradasCategory = {
+  type: 'category' as const,
+  label: 'Aplicaciones integradas',
+  link: {
+    type: 'doc' as const,
+    id: 'aplicaciones-integradas/aplicaciones-integradas-overview',
+  },
+  items: [
+    'aplicaciones-integradas/como-funcionan',
+    'aplicaciones-integradas/donde-aparecen',
+    {
+      type: 'category' as const,
+      label: 'Desarrollar',
+      items: [
+        'aplicaciones-integradas/desarrollar/primera-aplicacion',
+        'aplicaciones-integradas/desarrollar/contexto',
+        'aplicaciones-integradas/desarrollar/api-y-sesion',
+        'aplicaciones-integradas/desarrollar/datos-propios',
+        'aplicaciones-integradas/desarrollar/archivos-y-extracciones',
+        'aplicaciones-integradas/desarrollar/comunicacion',
+        'aplicaciones-integradas/desarrollar/probar',
+      ],
+    },
+    'aplicaciones-integradas/publicar',
+    'aplicaciones-integradas/instalar-y-administrar',
+    'aplicaciones-integradas/referencia',
+    'aplicaciones-integradas/problemas-frecuentes',
+  ],
+};
+
 const sidebars: SidebarsConfig = {
   docsSidebar: [
     'intro',
@@ -52,7 +83,6 @@ const sidebars: SidebarsConfig = {
         'modulos/centro-de-conocimiento',
         'modulos/conversaciones',
         'modulos/bandeja-inteligente',
-        'modulos/apps',
         'modulos/articulos-y-novedades',
         {
           type: 'category',
@@ -66,6 +96,7 @@ const sidebars: SidebarsConfig = {
         },
       ],
     },
+    aplicacionesIntegradasCategory,
     {
       type: 'category',
       label: 'Control y Auditoría',

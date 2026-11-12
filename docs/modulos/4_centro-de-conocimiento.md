@@ -81,7 +81,7 @@ Configuración por carpeta que procesa automáticamente cada documento entrante 
 | ------------------------------- | ----------------------------------------- |
 | **Agente de procesamiento**     | Agente encargado de la extracción         |
 | **Estructura JSON**             | Formato de los datos a extraer            |
-| **Aplicación de visualización** | Mini App que presenta los datos extraídos |
+| **Aplicación de visualización** | [Aplicación integrada](/aplicaciones-integradas) de tipo visualizador que presenta los datos extraídos |
 
 El estado de cada documento es visible en la columna **Estado extracción inteligente**.
 

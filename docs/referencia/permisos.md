@@ -17,7 +17,7 @@ Operaciones disponibles por módulo según el rol del usuario.
 | Conversaciones | ✔ | ✔ | | ✔ | |
 | Bandeja Inteligente | ✔ | ✔ | ✔ | ✔ | |
 | Espacios de trabajo | ✔ | ✔ | ✔ | ✔ | |
-| Catálogo de aplicaciones | ✔ | ✔ | | ✔ | |
+| Catálogo de integraciones | ✔ | ✔ | | ✔ | |
 | Auditoría y Reportes | ✔ | | | | |
 | Usuarios | ✔ | ✔ | ✔ | ✔ | ✔ |
 | Roles | ✔ | ✔ | ✔ | ✔ | ✔ |
