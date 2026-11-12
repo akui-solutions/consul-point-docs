@@ -94,14 +94,13 @@ samp {
   font-family: var(--cp-font-mono);
 }
 
-/* Desplaza el menú de navegación como en docs.iota.org: la marca ocupa una
-   columna de ancho fijo en vez de ajustarse al ancho natural del logo,
-   así el resto de los items del navbar arrancan siempre en el mismo punto.
-   Solo en escritorio: en el panel del móvil encogía el logo y el botón de
-   modo claro/oscuro quedaba encima. */
+/* La marca ocupa el ancho del menú lateral, así las pestañas empiezan en la
+   misma línea que el contenido de la página (300 px del menú − 12 px de relleno
+   de la pestaña). Solo en escritorio: en el panel del móvil encogía el logo. */
 @media (min-width: 997px) {
   .navbar__brand {
-    width: 17%;
+    width: calc(var(--doc-sidebar-width, 300px) - 0.75rem);
+    margin-right: 0;
   }
 }
 
@@ -462,14 +461,123 @@ samp {
   padding-left: 0;
 }
 
-/* ── Barra superior: pestañas Guía de uso · Desarrolladores · Administración ── */
+/* ── Barra superior ──────────────────────────────────────────────────────────
+   Separada por la misma línea que el menú lateral (no por sombra). Las pestañas
+   ocupan todo el alto, así el subrayado de la activa toca el borde inferior. */
+.navbar {
+  --ifm-navbar-padding-vertical: 0;
+  box-shadow: none;
+  border-bottom: 1px solid var(--cp-border);
+}
+
 .navbar__item.navbar__link {
+  display: flex;
+  align-items: center;
+  height: var(--ifm-navbar-height);
+  padding: 0 0.75rem;
+  font-size: 0.94rem;
   font-weight: 500;
+  color: var(--cp-text-secondary);
+}
+
+.navbar__item.navbar__link:hover {
+  color: var(--cp-text-main);
 }
 
 .navbar__item.navbar__link--active {
   font-weight: 600;
-  box-shadow: inset 0 -2px 0 currentColor;
+  color: var(--cp-text-main);
+  box-shadow: inset 0 -2px 0 var(--ifm-color-primary);
+}
+
+/* ── Menú lateral ────────────────────────────────────────────────────────────
+   Más ligero que el contenido: letra algo menor, menos aire y gris secundario. */
+.theme-doc-sidebar-menu {
+  font-size: 0.94rem;
+}
+
+.theme-doc-sidebar-menu .menu__link {
+  padding: 0.3rem 0.75rem;
+  border-radius: 8px;
+  color: var(--cp-text-secondary);
+}
+
+.theme-doc-sidebar-menu .menu__link:hover {
+  color: var(--cp-text-main);
+}
+
+.theme-doc-sidebar-menu .menu__link--active:not(.menu__link--sublist) {
+  font-weight: 500;
+  color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 9%, transparent);
+}
+
+.theme-doc-sidebar-menu .menu__link--sublist.menu__link--active {
+  color: var(--cp-text-main);
+}
+
+/* Los títulos de grupo no cambian de color aunque contengan la página activa */
+.theme-doc-sidebar-menu .sidebar-group > .menu__list-item-collapsible > .menu__link,
+.theme-doc-sidebar-menu .sidebar-group > .menu__list-item-collapsible > .menu__link--active {
+  color: var(--cp-text-main);
+  font-weight: 700;
+  background: none;
+}
+
+/* La página activa con margen por los dos lados, no pegada a la línea divisoria */
+.theme-doc-sidebar-container .menu {
+  padding-right: 0.75rem;
+}
+
+/* Flechas de los desplegables más pequeñas */
+.theme-doc-sidebar-menu .menu__caret::before,
+.theme-doc-sidebar-menu .menu__link--sublist-caret::after {
+  background-size: 1rem 1rem;
+  min-width: 1rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+.theme-doc-sidebar-menu .menu__caret {
+  padding: 0 0.5rem;
+}
+
+/* ── Móvil: pestañas siempre visibles en el panel (src/components/TabSwitcher) ── */
+.tab-switcher {
+  display: flex;
+  gap: 0.25rem;
+  margin: 0.5rem 1rem 0.25rem;
+  padding: 0.25rem;
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--cp-text-main) 6%, transparent);
+}
+
+.tab-switcher__item {
+  flex: 1;
+  padding: 0.4rem 0.25rem;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+  color: var(--cp-text-secondary);
+}
+
+.tab-switcher__item:hover {
+  text-decoration: none;
+  color: var(--cp-text-main);
+}
+
+.tab-switcher__item--active {
+  font-weight: 600;
+  color: var(--cp-text-main);
+  background: var(--cp-surface);
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.12);
+}
+
+/* Con las pestañas arriba, «Volver al menú principal» sobra */
+.navbar-sidebar__back {
+  display: none;
 }
 
 /* Etiqueta de los enlaces que llevan a otra pestaña (src/components/TabHint). */

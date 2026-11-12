@@ -105,12 +105,11 @@ const config: Config = {
     navbar: {
       logo: {
         alt: 'ConsulPoint',
-        src: 'img/logo-wordmark-navy.png',
-        srcDark: 'img/logo-wordmark-light.png',
-        // 32px (2rem), el mismo tamaño de logo que usa docs.iota.org
-        // (también sobre Docusaurus). Sin `width` fijo: el ancho se escala
-        // en proporción (271x67 reales) para no deformar el logo.
-        height: 32,
+        // El mismo SVG que la plataforma (consul-point-fe, LogoConsulPoint), con
+        // sus colores de tema claro y oscuro. Ancho proporcional (742x131).
+        src: 'img/logo-wordmark.svg',
+        srcDark: 'img/logo-wordmark-dark.svg',
+        height: 24,
       },
       items: [
         { type: 'docSidebar', sidebarId: 'usoSidebar', position: 'left', label: 'Guía de uso' },

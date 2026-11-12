@@ -10,15 +10,19 @@ import useGlobalData from '@docusaurus/useGlobalData';
  */
 
 type GlobalDoc = { path: string; sidebar?: string };
-type DocsGlobalData = Record<string, { versions: { docs: GlobalDoc[] }[] }>;
-type NavbarItem = { type?: string; sidebarId?: string; label?: string };
+export type DocsGlobalData = Record<
+  string,
+  { versions: { docs: GlobalDoc[]; sidebars?: Record<string, { link?: { path: string } }> }[] }
+>;
+export type NavbarItem = { type?: string; sidebarId?: string; label?: string };
 
 function normalize(path: string): string {
   const clean = path.split(/[?#]/)[0].replace(/\/+$/, '');
   return clean === '' ? '/' : clean;
 }
 
-function sidebarOf(path: string, docsData: DocsGlobalData): string | undefined {
+/** Menú lateral (pestaña) al que pertenece una ruta del sitio. */
+export function sidebarOf(path: string, docsData: DocsGlobalData): string | undefined {
   const target = normalize(path);
   for (const plugin of Object.values(docsData)) {
     for (const version of plugin.versions) {
