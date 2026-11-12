@@ -79,7 +79,7 @@ La barra superior da acceso a los elementos que acompañan a cualquier módulo:
     Selector para cambiar de organización o espacio de trabajo.
   </ModuleCard>
   <ModuleCard icon="inbox" title="Bandeja Inteligente" module="Smart Inbox" href="/modulos/bandeja-inteligente">
-    Correo con procesamiento automático. Visible si el módulo está habilitado.
+    Correo de las cuentas conectadas, con reglas y análisis con IA. Visible para quien tiene permiso sobre ella.
   </ModuleCard>
   <ModuleCard icon="notifications" title="Notificaciones">
     Avisos de la plataforma.

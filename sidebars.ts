@@ -1,5 +1,22 @@
 import type { SidebarsConfig } from '@docusaurus/plugin-content-docs';
 
+// Bandeja Inteligente: correo, reglas y análisis con IA.
+const bandejaInteligenteCategory = {
+  type: 'category' as const,
+  label: 'Bandeja Inteligente',
+  link: {
+    type: 'doc' as const,
+    id: 'bandeja-inteligente/bandeja-inteligente-overview',
+  },
+  items: [
+    'bandeja-inteligente/conectar-una-cuenta',
+    'bandeja-inteligente/leer-el-correo',
+    'bandeja-inteligente/reglas-de-correo',
+    'bandeja-inteligente/analisis-con-ia',
+    'bandeja-inteligente/problemas-frecuentes',
+  ],
+};
+
 // Centro de Conocimiento: documentos que consultan los agentes.
 const centroDeConocimientoCategory = {
   type: 'category' as const,
@@ -94,10 +111,10 @@ const sidebars: SidebarsConfig = {
       items: [
         'modulos/inicio',
         'modulos/conversaciones',
-        'modulos/bandeja-inteligente',
         'modulos/articulos-y-novedades',
       ],
     },
+    bandejaInteligenteCategory,
     centroDeConocimientoCategory,
     estudioCategory,
     aplicacionesIntegradasCategory,
