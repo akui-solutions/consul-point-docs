@@ -69,7 +69,6 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           routeBasePath: '/',
-          editUrl: `https://github.com/${ORG}/${REPO}/tree/main/`,
           showLastUpdateTime: true,
         },
         blog: false,
@@ -102,11 +101,6 @@ const config: Config = {
           sidebarId: 'docsSidebar',
           position: 'left',
           label: 'Documentación',
-        },
-        {
-          href: `https://github.com/${ORG}/${REPO}`,
-          label: 'GitHub',
-          position: 'right',
         },
       ],
     },

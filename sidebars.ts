@@ -83,7 +83,6 @@ const sidebars: SidebarsConfig = {
         'referencia/campos',
         'referencia/permisos',
         'referencia/glosario',
-        'referencia/sistema-de-diseno',
       ],
     },
   ],
