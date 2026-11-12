@@ -9,6 +9,8 @@ type ScreenshotProps = {
   alt: string;
   caption?: string;
   className?: string;
+  /** Ancho máximo en px, para capturas pequeñas (un menú, un botón). Se centran. */
+  maxWidth?: number;
 };
 
 const isVideo = (path: string) => /\.(mp4|webm)$/i.test(path);
@@ -25,7 +27,7 @@ function Media({ src, alt, className }: { src: string; alt: string; className?: 
  * Captura de pantalla (o clip corto) enmarcada como una ventana de la aplicación,
  * con pie de foto opcional. Las imágenes se abren a tamaño completo al hacer clic.
  */
-export function Screenshot({ src, srcDark, alt, caption, className }: ScreenshotProps): React.JSX.Element {
+export function Screenshot({ src, srcDark, alt, caption, className, maxWidth }: ScreenshotProps): React.JSX.Element {
   const light = useBaseUrl(src);
   const dark = useBaseUrl(srcDark ?? src);
   const mediaClass = 'block w-full h-auto';
@@ -40,7 +42,10 @@ export function Screenshot({ src, srcDark, alt, caption, className }: Screenshot
     );
 
   return (
-    <figure className={`mx-0 my-6 ${className ?? ''}`}>
+    <figure
+      className={`mx-0 my-6 ${className ?? ''}`}
+      style={maxWidth ? { maxWidth, marginInline: 'auto' } : undefined}
+    >
       <div className="overflow-hidden rounded-xl border border-solid border-[var(--cp-border)] bg-[var(--cp-card)] shadow-[0_8px_30px_rgba(15,44,89,0.08)]">
         <div className="flex items-center gap-1.5 border-0 border-b border-solid border-[var(--cp-border)] px-3 py-2">
           <span className="h-2.5 w-2.5 rounded-full bg-[#ff5f57]" />

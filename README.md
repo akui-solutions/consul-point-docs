@@ -92,6 +92,10 @@ Acciones irreversibles o de riesgo.
 :::
 ```
 
+### Componentes propios
+
+Estos componentes se pueden usar en cualquier `.md`/`.mdx` de `docs/` sin importarlos, porque están registrados en `src/theme/MDXComponents.tsx`: `Screenshot`, `Callout`, `ModuleCard`, `ModuleGrid`, `EndpointCard`, `MethodBadge`, `PageHeader`, `PageHero`, `MenuIllustration`, `Logo` y `LogoIcon`. Sus propiedades están en el código de cada componente, en `src/components/`. Para una captura pequeña, como un menú, `Screenshot` acepta `maxWidth` (en px) para no estirarla a todo el ancho.
+
 ### Diagramas
 
 Se admite [Mermaid](https://mermaid.js.org/) directamente:

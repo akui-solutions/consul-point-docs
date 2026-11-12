@@ -14,14 +14,6 @@ const estudioCategory = {
   ],
 };
 
-// El complemento Portal incluye Espacios de Trabajo como parte de su documentación.
-const portalCategory = {
-  type: 'category' as const,
-  label: 'Portal',
-  link: { type: 'doc' as const, id: 'modulos/complementos/portal/portal-overview' },
-  items: ['modulos/complementos/portal/espacios-de-trabajo'],
-};
-
 // Configuración integra Webhooks, Usuarios y Roles, e Integraciones y Canales.
 const configuracionCategory = {
   type: 'category' as const,
@@ -84,16 +76,7 @@ const sidebars: SidebarsConfig = {
         'modulos/conversaciones',
         'modulos/bandeja-inteligente',
         'modulos/articulos-y-novedades',
-        {
-          type: 'category',
-          label: 'Complementos',
-          items: [
-            'modulos/complementos/comms',
-            portalCategory,
-            'modulos/complementos/automatizaciones',
-            'modulos/complementos/advanced-control',
-          ],
-        },
+        'modulos/espacios-de-trabajo',
       ],
     },
     aplicacionesIntegradasCategory,
@@ -114,7 +97,6 @@ const sidebars: SidebarsConfig = {
         'referencia/campos',
         'referencia/permisos',
         'referencia/glosario',
-        'referencia/sistema-de-diseno',
       ],
     },
   ],

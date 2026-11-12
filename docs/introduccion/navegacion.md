@@ -38,7 +38,7 @@ El menú lateral se divide en dos bloques: en la parte superior, los módulos de
 
 <ModuleGrid>
   <ModuleCard icon="dashboard" title="Inicio" module="Dashboard" href="/modulos/inicio">
-    Novedades destacadas, calendario, accesos a las aplicaciones y conversaciones recientes.
+    Artículos destacados, aplicaciones, accesos rápidos y conversaciones recientes.
   </ModuleCard>
   <ModuleCard icon="chat" title="Conversaciones" module="Chat" href="/modulos/conversaciones">
     Interacción con los agentes.
@@ -75,7 +75,7 @@ La sección **Fijados** reúne las aplicaciones ancladas a la barra lateral para
 La barra superior da acceso a los elementos que acompañan a cualquier módulo:
 
 <ModuleGrid>
-  <ModuleCard icon="workspaces" title="Espacios de trabajo" module="Workspaces" href="/modulos/complementos/portal/espacios-de-trabajo">
+  <ModuleCard icon="workspaces" title="Espacios de trabajo" module="Workspaces" href="/modulos/espacios-de-trabajo">
     Selector para cambiar de organización o espacio de trabajo.
   </ModuleCard>
   <ModuleCard icon="inbox" title="Bandeja Inteligente" module="Smart Inbox" href="/modulos/bandeja-inteligente">

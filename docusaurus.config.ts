@@ -58,7 +58,13 @@ const config: Config = {
     [
       '@docusaurus/plugin-client-redirects',
       {
-        redirects: [{ from: '/modulos/apps', to: '/aplicaciones-integradas' }],
+        redirects: [
+          { from: '/modulos/apps', to: '/aplicaciones-integradas' },
+          {
+            from: '/modulos/complementos/portal/espacios-de-trabajo',
+            to: '/modulos/espacios-de-trabajo',
+          },
+        ],
       },
     ],
   ],
@@ -77,7 +83,6 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           routeBasePath: '/',
-          editUrl: `https://github.com/${ORG}/${REPO}/tree/main/`,
           showLastUpdateTime: true,
         },
         blog: false,
@@ -91,8 +96,8 @@ const config: Config = {
   themeConfig: {
     image: 'img/logo.png',
     colorMode: {
-      defaultMode: 'dark',
-      respectPrefersColorScheme: true,
+      defaultMode: 'light',
+      respectPrefersColorScheme: false,
     },
     navbar: {
       logo: {
@@ -110,11 +115,6 @@ const config: Config = {
           sidebarId: 'docsSidebar',
           position: 'left',
           label: 'Documentación',
-        },
-        {
-          href: `https://github.com/${ORG}/${REPO}`,
-          label: 'GitHub',
-          position: 'right',
         },
       ],
     },

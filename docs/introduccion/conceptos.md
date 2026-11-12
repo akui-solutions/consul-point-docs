@@ -46,7 +46,7 @@ Unidad de medida del consumo de IA. Se contabilizan tokens **de entrada** (lo qu
 
 ## Espacio de trabajo
 
-Agrupación interna que aísla usuarios, agentes y aplicaciones por equipo, departamento o proyecto dentro de una misma organización.
+Agrupación interna que aísla usuarios, agentes y aplicaciones por equipo, departamento o proyecto dentro de una misma organización. Ver [Espacios de trabajo](/modulos/espacios-de-trabajo).
 
 ## Integración
 
