@@ -36,7 +36,7 @@ El agente puede responder sin consultar a ningún especialista, o consultar a va
 ### Qué puede hacer un especialista
 
 - Responder con sus **instrucciones del sistema** y sus **documentos**, propios o de carpetas del Centro de Conocimiento compartidas con él.
-- Solo puede tener la capacidad **Acceso al centro de conocimiento**: no busca en la web ni usa conectores.
+- Solo puede tener la función integrada **Acceso al centro de conocimiento**: no busca en la web ni usa conectores.
 - No puede consultar a otros especialistas. Solo hay un nivel: agente → especialista.
 
 ## Crear un especialista
@@ -48,7 +48,7 @@ En el Estudio, pestaña **Especialistas**, pulsar **Nuevo especialista**. El for
 | **Información técnica** | Dos campos obligatorios más (ver abajo) |
 | **Imagen** | No tiene |
 | **Personalización** (tono e iniciadores) | No tiene |
-| **Capacidades** | Solo **Acceso al centro de conocimiento** |
+| **Funciones integradas** | Solo **Acceso al centro de conocimiento** |
 | **Acceso** | **Solo yo** o **Mi organización** |
 
 | Campo | Descripción |
@@ -83,5 +83,5 @@ Asignar y desvincular requiere poder editar el agente. Un mismo especialista se 
 :::tip Especialistas útiles
 - Un especialista por tema bien delimitado, con sus propios documentos.
 - Pocas palabras en común entre las descripciones técnicas de los especialistas de un mismo agente, para que no compitan.
-- Probar en Conversaciones preguntas que **deben** llegar al especialista y otras que **no**.
+- Probar en Conversaciones preguntas que **deben** llegar al especialista y otras que **no**. Encima de la respuesta, [Qué hizo el agente](/conversaciones/conversar-con-un-agente#qué-hizo-el-agente) muestra **Consultó a "…"** cuando lo consultó.
 :::

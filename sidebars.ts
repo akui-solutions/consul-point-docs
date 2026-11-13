@@ -45,6 +45,7 @@ const sidebars: SidebarsConfig = {
     group('Módulos', [
       'modulos/inicio',
       'modulos/articulos-y-novedades',
+      'modulos/contactos',
       module('Conversaciones', 'conversaciones/conversaciones-overview', [
         'conversaciones/conversar-con-un-agente',
         'conversaciones/compartir-y-colaborar',
@@ -72,6 +73,8 @@ const sidebars: SidebarsConfig = {
         'control/estudio/agentes',
         'control/estudio/especialistas',
         'control/estudio/microagentes',
+        'control/estudio/habilidades',
+        'control/estudio/crear-una-habilidad',
         'control/estudio/esquemas-de-datos',
         'control/estudio/problemas-frecuentes',
       ]),
@@ -103,23 +106,44 @@ const sidebars: SidebarsConfig = {
       ]),
       'aplicaciones-integradas/referencia',
     ]),
+    group('API de agentes', ['api-agentes/consultar-un-agente']),
+    group('Canal de aplicación externa', ['canal-externo/api']),
   ],
 
+  // Mismos grupos que el menú de Configuración de la plataforma.
   administracionSidebar: [
-    group('Organización', [
-      'control/configuracion/configuracion-overview',
-      'organizacion/usuarios-y-roles',
+    'control/configuracion/configuracion-overview',
+    group('Acceso y organización', [
+      'organizacion/usuarios',
+      'organizacion/roles',
+      'organizacion/equipos',
+      'organizacion/datos-de-la-organizacion',
+      'organizacion/suscripcion',
       'modulos/espacios-de-trabajo',
     ]),
-    group('Canales e integraciones', [
-      'modulos/integraciones',
-      'control/webhooks',
-    ]),
-    group('Aplicaciones', [
+    group('IA e integraciones', [
+      'organizacion/proveedores-de-ia',
+      module('Integraciones y canales', 'modulos/integraciones', [
+        'organizacion/canales/whatsapp',
+        'organizacion/canales/telegram',
+        'organizacion/canales/aplicacion-externa',
+        'organizacion/canales/google-calendar',
+      ]),
+      'organizacion/conectores',
       'organizacion/catalogo-de-aplicaciones',
       'aplicaciones-integradas/instalar-y-administrar',
     ]),
-    group('Control', ['control/auditoria-y-reportes', 'referencia/permisos']),
+    group('Datos y personalización', [
+      'organizacion/tipos-de-contacto',
+      'organizacion/etiquetas',
+      'organizacion/barra-lateral',
+    ]),
+    group('Desarrolladores', ['organizacion/claves-de-api', 'control/webhooks']),
+    group('Control', [
+      'control/auditoria-y-reportes',
+      'organizacion/creditos-y-limites',
+      'referencia/permisos',
+    ]),
   ],
 };
 

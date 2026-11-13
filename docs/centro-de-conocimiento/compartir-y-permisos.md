@@ -30,7 +30,7 @@ Una carpeta se puede compartir con un máximo de 10 personas y 5 agentes. Para c
 | **Puede administrar** | Además, compartir, eliminar, gestionar aplicaciones y extraer datos |
 | **Solo lectura** | El nivel fijo de los agentes: consultan el contenido sin modificarlo |
 
-El nivel de acceso a la carpeta se suma al rol de la persona: para editar hace falta, además, un rol con permiso de edición sobre Centro de Conocimiento. Ver [Usuarios y roles](/organizacion/usuarios-y-roles).
+El nivel de acceso a la carpeta se suma al rol de la persona: para editar hace falta, además, un rol con permiso de edición sobre Centro de Conocimiento. Ver [Roles](/organizacion/roles).
 
 ## Herencia
 

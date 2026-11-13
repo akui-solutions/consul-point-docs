@@ -23,11 +23,11 @@ El agente queda fijado al enviar el primer mensaje: para hablar con otro agente 
 
 - **Enter** envía y **Mayúsculas + Enter** hace un salto de línea.
 - Un mensaje admite hasta 65.000 caracteres. Al acercarse al límite aparece un contador.
-- **Dictar** convierte la voz en texto, hasta 5 minutos por grabación. Solo aparece si el agente tiene la capacidad **Voz a texto**.
+- **Dictar** convierte la voz en texto, hasta 5 minutos por grabación. Solo aparece si el agente tiene la función integrada **Voz a texto**.
 
 ### Adjuntar archivos
 
-**Adjuntar archivos**, arrastrar o pegar. Solo aparece si el agente tiene la capacidad **Adjuntar archivos**.
+**Adjuntar archivos**, arrastrar o pegar. Solo aparece si el agente tiene la función integrada **Adjuntar archivos**.
 
 | | En una conversación interna |
 |---|---|
@@ -53,7 +53,25 @@ Las herramientas activas se muestran como chips sobre el cuadro de mensaje y se 
 
 Las respuestas pueden incluir texto con formato, tablas, diagramas (con **Descargar SVG** y **Ver en pantalla completa**), datos CSV (**Descargar CSV**), imágenes y figuras de los documentos del Centro de Conocimiento.
 
-Cuando el agente consulta a un [especialista](/control/estudio/especialistas), la respuesta muestra **Consultado con experto**, con la consulta y la respuesta del especialista.
+### Qué hizo el agente
+
+Encima de cada respuesta, una línea resume lo que hizo el agente para responder: **Realizó 3 acciones**, o la acción misma si fue solo una. Mientras responde, la línea muestra en directo lo que está haciendo (**Buscando en los documentos…**). Al pulsarla se ven los pasos y, en cada uno, la **Consulta** y el **Resultado**; en las búsquedas web, las **Páginas consultadas**.
+
+| Acción | Cuándo aparece |
+|---|---|
+| **Buscó en los documentos** | Consultó el Centro de Conocimiento |
+| **Buscó "…" en la web** / **Leyó una página web** | Usó la búsqueda web |
+| **Buscó en fuentes certificadas** | Usó las fuentes certificadas |
+| **Consultó los datos extraídos de los documentos** | Consultó datos de carpetas de [extracción inteligente](/centro-de-conocimiento/extraccion-inteligente) |
+| **Consultó las transcripciones de audio y video** | Consultó archivos multimedia |
+| **Buscó imágenes en los documentos** / **Compartió imágenes de los documentos** | Usó imágenes de los documentos |
+| **Consultó a "…"** | Consultó a un [especialista](/control/estudio/especialistas) |
+| **Usó la habilidad "…"**, **Leyó "…" de la habilidad "…"**, **Ejecutó "…" de la habilidad "…"** | Usó una [habilidad](/control/estudio/habilidades) |
+| **Revisó la disponibilidad de la agenda** / **Agendó "…"** | Usó Google Calendar |
+| **Derivó la conversación a una persona** | Pidió atención humana (ver [Canales y atención humana](/conversaciones/canales-y-atencion-humana)) |
+| **Usó una herramienta** | Usó un [conector](/organizacion/conectores) u otra herramienta |
+
+Si una acción falla, se marca con **Falló**. La línea la ven todas las personas de la conversación.
 
 Acciones de cada respuesta:
 
@@ -109,4 +127,4 @@ Antes de abrir un agente a más personas o conectarlo a un canal, conviene proba
 | Pregunta no cubierta | Dice que no tiene el dato, sin inventarlo |
 | Pregunta fuera de su función | Deriva según sus instrucciones |
 | Pregunta ambigua | Pide una aclaración |
-| Pregunta para un especialista | Muestra **Consultado con experto** |
+| Pregunta para un especialista | **Qué hizo el agente** muestra **Consultó a "…"** |

@@ -18,9 +18,14 @@ Sin ninguna cuenta conectada, la Bandeja Inteligente muestra **No hay cuentas de
 
 1. Ir a **Configuración → Conectores**.
 2. Pulsar **Agregar integración** → **Email**.
-3. Elegir **Gmail** u **Outlook**, y completar **Nombre de la integración** y **Descripción**.
-4. Pulsar **Continuar con Google** o **Continuar con Microsoft**. Se abre la página del proveedor para iniciar sesión y autorizar el acceso.
-5. Al volver a ConsulPoint, la cuenta queda conectada.
+3. Elegir **Gmail** u **Outlook**, y completar:
+   - **Nombre de la integración**, obligatorio;
+   - **Descripción**, opcional (si se rellena, al menos 10 caracteres);
+   - **Visibilidad**: **Privada** (por defecto) o **Global**. Ver [Visibilidad](#visibilidad).
+4. Pulsar **Continuar con Google** o **Continuar con Microsoft**. Se abre una ventana del proveedor para iniciar sesión y autorizar el acceso.
+5. Al terminar, la plataforma muestra que la cuenta está conectada.
+
+Si se cierra la ventana antes de terminar, la cuenta queda creada como **Sin conectar**: se completa después con **Conectar cuenta**, en su tarjeta de **Conectores**. Si la autorización deja de valer, la misma tarjeta ofrece **Reconectar cuenta**.
 
 La plataforma pide permiso para leer y gestionar el correo, porque al abrir un correo lo marca como leído en la cuenta.
 
@@ -32,11 +37,12 @@ La plataforma pide permiso para leer y gestionar el correo, porque al abrir un c
    | Campo | Descripción |
    |---|---|
    | **Nombre de la integración** | Para reconocer la cuenta, por ejemplo "IMAP Soporte" |
-   | **Descripción** | Opcional |
+   | **Descripción** | Opcional; si se rellena, al menos 10 caracteres |
+   | **Visibilidad** | **Privada** (por defecto) o **Global**. Ver [Visibilidad](#visibilidad) |
    | **Proveedor de correo** | Yahoo, iCloud, Zoho u **Otro (IMAP personalizado)** |
    | **Correo electrónico** | La dirección de la cuenta |
    | **Contraseña** | La de la cuenta o, con Yahoo e iCloud, una **contraseña de aplicación** |
-   | **Servidor IMAP**, **Puerto**, **Conexión segura** | Los datos del servidor de correo. El puerto habitual es 993, con conexión segura |
+   | **Servidor IMAP**, **Puerto**, **Conexión segura** | Con Yahoo, iCloud y Zoho se rellenan solos y no se pueden cambiar. Con **Otro**, se escriben los del servidor de correo; el puerto habitual es 993, con conexión segura |
 
 3. Pulsar **Probar conexión**. Hasta que se muestra **Conexión verificada** no se puede conectar.
 4. Pulsar **Conectar**.

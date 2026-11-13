@@ -37,7 +37,7 @@ Una organización guarda su **conocimiento** en carpetas. Un **agente** lo consu
   <ModuleCard icon="workspaces" title="Espacio de trabajo" href="/modulos/espacios-de-trabajo">
     Una división interna de la organización, por equipo, departamento, proyecto o cliente, con sus propios miembros, agentes y contenido.
   </ModuleCard>
-  <ModuleCard icon="user" title="Rol" href="/organizacion/usuarios-y-roles">
+  <ModuleCard icon="user" title="Rol" href="/organizacion/roles">
     Define qué puede hacer cada persona en cada módulo: ver, crear, editar o eliminar.
   </ModuleCard>
 </ModuleGrid>
@@ -57,7 +57,7 @@ Una organización guarda su **conocimiento** en carpetas. Un **agente** lo consu
   <ModuleCard icon="instructions" title="Instrucciones del sistema" href="/control/estudio/crear-un-agente#comportamiento-instrucciones-del-sistema">
     El texto que define el papel de un agente, sus límites y cómo responde. Es lo que más influye en la calidad de sus respuestas.
   </ModuleCard>
-  <ModuleCard icon="capability" title="Capacidad" href="/control/estudio/crear-un-agente#capacidades">
+  <ModuleCard icon="capability" title="Funciones integradas" href="/control/estudio/agentes#capacidades">
     Función opcional que se activa en cada agente: consultar el Centro de Conocimiento, buscar en la web, adjuntar archivos, voz…
   </ModuleCard>
   <ModuleCard icon="model" title="Modelo">
@@ -100,7 +100,7 @@ Agente, especialista o microagente: el tipo se elige al crearlo y no se puede ca
 ## Consumo
 
 <ModuleGrid>
-  <ModuleCard icon="credits" title="Créditos" href="/control/auditoria-y-reportes">
+  <ModuleCard icon="credits" title="Créditos" href="/organizacion/creditos-y-limites">
     El saldo con el que la organización paga el uso de IA. Cada respuesta, análisis o búsqueda web los consume. Las respuestas de los modelos propios de la organización no consumen créditos.
   </ModuleCard>
   <ModuleCard icon="token" title="Token">

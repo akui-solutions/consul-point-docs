@@ -58,6 +58,18 @@ En la vista de lista, la columna **Extracción inteligente** muestra el estado d
 | **No se pudo extraer** | Falló. Se puede reintentar desde la vista previa del archivo |
 | **Duplicado** | El archivo repite el contenido de otro de la carpeta ya extraído, así que no se volvió a extraer |
 
+Cuando una extracción falla, al pasar el ratón por **No se pudo extraer**, y en la fila **Motivo** de la vista previa, se ve la causa:
+
+| Causa | Qué hacer |
+|---|---|
+| El agente de extracción no tiene instrucciones | Añadírselas en su configuración y reintentar |
+| El agente de extracción no está bien configurado | Revisar su tipo y su modelo, y reintentar |
+| El plan no incluye el modelo de IA del agente | Elegir otro modelo o mejorar el plan |
+| El archivo es demasiado largo | Probar con uno más corto |
+| No se pudo identificar la causa | Reintentar y, si sigue fallando, contactar con soporte |
+
+Quien no tiene permiso para extraer ve la causa con la indicación de pedir ayuda a un administrador.
+
 ## Ver y gestionar los datos
 
 Al abrir un archivo, la sección **Extracción inteligente** muestra el estado, las fechas y el resultado, con **Ver los datos**. La vista previa tiene, además, la pestaña **Datos extraídos** y, si la carpeta tiene aplicación, **Vista de la app**.

@@ -30,7 +30,7 @@ Los espacios de trabajo no aparecen en el menú lateral. Se usan y se gestionan 
 | Añadir usuarios, agentes y aplicaciones a un espacio | Roles con permiso de creación sobre Espacios de trabajo |
 | Desvincular agentes y aplicaciones de un espacio | Solo el **Administrador** de ese espacio |
 
-Los permisos de cada rol se configuran en [Usuarios y roles](/organizacion/usuarios-y-roles).
+Los permisos de cada rol se configuran en [Roles](/organizacion/roles).
 
 ## Lista de espacios
 

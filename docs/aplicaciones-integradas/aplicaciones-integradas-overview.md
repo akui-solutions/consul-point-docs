@@ -17,10 +17,6 @@ En [Conversaciones](/modulos/conversaciones) la persona habla con un agente. En 
 
 Esta sección explica cómo funcionan, cómo se desarrollan y cómo llegan a los usuarios.
 
-:::info Otros nombres
-En la API y en el código, una aplicación integrada se llama **mini app**. Son lo mismo.
-:::
-
 ## Por dónde empezar
 
 <div className="profile-grid">

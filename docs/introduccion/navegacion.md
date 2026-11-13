@@ -49,7 +49,7 @@ El menú lateral se divide en dos bloques: en la parte superior, los módulos de
   <ModuleCard icon="knowledge" title="Centro de Conocimiento" href="/modulos/centro-de-conocimiento">
     Gestión documental.
   </ModuleCard>
-  <ModuleCard icon="contacts" title="Contactos">
+  <ModuleCard icon="contacts" title="Contactos" href="/modulos/contactos">
     Personas y entidades con las que se relaciona la organización, por ejemplo los contactos de WhatsApp o Telegram.
   </ModuleCard>
   <ModuleCard icon="studio" title="Estudio" href="/modulos/estudio">
