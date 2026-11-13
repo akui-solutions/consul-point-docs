@@ -22,7 +22,7 @@ Los términos que aparecen en la plataforma y en esta documentación, en orden a
 
 ## C
 
-- **Capacidad**: función opcional que se activa en cada agente, como **Buscar en la web**, **Adjuntar archivos** o **Texto a voz**. Ver [Capacidades](/control/estudio/crear-un-agente#capacidades).
+- **Capacidades**: pestaña del agente que reúne sus **funciones integradas** y sus **habilidades**. Ver [Agentes](/control/estudio/agentes#capacidades).
 - **Carpeta**: unidad con la que se organiza y se comparte el conocimiento. Puede ser **Estándar**, **Multimedia** o de **Extracción inteligente**. Ver [Carpetas y archivos](/centro-de-conocimiento/carpetas-y-archivos).
 - **Catálogo de integraciones**: lugar desde el que la organización instala aplicaciones y conectores ya hechos. Ver [Catálogo de integraciones](/organizacion/catalogo-de-aplicaciones).
 - **Centro de Conocimiento**: repositorio de documentos de la organización, del que leen los agentes. Ver [Centro de Conocimiento](/modulos/centro-de-conocimiento).
@@ -44,8 +44,14 @@ Los términos que aparecen en la plataforma y en esta documentación, en orden a
 
 ## F
 
-- **Fuentes certificadas**: capacidad que permite al agente usar fuentes de información verificadas. Se activa en cada conversación. Ver [Capacidades](/control/estudio/crear-un-agente#capacidades).
+- **Fuentes certificadas**: función integrada que permite al agente usar fuentes de información verificadas. Se activa en cada conversación. Ver [Funciones integradas](/control/estudio/crear-un-agente#funciones-integradas).
 - **Fuentes del mensaje**: la información que se consultó para generar una respuesta: documentos del Centro de Conocimiento o páginas web. Se ve con **Ver fuentes**. Ver [Fuentes del mensaje](/conversaciones/conversar-con-un-agente#fuentes-del-mensaje).
+
+- **Función integrada**: función de la plataforma que se activa en cada agente, como **Buscar en la web**, **Adjuntar archivos** o **Texto a voz**. Ver [Funciones integradas](/control/estudio/crear-un-agente#funciones-integradas).
+
+## H
+
+- **Habilidad**: procedimiento reutilizable, con instrucciones y, si hace falta, archivos y scripts, que se asigna a agentes y especialistas. El agente la usa cuando la necesita. Ver [Habilidades](/control/estudio/habilidades).
 
 ## I
 

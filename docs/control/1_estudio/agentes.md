@@ -22,14 +22,24 @@ Se abre desde la lista del Estudio con **Ver detalle**. En la cabecera, **Editar
 
 | Pestaña | Contenido |
 |---|---|
-| **General** | Información básica, comportamiento, personalización y capacidades |
+| **General** | Información básica, comportamiento y personalización |
+| **Capacidades** | Lo que el agente puede hacer: sus funciones integradas y sus habilidades. Ver más abajo |
 | **Documentos** | Los documentos propios del agente y su estado de preparación |
 | **Conectores** | Herramientas externas que el agente puede usar. Ver más abajo |
 | **Especialistas** | Los especialistas que puede consultar. Ver [Especialistas](/control/estudio/especialistas#asignar-especialistas-a-un-agente) |
 | **Acceso** | Quién puede usar el agente y con qué nivel |
 | **Consultas por API** | Historial de las consultas hechas al agente a través de la API, con filtros por estado y fechas |
 
-Los especialistas tienen menos pestañas: no tienen **Conectores**, **Especialistas** ni **Consultas por API**.
+Los especialistas tienen menos pestañas: **General**, **Capacidades**, **Documentos** y **Acceso**.
+
+### Capacidades
+
+Reúne en un solo lugar lo que el agente puede hacer:
+
+- **Funciones integradas**: las funciones de la plataforma activas en el agente, como **Buscar en la web** o **Adjuntar archivos**. Se cambian con **Gestionar funciones** (o **Activar funciones**, si no tiene ninguna), con permiso de editar **Estudio**. La lista completa está en [Crear un agente](/control/estudio/crear-un-agente#funciones-integradas).
+- **Habilidades**: los procedimientos que el agente aplica cuando los necesita. Se asignan con **Gestionar habilidades**. Ver [Habilidades](/control/estudio/habilidades#asignar-habilidades-a-un-agente).
+
+<Screenshot src="/img/estudio/capacidades-agente.png" alt="Pestaña Capacidades en el detalle de un agente" caption="Detalle de un agente → Capacidades" />
 
 ### Documentos
 

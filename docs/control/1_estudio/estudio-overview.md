@@ -46,6 +46,7 @@ El tipo se elige al crear el agente y no se puede cambiar después.
 | **Agentes** | Los agentes de la organización |
 | **Especialistas** | Los especialistas disponibles para asignar a agentes |
 | **Microagentes** | Los microagentes, con su tipo y su esquema |
+| **Habilidades** | Procedimientos reutilizables que se asignan a agentes y especialistas. Ver [Habilidades](/control/estudio/habilidades) |
 | **Biblioteca de esquemas** | Estructuras de datos reutilizables por microagentes, carpetas y aplicaciones. Solo aparece con permiso sobre la biblioteca |
 
 En cada pestaña, el botón de la esquina crea un elemento de ese tipo (**Nuevo agente**, **Nuevo especialista**, **Nuevo microagente** o **Nuevo esquema**). Las listas se filtran por nombre y por modelo; la de microagentes, también por tipo.
@@ -55,9 +56,9 @@ En cada pestaña, el botón de la esquina crea un elemento de ese tipo (**Nuevo 
 Para poner en marcha un agente que responda con los documentos de la organización:
 
 1. **Preparar el conocimiento.** Subir los documentos a carpetas del [Centro de Conocimiento](/modulos/centro-de-conocimiento).
-2. **Crear el agente** en el Estudio, con sus instrucciones, su modelo y la capacidad **Acceso al centro de conocimiento**. Ver [Crear un agente](/control/estudio/crear-un-agente).
+2. **Crear el agente** en el Estudio, con sus instrucciones, su modelo y la función integrada **Acceso al centro de conocimiento**. Ver [Crear un agente](/control/estudio/crear-un-agente).
 3. **Darle acceso a las carpetas.** Compartirlas con el agente. Ver [Conocimiento de los agentes](/centro-de-conocimiento/conocimiento-de-los-agentes).
-4. **Asignarle especialistas**, si hay temas que conviene separar. Ver [Especialistas](/control/estudio/especialistas).
+4. **Asignarle especialistas**, si hay temas que conviene separar, y **habilidades**, si debe seguir procedimientos concretos. Ver [Especialistas](/control/estudio/especialistas) y [Habilidades](/control/estudio/habilidades).
 5. **Decidir quién lo usa**: solo quien lo crea, toda la organización o personas y roles concretos.
 6. **Probarlo** en [Conversaciones](/modulos/conversaciones) y revisar las fuentes de cada respuesta.
 7. **Conectarlo a un canal**, si va a atender fuera de la plataforma. Ver [Integraciones y canales](/modulos/integraciones).
@@ -84,5 +85,6 @@ El número de agentes que se pueden crear depende del plan contratado. Sin un pl
 | Gestionar un agente ya creado: documentos, acceso, eliminarlo | [Agentes](/control/estudio/agentes) |
 | Que un agente derive ciertos temas a otro más experto | [Especialistas](/control/estudio/especialistas) |
 | Extraer datos de documentos o correos | [Microagentes](/control/estudio/microagentes) |
+| Dar a varios agentes un mismo procedimiento | [Habilidades](/control/estudio/habilidades) |
 | Definir la estructura de los datos que se extraen | [Biblioteca de esquemas](/control/estudio/esquemas-de-datos) |
 | Resolver un problema | [Problemas frecuentes](/control/estudio/problemas-frecuentes) |

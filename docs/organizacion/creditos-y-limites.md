@@ -46,7 +46,7 @@ Los créditos vuelven con el bono del siguiente ciclo o con un bono adicional as
 
 ## Límites del plan
 
-Cada plan fija un máximo para recursos como usuarios, roles, agentes, conversaciones, carpetas, almacenamiento, espacios de trabajo, integraciones, conectores, webhooks, claves de API, etiquetas, contactos o esquemas de datos. Un recurso sin máximo aparece como **Ilimitado**.
+Cada plan fija un máximo para recursos como usuarios, roles, agentes, conversaciones, carpetas, almacenamiento, espacios de trabajo, integraciones, conectores, webhooks, claves de API, etiquetas, contactos, esquemas de datos o habilidades. Un recurso sin máximo aparece como **Ilimitado**.
 
 Al llegar a un máximo solo se bloquea crear más; lo que ya existe se conserva. La plataforma muestra **Llegaste al tope de tu plan**, con la opción **Mejorar plan**, que lleva a [Planes](/organizacion/suscripcion#planes). Antes de llegar, los administradores reciben el aviso **Límite casi alcanzado**.
 

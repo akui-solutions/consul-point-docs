@@ -19,8 +19,9 @@ Repositorio de aplicaciones, conectores y agentes preconfigurados que la organiz
 | Pestaña | Contenido |
 |---|---|
 | **Aplicaciones** | [Aplicaciones integradas](/aplicaciones-integradas) instalables, con búsqueda y filtro por categoría |
-| **Conectores** | Conectores disponibles para integrar servicios externos |
-| **Instaladas** | Aplicaciones y conectores ya incorporados |
+| **Conectores** | [Conectores](/organizacion/conectores) disponibles para integrar servicios externos |
+| **Habilidades** | [Habilidades](/control/estudio/habilidades) ya hechas para instalar en la biblioteca del Estudio |
+| **Instaladas** | Aplicaciones, conectores y habilidades ya incorporados |
 
 ### Tipos de aplicación
 

@@ -23,6 +23,7 @@ En la pantalla de permisos de un rol, cada módulo tiene cuatro permisos: **Ver*
 | **Bandeja Inteligente** | [Bandeja Inteligente](/modulos/bandeja-inteligente) y sus [Reglas de correo](/bandeja-inteligente/reglas-de-correo) |
 | **Estudio** | [Estudio](/modulos/estudio): agentes, especialistas y microagentes |
 | **Biblioteca de esquemas** | [Biblioteca de esquemas](/control/estudio/esquemas-de-datos) del Estudio |
+| **Habilidades** | [Habilidades](/control/estudio/habilidades) del Estudio y su pestaña en el Catálogo de integraciones |
 | **Contactos** | Contactos y **Configuración → Tipos de contacto** |
 | **Etiquetas** | **Configuración → Etiquetas** |
 | **Espacios de trabajo** | [Espacios de trabajo](/modulos/espacios-de-trabajo) |

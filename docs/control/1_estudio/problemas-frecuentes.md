@@ -12,7 +12,7 @@ description: Soluciones a los problemas más habituales al crear y usar agentes,
 
 | Causa | Solución |
 |---|---|
-| No tiene la capacidad **Acceso al centro de conocimiento** | **Editar** el agente y añadirla en **Capacidades** |
+| No tiene la función integrada **Acceso al centro de conocimiento** | En el detalle del agente, pestaña **Capacidades**, **Gestionar funciones** y activarla |
 | Las carpetas no están compartidas con el agente | Compartirlas desde el Centro de Conocimiento. Ver [Conocimiento de los agentes](/centro-de-conocimiento/conocimiento-de-los-agentes) |
 | Los documentos aún se están preparando, o falló la preparación | Revisar **Disponible para agentes** en cada archivo, o el estado en la pestaña **Documentos** del agente |
 | Quien conversa no tiene acceso a esas carpetas | El agente solo busca en carpetas a las que también tiene acceso la persona que pregunta |

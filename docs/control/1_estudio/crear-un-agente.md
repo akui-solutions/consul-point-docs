@@ -20,7 +20,7 @@ El formulario para crear un agente o un especialista, campo por campo. Los micro
 ## Los pasos
 
 1. En el Estudio, pestaña **Agentes**, pulsar **Nuevo agente** (o **Nuevo especialista** en su pestaña).
-2. **Configuración**: tipo, información básica, comportamiento, modelo, personalización y capacidades.
+2. **Configuración**: tipo, información básica, comportamiento, modelo, personalización y funciones integradas.
 3. **Documentos y acceso**: documentos propios del agente y quién puede usarlo.
 4. Pulsar **Crear**.
 
@@ -103,11 +103,11 @@ Solo para agentes.
 - **Tono de comunicación**: hasta 3 entre **Formal**, **Informal**, **Amigable**, **Técnico** y **Profesional**. No se pueden combinar Formal con Informal, ni Amigable con Técnico.
 - **Iniciadores de conversación**: hasta 5 frases sugeridas al empezar una conversación, de 3 a 150 caracteres cada una.
 
-### Capacidades
+### Funciones integradas
 
-Funciones adicionales que el agente puede usar. Se añaden con **Agregar capacidad**.
+Funciones de la plataforma que el agente puede usar en sus respuestas. Se añaden con **Agregar función**. Esta sección solo aparece al crear el agente: después, las funciones se cambian en la pestaña [Capacidades](/control/estudio/agentes#capacidades) del agente.
 
-| Capacidad | Qué permite |
+| Función | Qué permite |
 |---|---|
 | **Acceso al centro de conocimiento** | Consultar los documentos del Centro de Conocimiento. Sin ella, el agente no aparece para compartir carpetas con él |
 | **Buscar en la web** | Buscar información actualizada en internet. En Conversaciones aparece el botón **Búsqueda web**, y la búsqueda solo se usa cuando está activado |
@@ -116,7 +116,7 @@ Funciones adicionales que el agente puede usar. Se añaden con **Agregar capacid
 | **Adjuntar archivos** | Subir y procesar archivos |
 | **Fuentes certificadas** | Usar fuentes de información verificadas, promovidas por Cala AI. Se activan en cada conversación con el botón **Fuentes certificadas** |
 
-Los especialistas solo pueden tener **Acceso al centro de conocimiento**. Los microagentes no tienen capacidades.
+Los especialistas solo pueden tener **Acceso al centro de conocimiento**. Los microagentes no tienen funciones integradas.
 
 :::warning La causa más frecuente de respuestas genéricas
 Un agente sin **Acceso al centro de conocimiento** no consulta documentos, aunque haya carpetas preparadas para él.

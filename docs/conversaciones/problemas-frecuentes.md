@@ -15,7 +15,7 @@ description: Soluciones a los problemas más habituales en Conversaciones de Con
 | Responde de forma genérica, sin usar los documentos | Revisar **Ver fuentes**. Si no hay fuentes, ver [Problemas frecuentes del Estudio](/control/estudio/problemas-frecuentes#el-agente-responde-de-forma-genérica-sin-usar-los-documentos) |
 | No aparece un agente al iniciar la conversación | No se tiene acceso a él. Lo da un administrador, en la pestaña **Acceso** del agente |
 | No se puede cambiar de agente | El agente queda fijado con el primer mensaje. Abrir una conversación nueva |
-| No aparece **Búsqueda web**, **Adjuntar archivos** o **Dictar** | El agente no tiene esa capacidad. Se añade en el Estudio |
+| No aparece **Búsqueda web**, **Adjuntar archivos** o **Dictar** | El agente no tiene esa función integrada. Se activa en el Estudio, en la pestaña **Capacidades** del agente |
 | **La respuesta se interrumpió** | Volver a enviar el mensaje |
 | **La ventana de contexto está casi llena** | Abrir una conversación nueva |
 | Los agentes dejan de responder | Se acabaron los créditos de la organización. Revisar el consumo |

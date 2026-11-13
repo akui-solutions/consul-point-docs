@@ -57,7 +57,7 @@ Una organización guarda su **conocimiento** en carpetas. Un **agente** lo consu
   <ModuleCard icon="instructions" title="Instrucciones del sistema" href="/control/estudio/crear-un-agente#comportamiento-instrucciones-del-sistema">
     El texto que define el papel de un agente, sus límites y cómo responde. Es lo que más influye en la calidad de sus respuestas.
   </ModuleCard>
-  <ModuleCard icon="capability" title="Capacidad" href="/control/estudio/crear-un-agente#capacidades">
+  <ModuleCard icon="capability" title="Funciones integradas" href="/control/estudio/agentes#capacidades">
     Función opcional que se activa en cada agente: consultar el Centro de Conocimiento, buscar en la web, adjuntar archivos, voz…
   </ModuleCard>
   <ModuleCard icon="model" title="Modelo">

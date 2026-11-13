@@ -72,6 +72,8 @@ const sidebars: SidebarsConfig = {
         'control/estudio/agentes',
         'control/estudio/especialistas',
         'control/estudio/microagentes',
+        'control/estudio/habilidades',
+        'control/estudio/crear-una-habilidad',
         'control/estudio/esquemas-de-datos',
         'control/estudio/problemas-frecuentes',
       ]),

@@ -23,11 +23,11 @@ El agente queda fijado al enviar el primer mensaje: para hablar con otro agente 
 
 - **Enter** envía y **Mayúsculas + Enter** hace un salto de línea.
 - Un mensaje admite hasta 65.000 caracteres. Al acercarse al límite aparece un contador.
-- **Dictar** convierte la voz en texto, hasta 5 minutos por grabación. Solo aparece si el agente tiene la capacidad **Voz a texto**.
+- **Dictar** convierte la voz en texto, hasta 5 minutos por grabación. Solo aparece si el agente tiene la función integrada **Voz a texto**.
 
 ### Adjuntar archivos
 
-**Adjuntar archivos**, arrastrar o pegar. Solo aparece si el agente tiene la capacidad **Adjuntar archivos**.
+**Adjuntar archivos**, arrastrar o pegar. Solo aparece si el agente tiene la función integrada **Adjuntar archivos**.
 
 | | En una conversación interna |
 |---|---|
