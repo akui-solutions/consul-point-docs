@@ -31,7 +31,7 @@ Cada clave muestra su **Nombre**, la **Clave API** (solo los últimos caracteres
    | **Fecha de expiración (opcional)** | Una fecha futura. Si se deja en blanco, la clave no caduca |
    | **Agentes** | Obligatorio. Los agentes que se podrán consultar con esta clave (hasta 20) |
 
-3. Pulsar crear. La plataforma muestra la clave completa.
+3. Pulsar **Crear API Key**. La plataforma muestra la clave completa en **Tu API Key**, con un botón para copiarla.
 
 :::danger La clave se ve una sola vez
 Hay que copiarla en ese momento y guardarla como una contraseña. Después solo se ven sus últimos caracteres; si se pierde, hay que regenerarla.
