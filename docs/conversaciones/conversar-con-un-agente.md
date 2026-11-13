@@ -19,6 +19,12 @@ Cómo iniciar una conversación, escribir, adjuntar archivos, usar las herramien
 
 El agente queda fijado al enviar el primer mensaje: para hablar con otro agente se abre una conversación nueva.
 
+### Centro de Agentes de IA
+
+En el menú de agentes de la cabecera de la conversación, **Explorar Tienda de Agentes** abre el **Centro de Agentes de IA**: todos los agentes de la organización a los que se tiene acceso, con buscador por nombre. Cada agente muestra su descripción y su modelo, y **Iniciar conversación** abre una conversación con él.
+
+Al pulsar un agente se ve su ficha: **Iniciadores de conversación**, funciones integradas, **Modelo**, **Temperatura** y **Expertos integrados** (sus [especialistas](/control/estudio/especialistas)). **Chatear con el agente** inicia la conversación.
+
 ## Escribir
 
 - **Enter** envía y **Mayúsculas + Enter** hace un salto de línea.

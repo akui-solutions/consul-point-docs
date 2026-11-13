@@ -3,48 +3,65 @@ id: catalogo-de-aplicaciones
 title: Catálogo de integraciones
 sidebar_label: Catálogo de integraciones
 sidebar_position: 3
-description: Aplicaciones integradas y agentes preconfigurados instalables en ConsulPoint. Tipos de aplicación y Centro de Agentes.
+description: El Catálogo de integraciones de ConsulPoint. Aplicaciones, conectores y habilidades ya hechos que la organización puede instalar, actualizar y desinstalar.
 ---
 
 # Catálogo de integraciones
 
-<PageMeta route="/store/apps · /store/agents" />
+<PageMeta route="/store/apps">permiso sobre **Aplicaciones**, **Conectores** o **Habilidades**</PageMeta>
 
-Repositorio de aplicaciones, conectores y agentes preconfigurados que la organización puede incorporar sin construirlos desde cero.
+El **Catálogo de integraciones** reúne lo que la organización puede instalar sin construirlo desde cero: [aplicaciones integradas](/aplicaciones-integradas), [conectores](/organizacion/conectores) para los agentes y [habilidades](/control/estudio/habilidades). Se abre desde **Catálogo de integraciones**, en el menú lateral.
 
-<Screenshot src="/img/modulos/catalogo-de-integraciones.png" alt="Pantalla del Catálogo de integraciones en ConsulPoint" caption="Pantalla del Catálogo de integraciones" />
+<Screenshot src="/img/catalogo/catalogo.png" alt="Pestaña Aplicaciones del Catálogo de integraciones" caption="Catálogo de integraciones → Aplicaciones (aplicaciones de ejemplo)" />
 
-## Organización del módulo
+## Pestañas
 
-| Pestaña | Contenido |
+| Pestaña | Contenido | Se ve con permiso sobre |
+|---|---|---|
+| **Aplicaciones** | Aplicaciones integradas, con búsqueda y filtro por categoría | **Aplicaciones** |
+| **Conectores** | Conectores para los agentes, con búsqueda y filtro por categoría | **Conectores** |
+| **Habilidades** | Habilidades para la biblioteca del Estudio, con búsqueda | **Habilidades** |
+| **Instaladas** | Todo lo instalado en la organización | Cualquiera de los tres |
+
+Las destacadas aparecen primero, y después las que aún no están instaladas.
+
+## Las tarjetas
+
+Cada tarjeta muestra el nombre, el tipo (en las aplicaciones: **Extensión**, **Visualizador** o **Filtro**; ver [Dónde aparecen](/aplicaciones-integradas/donde-aparecen)), una descripción y, a partir de 10, el número de organizaciones que lo han instalado. Algunas llevan además:
+
+- **Destacada**: recomendada por ConsulPoint.
+- **Asignada a tu organización**: ConsulPoint la activó para la organización, fuera del catálogo.
+
+La tarjeta muestra una sola acción, según el estado:
+
+| Acción o texto | Cuándo |
 |---|---|
-| **Aplicaciones** | [Aplicaciones integradas](/aplicaciones-integradas) instalables, con búsqueda y filtro por categoría |
-| **Conectores** | [Conectores](/organizacion/conectores) disponibles para integrar servicios externos |
-| **Habilidades** | [Habilidades](/control/estudio/habilidades) ya hechas para instalar en la biblioteca del Estudio |
-| **Instaladas** | Aplicaciones, conectores y habilidades ya incorporados |
+| **Instalar** | No está instalada |
+| **Abrir** | Aplicación o habilidad instalada |
+| **Configurar** | Conector instalado: lleva a **Configuración → Conectores** |
+| **Actualizar** | Hay una versión nueva (quien no puede actualizar ve **Actualización disponible**) |
+| **No disponible** | Se retiró del catálogo |
 
-### Tipos de aplicación
+Al pulsar la tarjeta se abre el detalle: la versión, la fecha de instalación, la categoría y lo que incluye (los recursos de una aplicación o los archivos de una habilidad). El menú **⋯** del detalle tiene **Desinstalar**.
 
-| Tipo | Función |
-|---|---|
-| **Extensión** | Añade funcionalidad a la plataforma |
-| **Visualizador** | Presenta los datos extraídos de un archivo |
-| **Filtro** | Procesa o filtra información |
+## Instalar, actualizar y desinstalar
 
-Cada aplicación indica su número de instalaciones. Las acciones disponibles son **Instalar**, **Actualizar** y **Desinstalar**. El detalle de cada una está en [Instalar y administrar](/aplicaciones-integradas/instalar-y-administrar).
+| | Aplicación | Conector | Habilidad |
+|---|---|---|---|
+| **Instalar** | Si trae recursos (carpetas, microagentes, esquemas de datos), se eligen antes en un diálogo. Ver [Instalar y administrar](/aplicaciones-integradas/instalar-y-administrar) | Directo. Después se configura y se asigna a los agentes. Ver [Conectores](/organizacion/conectores) | Directo. Queda en la biblioteca del Estudio; si el nombre ya existe, se guarda con otro |
+| **Actualizar** | Se revisan antes los recursos que cambian | Directo | Pide confirmación. Sustituye instrucciones y archivos; conserva nombre, estado y agentes |
+| **Desinstalar** | Pide confirmación y permite borrar también lo que creó | Pide confirmación. Los asignados a la organización no se pueden desinstalar | Pide confirmación. Se borra de la biblioteca y de los agentes que la usaban |
 
-## Centro de Agentes
+Instalar y actualizar requieren permiso de crear sobre el módulo correspondiente; desinstalar, permiso de eliminar. El plan fija cuántas habilidades, conectores y recursos se pueden tener: al llegar al máximo, la plataforma lo indica antes de instalar. Ver [Créditos y límites](/organizacion/creditos-y-limites#límites-del-plan).
 
-Catálogo de agentes disponibles, con búsqueda por agente, modelo o categoría. La ficha de cada agente muestra:
+## Instaladas
 
-- Iniciadores de conversación
-- Capacidades
-- Modelo y temperatura
-- Especialistas integrados
-- Fecha de última actualización
+Una tabla con todo lo instalado: **Nombre**, **Versión**, **Instalación** (fecha y quién) y **Estado** (**Al día**, versión disponible o **No disponible**). Se puede buscar y filtrar por tipo y, en las aplicaciones, por categoría. Si hay actualizaciones pendientes, un aviso permite ver solo esas.
 
-Con acceso directo a iniciar conversación.
+Cada fila tiene **Actualizar** (si hay versión nueva), un acceso directo para abrir o configurar, y en **⋯**, **Ver detalle** y **Desinstalar**.
 
-:::tip Antes de crear desde cero
-Conviene revisar el catálogo antes de construir un agente complejo: es posible que ya exista uno equivalente.
-:::
+## Elementos retirados
+
+Si quien publica un elemento lo retira del catálogo, sigue instalado y se puede desinstalar, pero ya no se puede reinstalar ni actualizar. Si además lo desactiva, una aplicación ya no se puede abrir.
+
+Los elementos del catálogo los publica ConsulPoint.
