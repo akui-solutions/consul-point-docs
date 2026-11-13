@@ -13,7 +13,7 @@ description: Solutions to the most common issues when creating and using agents,
 | Cause | Solution |
 |---|---|
 | It doesn't have the **Knowledge hub access** built-in function | In the agent's detail, on the **Capabilities** tab, use **Manage functions** and turn it on |
-| The folders aren't shared with the agent | Share them from the Knowledge Hub. See [Agents' knowledge](/centro-de-conocimiento/conocimiento-de-los-agentes) |
+| The folders aren't shared with the agent | Share them from the Knowledge Hub. See [Agent knowledge](/centro-de-conocimiento/conocimiento-de-los-agentes) |
 | The documents are still being prepared, or preparation failed | Check **Available to agents** on each file, or the status on the agent's **Documents** tab |
 | The person talking to it doesn't have access to those folders | The agent only searches folders the person asking also has access to |
 | The instructions don't tell it to use the documentation | Say so in **System instructions**, for example: "Always answer based on the available documentation" |

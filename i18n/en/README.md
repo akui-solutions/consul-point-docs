@@ -106,6 +106,21 @@ Nombres de módulos y conceptos, como los muestra la plataforma en inglés.
 | Fijados | Pinned |
 | Configuración de cuenta | Account Settings |
 | Organización favorita | Favorite organization |
+| Grupos de Configuración: Administración / IA e integraciones / Datos / Personalización / Desarrolladores / Acceso | Administration / AI and integrations / Data / Customization / Developers / Access |
+| Aplicaciones (pestaña de Configuración y módulo de permisos) | Apps |
+| Elementos fijados / Atajos / Recursos (módulos de permisos) | Pinned items / Shortcuts / Resources |
+| Tipos de contacto / Etiquetas / Barra lateral | Contact types / Tags / Sidebar |
+| Tipos de contacto predefinidos: Cliente / Cliente potencial / Proveedor / Socio / Colaborador | Client / Lead / Supplier / Partner / Collaborator |
+| Roles predefinidos: Administrador / Miembro / Colaborador | Administrator / Member / Collaborator |
+| Predefinido / Personalizado | Built-in / Custom |
+| Bonos de crédito / Códigos de referido / Solicitudes | Credit vouchers / Referral codes / Requests |
+| Modelo propio | Own model (insignia: "Your own model") |
+| Modo consulta (sin plan activo) | Read-only mode |
+| Conexión asistida / manual (WhatsApp) | Guided connection / Manual connection |
+| Secreto de firma | Signing secret |
+| Elementos retirados | Withdrawn items |
+| Principal (selector de espacios) | Main |
+| Estadísticas (Auditoría y Reportes) | Analytics |
 | Problemas frecuentes (título de página) | Common issues |
 | Permiso en PageMeta: "el que corresponda sobre **X**" | "the relevant one on **X**" |
 | Pestañas del sitio: Guía de uso / Administración / Desarrolladores | User guide / Administration / Developers |

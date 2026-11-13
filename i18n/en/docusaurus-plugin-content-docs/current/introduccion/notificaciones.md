@@ -42,11 +42,11 @@ Each person only receives the notifications that apply to them based on what the
 
 | Notification | When it arrives |
 |---|---|
-| **Processing documents** / **Document ready** | A folder's documents are being prepared for the agents, or one is now available. See [Agents' knowledge](/centro-de-conocimiento/conocimiento-de-los-agentes) |
+| **Processing documents** / **Document ready** | A folder's documents are being prepared for the agents, or one is now available. See [Agent knowledge](/centro-de-conocimiento/conocimiento-de-los-agentes) |
 | **PDF converted** / **The PDF could not be converted** | A PDF conversion has finished |
 | **Emails processed** | The [Smart Inbox](/modulos/bandeja-inteligente) checked emails and saved their files |
 | **New message** | Someone wrote in a shared conversation |
-| **Supervision requested** / **Conversation unattended** | A channel conversation needs a human, or has gone unanswered for a while. See [Channels and human handoff](/conversaciones/canales-y-atencion-humana) |
+| **Supervision requested** / **Conversation unattended** | A channel conversation needs a human, or has gone unanswered for a while. See [Channels and human support](/conversaciones/canales-y-atencion-humana) |
 | **New version available** | There is an update for an installed app. See [Integrations catalog](/organizacion/catalogo-de-aplicaciones) |
 | **Connector installed** | Someone installed a connector in the organization |
 | **Connection about to expire** | A channel connection, such as WhatsApp, needs to be renewed |
