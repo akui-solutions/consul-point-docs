@@ -57,8 +57,8 @@ An organization keeps its **knowledge** in folders. An **agent** consults it to 
   <ModuleCard icon="instructions" title="System instructions" href="/control/estudio/crear-un-agente#comportamiento-instrucciones-del-sistema">
     The text that defines an agent's role, its limits and how it answers. It is what most affects the quality of its answers.
   </ModuleCard>
-  <ModuleCard icon="capability" title="Capabilities" href="/control/estudio/agentes#capacidades">
-    Optional features turned on for each agent: searching the Knowledge Hub, searching the web, attaching files, voice…
+  <ModuleCard icon="capability" title="Built-in functions" href="/control/estudio/agentes#capacidades">
+    Optional functions turned on for each agent: searching the Knowledge Hub, searching the web, attaching files, voice…
   </ModuleCard>
   <ModuleCard icon="model" title="Model">
     The AI engine each agent runs on: from Google, OpenAI or Anthropic, or the organization's own model if the plan includes it.
