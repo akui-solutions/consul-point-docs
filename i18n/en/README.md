@@ -18,6 +18,21 @@ primero en `docs/` y se traduce aquí.
 Una página que aún no tiene traducción se muestra en español con un aviso, y los buscadores
 no la indexan en inglés.
 
+## Ver el inglés en local
+
+`pnpm start` solo carga el español: al elegir English en el selector sale "Página no encontrada".
+Para trabajar en inglés:
+
+```bash
+pnpm run start:en
+```
+
+Para ver los dos idiomas y el selector funcionando, compilar y servir:
+
+```bash
+pnpm run build && pnpm run serve
+```
+
 ## Mantener los dos idiomas al día
 
 Todo cambio en una página en español va en la misma PR que su cambio en inglés. Después se
