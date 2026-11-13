@@ -44,14 +44,14 @@ Las secciones están agrupadas igual que en la plataforma. En la columna **Quié
 
 | Sección | Para qué sirve | Quién la ve |
 |---|---|---|
-| **Tipos de contacto** | Clasificar los contactos de la organización | Permiso sobre **Contactos** |
-| **Etiquetas** | Organizar contactos, recursos y conversaciones | Permiso sobre **Etiquetas** |
+| **Tipos de contacto** | Clasificar las personas y entidades de Contactos. Ver [Tipos de contacto](/organizacion/tipos-de-contacto) | Permiso sobre **Contactos** |
+| **Etiquetas** | Clasificar personas, entidades y habilidades. Ver [Etiquetas](/organizacion/etiquetas) | Permiso sobre **Etiquetas** |
 
 ### Personalización
 
 | Sección | Para qué sirve | Quién la ve |
 |---|---|---|
-| **Barra lateral** | Los elementos fijados en el menú lateral | Permiso sobre **Elementos fijados** y **Aplicaciones** |
+| **Barra lateral** | Las aplicaciones fijadas en el menú lateral. Ver [Barra lateral](/organizacion/barra-lateral) | Permiso sobre **Elementos fijados** y **Aplicaciones** |
 
 ### Desarrolladores
 

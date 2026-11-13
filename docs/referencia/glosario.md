@@ -28,7 +28,7 @@ Los términos que aparecen en la plataforma y en esta documentación, en orden a
 - **Centro de Conocimiento**: repositorio de documentos de la organización, del que leen los agentes. Ver [Centro de Conocimiento](/modulos/centro-de-conocimiento).
 - **Clave de API**: credencial con la que un sistema externo se conecta a ConsulPoint. Se gestiona en **Configuración → Claves de API**.
 - **Conector**: conexión con una herramienta externa que los agentes pueden usar durante una conversación. Se instala desde el [Catálogo de integraciones](/organizacion/catalogo-de-aplicaciones). No es lo mismo que una **integración**. Ver [Conectores](/organizacion/conectores).
-- **Contacto**: persona o entidad con la que se relaciona la organización, por ejemplo quien escribe por WhatsApp o Telegram. Se clasifican con **Tipos de contacto**.
+- **Contacto**: persona o entidad con la que se relaciona la organización, por ejemplo quien escribe por WhatsApp o Telegram. Se clasifican con **tipos de contacto** y **etiquetas**. Ver [Contactos](/modulos/contactos).
 - **Conversación**: intercambio de mensajes con un agente, en la plataforma o en un canal. Ver [Conversaciones](/modulos/conversaciones).
 - **Créditos**: saldo con el que la organización paga el uso de IA. Se reciben en **bonos de crédito**, que caducan. Si se acaban, los agentes dejan de responder. Ver [Créditos y límites](/organizacion/creditos-y-limites).
 
@@ -39,7 +39,7 @@ Los términos que aparecen en la plataforma y en esta documentación, en orden a
 - **Especialista**: agente experto en un tema, al que un agente consulta durante una conversación. No habla con las personas. Ver [Especialistas](/control/estudio/especialistas).
 - **Esquema de datos**: estructura que define qué datos se extraen de un documento y con qué forma. Ver [Biblioteca de esquemas](/control/estudio/esquemas-de-datos).
 - **Estudio**: módulo donde se crean y configuran agentes, especialistas, microagentes y esquemas de datos. Ver [Estudio](/modulos/estudio).
-- **Etiqueta**: marca para organizar contactos, recursos y conversaciones. Se gestiona en **Configuración → Etiquetas**.
+- **Etiqueta**: palabra compartida por toda la organización para clasificar personas, entidades y habilidades. Ver [Etiquetas](/organizacion/etiquetas).
 - **Extracción inteligente**: tipo de carpeta que extrae datos estructurados de cada documento que se sube. Ver [Extracción inteligente](/centro-de-conocimiento/extraccion-inteligente).
 
 ## F

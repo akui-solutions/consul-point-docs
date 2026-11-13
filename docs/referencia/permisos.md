@@ -24,11 +24,11 @@ En la pantalla de permisos de un rol, cada módulo tiene cuatro permisos: **Ver*
 | **Estudio** | [Estudio](/modulos/estudio): agentes, especialistas y microagentes |
 | **Biblioteca de esquemas** | [Biblioteca de esquemas](/control/estudio/esquemas-de-datos) del Estudio |
 | **Habilidades** | [Habilidades](/control/estudio/habilidades) del Estudio y su pestaña en el Catálogo de integraciones |
-| **Contactos** | Contactos y **Configuración → Tipos de contacto** |
-| **Etiquetas** | **Configuración → Etiquetas** |
+| **Contactos** | [Contactos](/modulos/contactos) y [Tipos de contacto](/organizacion/tipos-de-contacto) |
+| **Etiquetas** | [Etiquetas](/organizacion/etiquetas) |
 | **Espacios de trabajo** | [Espacios de trabajo](/modulos/espacios-de-trabajo) |
 | **Aplicaciones** | [Aplicaciones integradas](/aplicaciones-integradas/instalar-y-administrar) |
-| **Elementos fijados** | Los elementos fijados del menú lateral (**Configuración → Barra lateral**) |
+| **Elementos fijados** | Las aplicaciones fijadas en el menú lateral. Ver [Barra lateral](/organizacion/barra-lateral) |
 | **Atajos** | Los accesos rápidos de [Inicio](/modulos/inicio) |
 | **Integraciones** | Los canales de [Integraciones y canales](/modulos/integraciones) |
 | **Conectores** | Los [conectores](/organizacion/conectores): herramientas externas para los agentes |

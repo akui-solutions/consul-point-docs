@@ -45,6 +45,7 @@ const sidebars: SidebarsConfig = {
     group('Módulos', [
       'modulos/inicio',
       'modulos/articulos-y-novedades',
+      'modulos/contactos',
       module('Conversaciones', 'conversaciones/conversaciones-overview', [
         'conversaciones/conversar-con-un-agente',
         'conversaciones/compartir-y-colaborar',
@@ -130,6 +131,11 @@ const sidebars: SidebarsConfig = {
       'organizacion/conectores',
       'organizacion/catalogo-de-aplicaciones',
       'aplicaciones-integradas/instalar-y-administrar',
+    ]),
+    group('Datos y personalización', [
+      'organizacion/tipos-de-contacto',
+      'organizacion/etiquetas',
+      'organizacion/barra-lateral',
     ]),
     group('Desarrolladores', ['control/webhooks']),
     group('Control', [
