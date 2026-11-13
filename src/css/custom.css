@@ -497,6 +497,43 @@ samp {
   box-shadow: inset 0 -2px 0 var(--ifm-color-primary);
 }
 
+/* Cambio de idioma: píldora con globo y código del otro idioma, como en la web
+   de ConsulPoint (src/theme/NavbarItem/LocaleDropdownNavbarItem). */
+.cp-lang-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 36px;
+  margin-right: 0.5rem;
+  padding: 0 0.75rem;
+  border-radius: 999px;
+  color: var(--cp-text-secondary);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease;
+}
+
+.cp-lang-link:hover {
+  background-color: var(--cp-border);
+  color: var(--cp-text-main);
+  text-decoration: none;
+}
+
+.cp-lang-link:focus-visible {
+  outline: 2px solid var(--cp-border-focus);
+  outline-offset: 2px;
+}
+
+.cp-lang-link--mobile {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 /* ── Menú lateral ────────────────────────────────────────────────────────────
    Más ligero que el contenido: letra algo menor, menos aire y gris secundario. */
 .theme-doc-sidebar-menu {
