@@ -1,0 +1,5 @@
+# Documentación pública de ConsulPoint. Abierta a buscadores y asistentes de IA.
+User-agent: *
+Allow: /
+
+Sitemap: https://docs.consulpoint.com/sitemap.xml

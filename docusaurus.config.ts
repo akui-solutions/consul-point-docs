@@ -3,6 +3,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 import { themes as prismThemes } from 'prism-react-renderer';
 import tailwindcss from 'tailwindcss';
 import autoprefixer from 'autoprefixer';
+import llmsTxtPlugin from './plugins/llms-txt';
 
 const ORG = 'akui-solutions';
 const REPO = 'consul-point-docs';
@@ -73,6 +74,7 @@ const config: Config = {
   clientModules: ['./src/clientModules/tableLabels.ts'],
   plugins: [
     tailwindPlugin,
+    llmsTxtPlugin,
     [
       '@docusaurus/plugin-client-redirects',
       {
@@ -115,7 +117,9 @@ const config: Config = {
   ],
 
   themeConfig: {
-    image: 'img/logo.png',
+    // Imagen al compartir un enlace. Los documentos usan la de su pestaña
+    // (src/theme/DocItem/Metadata).
+    image: 'img/social/guia-de-uso.png',
     colorMode: {
       defaultMode: 'light',
       respectPrefersColorScheme: false,

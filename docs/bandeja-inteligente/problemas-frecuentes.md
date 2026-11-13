@@ -1,6 +1,6 @@
 ---
 id: problemas-frecuentes
-title: Problemas frecuentes
+title: Problemas frecuentes de la Bandeja Inteligente
 sidebar_label: Problemas frecuentes
 sidebar_position: 6
 description: Soluciones a los problemas más habituales de la Bandeja Inteligente de ConsulPoint.

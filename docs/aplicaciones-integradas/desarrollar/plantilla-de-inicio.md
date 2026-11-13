@@ -3,7 +3,7 @@ id: plantilla-de-inicio
 title: Plantilla de inicio
 sidebar_label: Plantilla de inicio
 sidebar_position: 2
-description: Repositorio público con una aplicación integrada de ejemplo para ConsulPoint, lista para clonar y adaptar. Qué incluye, cómo verla en local y cómo crear un proyecto propio a partir de ella.
+description: La plantilla de inicio de las aplicaciones integradas de ConsulPoint. Cómo verla en local, qué enseña y cómo crear y publicar una aplicación con ella.
 ---
 
 # Plantilla de inicio

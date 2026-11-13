@@ -4,7 +4,7 @@ title: Configuración
 sidebar_label: Configuración
 sidebar_position: 1
 slug: /control/configuracion
-description: "Las secciones de Configuración de ConsulPoint: acceso, organización, suscripción, IA e integraciones, datos, personalización y herramientas para desarrolladores, y quién ve cada una."
+description: "Las secciones de Configuración de ConsulPoint: acceso y organización, IA e integraciones, datos, personalización, desarrolladores y quién ve cada una."
 ---
 
 # Configuración
