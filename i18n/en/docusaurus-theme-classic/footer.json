@@ -1,0 +1,70 @@
+{
+  "link.title.Guía de uso": {
+    "message": "User guide",
+    "description": "The title of the footer links column with title=Guía de uso in the footer"
+  },
+  "link.title.Administración": {
+    "message": "Administration",
+    "description": "The title of the footer links column with title=Administración in the footer"
+  },
+  "link.title.Aplicaciones integradas": {
+    "message": "Integrated apps",
+    "description": "The title of the footer links column with title=Aplicaciones integradas in the footer"
+  },
+  "link.item.label.Conceptos fundamentales": {
+    "message": "Core concepts",
+    "description": "The label of footer link with label=Conceptos fundamentales linking to /introduccion/conceptos"
+  },
+  "link.item.label.Centro de Conocimiento": {
+    "message": "Knowledge Hub",
+    "description": "The label of footer link with label=Centro de Conocimiento linking to /modulos/centro-de-conocimiento"
+  },
+  "link.item.label.Estudio": {
+    "message": "Studio",
+    "description": "The label of footer link with label=Estudio linking to /modulos/estudio"
+  },
+  "link.item.label.Glosario": {
+    "message": "Glossary",
+    "description": "The label of footer link with label=Glosario linking to /referencia/glosario"
+  },
+  "link.item.label.Usuarios": {
+    "message": "Users",
+    "description": "The label of footer link with label=Usuarios linking to /organizacion/usuarios"
+  },
+  "link.item.label.Roles": {
+    "message": "Roles",
+    "description": "The label of footer link with label=Roles linking to /organizacion/roles"
+  },
+  "link.item.label.Integraciones y canales": {
+    "message": "Integrations and channels",
+    "description": "The label of footer link with label=Integraciones y canales linking to /modulos/integraciones"
+  },
+  "link.item.label.Auditoría y Reportes": {
+    "message": "Audit & Reports",
+    "description": "The label of footer link with label=Auditoría y Reportes linking to /control/auditoria-y-reportes"
+  },
+  "link.item.label.Matriz de permisos": {
+    "message": "Permissions matrix",
+    "description": "The label of footer link with label=Matriz de permisos linking to /referencia/permisos"
+  },
+  "link.item.label.Tu primera aplicación": {
+    "message": "Your first app",
+    "description": "The label of footer link with label=Tu primera aplicación linking to /aplicaciones-integradas/desarrollar/primera-aplicacion"
+  },
+  "link.item.label.Contexto que recibe": {
+    "message": "Context it receives",
+    "description": "The label of footer link with label=Contexto que recibe linking to /aplicaciones-integradas/desarrollar/contexto"
+  },
+  "link.item.label.Publicar": {
+    "message": "Publish",
+    "description": "The label of footer link with label=Publicar linking to /aplicaciones-integradas/publicar"
+  },
+  "link.item.label.Referencia técnica": {
+    "message": "Technical reference",
+    "description": "The label of footer link with label=Referencia técnica linking to /aplicaciones-integradas/referencia"
+  },
+  "logo.alt": {
+    "message": "ConsulPoint",
+    "description": "The alt text of footer logo"
+  }
+}
