@@ -111,5 +111,5 @@ Todas son relativas a `apiBaseUrl` y requieren las cabeceras `Authorization` y `
 | `429` | Demasiadas peticiones | Esperar y reintentar |
 
 :::info Recursos en la pestaña Permisos
-**Biblioteca de esquemas** figura en la lista de recursos, pero todavía no ofrece rutas para aplicaciones.
+**Biblioteca de esquemas** figura en la lista de recursos, pero no ofrece rutas para aplicaciones.
 :::

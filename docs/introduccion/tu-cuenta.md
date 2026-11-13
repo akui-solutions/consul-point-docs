@@ -37,7 +37,7 @@ El tema y el idioma se guardan en el navegador: en otro equipo o navegador hay q
 | Foto | JPG, JPEG, PNG o WEBP, hasta 500 KB. **Cargar foto** o arrastrarla; **Eliminar foto** la quita y **Deshacer** recupera la anterior antes de guardar |
 | **Nombre** y **Apellidos** | Entre 2 y 50 caracteres |
 | **Correo electrónico** | No se puede cambiar |
-| **Móvil** | Entre 7 y 10 dígitos, sin prefijo internacional |
+| **Móvil** | Número de contacto |
 
 Se termina con **Guardar cambios**. El nombre y la foto son los que ven las demás personas de la organización, por ejemplo en las conversaciones compartidas.
 

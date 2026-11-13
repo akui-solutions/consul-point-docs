@@ -146,6 +146,7 @@ const sidebars: SidebarsConfig = {
       'control/auditoria-y-reportes',
       'organizacion/creditos-y-limites',
       'referencia/permisos',
+      'control/configuracion/problemas-frecuentes',
     ]),
   ],
 };
