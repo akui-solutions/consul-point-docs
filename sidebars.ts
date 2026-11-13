@@ -41,6 +41,9 @@ const sidebars: SidebarsConfig = {
       'introduccion/vision-general',
       'introduccion/conceptos',
       'introduccion/navegacion',
+      'introduccion/acceder-a-la-plataforma',
+      'introduccion/tu-cuenta',
+      'introduccion/notificaciones',
     ]),
     group('Módulos', [
       'modulos/inicio',
@@ -143,6 +146,7 @@ const sidebars: SidebarsConfig = {
       'control/auditoria-y-reportes',
       'organizacion/creditos-y-limites',
       'referencia/permisos',
+      'control/configuracion/problemas-frecuentes',
     ]),
   ],
 };

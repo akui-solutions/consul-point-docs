@@ -54,7 +54,7 @@ Conviene revisar los permisos de la versión nueva: pueden ser distintos de los 
 
 ## Desinstalar
 
-En **Instaladas**, pulsar **Desinstalar**.
+En **Instaladas**, abrir el menú **⋯** de la aplicación y pulsar **Desinstalar**. La confirmación permite borrar también los recursos que creó la aplicación; lo que no se marca se queda en la organización.
 
 | Qué ocurre con | Al desinstalar |
 |---|---|
