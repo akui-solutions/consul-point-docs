@@ -22,28 +22,19 @@ En **Configuración → Conectores**, la pantalla **Conectores e integraciones**
 |---|---|
 | **Conectado** | El canal funciona |
 | **Sin conectar** | Falta completar la conexión, por ejemplo autorizar la cuenta de correo |
-| **Caducada — reconectar** | Solo WhatsApp: la autorización caducó y hay que volver a conectar el número. Mientras tanto, el canal no funciona |
+| **Caducada — reconectar** | Solo WhatsApp: la autorización caducó y hay que volver a conectar el número. Mientras tanto, el canal no funciona. Ver [Cuando la conexión caduca](/organizacion/canales/whatsapp#cuando-la-conexión-caduca) |
 
 ## Canales
 
 Se añaden con **Agregar integración**:
 
-| Canal | Para qué sirve | Dónde llega |
-|---|---|---|
-| **WhatsApp** | Atender un número de WhatsApp Business con un agente y con personas del equipo | Conversaciones |
-| **Telegram** | Atender un bot de Telegram | Conversaciones |
-| **Email** | Gmail y Microsoft Outlook (con autorización de la cuenta) o cualquier correo IMAP. Ver [Conectar una cuenta](/bandeja-inteligente/conectar-una-cuenta) | Bandeja Inteligente |
-| **Aplicación externa** | Que un sistema propio envíe y reciba mensajes por API | Conversaciones |
-| **Google Calendar** | Que los agentes consulten la disponibilidad y agenden citas | — |
-
-### WhatsApp: conexión y modo del número
-
-El número se conecta con **Conexión asistida** (recomendada: se inicia sesión con Facebook y se siguen los pasos de Meta) o con **Conexión manual** (para quien ya tiene su propia aplicación y cuenta de empresa en Meta). El detalle de la integración indica el **Modo del número**:
-
-| Modo | Qué implica |
-|---|---|
-| **Coexistencia (app de WhatsApp Business)** | El número también se usa desde la app de WhatsApp Business. Si alguien responde desde la app, la IA se apaga en ese chat |
-| **Cloud API** | El número solo funciona en ConsulPoint, no en la app de WhatsApp Business |
+| Canal | Para qué sirve | Dónde llega | Cómo conectarlo |
+|---|---|---|---|
+| **WhatsApp** | Atender un número de WhatsApp Business con un agente y con personas del equipo | Conversaciones | [WhatsApp](/organizacion/canales/whatsapp) |
+| **Telegram** | Atender un bot de Telegram | Conversaciones | [Telegram](/organizacion/canales/telegram) |
+| **Email** | Gmail y Microsoft Outlook (con autorización de la cuenta) o cualquier correo IMAP | Bandeja Inteligente | [Conectar una cuenta](/bandeja-inteligente/conectar-una-cuenta) |
+| **Aplicación externa** | Que un sistema propio envíe y reciba mensajes por API | Conversaciones | [Aplicación externa](/organizacion/canales/aplicacion-externa) |
+| **Google Calendar** | Que los agentes consulten la disponibilidad y agenden citas | — | [Google Calendar](/organizacion/canales/google-calendar) |
 
 ## Acciones
 

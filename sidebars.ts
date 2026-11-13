@@ -105,6 +105,7 @@ const sidebars: SidebarsConfig = {
       ]),
       'aplicaciones-integradas/referencia',
     ]),
+    group('Canal de aplicación externa', ['canal-externo/api']),
   ],
 
   // Mismos grupos que el menú de Configuración de la plataforma.
@@ -120,7 +121,12 @@ const sidebars: SidebarsConfig = {
     ]),
     group('IA e integraciones', [
       'organizacion/proveedores-de-ia',
-      'modulos/integraciones',
+      module('Integraciones y canales', 'modulos/integraciones', [
+        'organizacion/canales/whatsapp',
+        'organizacion/canales/telegram',
+        'organizacion/canales/aplicacion-externa',
+        'organizacion/canales/google-calendar',
+      ]),
       'organizacion/conectores',
       'organizacion/catalogo-de-aplicaciones',
       'aplicaciones-integradas/instalar-y-administrar',
