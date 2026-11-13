@@ -121,6 +121,13 @@ Nombres de módulos y conceptos, como los muestra la plataforma en inglés.
 | Elementos retirados | Withdrawn items |
 | Principal (selector de espacios) | Main |
 | Estadísticas (Auditoría y Reportes) | Analytics |
+| Plantilla de inicio / Modo de demostración | Starter template / demo mode |
+| Aplicación propia (origen) | Custom |
+| Datos propios / Registros propios | Own data / Own records |
+| Archivos y extracciones | Files and extractions |
+| Probar / Publicar / Paquete (ZIP) | Test / Publish / package |
+| URL de entrega / API Key de entrega | Delivery URL / Delivery API Key |
+| API de agentes / API del canal de aplicación externa | Agents API / External app channel API |
 | Problemas frecuentes (título de página) | Common issues |
 | Permiso en PageMeta: "el que corresponda sobre **X**" | "the relevant one on **X**" |
 | Pestañas del sitio: Guía de uso / Administración / Desarrolladores | User guide / Administration / Developers |
