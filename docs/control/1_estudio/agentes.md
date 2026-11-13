@@ -28,7 +28,7 @@ Se abre desde la lista del Estudio con **Ver detalle**. En la cabecera, **Editar
 | **Conectores** | Herramientas externas que el agente puede usar. Ver más abajo |
 | **Especialistas** | Los especialistas que puede consultar. Ver [Especialistas](/control/estudio/especialistas#asignar-especialistas-a-un-agente) |
 | **Acceso** | Quién puede usar el agente y con qué nivel |
-| **Consultas por API** | Historial de las consultas hechas al agente a través de la API, con filtros por estado y fechas |
+| **Consultas por API** | Historial de las consultas hechas al agente con una [clave de API](/organizacion/claves-de-api), con filtros por estado y fechas, y el detalle de cada una |
 
 Los especialistas tienen menos pestañas: **General**, **Capacidades**, **Documentos** y **Acceso**.
 

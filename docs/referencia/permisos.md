@@ -33,7 +33,7 @@ En la pantalla de permisos de un rol, cada módulo tiene cuatro permisos: **Ver*
 | **Integraciones** | Los canales de [Integraciones y canales](/modulos/integraciones) |
 | **Conectores** | Los [conectores](/organizacion/conectores): herramientas externas para los agentes |
 | **Webhooks** | [Webhooks](/control/webhooks) |
-| **Claves de API** | **Configuración → Claves de API** |
+| **Claves de API** | [Claves de API](/organizacion/claves-de-api) |
 | **Usuarios** | [Usuarios](/organizacion/usuarios) |
 | **Equipos** | [Equipos](/organizacion/equipos) |
 | **Organización** | [Organización](/organizacion/datos-de-la-organizacion) |

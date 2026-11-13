@@ -57,9 +57,9 @@ Las secciones están agrupadas igual que en la plataforma. En la columna **Quié
 
 | Sección | Para qué sirve | Quién la ve |
 |---|---|---|
-| **Claves de API** | Credenciales para que un sistema externo se conecte a ConsulPoint | Permiso sobre **Claves de API** |
+| **Claves de API** | Claves para consultar los agentes desde otro sistema. Ver [Claves de API](/organizacion/claves-de-api) | Permiso sobre **Claves de API** |
 | **Webhooks** | Avisos automáticos a sistemas externos. Ver [Webhooks](/control/webhooks) | Permiso sobre **Webhooks** |
 
 ### Acerca de
 
-Al final del menú, para todas las personas. Muestra la versión de la plataforma, el correo de soporte (si la organización lo tiene configurado) y los enlaces a **Términos y Condiciones** y **Política de Privacidad**.
+Al final del menú, para todas las personas. Muestra la fecha de lanzamiento y las versiones de la plataforma, quién la desarrolla, el correo de soporte (si ConsulPoint lo ha configurado) y los enlaces a **Términos y Condiciones** y **Política de Privacidad**.

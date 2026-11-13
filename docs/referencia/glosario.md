@@ -26,7 +26,7 @@ Los términos que aparecen en la plataforma y en esta documentación, en orden a
 - **Carpeta**: unidad con la que se organiza y se comparte el conocimiento. Puede ser **Estándar**, **Multimedia** o de **Extracción inteligente**. Ver [Carpetas y archivos](/centro-de-conocimiento/carpetas-y-archivos).
 - **Catálogo de integraciones**: lugar desde el que la organización instala aplicaciones y conectores ya hechos. Ver [Catálogo de integraciones](/organizacion/catalogo-de-aplicaciones).
 - **Centro de Conocimiento**: repositorio de documentos de la organización, del que leen los agentes. Ver [Centro de Conocimiento](/modulos/centro-de-conocimiento).
-- **Clave de API**: credencial con la que un sistema externo se conecta a ConsulPoint. Se gestiona en **Configuración → Claves de API**.
+- **Clave de API**: credencial con la que un sistema externo consulta los agentes de la organización. Ver [Claves de API](/organizacion/claves-de-api).
 - **Conector**: conexión con una herramienta externa que los agentes pueden usar durante una conversación. Se instala desde el [Catálogo de integraciones](/organizacion/catalogo-de-aplicaciones). No es lo mismo que una **integración**. Ver [Conectores](/organizacion/conectores).
 - **Contacto**: persona o entidad con la que se relaciona la organización, por ejemplo quien escribe por WhatsApp o Telegram. Se clasifican con **tipos de contacto** y **etiquetas**. Ver [Contactos](/modulos/contactos).
 - **Conversación**: intercambio de mensajes con un agente, en la plataforma o en un canal. Ver [Conversaciones](/modulos/conversaciones).

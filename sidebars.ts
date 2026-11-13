@@ -106,6 +106,7 @@ const sidebars: SidebarsConfig = {
       ]),
       'aplicaciones-integradas/referencia',
     ]),
+    group('API de agentes', ['api-agentes/consultar-un-agente']),
     group('Canal de aplicación externa', ['canal-externo/api']),
   ],
 
@@ -137,7 +138,7 @@ const sidebars: SidebarsConfig = {
       'organizacion/etiquetas',
       'organizacion/barra-lateral',
     ]),
-    group('Desarrolladores', ['control/webhooks']),
+    group('Desarrolladores', ['organizacion/claves-de-api', 'control/webhooks']),
     group('Control', [
       'control/auditoria-y-reportes',
       'organizacion/creditos-y-limites',

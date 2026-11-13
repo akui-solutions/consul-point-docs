@@ -3,56 +3,77 @@ id: auditoria-y-reportes
 title: Auditoría y Reportes
 sidebar_label: Auditoría y Reportes
 sidebar_position: 1
-description: Control del consumo de créditos y de la actividad de los usuarios en ConsulPoint.
+description: El consumo de créditos de la organización en ConsulPoint, los límites de la suscripción, el historial por proveedor y operación, y la actividad de cada usuario.
 ---
 
 # Auditoría y Reportes
 
-<PageMeta route="/consumption" />
+<PageMeta route="/consumption">permiso sobre **Auditoría y reportes**; con los roles predeterminados, solo administradores</PageMeta>
 
-Módulo de control del consumo de créditos de la plataforma y de la actividad de los usuarios.
+**Auditoría y Reportes** muestra cuántos créditos usa la organización, en qué se van, cuánto queda de cada límite de la suscripción y la actividad de cada persona. Tiene dos pestañas: **Estadísticas** y **Actividad de Usuarios**.
 
-<Screenshot src="/img/modulos/auditoria-y-reportes.png" alt="Pantalla de Auditoría y Reportes en ConsulPoint" caption="Pantalla de Auditoría y Reportes" />
+Quien tiene acceso ve los datos de **toda la organización**, salvo su tarjeta de consumo, que es personal.
 
-## Secciones
+## Estadísticas
 
-| Pestaña | Contenido |
+<Screenshot src="/img/control/auditoria-estadisticas.png" alt="Pestaña Estadísticas de Auditoría y Reportes" caption="Auditoría y Reportes → Estadísticas (datos de ejemplo)" />
+
+### Créditos de la organización
+
+| Tarjeta | Qué muestra |
 |---|---|
-| **Estadísticas** | Créditos de la organización, consumo del usuario y límites de la suscripción |
-| **Actividad de Usuarios** | Uso de la plataforma por persona |
+| **Créditos disponibles de la organización** | Los créditos que le quedan a toda la organización |
+| **Créditos usados por la organización** | Los créditos ya usados del saldo activo |
+| **Porcentaje usado por la organización** | Qué parte del saldo activo se ha usado |
 
-## Métricas
+El saldo activo es la suma de los [bonos de crédito](/organizacion/suscripcion#bonos-de-crédito) vigentes.
 
-| Métrica | Definición |
+### Consumo del Usuario
+
+El resumen personal del mes en curso de quien mira la pantalla: los **Créditos usados este mes**, sus conversaciones y sus mensajes enviados.
+
+### Límites de tu suscripción
+
+El uso actual de cada recurso frente al máximo de la suscripción, con una barra que se pone **naranja** al acercarse al límite y **roja** al alcanzarlo. Los recursos sin máximo aparecen como **Sin límite**.
+
+Algunos límites cuentan solo lo de quien mira, no lo de toda la organización:
+
+| Recurso | Qué cuenta |
 |---|---|
-| **Tokens de entrada** | Consumidos por las consultas y textos enviados |
-| **Tokens de salida** | Consumidos por las respuestas generadas |
-| **Créditos consumidos** | Consumo del periodo en créditos |
-| **Créditos restantes** | Saldo disponible |
-| **Progreso del límite mensual** | Porcentaje consumido del límite |
-| **Días restantes** | Días hasta el cierre del periodo |
+| **Conversaciones**, **Almacenamiento**, **Carpetas** | Solo las tuyas |
+| **Contactos** | Todos, también los inactivos: solo eliminarlos libera espacio |
+| **Integraciones** | Un único máximo para todas juntas |
+| **Conectores** | Cada conector instalado, aunque lo usen varios agentes |
 
-## Vistas de análisis
+Qué pasa al llegar a un límite se explica en [Créditos y límites](/organizacion/creditos-y-limites#límites-del-plan).
 
-### Estadísticas
+### Historial
 
-- **Créditos de la organización:** créditos disponibles, créditos usados y porcentaje consumido.
-- **Consumo del usuario:** créditos usados en el mes, conversaciones y mensajes enviados.
-- **Límites de la suscripción:** uso actual frente al máximo incluido en la suscripción (conversaciones, almacenamiento, agentes, usuarios, roles, carpetas, webhooks, etiquetas y modelos de IA propios).
+Cuántos créditos usa la organización, entre la **Fecha inicio** y la **Fecha fin** elegidas (por defecto, el mes en curso) y con **Agrupación** **Diario**, **Semanal** o **Mensual**:
 
-### Actividad de Usuarios
+- **Créditos por período**: la evolución del consumo.
+- **Por proveedor**: el reparto entre proveedores de IA; al pasar el ratón, el detalle por modelo.
+- **Por operación**: el reparto por tipo de uso:
 
-Total de chats, total de mensajes y créditos consumidos por persona.
+| Categoría | Incluye |
+|---|---|
+| **Conversaciones** | Las respuestas de los agentes |
+| **Análisis de supervisión** | Los análisis de conversaciones con IA |
+| **Traducción** | Traducciones de mensajes |
+| **Generación de agentes** | El contenido que se genera con IA al crear agentes |
+| **Microagentes** | Extracción de documentos y correos, OCR y preparación de archivos para los agentes |
+| **Multimedia** | Imágenes generadas, texto a voz, voz a texto y transcripción de vídeo |
+| **Web** | Búsquedas y lectura de páginas web |
+| **Otros** | El resto |
 
-## Exportación
+## Actividad de Usuarios
 
-Los registros admiten filtrado por estado, nivel, tipo de evento y rango de fechas, con **exportación** de los resultados y descarga de informes de consumo.
+<Screenshot src="/img/control/auditoria-actividad.png" alt="Pestaña Actividad de Usuarios" caption="Auditoría y Reportes → Actividad de Usuarios (datos de ejemplo)" />
 
-## Optimización del consumo
+Una fila por persona, con sus **Conversaciones iniciadas**, **Mensajes enviados**, **Créditos Usados** y su **Modelo más usado**. Los créditos incluyen todo su consumo, no solo el de las conversaciones (también análisis, audio y herramientas).
 
-:::tip Reducir el gasto de tokens
-- Asignar modelos de mayor capacidad solo donde la calidad lo justifique; los modelos ligeros son adecuados para tareas simples de alto volumen.
-- Unas instrucciones del sistema precisas reducen las reformulaciones y, con ellas, el consumo.
-- Iniciar conversaciones nuevas al cambiar de asunto evita arrastrar contexto innecesario.
-- Vincular a cada agente únicamente las carpetas pertinentes a su función.
+Se puede buscar una persona y acotar por fechas; sin fechas, muestra todo el histórico.
+
+:::note Qué no incluye
+Este módulo muestra consumo y actividad agregada. No es un registro de acciones (quién creó, modificó o eliminó qué) ni permite exportar los datos.
 :::
