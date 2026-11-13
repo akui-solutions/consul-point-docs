@@ -80,6 +80,7 @@ const config: Config = {
           { from: '/modulos/apps', to: '/aplicaciones-integradas' },
           // Los límites de cada formulario están en la página de ese formulario.
           { from: '/referencia/campos', to: '/control/estudio/crear-un-agente' },
+          { from: '/organizacion/usuarios-y-roles', to: '/organizacion/usuarios' },
           {
             from: '/modulos/complementos/portal/espacios-de-trabajo',
             to: '/modulos/espacios-de-trabajo',
@@ -168,7 +169,8 @@ const config: Config = {
         {
           title: 'Administración',
           items: [
-            { label: 'Usuarios y roles', to: '/organizacion/usuarios-y-roles' },
+            { label: 'Usuarios', to: '/organizacion/usuarios' },
+            { label: 'Roles', to: '/organizacion/roles' },
             { label: 'Integraciones y canales', to: '/modulos/integraciones' },
             { label: 'Auditoría y Reportes', to: '/control/auditoria-y-reportes' },
             { label: 'Matriz de permisos', to: '/referencia/permisos' },

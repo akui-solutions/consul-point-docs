@@ -37,7 +37,7 @@ Una organización guarda su **conocimiento** en carpetas. Un **agente** lo consu
   <ModuleCard icon="workspaces" title="Espacio de trabajo" href="/modulos/espacios-de-trabajo">
     Una división interna de la organización, por equipo, departamento, proyecto o cliente, con sus propios miembros, agentes y contenido.
   </ModuleCard>
-  <ModuleCard icon="user" title="Rol" href="/organizacion/usuarios-y-roles">
+  <ModuleCard icon="user" title="Rol" href="/organizacion/roles">
     Define qué puede hacer cada persona en cada módulo: ver, crear, editar o eliminar.
   </ModuleCard>
 </ModuleGrid>

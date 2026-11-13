@@ -34,7 +34,7 @@ Los términos que aparecen en la plataforma y en esta documentación, en orden a
 
 ## E
 
-- **Equipo**: grupo de usuarios de la organización. Se puede asignar, por ejemplo, a una integración para que atienda sus conversaciones.
+- **Equipo**: grupo de usuarios de la organización. Se puede asignar, por ejemplo, a una integración para que atienda sus conversaciones. Ver [Equipos](/organizacion/equipos).
 - **Espacio de trabajo**: división de la organización con sus propios miembros, agentes, aplicaciones, Centro de Conocimiento y artículos. Ver [Espacios de trabajo](/modulos/espacios-de-trabajo).
 - **Especialista**: agente experto en un tema, al que un agente consulta durante una conversación. No habla con las personas. Ver [Especialistas](/control/estudio/especialistas).
 - **Esquema de datos**: estructura que define qué datos se extraen de un documento y con qué forma. Ver [Biblioteca de esquemas](/control/estudio/esquemas-de-datos).
@@ -73,7 +73,7 @@ Los términos que aparecen en la plataforma y en esta documentación, en orden a
 
 - **Regla de correo**: regla de la Bandeja Inteligente que decide qué correos se procesan y cómo. Ver [Reglas de correo](/bandeja-inteligente/reglas-de-correo).
 - **Requiere atención**: marca de una conversación de canal que necesita a una persona. **Atender** la asigna a quien la toma y el agente deja de responder; **Marcar como resuelta** se la devuelve al agente. Ver [Atención humana](/conversaciones/canales-y-atencion-humana#atención-humana).
-- **Rol**: conjunto de permisos que define qué puede hacer cada persona en cada módulo. Ver [Usuarios y roles](/organizacion/usuarios-y-roles).
+- **Rol**: conjunto de permisos que define qué puede hacer cada persona en cada módulo. Ver [Roles](/organizacion/roles).
 
 ## T
 

@@ -105,20 +105,21 @@ const sidebars: SidebarsConfig = {
     ]),
   ],
 
+  // Mismos grupos que el menú de Configuración de la plataforma.
   administracionSidebar: [
-    group('Organización', [
-      'control/configuracion/configuracion-overview',
-      'organizacion/usuarios-y-roles',
+    'control/configuracion/configuracion-overview',
+    group('Acceso y organización', [
+      'organizacion/usuarios',
+      'organizacion/roles',
+      'organizacion/equipos',
       'modulos/espacios-de-trabajo',
     ]),
-    group('Canales e integraciones', [
+    group('IA e integraciones', [
       'modulos/integraciones',
-      'control/webhooks',
-    ]),
-    group('Aplicaciones', [
       'organizacion/catalogo-de-aplicaciones',
       'aplicaciones-integradas/instalar-y-administrar',
     ]),
+    group('Desarrolladores', ['control/webhooks']),
     group('Control', ['control/auditoria-y-reportes', 'referencia/permisos']),
   ],
 };
