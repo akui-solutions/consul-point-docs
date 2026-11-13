@@ -69,7 +69,7 @@ The terms that appear on the platform and in this documentation, in alphabetical
 
 ## P {#p}
 
-- **Prepare for agents**: action that turns a file into fragments the agents can search and read. See [Agents' knowledge](/centro-de-conocimiento/conocimiento-de-los-agentes).
+- **Prepare for agents**: action that turns a file into fragments the agents can search and read. See [Agent knowledge](/centro-de-conocimiento/conocimiento-de-los-agentes).
 
 ## R {#r}
 
@@ -89,7 +89,7 @@ The terms that appear on the platform and in this documentation, in alphabetical
 - **Tag**: word shared across the whole organization to classify people, entities and skills. See [Tags](/organizacion/etiquetas).
 - **Team**: group of users in the organization. It can be assigned, for example, to an integration so it handles its conversations. See [Teams](/organizacion/equipos).
 - **Temperature**: agent setting between precise (0) and creative (1) answers. See [Model](/control/estudio/crear-un-agente#modelo).
-- **Text version**: copy of a PDF converted to text and saved next to the original. If the folder is shared with agents, it is the version they read. See [Agents' knowledge](/centro-de-conocimiento/conocimiento-de-los-agentes).
+- **Text version**: copy of a PDF converted to text and saved next to the original. If the folder is shared with agents, it is the version they read. See [Agent knowledge](/centro-de-conocimiento/conocimiento-de-los-agentes).
 - **Token**: unit models use to measure the text they receive and the text they generate. The tokens used are deducted as credits.
 
 ## W {#w}

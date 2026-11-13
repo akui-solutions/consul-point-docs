@@ -57,7 +57,7 @@ To get an agent up and running that answers with your organization's documents:
 
 1. **Prepare the knowledge.** Upload the documents to folders in the [Knowledge Hub](/modulos/centro-de-conocimiento).
 2. **Create the agent** in the Studio, with its instructions, its model and the **Knowledge hub access** built-in function. See [Create an agent](/control/estudio/crear-un-agente).
-3. **Give it access to the folders.** Share them with the agent. See [Agents' knowledge](/centro-de-conocimiento/conocimiento-de-los-agentes).
+3. **Give it access to the folders.** Share them with the agent. See [Agent knowledge](/centro-de-conocimiento/conocimiento-de-los-agentes).
 4. **Assign it specialists**, if some topics are better kept separate, and **skills**, if it has to follow specific procedures. See [Specialists](/control/estudio/especialistas) and [Skills](/control/estudio/habilidades).
 5. **Decide who uses it**: only the person who creates it, the whole organization, or specific people and roles.
 6. **Test it** in [Conversations](/modulos/conversaciones) and check the sources of each answer.
