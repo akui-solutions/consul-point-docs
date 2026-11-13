@@ -30,12 +30,12 @@ En la pantalla de permisos de un rol, cada módulo tiene cuatro permisos: **Ver*
 | **Elementos fijados** | Los elementos fijados del menú lateral (**Configuración → Barra lateral**) |
 | **Atajos** | Los accesos rápidos de [Inicio](/modulos/inicio) |
 | **Integraciones** | Los canales de [Integraciones y canales](/modulos/integraciones) |
-| **Conectores** | Las herramientas externas para los agentes |
+| **Conectores** | Los [conectores](/organizacion/conectores): herramientas externas para los agentes |
 | **Webhooks** | [Webhooks](/control/webhooks) |
 | **Claves de API** | **Configuración → Claves de API** |
 | **Usuarios** | [Usuarios](/organizacion/usuarios) |
 | **Equipos** | [Equipos](/organizacion/equipos) |
-| **Organización** | **Configuración → Organización** |
+| **Organización** | [Organización](/organizacion/datos-de-la-organizacion) |
 | **Auditoría y reportes** | [Auditoría y Reportes](/control/auditoria-y-reportes) |
 
 ## Secciones solo para administradores
@@ -47,9 +47,9 @@ Estas secciones de Configuración solo las ve el rol **Administrador**, aunque o
 | [Usuarios](/organizacion/usuarios) | Permiso de ver **Usuarios** |
 | [Roles](/organizacion/roles) | — |
 | [Equipos](/organizacion/equipos) | Permiso de ver **Equipos** |
-| **Suscripción** | — |
-| **Proveedores de IA** | — |
-| **Conectores** (integraciones y conectores) | Permiso de ver **Integraciones** o **Conectores** |
+| [Suscripción](/organizacion/suscripcion) | — |
+| [Proveedores de IA](/organizacion/proveedores-de-ia) | — |
+| [Conectores](/modulos/integraciones) (integraciones y conectores) | Permiso de ver **Integraciones** o **Conectores** |
 
 El rol **Administrador** tiene todos los permisos y no se puede editar.
 

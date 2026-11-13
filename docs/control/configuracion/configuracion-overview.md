@@ -35,8 +35,8 @@ Las secciones están agrupadas igual que en la plataforma. En la columna **Quié
 
 | Sección | Para qué sirve | Quién la ve |
 |---|---|---|
-| **Proveedores de IA** | Conectar modelos de IA propios de la organización, si el plan lo incluye | Administradores |
-| **Conectores** | Los canales (WhatsApp, Telegram, correo, aplicaciones externas) y las herramientas externas para los agentes. Ver [Integraciones y canales](/modulos/integraciones) | Administradores |
+| **Proveedores de IA** | Los modelos de IA disponibles y los propios de la organización, si el plan los incluye. Ver [Proveedores de IA](/organizacion/proveedores-de-ia) | Administradores |
+| **Conectores** | Los canales (WhatsApp, Telegram, correo, aplicaciones externas) y las herramientas externas para los agentes. Ver [Integraciones y canales](/modulos/integraciones) y [Conectores](/organizacion/conectores) | Administradores |
 | **Reglas de correo** | Qué correos procesa la Bandeja Inteligente. Ver [Reglas de correo](/bandeja-inteligente/reglas-de-correo) | Permiso sobre **Bandeja Inteligente** |
 | **Aplicaciones** | Las aplicaciones integradas instaladas y las propias. Ver [Instalar y administrar](/aplicaciones-integradas/instalar-y-administrar) | Permiso sobre **Aplicaciones** |
 

@@ -1,54 +1,62 @@
 ---
 id: integraciones
-title: Integraciones y Canales
-sidebar_label: Integraciones y Canales
+title: Integraciones y canales
+sidebar_label: Integraciones y canales
 sidebar_position: 5
-description: "Configuración de canales externos en ConsulPoint: WhatsApp Business, Telegram, Gmail, Outlook, IMAP y aplicaciones externas. Atención humana."
+description: "Los canales que se conectan a ConsulPoint (WhatsApp, Telegram, correo, aplicaciones externas y Google Calendar), sus estados, acciones y tiempos de espera."
 ---
+
+# Integraciones y canales
 
 <PageMeta route="/settings/connectors">administrador</PageMeta>
 
-Configuración de las conexiones con canales de comunicación externos. Una integración vincula un canal con un agente y con un responsable.
+Una **integración** conecta un canal con ConsulPoint: un número de WhatsApp, un bot de Telegram, una cuenta de correo, una aplicación externa o Google Calendar. Las conversaciones de los canales llegan a [Conversaciones](/modulos/conversaciones), y el correo, a la [Bandeja Inteligente](/modulos/bandeja-inteligente).
 
-## Canales disponibles
+<Screenshot src="/img/configuracion/conectores-e-integraciones.png" alt="Pantalla Conectores e integraciones en Configuración de ConsulPoint" caption="Configuración → Conectores" />
 
-| Canal                     | Tipo       | Uso                              |
-| ------------------------- | ---------- | -------------------------------- |
-| **WhatsApp Business**     | Mensajería | Atención al cliente vía WhatsApp |
-| **Telegram**              | Mensajería | Atención vía Telegram            |
-| **Gmail**                 | Correo     | Correo corporativo Google        |
-| **Microsoft Outlook**     | Correo     | Correo corporativo Microsoft     |
-| **IMAP**                  | Correo     | Cualquier servidor de correo     |
-| **Aplicaciones externas** | API        | Integración con sistemas propios |
+## La pantalla
 
-## Estados de integración
+En **Configuración → Conectores**, la pantalla **Conectores e integraciones** muestra una tarjeta por cada integración, con la etiqueta **Integración**, y por cada [conector](/organizacion/conectores), con la etiqueta **Conector**. Se puede buscar y filtrar por **Estado de conexión** y por **Tipo de servicio**.
 
-| Estado                       | Significado                            |
-| ---------------------------- | -------------------------------------- |
-| **Activo / Inactivo**        | Integración habilitada o deshabilitada |
-| **Conectado / Desconectado** | Estado del canal                       |
-| **Autorizado**               | Credenciales válidas                   |
-| **Acción requerida**         | Requiere reautorización del usuario    |
+| Estado | Significado |
+|---|---|
+| **Conectado** | El canal funciona |
+| **Sin conectar** | Falta completar la conexión, por ejemplo autorizar la cuenta de correo |
+| **Caducada — reconectar** | Solo WhatsApp: la autorización caducó y hay que volver a conectar el número. Mientras tanto, el canal no funciona |
 
-:::warning Caducidad de autorizaciones
-Las autorizaciones de correo y de WhatsApp caducan. Ante el estado **Acción requerida**, utilizar la acción **Reautorizar cuenta**. El canal no opera mientras persista ese estado — es la causa habitual de que un canal deje de responder sin cambios de configuración.
-:::
+## Canales
 
-## Conexión de WhatsApp Business
+Se añaden con **Agregar integración**:
 
-<PageMeta route="/settings/connectors/whatsapp/new" />
+| Canal | Para qué sirve | Dónde llega |
+|---|---|---|
+| **WhatsApp** | Atender un número de WhatsApp Business con un agente y con personas del equipo | Conversaciones |
+| **Telegram** | Atender un bot de Telegram | Conversaciones |
+| **Email** | Gmail y Microsoft Outlook (con autorización de la cuenta) o cualquier correo IMAP. Ver [Conectar una cuenta](/bandeja-inteligente/conectar-una-cuenta) | Bandeja Inteligente |
+| **Aplicación externa** | Que un sistema propio envíe y reciba mensajes por API | Conversaciones |
+| **Google Calendar** | Que los agentes consulten la disponibilidad y agenden citas | — |
 
-Proceso guiado que comienza con la validación de la línea con Meta.
+### WhatsApp: conexión y modo del número
 
-**Requisitos previos:**
+El número se conecta con **Conexión asistida** (recomendada: se inicia sesión con Facebook y se siguen los pasos de Meta) o con **Conexión manual** (para quien ya tiene su propia aplicación y cuenta de empresa en Meta). El detalle de la integración indica el **Modo del número**:
 
-- Cuenta de WhatsApp Business
-- Número de teléfono no registrado en la aplicación WhatsApp estándar
-- Credenciales de Meta
+| Modo | Qué implica |
+|---|---|
+| **Coexistencia (app de WhatsApp Business)** | El número también se usa desde la app de WhatsApp Business. Si alguien responde desde la app, la IA se apaga en ese chat |
+| **Cloud API** | El número solo funciona en ConsulPoint, no en la app de WhatsApp Business |
 
-## Conexión de correo
+## Acciones
 
-Gmail y Microsoft Outlook se conectan mediante autorización de la cuenta. Otros proveedores requieren datos de servidor IMAP.
+Cada tarjeta tiene sus acciones según el canal:
+
+| Acción | Canales | Qué hace |
+|---|---|---|
+| **Editar** | Todos | Cambia el nombre, la descripción y los datos del canal |
+| **Gestionar equipo** | WhatsApp, Telegram, aplicación externa | Asigna el responsable, el agente y el [equipo](/organizacion/equipos) que atienden las conversaciones |
+| **Conectar cuenta** / **Reconectar cuenta** | Correo | Autoriza (o vuelve a autorizar) la cuenta |
+| **Regenerar API key** / **Regenerar secreto de firma** | Aplicación externa | Crea credenciales nuevas; las anteriores dejan de valer |
+| **Conectar Google Calendar** / **Desconectar** | Google Calendar | Al desconectar, los agentes dejan de poder consultar la disponibilidad y agendar citas |
+| **Eliminar** | Todos | Elimina la integración. No se puede deshacer |
 
 ## Datos de cada integración
 
@@ -64,7 +72,16 @@ Los datos que se piden cambian según el canal:
 
 El nombre admite hasta 50 caracteres y la descripción, si se rellena, entre 10 y 255.
 
-Para cambiar después el responsable, el agente o el equipo, usar **Gestionar equipo** en la lista de integraciones.
+Para cambiar después el responsable, el agente o el equipo, usar **Gestionar equipo** en la tarjeta de la integración.
+
+## Tiempos de espera
+
+En WhatsApp, Telegram y aplicaciones externas, **Editar** incluye **Tiempos de espera**, que se aplican cuando una conversación espera a una persona del equipo (ver [Canales y atención humana](/conversaciones/canales-y-atencion-humana#mensajes-al-contacto-mientras-espera)):
+
+| Campo | Significado |
+|---|---|
+| **Recordatorio (minutos)** | Cada cuánto se recuerda al contacto que sigue en espera. Por defecto, cada 10 minutos (de 1 a 1.440) |
+| **Espera máxima (minutos)** | Cuánto puede esperar el contacto (de 1 a 10.080). Vacío significa automático: 30 minutos en WhatsApp y Telegram; en las aplicaciones externas, según el canal |
 
 ## Atención humana
 

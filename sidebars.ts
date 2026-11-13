@@ -117,7 +117,9 @@ const sidebars: SidebarsConfig = {
       'modulos/espacios-de-trabajo',
     ]),
     group('IA e integraciones', [
+      'organizacion/proveedores-de-ia',
       'modulos/integraciones',
+      'organizacion/conectores',
       'organizacion/catalogo-de-aplicaciones',
       'aplicaciones-integradas/instalar-y-administrar',
     ]),
