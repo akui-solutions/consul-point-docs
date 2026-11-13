@@ -28,8 +28,8 @@ Las secciones están agrupadas igual que en la plataforma. En la columna **Quié
 | **Acceso → Usuarios** | Invitar personas, cambiar su rol y activarlas o desactivarlas. Ver [Usuarios](/organizacion/usuarios) | Administradores |
 | **Acceso → Roles** | Definir qué puede hacer cada rol en cada módulo. Ver [Roles](/organizacion/roles) | Administradores |
 | **Acceso → Equipos** | Agrupar personas para asignarlas juntas, por ejemplo a una integración. Ver [Equipos](/organizacion/equipos) | Administradores con permiso sobre **Equipos** |
-| **Organización** | Los datos de la organización | Permiso sobre **Organización** |
-| **Suscripción** | El plan contratado, los planes disponibles y los métodos de pago | Administradores |
+| **Organización** | Nombre, logo y descripción de la organización. Ver [Organización](/organizacion/datos-de-la-organizacion) | Permiso sobre **Organización** |
+| **Suscripción** | El plan, los créditos y la solicitud de un plan nuevo. Ver [Suscripción](/organizacion/suscripcion) | Administradores |
 
 ### IA e integraciones
 

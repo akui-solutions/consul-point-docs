@@ -100,7 +100,7 @@ Agente, especialista o microagente: el tipo se elige al crearlo y no se puede ca
 ## Consumo
 
 <ModuleGrid>
-  <ModuleCard icon="credits" title="Créditos" href="/control/auditoria-y-reportes">
+  <ModuleCard icon="credits" title="Créditos" href="/organizacion/creditos-y-limites">
     El saldo con el que la organización paga el uso de IA. Cada respuesta, análisis o búsqueda web los consume. Las respuestas de los modelos propios de la organización no consumen créditos.
   </ModuleCard>
   <ModuleCard icon="token" title="Token">

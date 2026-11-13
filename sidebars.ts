@@ -112,6 +112,8 @@ const sidebars: SidebarsConfig = {
       'organizacion/usuarios',
       'organizacion/roles',
       'organizacion/equipos',
+      'organizacion/datos-de-la-organizacion',
+      'organizacion/suscripcion',
       'modulos/espacios-de-trabajo',
     ]),
     group('IA e integraciones', [
@@ -120,7 +122,11 @@ const sidebars: SidebarsConfig = {
       'aplicaciones-integradas/instalar-y-administrar',
     ]),
     group('Desarrolladores', ['control/webhooks']),
-    group('Control', ['control/auditoria-y-reportes', 'referencia/permisos']),
+    group('Control', [
+      'control/auditoria-y-reportes',
+      'organizacion/creditos-y-limites',
+      'referencia/permisos',
+    ]),
   ],
 };
 

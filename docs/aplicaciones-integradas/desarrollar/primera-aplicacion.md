@@ -22,6 +22,10 @@ Una aplicación integrada es un **sitio web estático**: un `index.html` con sus
 
 No tiene servidor propio. Todo lo que necesita guardar o consultar lo hace a través de la API de ConsulPoint.
 
+:::info Nombre en el código
+En la API y en el código, las aplicaciones integradas se llaman **mini apps**: por eso aparecen nombres como `window.MINI_APP_PARAMS`, `miniAppId` o las rutas `/mini-apps/…`.
+:::
+
 ### Paso 1 — Crear el proyecto
 
 Con Vite, por ejemplo:
