@@ -41,6 +41,9 @@ const sidebars: SidebarsConfig = {
       'introduccion/vision-general',
       'introduccion/conceptos',
       'introduccion/navegacion',
+      'introduccion/acceder-a-la-plataforma',
+      'introduccion/tu-cuenta',
+      'introduccion/notificaciones',
     ]),
     group('Módulos', [
       'modulos/inicio',

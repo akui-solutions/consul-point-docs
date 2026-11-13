@@ -81,13 +81,13 @@ La barra superior da acceso a los elementos que acompañan a cualquier módulo:
   <ModuleCard icon="inbox" title="Bandeja Inteligente" href="/modulos/bandeja-inteligente">
     Correo de las cuentas conectadas, con reglas y análisis con IA. Visible para quien tiene permiso sobre ella.
   </ModuleCard>
-  <ModuleCard icon="notifications" title="Notificaciones">
+  <ModuleCard icon="notifications" title="Notificaciones" href="/introduccion/notificaciones">
     Avisos de la plataforma.
   </ModuleCard>
   <ModuleCard icon="help" title="Ayuda y documentación">
     Abre esta documentación en una pestaña nueva.
   </ModuleCard>
-  <ModuleCard icon="user" title="Menú de usuario">
+  <ModuleCard icon="user" title="Menú de usuario" href="/introduccion/tu-cuenta">
     Configuración de la cuenta, preferencias (modo oscuro e idioma) y cerrar sesión.
   </ModuleCard>
 </ModuleGrid>
@@ -98,8 +98,4 @@ El menú muestra únicamente los módulos habilitados para la organización y pe
 
 ## Idioma
 
-La interfaz está disponible en **español e inglés**. El idioma se cambia desde el **menú de usuario**, en la esquina superior derecha.
-
-{/* Captura del selector de idioma en el perfil: guardar el archivo en static/img/navegacion/ y descomentar.
-<Screenshot src="/img/navegacion/selector-idioma.png" alt="Selector de idioma en el perfil de usuario" caption="Cambio de idioma desde el perfil" />
-*/}
+La interfaz está disponible en **español e inglés**. El idioma se cambia desde el **menú de usuario**, en la esquina superior derecha, o desde la pantalla de inicio de sesión. Ver [Tu cuenta](/introduccion/tu-cuenta#menú-de-usuario).
