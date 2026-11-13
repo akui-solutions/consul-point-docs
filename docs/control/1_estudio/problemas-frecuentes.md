@@ -1,6 +1,6 @@
 ---
 id: problemas-frecuentes
-title: Problemas frecuentes
+title: Problemas frecuentes del Estudio
 sidebar_label: Problemas frecuentes
 sidebar_position: 7
 description: Soluciones a los problemas más habituales al crear y usar agentes, especialistas y microagentes en el Estudio de ConsulPoint.

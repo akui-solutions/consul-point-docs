@@ -1,6 +1,6 @@
 ---
 id: problemas-frecuentes
-title: Problemas frecuentes
+title: Problemas frecuentes de Conversaciones
 sidebar_label: Problemas frecuentes
 sidebar_position: 5
 description: Soluciones a los problemas más habituales en Conversaciones de ConsulPoint.

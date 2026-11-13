@@ -4,7 +4,7 @@ title: API de agentes
 sidebar_label: Consultar un agente
 sidebar_position: 1
 slug: /api-agentes
-description: Referencia para consultar un agente de ConsulPoint desde otro sistema con una clave de API. Formato nativo y compatible con OpenAI, adjuntos, streaming, errores y límites.
+description: "Cómo consultar un agente de ConsulPoint desde un sistema externo con la API de agentes: petición, respuesta, adjuntos, errores y créditos."
 ---
 
 # API de agentes

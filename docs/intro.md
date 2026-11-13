@@ -4,7 +4,7 @@ title: Documentación de ConsulPoint
 sidebar_label: Presentación
 sidebar_position: 1
 slug: /
-description: Documentación de ConsulPoint, la plataforma empresarial de inteligencia artificial para crear agentes, gestionar el conocimiento de la organización, atender canales y desplegar aplicaciones integradas.
+description: "Documentación oficial de ConsulPoint, la plataforma de agentes de IA para empresas: agentes, conocimiento, canales y aplicaciones integradas."
 ---
 
 # Documentación de ConsulPoint

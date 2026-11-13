@@ -1,6 +1,6 @@
 ---
 id: problemas-frecuentes
-title: Problemas frecuentes
+title: Problemas frecuentes de Aplicaciones integradas
 sidebar_label: Problemas frecuentes
 sidebar_position: 8
 description: Síntomas, causas y soluciones de los problemas más habituales al desarrollar, publicar o usar aplicaciones integradas en ConsulPoint.

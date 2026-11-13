@@ -1,6 +1,6 @@
 ---
 id: problemas-frecuentes
-title: Problemas frecuentes
+title: Problemas frecuentes del Centro de Conocimiento
 sidebar_label: Problemas frecuentes
 sidebar_position: 8
 description: Soluciones a los problemas más habituales del Centro de Conocimiento de ConsulPoint.

@@ -3,7 +3,7 @@ id: canales-y-atencion-humana
 title: Canales y atención humana
 sidebar_label: Canales y atención humana
 sidebar_position: 4
-description: Cómo se atienden en ConsulPoint las conversaciones de WhatsApp, Telegram y aplicaciones externas, cómo tomar el control de una conversación y cómo funciona la atención humana.
+description: Cómo se atienden en ConsulPoint las conversaciones de WhatsApp, Telegram y aplicaciones externas, y cómo tomar el control de una conversación.
 ---
 
 # Canales y atención humana

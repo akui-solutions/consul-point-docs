@@ -3,7 +3,7 @@ id: problemas-frecuentes
 title: Problemas frecuentes de Administración
 sidebar_label: Problemas frecuentes
 sidebar_position: 2
-description: Soluciones a los problemas más habituales al administrar una organización en ConsulPoint. Usuarios e invitaciones, permisos, plan y créditos, modelos propios, canales, conectores, claves de API, webhooks y espacios de trabajo.
+description: "Soluciones a los problemas habituales al administrar ConsulPoint: usuarios, permisos, plan y créditos, canales, conectores, claves de API y webhooks."
 ---
 
 # Problemas frecuentes de Administración
