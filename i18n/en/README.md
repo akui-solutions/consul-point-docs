@@ -54,7 +54,8 @@ node scripts/translation-status.mjs
 - Traducir el sentido, no palabra por palabra. Misma estructura, títulos y tablas que en español.
 - Tratar al lector de "you", con frases sencillas y directas.
 - Citar las etiquetas de la interfaz exactamente como las muestra la plataforma en inglés
-  (`public/locales/en` en el frontend), en negrita como en español.
+  (`public/locales/en` en el frontend, de la misma versión que describe la página en español),
+  en negrita como en español.
 - Dejar los enlaces como están (`/modulos/inicio`): el sitio añade `/en/` solo.
 - Dar a cada título el mismo ancla que en español, para que los enlaces con `#` funcionen en
   los dos idiomas: `## User menu {#menú-de-usuario}`.
@@ -82,7 +83,16 @@ Nombres de módulos y conceptos, como los muestra la plataforma en inglés.
 | Aplicación externa (canal) | External app |
 | Agente / Especialista / Microagente | Agent / Specialist / Micro-agent |
 | Instrucciones del sistema | System instructions |
-| Capacidades | Capabilities |
+| Funciones integradas (de un agente) | Built-in functions |
+| Habilidad | Skill |
+| Biblioteca de esquemas | Schema library |
+| Extracción inteligente | Smart Extract |
+| Reglas de correo / Carpeta de resúmenes | Email rules / Summaries folder |
+| Mis documentos / Compartidos conmigo | My documents / Shared with me |
+| Disponible para agentes | Available to agents |
+| Atención humana | Human support |
+| Panel auxiliar | Side panel |
+| Responsable / Tipo de contacto / Etiqueta | Owner / Contact type / Tag |
 | Esquema de datos | Data schema |
 | Carpeta | Folder |
 | Conectores | Connectors |
@@ -96,4 +106,6 @@ Nombres de módulos y conceptos, como los muestra la plataforma en inglés.
 | Fijados | Pinned |
 | Configuración de cuenta | Account Settings |
 | Organización favorita | Favorite organization |
+| Problemas frecuentes (título de página) | Common issues |
+| Permiso en PageMeta: "el que corresponda sobre **X**" | "the relevant one on **X**" |
 | Pestañas del sitio: Guía de uso / Administración / Desarrolladores | User guide / Administration / Developers |
