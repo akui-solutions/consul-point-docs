@@ -4,6 +4,7 @@ import { themes as prismThemes } from 'prism-react-renderer';
 import tailwindcss from 'tailwindcss';
 import autoprefixer from 'autoprefixer';
 import llmsTxtPlugin from './plugins/llms-txt';
+import translationStatusPlugin from './plugins/translation-status';
 
 const ORG = 'akui-solutions';
 const REPO = 'consul-point-docs';
@@ -39,10 +40,13 @@ const config: Config = {
 
   i18n: {
     defaultLocale: 'es',
-    locales: ['es'],
+    // El español está en la raíz y el inglés en /en/. Las páginas en inglés están
+    // en i18n/en/docusaurus-plugin-content-docs/current/, con la misma ruta que su
+    // original en docs/. Las que aún no existen se muestran en español con un aviso.
+    // Ver i18n/en/README.md.
+    locales: ['es', 'en'],
     localeConfigs: {
       es: { label: 'Español', htmlLang: 'es-ES' },
-      // Para activar inglés: añade 'en' a `locales` y traduce en i18n/en/
       en: { label: 'English', htmlLang: 'en-US' },
     },
   },
@@ -57,12 +61,12 @@ const config: Config = {
     '@docusaurus/theme-mermaid',
     // Buscador local: el índice se genera al compilar y viaja con el sitio; no
     // depende de ningún servicio externo. Solo funciona en la versión compilada
-    // (pnpm build && pnpm serve), no con pnpm start. Textos en i18n/es/code.json.
+    // (pnpm build && pnpm serve), no con pnpm start. Textos en i18n/<idioma>/code.json.
     [
       '@easyops-cn/docusaurus-search-local',
       {
         hashed: true,
-        language: ['es'],
+        language: ['es', 'en'],
         indexBlog: false,
         docsRouteBasePath: '/',
         highlightSearchTermsOnTargetPage: true,
@@ -74,6 +78,7 @@ const config: Config = {
   clientModules: ['./src/clientModules/tableLabels.ts'],
   plugins: [
     tailwindPlugin,
+    translationStatusPlugin,
     llmsTxtPlugin,
     [
       '@docusaurus/plugin-client-redirects',
@@ -147,6 +152,7 @@ const config: Config = {
           position: 'left',
           label: 'Administración',
         },
+        { type: 'localeDropdown', position: 'right' },
         { type: 'search', position: 'right' },
       ],
     },

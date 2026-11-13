@@ -1,0 +1,82 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.usoSidebar.category.Primeros pasos": {
+    "message": "Getting started",
+    "description": "The label for category 'Primeros pasos' in sidebar 'usoSidebar'"
+  },
+  "sidebar.usoSidebar.category.Módulos": {
+    "message": "Modules",
+    "description": "The label for category 'Módulos' in sidebar 'usoSidebar'"
+  },
+  "sidebar.usoSidebar.category.Conversaciones": {
+    "message": "Conversations",
+    "description": "The label for category 'Conversaciones' in sidebar 'usoSidebar'"
+  },
+  "sidebar.usoSidebar.category.Bandeja Inteligente": {
+    "message": "Smart Inbox",
+    "description": "The label for category 'Bandeja Inteligente' in sidebar 'usoSidebar'"
+  },
+  "sidebar.usoSidebar.category.Centro de Conocimiento": {
+    "message": "Knowledge Hub",
+    "description": "The label for category 'Centro de Conocimiento' in sidebar 'usoSidebar'"
+  },
+  "sidebar.usoSidebar.category.Estudio": {
+    "message": "Studio",
+    "description": "The label for category 'Estudio' in sidebar 'usoSidebar'"
+  },
+  "sidebar.usoSidebar.category.Aplicaciones integradas": {
+    "message": "Integrated apps",
+    "description": "The label for category 'Aplicaciones integradas' in sidebar 'usoSidebar'"
+  },
+  "sidebar.usoSidebar.category.Referencia": {
+    "message": "Reference",
+    "description": "The label for category 'Referencia' in sidebar 'usoSidebar'"
+  },
+  "sidebar.desarrolladoresSidebar.category.Aplicaciones integradas": {
+    "message": "Integrated apps",
+    "description": "The label for category 'Aplicaciones integradas' in sidebar 'desarrolladoresSidebar'"
+  },
+  "sidebar.desarrolladoresSidebar.category.Primeros pasos": {
+    "message": "Getting started",
+    "description": "The label for category 'Primeros pasos' in sidebar 'desarrolladoresSidebar'"
+  },
+  "sidebar.desarrolladoresSidebar.category.Trabajar con la plataforma": {
+    "message": "Working with the platform",
+    "description": "The label for category 'Trabajar con la plataforma' in sidebar 'desarrolladoresSidebar'"
+  },
+  "sidebar.desarrolladoresSidebar.category.API de agentes": {
+    "message": "Agents API",
+    "description": "The label for category 'API de agentes' in sidebar 'desarrolladoresSidebar'"
+  },
+  "sidebar.desarrolladoresSidebar.category.Canal de aplicación externa": {
+    "message": "External app channel",
+    "description": "The label for category 'Canal de aplicación externa' in sidebar 'desarrolladoresSidebar'"
+  },
+  "sidebar.administracionSidebar.category.Acceso y organización": {
+    "message": "Access and organization",
+    "description": "The label for category 'Acceso y organización' in sidebar 'administracionSidebar'"
+  },
+  "sidebar.administracionSidebar.category.IA e integraciones": {
+    "message": "AI and integrations",
+    "description": "The label for category 'IA e integraciones' in sidebar 'administracionSidebar'"
+  },
+  "sidebar.administracionSidebar.category.Integraciones y canales": {
+    "message": "Integrations and channels",
+    "description": "The label for category 'Integraciones y canales' in sidebar 'administracionSidebar'"
+  },
+  "sidebar.administracionSidebar.category.Datos y personalización": {
+    "message": "Data and customization",
+    "description": "The label for category 'Datos y personalización' in sidebar 'administracionSidebar'"
+  },
+  "sidebar.administracionSidebar.category.Desarrolladores": {
+    "message": "Developers",
+    "description": "The label for category 'Desarrolladores' in sidebar 'administracionSidebar'"
+  },
+  "sidebar.administracionSidebar.category.Control": {
+    "message": "Control",
+    "description": "The label for category 'Control' in sidebar 'administracionSidebar'"
+  }
+}

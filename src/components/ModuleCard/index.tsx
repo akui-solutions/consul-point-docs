@@ -1,3 +1,4 @@
+import { translate } from '@docusaurus/Translate';
 import React from 'react';
 import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -26,7 +27,7 @@ export function ModuleCard({ icon, title, href, image, children }: ModuleCardPro
         <div className="aspect-[2/1] overflow-hidden border-0 border-b border-solid border-[var(--cp-border)] bg-[var(--cp-bg)]">
           <img
             src={imageUrl}
-            alt={`Vista del módulo ${title}`}
+            alt={translate({ id: 'cp.moduleCard.imageAlt', message: 'Vista del módulo {title}' }, { title })}
             loading="lazy"
             className="block h-full w-full object-cover object-left-top transition-transform duration-300 group-hover:scale-[1.02]"
           />
@@ -45,7 +46,7 @@ export function ModuleCard({ icon, title, href, image, children }: ModuleCardPro
         <div className="font-sans text-sm leading-relaxed text-[var(--cp-text-secondary)] [&>p]:m-0">{children}</div>
         {href && (
           <span className="mt-auto inline-flex items-center gap-1 font-sans text-sm font-semibold text-[var(--cp-text-accent)]">
-            Ver documentación
+            {translate({ id: 'cp.moduleCard.cta', message: 'Ver documentación' })}
             <Icon name="arrowRight" size={14} className="transition-transform duration-200 group-hover:translate-x-1" />
           </span>
         )}

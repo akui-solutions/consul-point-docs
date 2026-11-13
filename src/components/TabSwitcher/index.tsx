@@ -3,6 +3,7 @@ import Link from '@docusaurus/Link';
 import { useLocation } from '@docusaurus/router';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useGlobalData from '@docusaurus/useGlobalData';
+import { translate } from '@docusaurus/Translate';
 import { sidebarOf, type DocsGlobalData, type NavbarItem } from '../TabHint';
 
 /**
@@ -28,7 +29,7 @@ export function TabSwitcher(): React.JSX.Element | null {
     document.querySelector<HTMLElement>('.navbar-sidebar__backdrop')?.click();
 
   return (
-    <nav className="tab-switcher" aria-label="Secciones de la documentación">
+    <nav className="tab-switcher" aria-label={translate({ id: 'cp.tabSwitcher.label', message: 'Secciones de la documentación' })}>
       {items.map((item) => {
         const to = sidebars[item.sidebarId!]?.link?.path ?? '/';
         const active = item.sidebarId === current;

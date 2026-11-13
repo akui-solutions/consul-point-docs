@@ -1,0 +1,18 @@
+{
+  "logo.alt": {
+    "message": "ConsulPoint",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Guía de uso": {
+    "message": "User guide",
+    "description": "Navbar item with label Guía de uso"
+  },
+  "item.label.Desarrolladores": {
+    "message": "Developers",
+    "description": "Navbar item with label Desarrolladores"
+  },
+  "item.label.Administración": {
+    "message": "Administration",
+    "description": "Navbar item with label Administración"
+  }
+}

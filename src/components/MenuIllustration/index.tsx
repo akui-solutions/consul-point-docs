@@ -1,3 +1,4 @@
+import { translate } from '@docusaurus/Translate';
 import React from 'react';
 import { Logo } from '../Logo';
 import { Icon, type IconName } from '../Icon';
@@ -47,7 +48,10 @@ export function MenuIllustration({ main, section, footer, workspace, active, cap
     <figure className="mx-0 my-8">
       <div
         role="img"
-        aria-label={`Esquema del menú lateral de ConsulPoint: ${[...main, ...(footer ?? [])].map((i) => i.label).join(', ')}`}
+        aria-label={translate(
+          { id: 'cp.menuIllustration.label', message: 'Esquema del menú lateral de ConsulPoint: {items}' },
+          { items: [...main, ...(footer ?? [])].map((i) => i.label).join(', ') },
+        )}
         className="overflow-hidden rounded-xl border border-solid border-[var(--cp-border)] bg-[var(--cp-card)] shadow-[0_8px_30px_rgba(15,44,89,0.08)]"
       >
         <div className="flex items-center gap-1.5 border-0 border-b border-solid border-[var(--cp-border)] px-3 py-2">

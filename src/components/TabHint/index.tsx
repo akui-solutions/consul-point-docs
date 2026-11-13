@@ -2,6 +2,8 @@ import React from 'react';
 import { useLocation } from '@docusaurus/router';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useGlobalData from '@docusaurus/useGlobalData';
+import { useBaseUrlUtils } from '@docusaurus/useBaseUrl';
+import { translate } from '@docusaurus/Translate';
 
 /**
  * Las páginas están repartidas en tres pestañas (Guía de uso, Desarrolladores,
@@ -38,10 +40,12 @@ export function useOtherTab(href: string | undefined): string | null {
   const { pathname } = useLocation();
   const { siteConfig } = useDocusaurusContext();
   const docsData = (useGlobalData()['docusaurus-plugin-content-docs'] ?? {}) as DocsGlobalData;
+  const { withBaseUrl } = useBaseUrlUtils();
 
   if (!href || !href.startsWith('/')) return null;
   const current = sidebarOf(pathname, docsData);
-  const target = sidebarOf(href, docsData);
+  // En otro idioma las rutas llevan su prefijo (/en/…); los enlaces de las páginas, no.
+  const target = sidebarOf(withBaseUrl(href), docsData);
   if (!current || !target || current === target) return null;
 
   const items = ((siteConfig.themeConfig.navbar as { items?: NavbarItem[] })?.items ?? []);
@@ -52,7 +56,10 @@ export function useOtherTab(href: string | undefined): string | null {
 /** Etiqueta pequeña con el nombre de la otra pestaña. */
 export function TabHint({ label }: { label: string }): React.JSX.Element {
   return (
-    <span className="tab-hint" title={`Esta página está en la pestaña ${label}`}>
+    <span className="tab-hint" title={translate(
+        { id: 'cp.tabHint.title', message: 'Esta página está en la pestaña {label}' },
+        { label },
+      )}>
       {label}
     </span>
   );

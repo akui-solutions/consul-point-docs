@@ -1,4 +1,5 @@
 import React from 'react';
+import { translate } from '@docusaurus/Translate';
 import { Icon } from '../Icon';
 
 type PageMetaProps = {
@@ -16,7 +17,9 @@ export function PageMeta({ route, children }: PageMetaProps): React.JSX.Element 
       {routes.length > 0 && (
         <div className="page-meta__item">
           <Icon name="route" size={16} className="page-meta__icon" />
-          <span className="page-meta__label">{routes.length > 1 ? 'Rutas' : 'Ruta'}</span>
+          <span className="page-meta__label">{routes.length > 1
+              ? translate({ id: 'cp.pageMeta.routes', message: 'Rutas' })
+              : translate({ id: 'cp.pageMeta.route', message: 'Ruta' })}</span>
           {routes.map((r) => (
             <code key={r}>{r}</code>
           ))}
@@ -25,7 +28,9 @@ export function PageMeta({ route, children }: PageMetaProps): React.JSX.Element 
       {children && (
         <div className="page-meta__item">
           <Icon name="lock" size={16} className="page-meta__icon" />
-          <span className="page-meta__label">Permiso</span>
+          <span className="page-meta__label">
+            {translate({ id: 'cp.pageMeta.permission', message: 'Permiso' })}
+          </span>
           <span>{children}</span>
         </div>
       )}
