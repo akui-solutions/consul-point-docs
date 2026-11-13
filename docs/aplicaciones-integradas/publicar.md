@@ -67,7 +67,9 @@ La versión en uso figura como **Actual**: es siempre la última **publicada** p
 Se rechazan los archivos ocultos, los que no tienen extensión y los de cualquier otro tipo, como `.mjs`, `.wasm` o `.pdf`. Un solo archivo no admitido hace fallar la versión completa.
 
 :::warning Referencias a archivos
-Las referencias a estilos, código e imágenes desde `index.html` deben usar rutas que empiecen por `/` (el valor por defecto de herramientas como Vite). La plataforma las adapta al publicar.
+Las referencias a estilos, código e imágenes desde `index.html` deben usar rutas que empiecen por `/`, el valor por defecto de herramientas como Vite (`base: '/'`). La plataforma las adapta cada vez que sirve la aplicación. **No usar rutas relativas** (`./assets/…`) en `index.html`: se resuelven fuera de la carpeta de la aplicación y los archivos no cargan.
+
+Solo se adaptan los atributos `src`, `href` y `data-src` de `index.html`. Las rutas que el código construye mientras se ejecuta, o las `url(/…)` dentro de los estilos, no se adaptan: en esos casos, usar rutas relativas al propio archivo de código o de estilos.
 :::
 
 ## Modelos y permisos

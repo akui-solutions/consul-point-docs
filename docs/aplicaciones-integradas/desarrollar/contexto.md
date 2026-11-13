@@ -53,7 +53,15 @@ export function getConfig() {
 
 ## Cuándo cambia
 
-Si el usuario cambia de idioma, de tema, de carpeta o de conversación, ConsulPoint **vuelve a cargar la aplicación** con el contexto nuevo. No hay que escuchar cambios.
+Si el usuario cambia de idioma, de tema, de carpeta o de conversación, ConsulPoint **vuelve a cargar la aplicación** con el contexto nuevo. No hay que escuchar cambios. Si la plataforma envía un contexto nuevo sin recargar, se dispara el evento opcional `mini-app-context` en `window`.
+
+### Cómo llega el contexto
+
+La aplicación se sirve desde un dominio propio, separado del de la plataforma. Al cargarse, avisa a ConsulPoint de que está lista y recibe el contexto; mientras tanto, sus scripts esperan, y se ejecutan en orden cuando `window.MINI_APP_PARAMS` ya existe. Por eso conviene evitar en el código:
+
+- `document.write`;
+- depender de que `document.readyState` sea `loading`;
+- atributos `on…` en el HTML que llamen a funciones del propio código.
 
 Por eso la aplicación no debe dar por hecho que su estado en memoria se conserva: lo que importe se guarda en la plataforma.
 

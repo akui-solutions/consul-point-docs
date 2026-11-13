@@ -14,7 +14,8 @@ Problemas habituales, ordenados por el momento en que aparecen. Cada fila indica
 
 | Síntoma | Causa | Solución |
 |---|---|---|
-| El recuadro queda en blanco | El paquete no tiene `index.html` en la raíz, o un archivo de estilos o código no se encuentra | Revisar el contenido del ZIP y que las referencias empiecen por `/` |
+| El recuadro queda en blanco | El paquete no tiene `index.html` en la raíz, o un archivo de estilos o código no se encuentra | Revisar el contenido del ZIP y que las referencias de `index.html` empiecen por `/`, no por `./`. Ver [Publicar](/aplicaciones-integradas/publicar) |
+| Al leer un archivo, el navegador responde «Failed to fetch» | El almacenamiento de archivos no admite peticiones desde el dominio de las aplicaciones | Contactar con soporte de ConsulPoint |
 | Aparece un mensaje de aplicación no disponible | Está en borrador, desactivada o sin una versión publicada | Activarla y comprobar la pestaña **Versiones** |
 | «Esta aplicación ya no está disponible» | Quien la publica la retiró del catálogo | Desinstalarla desde **Instaladas** |
 | Funciona en la **Vista previa** pero no aparece en Inicio o en Conversaciones | Su tipo no corresponde a ese lugar | Consultar [Dónde aparecen](/aplicaciones-integradas/donde-aparecen) |

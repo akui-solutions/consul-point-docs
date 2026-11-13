@@ -83,5 +83,5 @@ Asignar y desvincular requiere poder editar el agente. Un mismo especialista se 
 :::tip Especialistas útiles
 - Un especialista por tema bien delimitado, con sus propios documentos.
 - Pocas palabras en común entre las descripciones técnicas de los especialistas de un mismo agente, para que no compitan.
-- Probar en Conversaciones preguntas que **deben** llegar al especialista y otras que **no**.
+- Probar en Conversaciones preguntas que **deben** llegar al especialista y otras que **no**. Encima de la respuesta, [Qué hizo el agente](/conversaciones/conversar-con-un-agente#qué-hizo-el-agente) muestra **Consultó a "…"** cuando lo consultó.
 :::

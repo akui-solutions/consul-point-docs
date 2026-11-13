@@ -56,7 +56,7 @@ sequenceDiagram
 Reglas:
 
 - Una respuesta `401` significa que el servidor no hizo nada, por lo que repetir la petición es seguro incluso al guardar.
-- Varias peticiones vencidas a la vez comparten una única renovación.
+- Varias peticiones vencidas a la vez comparten una única renovación. Si se pide otra renovación en los 30 segundos siguientes, la plataforma devuelve la misma sesión.
 - Si la plataforma responde `SESSION_REFRESH_FAILED`, o no responde en unos 8 segundos, se muestra un estado propio de **sesión expirada** que invite a abrir de nuevo la aplicación.
 - La sesión nueva se conserva en memoria, nunca en el almacenamiento del navegador.
 

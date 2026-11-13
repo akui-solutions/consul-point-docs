@@ -81,5 +81,5 @@ Permisos de la aplicación
 ```
 
 :::warning Almacenamiento del navegador
-El almacenamiento del navegador sirve solo para preferencias de interfaz. Los datos que deban conservarse o protegerse se guardan en la plataforma, no en el navegador.
+El almacenamiento del navegador sirve solo para preferencias de interfaz. Todas las aplicaciones integradas se sirven desde el mismo dominio, así que `localStorage`, `sessionStorage`, IndexedDB y las cookies son **compartidos con las demás aplicaciones**, también de otras organizaciones. Los datos que deban conservarse o protegerse se guardan en la plataforma, no en el navegador.
 :::
