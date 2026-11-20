@@ -28,7 +28,7 @@ Cada usuario ve solo los bloques de los módulos a los que tiene acceso. El pane
 ### Avisos en la parte superior
 
 - **¿Primera vez en ConsulPoint?** — tarjeta con enlaces a la guía de inicio de esta documentación (**Visión general**, **Navegación**, **Conceptos**). Se cierra con la **X** y deja de mostrarse para ese usuario en ese navegador.
-- **Periodo de prueba** — en las organizaciones que están en prueba, una tarjeta indica los días que quedan. Los administradores ven además un botón que lleva a los planes disponibles.
+- **Periodo de prueba** — en las organizaciones que están en prueba, una tarjeta indica los días que quedan. Los administradores ven además un botón que lleva a las suscripciones disponibles.
 
 ## Accesos
 

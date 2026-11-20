@@ -37,7 +37,7 @@ If a file with the same name already exists in the folder, the new one is saved 
 |---|---|
 | Files per upload | Up to 6 |
 | Size per file | Up to 150 MB |
-| Total storage | Depends on your plan |
+| Total storage | Depends on your subscription |
 
 | Format | Extensions | Read by agents |
 |---|---|---|

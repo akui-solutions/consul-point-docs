@@ -58,7 +58,7 @@ Al pulsar la tarjeta se abre el detalle: la versión, la fecha de instalación, 
 
 Los agentes se instalan, actualizan y desinstalan como se explica en [Agentes del catálogo](/control/estudio/agentes-del-catalogo).
 
-Instalar y actualizar requieren permiso de crear sobre el módulo correspondiente (en los agentes, **Estudio**); desinstalar, permiso de eliminar. El plan fija cuántas habilidades, conectores y recursos se pueden tener: al llegar al máximo, la plataforma lo indica antes de instalar. Ver [Créditos y límites](/organizacion/creditos-y-limites#límites-del-plan).
+Instalar y actualizar requieren permiso de crear sobre el módulo correspondiente (en los agentes, **Estudio**); desinstalar, permiso de eliminar. La suscripción fija cuántas habilidades, conectores y recursos se pueden tener: al llegar al máximo, la plataforma lo indica antes de instalar. Ver [Créditos y límites](/organizacion/creditos-y-limites#límites-de-la-suscripción).
 
 ## Instaladas
 

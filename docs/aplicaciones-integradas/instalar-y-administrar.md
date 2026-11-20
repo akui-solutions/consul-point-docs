@@ -25,7 +25,7 @@ Esta página no requiere conocimientos de programación.
 La aplicación queda disponible en los lugares que correspondan a su tipo. Consultar [Dónde aparecen](/aplicaciones-integradas/donde-aparecen).
 
 :::info Recursos incluidos
-Los recursos que se crean al instalar cuentan para los límites del plan de la organización.
+Los recursos que se crean al instalar cuentan para los límites de la suscripción de la organización.
 :::
 
 ## Estados en el catálogo

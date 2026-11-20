@@ -84,6 +84,7 @@ The terms that appear on the platform and in this documentation, in alphabetical
 - **Smart Extract**: folder type that extracts structured data from each document uploaded. See [Smart Extract](/centro-de-conocimiento/extraccion-inteligente).
 - **Smart Inbox**: module that gathers the emails from connected accounts and brings their content into the Knowledge Hub. See [Smart Inbox](/modulos/bandeja-inteligente).
 - **Specialist**: agent that is an expert in a topic, which an agent consults during a conversation. It does not talk to people. See [Specialists](/control/estudio/especialistas).
+- **Subscription**: what the organization contracts with ConsulPoint: the credits for each cycle and the maximum for each resource. See [Subscription](/organizacion/suscripcion).
 - **Studio**: module where agents, specialists, micro-agents and data schemas are created and configured. See [Studio](/modulos/estudio).
 - **System instructions**: text that defines an agent's role, its limits and how it answers. It is what most affects the quality of its answers. See [System instructions](/control/estudio/crear-un-agente#comportamiento-instrucciones-del-sistema).
 
@@ -103,4 +104,4 @@ The terms that appear on the platform and in this documentation, in alphabetical
 
 ## Y {#y}
 
-- **Your own model**: AI model connected with the organization's own account, in **Settings → AI Providers**, if the plan includes it. Its answers do not use credits.
+- **Your own model**: AI model connected with the organization's own account, in **Settings → AI Providers**, if the subscription includes it. Its answers do not use credits.

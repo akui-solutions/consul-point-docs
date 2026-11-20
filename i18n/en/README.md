@@ -114,7 +114,7 @@ Nombres de módulos y conceptos, como los muestra la plataforma en inglés.
 | Predefinido / Personalizado | Built-in / Custom |
 | Bonos de crédito / Códigos de referido / Solicitudes | Credit vouchers / Referral codes / Requests |
 | Modelo propio | Own model (insignia: "Your own model") |
-| Modo consulta (sin plan activo) | Read-only mode |
+| Modo consulta (sin suscripción activa) | Read-only mode |
 | Conexión asistida / manual (WhatsApp) | Guided connection / Manual connection |
 | Secreto de firma | Signing secret |
 | Elementos retirados | Withdrawn items |

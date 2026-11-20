@@ -98,7 +98,7 @@ Algunos límites cuentan solo lo de quien mira, no lo de toda la organización. 
 | **Integraciones** | Un único máximo para todas juntas |
 | **Conectores** | Cada conector instalado, aunque lo usen varios agentes |
 
-Qué pasa al llegar a un límite se explica en [Créditos y límites](/organizacion/creditos-y-limites#límites-del-plan).
+Qué pasa al llegar a un límite se explica en [Créditos y límites](/organizacion/creditos-y-limites#límites-de-la-suscripción).
 
 :::note Qué no incluye
 Este módulo muestra consumo y actividad agregada. No es un registro de acciones (quién creó, modificó o eliminó qué) ni permite exportar los datos.

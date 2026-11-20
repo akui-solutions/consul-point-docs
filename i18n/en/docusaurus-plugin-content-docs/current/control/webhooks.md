@@ -38,7 +38,7 @@ Click **New webhook** and fill in:
 | **Events** | The occurrences that trigger the notification. See the table below |
 | **Chat** | Only with **Specific Conversation Updated**: the conversation that triggers it |
 
-New webhooks are created active. The plan sets the maximum number of webhooks. See [Credits and limits](/organizacion/creditos-y-limites#límites-del-plan).
+New webhooks are created active. The subscription sets the maximum number of webhooks. See [Credits and limits](/organizacion/creditos-y-limites#límites-de-la-suscripción).
 
 ## Events {#eventos}
 

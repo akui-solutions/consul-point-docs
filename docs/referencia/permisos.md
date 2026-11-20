@@ -55,5 +55,5 @@ Estas secciones de Configuración solo las ve el rol **Administrador**, aunque o
 El rol **Administrador** tiene todos los permisos y no se puede editar.
 
 :::note Disponibilidad efectiva
-Un permiso solo tiene efecto si el módulo está incluido en el plan de la organización. Una persona con permisos sobre un módulo no contratado no lo verá en el menú.
+Un permiso solo tiene efecto si el módulo está incluido en la suscripción de la organización. Una persona con permisos sobre un módulo no contratado no lo verá en el menú.
 :::

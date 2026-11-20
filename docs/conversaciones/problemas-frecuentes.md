@@ -39,7 +39,7 @@ description: Soluciones a los problemas más habituales en Conversaciones de Con
 
 | Síntoma | Causa y solución |
 |---|---|
-| El botón **Nueva conversación** está desactivado | La organización no tiene un plan activo, o el rol no permite crear conversaciones |
+| El botón **Nueva conversación** está desactivado | La organización no tiene una suscripción activa, o el rol no permite crear conversaciones |
 | No aparece **Compartir conversación** | La conversación todavía no tiene mensajes, o el rol no permite editarla |
 | No se encuentra a una persona al compartir | No tiene acceso al agente de la conversación |
 | Una conversación desapareció de la lista | Se eliminó, o se dejó de compartir |

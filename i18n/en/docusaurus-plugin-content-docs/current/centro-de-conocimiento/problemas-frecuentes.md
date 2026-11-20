@@ -28,7 +28,7 @@ If the document is available and the agent still does not use it, the problem is
 | **Exceeds the maximum size** | The file is larger than 150 MB | Split or compress it |
 | **Unsupported format** | File type not accepted | See [Formats and limits](/centro-de-conocimiento/subir-documentos#formatos-y-límites) |
 | No more files can be added to the upload | Up to 6 per upload are allowed | Upload them in several batches |
-| The upload is rejected even though the file is valid | The plan's storage limit has been reached | Free up space or upgrade the plan |
+| The upload is rejected even though the file is valid | The subscription's storage limit has been reached | Free up space or upgrade the subscription |
 
 ## An option does not appear {#no-aparece-una-opción}
 

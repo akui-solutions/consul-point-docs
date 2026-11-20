@@ -161,7 +161,7 @@ curl -X DELETE -H "Authorization: Bearer {API key}" \
 | Code | Cause |
 |---|---|
 | `400` | The agent or end-user identifier isn't valid |
-| `403` | The key isn't linked to the agent, or the organization has no active plan |
+| `403` | The key isn't linked to the agent, or the organization has no active subscription |
 | `404` | The agent doesn't exist in the organization |
 | `503` | Memory isn't available right now (when deleting) |
 
@@ -173,7 +173,7 @@ End users' memory is deleted automatically when you delete the API key, remove t
 |---|---|
 | `400` | Invalid attachments or parameters, or an invalid `endUserId` |
 | `401` | The key is missing or not valid |
-| `403` | The agent is not associated with the key, the organization has no active plan or has no credits left |
+| `403` | The agent is not associated with the key, the organization has no active subscription or has no credits left |
 | `404` | There is no agent with that name |
 | `409` | Several agents have that name: use its identifier |
 | `413` | The body exceeds 28 MB |

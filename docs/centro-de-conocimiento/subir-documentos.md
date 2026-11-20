@@ -37,7 +37,7 @@ Si ya existe un archivo con el mismo nombre en la carpeta, el nuevo se guarda co
 |---|---|
 | Archivos por subida | Hasta 6 |
 | Tamaño por archivo | Hasta 150 MB |
-| Almacenamiento total | Según el plan contratado |
+| Almacenamiento total | Según la suscripción contratada |
 
 | Formato | Extensiones | Lo leen los agentes |
 |---|---|---|

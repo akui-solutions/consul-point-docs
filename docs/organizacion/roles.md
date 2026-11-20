@@ -48,7 +48,7 @@ El rol es solo una parte del acceso: además, cada carpeta, agente o conversaci�
 3. Pulsar **Siguiente**. El rol queda creado, todavía sin permisos.
 4. En **Asignar permisos**, activar al menos un permiso y pulsar **Guardar Permisos**.
 
-El plan fija el número máximo de roles de la organización, y los tres predeterminados cuentan.
+La suscripción fija el número máximo de roles de la organización, y los tres predeterminados cuentan.
 
 ## Editar y eliminar
 

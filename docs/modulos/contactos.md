@@ -52,4 +52,4 @@ Cuando llega una conversación por WhatsApp, Telegram o una aplicación externa,
 
 ## Límites
 
-El plan fija el número máximo de personas y de entidades. Ver [Créditos y límites](/organizacion/creditos-y-limites#límites-del-plan).
+La suscripción fija el número máximo de personas y de entidades. Ver [Créditos y límites](/organizacion/creditos-y-limites#límites-de-la-suscripción).

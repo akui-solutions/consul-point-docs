@@ -23,11 +23,11 @@ Cada modelo muestra su **Proveedor**, su **Tipo**, su **Temperatura** por defect
 | **ConsulPoint** | Modelos que ofrece la plataforma. Consumen créditos |
 | **Propio** | Modelos registrados por la organización con su propia clave. No consumen créditos |
 
-Las pestañas **Todos** y **Propios** filtran la lista; aparecen cuando el plan incluye modelos propios o ya hay alguno registrado.
+Las pestañas **Todos** y **Propios** filtran la lista; aparecen cuando la suscripción incluye modelos propios o ya hay alguno registrado.
 
 ## Registrar un modelo propio
 
-El plan tiene que incluir **Modelos de IA propios**; si no, la pantalla lo indica con **Tu plan no incluye modelos de IA propios**. Ver [Créditos y límites](/organizacion/creditos-y-limites#modelos-propios).
+La suscripción tiene que incluir **Modelos de IA propios**; si no, la pantalla lo indica con **Tu suscripción no incluye modelos de IA propios**. Ver [Créditos y límites](/organizacion/creditos-y-limites#modelos-propios).
 
 1. Pulsar **Registrar modelo propio**.
 2. Rellenar los campos:
@@ -63,4 +63,4 @@ Los modelos de ConsulPoint no tienen acciones.
 
 Al crear o editar un agente, el modelo propio aparece dentro de su proveedor con la etiqueta **Modelo propio**. Ver [Crear un agente](/control/estudio/crear-un-agente#modelo).
 
-Si la organización cambia a un plan que no incluye modelos propios, los modelos registrados se conservan, pero no se pueden elegir en los agentes hasta que el plan vuelva a incluirlos.
+Si la organización cambia a una suscripción que no incluye modelos propios, los modelos registrados se conservan, pero no se pueden elegir en los agentes hasta que la suscripción vuelva a incluirlos.

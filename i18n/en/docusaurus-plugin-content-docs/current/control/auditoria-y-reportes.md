@@ -98,7 +98,7 @@ Some limits only count what belongs to the viewer, not the whole organization. T
 | **Integrations** | A single maximum for all of them together |
 | **Connectors** | Each installed connector, even if several agents use it |
 
-What happens when you reach a limit is explained in [Credits and limits](/organizacion/creditos-y-limites#límites-del-plan).
+What happens when you reach a limit is explained in [Credits and limits](/organizacion/creditos-y-limites#límites-de-la-suscripción).
 
 :::note What it doesn't include
 This module shows usage and aggregated activity. It is not a log of actions (who created, changed or deleted what) and it doesn't let you export the data.

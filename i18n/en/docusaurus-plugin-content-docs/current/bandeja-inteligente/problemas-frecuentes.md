@@ -35,7 +35,7 @@ description: Solutions to the most common issues with the ConsulPoint Smart Inbo
 |---|---|
 | Attachments from new emails are not saved | They are not saved automatically. Use **Process attachments** on the rule |
 | An attachment is missing | Its type is not in the rule's **File types**, or it is larger than 25 MB |
-| **Failed to save the attachments** | Try again with **Process attachments**. If it persists, check that the folder exists and the plan's storage space |
+| **Failed to save the attachments** | Try again with **Process attachments**. If it persists, check that the folder exists and the subscription's storage space |
 
 ## AI analysis {#análisis-con-ia}
 

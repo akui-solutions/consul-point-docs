@@ -50,12 +50,12 @@ description: Soluciones a los problemas más habituales al crear y usar agentes,
 
 | Síntoma | Causa |
 |---|---|
-| El botón **Nuevo agente** está desactivado o no aparece | No hay un plan activo, o el rol no tiene permiso de creación sobre el Estudio |
-| Al crear, la plataforma avisa de que se alcanzó el límite del plan | El plan tiene un número máximo de agentes, que incluye especialistas y microagentes. Eliminar los que no se usan o ampliar el plan |
+| El botón **Nuevo agente** está desactivado o no aparece | No hay una suscripción activa, o el rol no tiene permiso de creación sobre el Estudio |
+| Al crear, la plataforma avisa de que se alcanzó el límite de la suscripción | La suscripción tiene un número máximo de agentes, que incluye especialistas y microagentes. Eliminar los que no se usan o ampliar la suscripción |
 | **Ya existe un agente llamado "…" en tu organización** | El nombre ya lo usa otro agente o microagente. Elegir otro |
 | No aparece la opción **Personas y roles concretos** en el acceso | Solo está disponible para agentes, no para especialistas |
 | No aparece la pestaña **Biblioteca de esquemas** | Con los roles predeterminados, es solo para administradores |
-| **Tu plan actual no incluye modelos propios** | Los modelos propios de la organización (**Custom**) dependen del plan |
+| **Tu suscripción actual no incluye modelos propios** | Los modelos propios de la organización (**Custom**) dependen de la suscripción |
 
 ## No se puede eliminar
 

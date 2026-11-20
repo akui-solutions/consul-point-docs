@@ -59,4 +59,4 @@ To assign skills you need permission to view **Skills**, permission to edit **St
 
 ## Who can do what {#quién-puede-hacer-qué}
 
-With the default roles, the **Administrator** can create, edit and delete skills; **Member** and **Collaborator** can only view them. The plan sets the maximum number of skills in the organization, counting deactivated ones and those from the catalog. See [Credits and limits](/organizacion/creditos-y-limites#límites-del-plan).
+With the default roles, the **Administrator** can create, edit and delete skills; **Member** and **Collaborator** can only view them. The subscription sets the maximum number of skills in the organization, counting deactivated ones and those from the catalog. See [Credits and limits](/organizacion/creditos-y-limites#límites-de-la-suscripción).

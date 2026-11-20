@@ -55,5 +55,5 @@ Only the **Administrator** role sees these Settings sections, even if another ro
 The **Administrator** role has all permissions and cannot be edited.
 
 :::note Effective availability
-A permission only takes effect if the module is included in the organization's plan. A person with permissions on a module the plan does not include will not see it in the menu.
+A permission only takes effect if the module is included in the organization's subscription. A person with permissions on a module the subscription does not include will not see it in the menu.
 :::

@@ -28,7 +28,7 @@ Si el documento está disponible y el agente sigue sin usarlo, el problema suele
 | **Supera el tamaño máximo** | El archivo pasa de 150 MB | Dividirlo o comprimirlo |
 | **Formato no admitido** | Tipo de archivo no aceptado | Ver [Formatos y límites](/centro-de-conocimiento/subir-documentos#formatos-y-límites) |
 | No se pueden añadir más archivos a la subida | Se admiten hasta 6 por subida | Subirlos en varias tandas |
-| La subida se rechaza aunque el archivo es válido | Se alcanzó el almacenamiento del plan | Liberar espacio o ampliar el plan |
+| La subida se rechaza aunque el archivo es válido | Se alcanzó el almacenamiento de la suscripción | Liberar espacio o ampliar la suscripción |
 
 ## No aparece una opción
 

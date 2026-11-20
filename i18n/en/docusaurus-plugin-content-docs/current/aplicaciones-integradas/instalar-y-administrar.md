@@ -25,7 +25,7 @@ This page doesn't require any programming knowledge.
 The app becomes available in the places that match its type. See [Where they appear](/aplicaciones-integradas/donde-aparecen).
 
 :::info Included resources
-The resources created during installation count toward the organization's plan limits.
+The resources created during installation count toward the organization's subscription limits.
 :::
 
 ## Statuses in the catalog {#estados-en-el-catálogo}

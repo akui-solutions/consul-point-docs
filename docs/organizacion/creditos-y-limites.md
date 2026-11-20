@@ -3,30 +3,30 @@ id: creditos-y-limites
 title: Créditos y límites
 sidebar_label: Créditos y límites
 sidebar_position: 7
-description: Qué pasa en ConsulPoint cuando la organización no tiene un plan activo, se queda sin créditos o llega a un límite de su plan, y qué avisos se ven.
+description: Qué pasa en ConsulPoint cuando la organización no tiene una suscripción activa, se queda sin créditos o llega a un límite de su suscripción, y qué avisos se ven.
 ---
 
 # Créditos y límites
 
-Qué pasa cuando la organización no tiene un plan activo, se queda sin créditos o llega a un límite de su plan, y qué avisos ve cada persona. El plan y los créditos se consultan en [Suscripción](/organizacion/suscripcion).
+Qué pasa cuando la organización no tiene una suscripción activa, se queda sin créditos o llega a un límite de su suscripción, y qué avisos ve cada persona. La suscripción y los créditos se consultan en [Suscripción](/organizacion/suscripcion).
 
-## Sin plan activo
+## Sin suscripción activa
 
-La organización se queda sin plan activo si no tiene ninguno asignado, si terminó su periodo de prueba o si venció su suscripción. Los planes de pago tienen **3 días de gracia** tras el fin del periodo, en los que se puede seguir trabajando con normalidad.
+La organización se queda sin suscripción activa si no tiene ninguna asignada, si terminó su periodo de prueba o si venció su suscripción. Las suscripciones de pago tienen **3 días de gracia** tras el fin del periodo, en los que se puede seguir trabajando con normalidad.
 
-Sin plan activo, la organización queda en **modo consulta**: todo lo que ya existe se puede ver, pero no se puede crear ni modificar nada. Los botones de crear aparecen desactivados con el aviso **Tu organización necesita un plan activo para hacer esto.**, y cualquier cambio se rechaza con **Se necesita un plan activo**. Solicitar un plan sigue siendo posible.
+Sin suscripción activa, la organización queda en **modo consulta**: todo lo que ya existe se puede ver, pero no se puede crear ni modificar nada. Los botones de crear aparecen desactivados con el aviso **Tu organización necesita una suscripción activa para hacer esto.**, y cualquier cambio se rechaza con **Se necesita una suscripción activa**. Solicitar una suscripción sigue siendo posible.
 
 En la parte superior de la plataforma aparece un aviso según la situación:
 
 | Situación | Aviso |
 |---|---|
-| Sin plan | **Elige un plan para empezar** |
-| Terminó la prueba | **Tu prueba de *plan* terminó** |
-| Venció la suscripción | **Tu suscripción a *plan* venció** |
-| En los días de gracia | **Tu plan vence el *fecha***: se puede seguir trabajando con normalidad hasta entonces |
-| Hay una solicitud de plan en revisión | **Tu solicitud de plan está en revisión** |
+| Sin suscripción | **Elige una suscripción para empezar** |
+| Terminó la prueba | **Tu prueba de *nombre* terminó** |
+| Venció la suscripción | **Tu suscripción a *nombre* venció** |
+| En los días de gracia | **Tu suscripción vence el *fecha***: se puede seguir trabajando con normalidad hasta entonces |
+| Hay una solicitud de suscripción en revisión | **Tu solicitud de suscripción está en revisión** |
 
-Los administradores ven el botón **Ver planes**; el resto de personas, que hablen con un administrador.
+Los administradores ven el botón **Ver suscripciones**; el resto de personas, que hablen con un administrador.
 
 ## Sin créditos
 
@@ -46,14 +46,14 @@ Los agentes que usan un **modelo propio** de la organización siguen respondiend
 
 Los créditos vuelven con el bono del siguiente ciclo o con un bono adicional asignado por ConsulPoint.
 
-## Límites del plan
+## Límites de la suscripción
 
-Cada plan fija un máximo para recursos como usuarios, roles, agentes, conversaciones, carpetas, almacenamiento, espacios de trabajo, integraciones, conectores, webhooks, claves de API, etiquetas, contactos, esquemas de datos o habilidades. Un recurso sin máximo aparece como **Ilimitado**.
+Cada suscripción fija un máximo para recursos como usuarios, roles, agentes, conversaciones, carpetas, almacenamiento, espacios de trabajo, integraciones, conectores, webhooks, claves de API, etiquetas, contactos, esquemas de datos o habilidades. Un recurso sin máximo aparece como **Ilimitado**.
 
-Al llegar a un máximo solo se bloquea crear más; lo que ya existe se conserva. La plataforma muestra **Llegaste al tope de tu plan**, con la opción **Mejorar plan**, que lleva a [Planes](/organizacion/suscripcion#planes). Antes de llegar, los administradores reciben el aviso **Límite casi alcanzado**.
+Al llegar a un máximo solo se bloquea crear más; lo que ya existe se conserva. La plataforma muestra **Llegaste al tope de tu suscripción**, con la opción **Mejorar suscripción**, que lleva a [Suscripciones](/organizacion/suscripcion#suscripciones). Antes de llegar, los administradores reciben el aviso **Límite casi alcanzado**.
 
 El uso de cada recurso frente a su máximo se ve en [Auditoría y Reportes](/control/auditoria-y-reportes#límites).
 
 ### Modelos propios
 
-Los modelos de IA propios de la organización solo se pueden registrar si el plan los incluye, y hasta el máximo del plan. Si la organización cambia a un plan que no los incluye, los modelos ya registrados se conservan, pero no se pueden usar en agentes hasta que el plan vuelva a incluirlos.
+Los modelos de IA propios de la organización solo se pueden registrar si la suscripción los incluye, y hasta el máximo que fije. Si la organización cambia a una suscripción que no los incluye, los modelos ya registrados se conservan, pero no se pueden usar en agentes hasta que la suscripción vuelva a incluirlos.

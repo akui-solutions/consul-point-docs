@@ -18,7 +18,7 @@ Los conectores no se crean a mano: se instalan desde el [Catálogo de integracio
 
 ConsulPoint también puede activar un conector para la organización. Esos aparecen como **Asignado a tu organización** y no se pueden desinstalar desde el catálogo.
 
-El plan fija el número máximo de conectores de la organización. Ver [Créditos y límites](/organizacion/creditos-y-limites#límites-del-plan).
+La suscripción fija el número máximo de conectores de la organización. Ver [Créditos y límites](/organizacion/creditos-y-limites#límites-de-la-suscripción).
 
 ## Configurar y autorizar
 

@@ -3,7 +3,7 @@ id: problemas-frecuentes
 title: Common issues in Administration
 sidebar_label: Common issues
 sidebar_position: 2
-description: "Solutions to common issues when administering ConsulPoint: users, permissions, plan and credits, channels, connectors, API keys and webhooks."
+description: "Solutions to common issues when administering ConsulPoint: users, permissions, subscription and credits, channels, connectors, API keys and webhooks."
 ---
 
 # Common issues in Administration
@@ -14,7 +14,7 @@ What to do about the most common warnings and situations when administering an o
 
 | Symptom | Cause and solution |
 |---|---|
-| **You've reached your plan's limit** when inviting | The organization has as many active people as the plan allows. Deactivate someone or request a bigger plan. Pending invitations do not count. See [Users](/organizacion/usuarios#invitar-a-una-persona) |
+| **You've reached your subscription's limit** when inviting | The organization has as many active people as the subscription allows. Deactivate someone or request a bigger subscription. Pending invitations do not count. See [Users](/organizacion/usuarios#invitar-a-una-persona) |
 | **An error occurred while sending the invitation.** | That email already belongs to the organization. Look for the person in the list |
 | The person does not receive the invitation email | Check the spam folder. Then use **Send reminder** if they are **Pending**, or **Resend invitation** if they are **Expired**. Both generate a new link |
 | Someone who already had an account did not get a link to create a password | This is expected: they sign in with their usual password and the organization appears in their list. See [Signing in to the platform](/introduccion/acceder-a-la-plataforma#aceptar-una-invitación) |
@@ -29,24 +29,24 @@ What to do about the most common warnings and situations when administering an o
 |---|---|
 | A module does not appear in the menu | The role does not have **View** on that module. See [Roles](/organizacion/roles) |
 | **You do not have access to this section** when opening a link | Same as above: that person's role cannot see the page |
-| **This module is not available** | The organization's plan does not include that module, even if the role has the permission. See [Permissions matrix](/referencia/permisos) |
+| **This module is not available** | The organization's subscription does not include that module, even if the role has the permission. See [Permissions matrix](/referencia/permisos) |
 | Someone with permissions cannot see Users, Roles, Teams, Subscription, AI Providers or Connectors | Those sections are only for the **Administrator** role. See [Permissions matrix](/referencia/permisos#secciones-solo-para-administradores) |
 | **Settings** does not appear | You are inside a workspace. Go back to **Main** in the selector in the top bar |
 | **Cannot delete role** | There are people with that role, including deactivated ones or ones with a pending invitation. Change their role or delete their invitations first |
 | **You must assign at least one permission to a module.** | A role needs at least one permission |
 | The **Administrator** role cannot be edited | It is fixed. For similar access with limits, create your own role |
 
-## Plan, credits and limits {#plan-créditos-y-límites}
+## Subscription, credits and limits {#suscripción-créditos-y-límites}
 
 | Symptom | Cause and solution |
 |---|---|
-| **An active plan is required**, create buttons disabled | The organization has no active plan: the trial ended or the subscription expired. Everything can be viewed, nothing can be created or changed. Request a plan in [Subscription](/organizacion/suscripcion). See [No active plan](/organizacion/creditos-y-limites#sin-plan-activo) |
-| **Your plan expires soon** / **Plan expired** | Renew from [Subscription](/organizacion/suscripcion) before the grace period ends |
+| **An active subscription is required**, create buttons disabled | The organization has no active subscription: the trial ended or the subscription expired. Everything can be viewed, nothing can be created or changed. Request one in [Subscription](/organizacion/suscripcion). See [No active subscription](/organizacion/creditos-y-limites#sin-suscripción-activa) |
+| **Your subscription expires soon** / **Subscription expired** | Renew from [Subscription](/organizacion/suscripcion) before the grace period ends |
 | **Credits exhausted** | There is a short grace period to top up. After that, agents stop answering, except those that use an own model. See [No credits](/organizacion/creditos-y-limites#sin-créditos) |
-| **You've reached your plan's limit** when creating something | The maximum for that resource has been reached. The usage of each one is in [Audit & Reports](/control/auditoria-y-reportes#límites). Free up space or request a bigger plan |
+| **You've reached your subscription's limit** when creating something | The maximum for that resource has been reached. The usage of each one is in [Audit & Reports](/control/auditoria-y-reportes#límites). Free up space or request a bigger subscription |
 | Deactivating contacts does not free up space | Inactive contacts also count. Only deleting them frees up space |
 | **You already have a pending request…** | Cancel the pending request before requesting another subscription |
-| **This code is not valid, has expired, or has no uses left.** | Check the discount code or request the plan without it |
+| **This code is not valid, has expired, or has no uses left.** | Check the discount code or request the subscription without it |
 
 ## Own models {#modelos-propios}
 
@@ -55,14 +55,14 @@ What to do about the most common warnings and situations when administering an o
 | **The connection failed** when testing a model | The reason appears below. If **The provider rejected the API Key**, use **Change API Key**; if it **doesn't recognize this model ID**, fix it with **Edit**. See [AI Providers](/organizacion/proveedores-de-ia) |
 | **The address is not valid** | The model's address must be HTTPS and public |
 | A model cannot be deleted | There are agents using it. Assign them another model first |
-| **Your plan doesn't include own AI models** | The plan does not include this feature. Models already registered are kept but cannot be used in agents. See [Own models](/organizacion/creditos-y-limites#modelos-propios) |
+| **Your subscription doesn't include own AI models** | The subscription does not include this feature. Models already registered are kept but cannot be used in agents. See [Own models](/organizacion/creditos-y-limites#modelos-propios) |
 | Agents warn that the own model rejected the API Key or ran out of balance | The provider key expired or the provider account needs a top-up. Fix it at the provider and, if the key changed, with **Change API Key** |
 
 ## Channels {#canales}
 
 | Symptom | Cause and solution |
 |---|---|
-| **Your plan has reached its integrations limit.** | Only active integrations count. Deactivate or delete one, or request a bigger plan |
+| **Your subscription has reached its integrations limit.** | Only active integrations count. Deactivate or delete one, or request a bigger subscription |
 | WhatsApp: **Expired — reconnect** or the **Connection about to expire** warning | The assisted connection lasts 60 days. Repeat the assisted connection with the same number. See [When the connection expires](/organizacion/canales/whatsapp#cuando-la-conexión-caduca) |
 | WhatsApp: the agent stops answering with a manual connection | The Meta token expired. Use a permanent token. See [Manual connection](/organizacion/canales/whatsapp#conexión-manual) |
 | WhatsApp: error when connecting | See the table in [If something fails](/organizacion/canales/whatsapp#si-algo-falla). If **Meta did not respond**, wait a few minutes and try again |
@@ -87,7 +87,7 @@ What to do about the most common warnings and situations when administering an o
 | An uninstalled connector appears as **Unavailable** in an agent | It is removed from the agent when you save it |
 | Something **Assigned to your organization** cannot be uninstalled | ConsulPoint turned it on for the organization, and it cannot be uninstalled from the catalog |
 | An item appears as **Unavailable** or retired | It was retired from the catalog: it stays installed, but it cannot be reinstalled or updated. See [Retired items](/organizacion/catalogo-de-aplicaciones#elementos-retirados) |
-| You cannot install another skill | The plan maximum has been reached. Uninstall or delete one, or request a bigger plan |
+| You cannot install another skill | The subscription maximum has been reached. Uninstall or delete one, or request a bigger subscription |
 | The catalog's **Agents** tab doesn't appear | You need view permission on **Studio** |
 | Installing an agent asks for an administrator to choose the model | Only administrators choose the AI model of a catalog agent |
 | The install or uninstall buttons do not appear | Installing and updating require the create permission on the module; uninstalling, the delete permission |
@@ -98,7 +98,7 @@ What to do about the most common warnings and situations when administering an o
 | Symptom | Cause and solution |
 |---|---|
 | An external tool gets `401` | The key does not exist, usually because it was regenerated. Hand over the new key. The key's **Events** tab shows **Key not found**. See [API keys](/organizacion/claves-de-api#la-ficha-de-una-clave) |
-| An external tool gets `403` | The key is deactivated or expired, or the organization has no plan or credits. Activate it or extend **Expires** with **Edit** |
+| An external tool gets `403` | The key is deactivated or expired, or the organization has no subscription or credits. Activate it or extend **Expires** with **Edit** |
 | A key appears as **Expiring soon** or **Expired** | It expires in less than 7 days, or it has already expired. Extend the date with **Edit** |
 | **Cannot regenerate** | The key is deactivated. Activate it before regenerating |
 | A key or a webhook cannot be deleted | Deactivate it first |
@@ -109,7 +109,7 @@ What to do about the most common warnings and situations when administering an o
 
 | Symptom | Cause and solution |
 |---|---|
-| **You've reached your plan's limit** when creating a workspace | Inactive workspaces also count. See [Workspaces](/modulos/espacios-de-trabajo#crear-un-espacio) |
+| **You've reached your subscription's limit** when creating a workspace | Inactive workspaces also count. See [Workspaces](/modulos/espacios-de-trabajo#crear-un-espacio) |
 | **Unable to send invitation** | The person is already a member of the workspace, or there was a one-off problem. Check the **Users** tab |
 | An invitation appears as **Expired** | 7 days have passed. Use **Resend** from the menu on its row |
 | A workspace does not appear in the selector | It is inactive. Activate it from the list of workspaces |

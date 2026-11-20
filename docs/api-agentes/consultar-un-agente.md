@@ -161,7 +161,7 @@ curl -X DELETE -H "Authorization: Bearer {clave de API}" \
 | Código | Causa |
 |---|---|
 | `400` | El identificador del agente o del usuario final no es válido |
-| `403` | La clave no está asociada al agente, o la organización no tiene un plan activo |
+| `403` | La clave no está asociada al agente, o la organización no tiene una suscripción activa |
 | `404` | El agente no existe en la organización |
 | `503` | La memoria no está disponible en este momento (al borrar) |
 
@@ -173,7 +173,7 @@ La memoria de los usuarios finales se borra sola al eliminar la clave de API, al
 |---|---|
 | `400` | Adjuntos o parámetros no válidos, o un `endUserId` no válido |
 | `401` | Falta la clave o no es válida |
-| `403` | El agente no está asociado a la clave, la organización no tiene un plan activo o no le quedan créditos |
+| `403` | El agente no está asociado a la clave, la organización no tiene una suscripción activa o no le quedan créditos |
 | `404` | No hay ningún agente con ese nombre |
 | `409` | Varios agentes tienen ese nombre: usar su identificador |
 | `413` | El cuerpo supera los 28 MB |

@@ -18,7 +18,7 @@ The platform notifies each person about what happens in the organization that co
 
 The number on the bell shows how many are unread. Clicking it opens the 10 most recent:
 
-- Clicking a notification marks it as read and takes you to what it is about (the conversation, the folder, the plan…).
+- Clicking a notification marks it as read and takes you to what it is about (the conversation, the folder, the subscription…).
 - The check mark on an unread notification marks it as read without opening it. **Mark all as read** marks them all.
 - The trash icon deletes a notification. It only appears on read ones.
 - **View all your notifications** opens the full page.
@@ -55,9 +55,9 @@ Each person only receives the notifications that apply to them based on what the
 | **Workspace invitation** / **New workspace member** | Invitations to [workspaces](/modulos/espacios-de-trabajo) |
 | **Added to a team** | You are now part of a [team](/organizacion/equipos) |
 | **Credits exhausted** | The organization ran out of credits. See [Credits and limits](/organizacion/creditos-y-limites) |
-| **Your plan expires soon** / **Plan expired** / **Plan request approved** or **rejected** | [Subscription](/organizacion/suscripcion) notifications |
+| **Your subscription expires soon** / **Subscription expired** / **Subscription request approved** or **rejected** | [Subscription](/organizacion/suscripcion) notifications |
 
-Some notifications, such as invitations, password changes, running out of credits, unattended conversations or plan expiry, also arrive by email.
+Some notifications, such as invitations, password changes, running out of credits, unattended conversations or subscription expiry, also arrive by email.
 
 :::note No preferences
 Notifications cannot be configured or turned off by type. Browser notifications can be blocked from the browser itself.

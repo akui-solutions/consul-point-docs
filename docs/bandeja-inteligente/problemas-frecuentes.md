@@ -35,7 +35,7 @@ description: Soluciones a los problemas más habituales de la Bandeja Inteligent
 |---|---|
 | Los adjuntos de los correos nuevos no se guardan | No se guardan solos. Usar **Procesar adjuntos** en la regla |
 | Falta un adjunto | Su tipo no está en **Tipos de archivo** de la regla, o pasa de 25 MB |
-| **Error al guardar los adjuntos** | Repetir con **Procesar adjuntos**. Si persiste, revisar que la carpeta exista y el espacio de almacenamiento del plan |
+| **Error al guardar los adjuntos** | Repetir con **Procesar adjuntos**. Si persiste, revisar que la carpeta exista y el espacio de almacenamiento de la suscripción |
 
 ## Análisis con IA
 

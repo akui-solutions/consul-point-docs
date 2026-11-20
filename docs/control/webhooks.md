@@ -38,7 +38,7 @@ Pulsar **Nuevo webhook** y completar:
 | **Eventos** | Los sucesos que disparan el aviso. Ver la tabla siguiente |
 | **Chat** | Solo con **Conversación específica actualizada**: la conversación que lo dispara |
 
-Los webhooks nuevos se crean activos. El plan fija el número máximo de webhooks. Ver [Créditos y límites](/organizacion/creditos-y-limites#límites-del-plan).
+Los webhooks nuevos se crean activos. La suscripción fija el número máximo de webhooks. Ver [Créditos y límites](/organizacion/creditos-y-limites#límites-de-la-suscripción).
 
 ## Eventos
 

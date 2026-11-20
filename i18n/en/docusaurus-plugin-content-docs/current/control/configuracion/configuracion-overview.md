@@ -11,7 +11,7 @@ description: "The ConsulPoint Settings sections: access and organization, AI and
 
 <PageMeta route="/settings">depends on each section; several are for administrators only</PageMeta>
 
-Settings brings together the organization's settings: who has access, the plan, the AI channels and models, the classification data and the developer tools. You open it from **Settings**, at the bottom of the side menu.
+Settings brings together the organization's settings: who has access, the subscription, the AI channels and models, the classification data and the developer tools. You open it from **Settings**, at the bottom of the side menu.
 
 <Screenshot src="/img/en/configuracion/configuracion.png" alt="Settings screen in ConsulPoint, with the sections menu on the left" caption="Settings, Users section" />
 
@@ -19,7 +19,7 @@ Each person sees only the sections their role allows, and the first of them open
 
 ## Sections {#secciones}
 
-The sections are grouped the same way as in the platform. In the **Who can see it** column, "permission on…" means the permission to view that module in the role; the module must also be included in the organization's plan. See [Permissions matrix](/referencia/permisos).
+The sections are grouped the same way as in the platform. In the **Who can see it** column, "permission on…" means the permission to view that module in the role; the module must also be included in the organization's subscription. See [Permissions matrix](/referencia/permisos).
 
 ### Administration {#administración}
 
@@ -29,13 +29,13 @@ The sections are grouped the same way as in the platform. In the **Who can see i
 | **Access → Roles** | Define what each role can do in each module. See [Roles](/organizacion/roles) | Administrators |
 | **Access → Teams** | Group people to assign them together, for example to an integration. See [Teams](/organizacion/equipos) | Administrators with permission on **Teams** |
 | **Organization** | The organization's name, logo and description. See [Organization](/organizacion/datos-de-la-organizacion) | Permission on **Organization** |
-| **Subscription** | The plan, the credits and requesting a new plan. See [Subscription](/organizacion/suscripcion) | Administrators |
+| **Subscription** | The subscription, the credits and requesting a new one. See [Subscription](/organizacion/suscripcion) | Administrators |
 
 ### AI and integrations {#ia-e-integraciones}
 
 | Section | What it is for | Who can see it |
 |---|---|---|
-| **AI Providers** | The available AI models and the organization's own models, if the plan includes them. See [AI Providers](/organizacion/proveedores-de-ia) | Administrators |
+| **AI Providers** | The available AI models and the organization's own models, if the subscription includes them. See [AI Providers](/organizacion/proveedores-de-ia) | Administrators |
 | **Connectors** | The channels (WhatsApp, Telegram, email, external apps) and the external tools for agents. See [Integrations and channels](/modulos/integraciones) and [Connectors](/organizacion/conectores) | Administrators |
 | **Email rules** | Which emails the Smart Inbox processes. See [Email rules](/bandeja-inteligente/reglas-de-correo) | Permission on **Smart Inbox** |
 | **Apps** | The installed integrated apps and the organization's own. See [Install and manage](/aplicaciones-integradas/instalar-y-administrar) | Permission on **Apps** |

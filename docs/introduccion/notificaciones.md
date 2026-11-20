@@ -18,7 +18,7 @@ La plataforma avisa de lo que pasa en la organización y concierne a cada person
 
 El número sobre la campana indica cuántas hay sin leer. Al pulsarla se abren las 10 más recientes:
 
-- Pulsar una notificación la marca como leída y lleva a lo que avisa (la conversación, la carpeta, el plan…).
+- Pulsar una notificación la marca como leída y lleva a lo que avisa (la conversación, la carpeta, la suscripción…).
 - El check de una notificación sin leer la marca como leída sin abrirla. **Marcar todas como leídas** marca todas.
 - La papelera borra una notificación. Solo aparece en las ya leídas.
 - **Ver todas tus notificaciones** abre la página completa.
@@ -55,9 +55,9 @@ Cada persona recibe solo los avisos que le corresponden por lo que hace o admini
 | **Invitación a un espacio de trabajo** / **Nuevo miembro en el espacio de trabajo** | Invitaciones a [espacios de trabajo](/modulos/espacios-de-trabajo) |
 | **Añadido a un equipo** | Ahora se forma parte de un [equipo](/organizacion/equipos) |
 | **Créditos agotados** | La organización se quedó sin créditos. Ver [Créditos y límites](/organizacion/creditos-y-limites) |
-| **Tu plan vence pronto** / **Plan vencido** / **Solicitud de plan aprobada** o **rechazada** | Avisos de la [suscripción](/organizacion/suscripcion) |
+| **Tu suscripción vence pronto** / **Suscripción vencida** / **Solicitud de suscripción aprobada** o **rechazada** | Avisos de la [suscripción](/organizacion/suscripcion) |
 
-Algunos avisos, como las invitaciones, el cambio de contraseña, los créditos agotados, las conversaciones sin atender o el vencimiento del plan, llegan también por correo.
+Algunos avisos, como las invitaciones, el cambio de contraseña, los créditos agotados, las conversaciones sin atender o el vencimiento de la suscripción, llegan también por correo.
 
 :::note Sin preferencias
 Las notificaciones no se pueden configurar ni desactivar por tipo. Las del navegador se pueden bloquear desde el propio navegador.
