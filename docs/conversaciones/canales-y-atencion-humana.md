@@ -73,3 +73,13 @@ Estas opciones solo aparecen con permiso sobre las integraciones.
 ## Contactos
 
 En **Más opciones**, **Asignar contacto** vincula la conversación a un contacto de la agenda, y **Quitar contacto asignado** lo desvincula.
+
+## Memoria del contacto
+
+Si el agente tiene [memoria](/control/estudio/memoria), recuerda lo relevante de cada contacto de WhatsApp, Telegram o una aplicación externa: su nombre, su idioma, sus pedidos anteriores y lo que quedó pendiente. Lo usa cada vez que el contacto le escribe. En los grupos de Telegram no guarda nada.
+
+Los administradores pueden consultarla desde la conversación: en **Más opciones**, **Memoria del agente**, o en **Detalles de la conversación**, **Ver lo que recuerda**. La ventana **Qué recuerda de este contacto** muestra el texto y la fecha de la última actualización.
+
+**Borrar memoria** hace que el agente olvide todo lo que guardó del contacto y empiece de cero en su próxima conversación. No se puede deshacer. La memoria de un contacto no se puede editar.
+
+El agente solo usa y actualiza la memoria al responder al contacto, no con los mensajes del equipo.

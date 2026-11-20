@@ -18,12 +18,13 @@ To create one, see [Create an agent](/control/estudio/crear-un-agente).
 
 ## An agent's detail {#el-detalle-de-un-agente}
 
-You open it from the Studio list with **View detail**. In the header, **Edit** opens the form and **Delete** removes it (see below).
+You open it from the Studio list with **View detail**. In the header, **Edit** opens the form, and the more actions menu has **Delete** (see below).
 
 | Tab | Contents |
 |---|---|
 | **General** | Basic information, behavior and personalization |
 | **Capabilities** | What the agent can do: its built-in functions and its skills. See below |
+| **Memory** | Whether it remembers what matters about each person across conversations, and what it should remember. See [Agent memory](/control/estudio/memoria) |
 | **Documents** | The agent's own documents and their preparation status |
 | **Connectors** | External tools the agent can use. See below |
 | **Specialists** | The specialists it can consult. See [Specialists](/control/estudio/especialistas#asignar-especialistas-a-un-agente) |
@@ -36,7 +37,7 @@ Specialists have fewer tabs: **General**, **Capabilities**, **Documents** and **
 
 Brings together in one place what the agent can do:
 
-- **Built-in functions**: the platform functions turned on for the agent, such as **Web search** or **Attach files**. You change them with **Manage functions** (or **Enable functions**, if it has none), with permission to edit **Studio**. The full list is in [Create an agent](/control/estudio/crear-un-agente#funciones-integradas).
+- **Built-in functions**: the platform functions turned on for the agent, such as **Web search** or **Attach files**. Memory doesn't appear here: it has its own tab. You change them with **Manage functions** (or **Enable functions**, if it has none), with permission to edit **Studio**. The full list is in [Create an agent](/control/estudio/crear-un-agente#funciones-integradas).
 - **Skills**: the procedures the agent applies when it needs them. You assign them with **Manage skills**. See [Skills](/control/estudio/habilidades#asignar-habilidades-a-un-agente).
 
 <Screenshot src="/img/en/estudio/capacidades-agente.png" alt="Capabilities tab in an agent's detail" caption="Agent detail → Capabilities" />
