@@ -12,7 +12,7 @@ description: Qué es un agente en ConsulPoint y cómo gestionarlo desde su detal
 
 Un **agente** conversa con las personas: en [Conversaciones](/modulos/conversaciones), en un canal conectado como WhatsApp o a través de la API. Responde con sus instrucciones, los documentos a los que tiene acceso y, si los tiene, consultando a sus [especialistas](/control/estudio/especialistas).
 
-Para crear uno, ver [Crear un agente](/control/estudio/crear-un-agente).
+Para crear uno, ver [Crear un agente](/control/estudio/crear-un-agente). Para instalar uno ya hecho, ver [Agentes del catálogo](/control/estudio/agentes-del-catalogo).
 
 **Casos de uso:** atención al cliente, soporte, consulta interna de documentación, asistencia a un equipo concreto.
 

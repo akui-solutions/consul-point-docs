@@ -8,7 +8,7 @@ description: Qué son los conectores de ConsulPoint, cómo instalarlos desde el 
 
 # Conectores
 
-<PageMeta route="/store/apps · /settings/connectors">administrador</PageMeta>
+<PageMeta route="/store/connectors · /settings/connectors">administrador</PageMeta>
 
 Un **conector** da a los agentes acceso a una herramienta externa durante una conversación, por ejemplo para consultar o registrar datos en otro servicio. No es lo mismo que una [integración](/modulos/integraciones): una integración conecta un canal por el que llegan las conversaciones; un conector amplía lo que el agente puede hacer dentro de ellas.
 

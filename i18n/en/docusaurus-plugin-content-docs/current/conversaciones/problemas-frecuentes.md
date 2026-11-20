@@ -14,6 +14,7 @@ description: Solutions to the most common issues in ConsulPoint Conversations.
 |---|---|
 | It answers generically, without using the documents | Check **View sources**. If there are no sources, see [Common issues in Studio](/control/estudio/problemas-frecuentes#el-agente-responde-de-forma-genérica-sin-usar-los-documentos) |
 | An agent does not appear when starting the conversation | You do not have access to it. An administrator grants it, in the agent's **Access** tab |
+| **This agent is no longer available** | It's a catalog agent its publisher withdrew and turned off. The message isn't sent and the conversation can only be read. See [Catalog agents](/control/estudio/agentes-del-catalogo#si-lo-retiran-del-catálogo) |
 | You cannot switch agents | The agent is fixed with the first message. Open a new conversation |
 | **Web search**, **Attach files** or **Dictate** does not appear | The agent does not have that built-in function. It is turned on in Studio, in the agent's **Capabilities** tab |
 | **The response was interrupted** | Send the message again |

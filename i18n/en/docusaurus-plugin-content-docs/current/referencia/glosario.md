@@ -23,6 +23,7 @@ The terms that appear on the platform and in this documentation, in alphabetical
 ## C {#c}
 
 - **Capabilities**: agent tab that brings together its **built-in functions** and its **skills**. See [Agents](/control/estudio/agentes#capacidades).
+- **Catalog agent**: ready-made agent the organization installs from the Integrations catalog. It's used, but not edited. See [Catalog agents](/control/estudio/agentes-del-catalogo).
 - **Certified sources**: built-in function that lets the agent use verified information sources. It is turned on in each conversation. See [Built-in functions](/control/estudio/crear-un-agente#funciones-integradas).
 - **Connector**: connection to an external tool that agents can use during a conversation. It is installed from the [Integrations catalog](/organizacion/catalogo-de-aplicaciones). It is not the same as an **integration**. See [Connectors](/organizacion/conectores).
 - **Contact**: person or entity the organization deals with, for example someone who writes through WhatsApp or Telegram. Contacts are classified with **contact types** and **tags**. See [Contacts](/modulos/contactos).
@@ -33,6 +34,7 @@ The terms that appear on the platform and in this documentation, in alphabetical
 
 ## D {#d}
 
+- **Distributor**: organization that manages other ConsulPoint organizations and can publish agents to the catalog for them. See [Publish agents to the catalog](/control/estudio/publicar-agentes).
 - **Data schema**: structure that defines which data is extracted from a document and in what shape. See [Schema library](/control/estudio/esquemas-de-datos).
 
 ## E {#e}
@@ -47,7 +49,7 @@ The terms that appear on the platform and in this documentation, in alphabetical
 
 - **Integrated app**: app with its own screen that is shown inside ConsulPoint and works with the organization's data. By origin, it is **Installed** (from the catalog) or **Custom**; by type, **Extension**, **Viewer** or **Filter**. See [Integrated apps](/aplicaciones-integradas).
 - **Integration**: connection of a channel to the platform: WhatsApp, Telegram, an email account or an external app. See [Integrations and channels](/modulos/integraciones).
-- **Integrations catalog**: place from which the organization installs ready-made apps and connectors. See [Integrations catalog](/organizacion/catalogo-de-aplicaciones).
+- **Integrations catalog**: place from which the organization installs ready-made apps, connectors, skills and agents. See [Integrations catalog](/organizacion/catalogo-de-aplicaciones).
 
 ## K {#k}
 

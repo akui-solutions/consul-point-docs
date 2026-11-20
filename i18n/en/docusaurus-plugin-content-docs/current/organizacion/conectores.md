@@ -8,7 +8,7 @@ description: What ConsulPoint connectors are, how to install them from the Integ
 
 # Connectors
 
-<PageMeta route="/store/apps · /settings/connectors">administrator</PageMeta>
+<PageMeta route="/store/connectors · /settings/connectors">administrator</PageMeta>
 
 A **connector** gives agents access to an external tool during a conversation, for example to look up or record data in another service. It isn't the same as an [integration](/modulos/integraciones): an integration connects a channel through which conversations arrive; a connector extends what the agent can do within them.
 

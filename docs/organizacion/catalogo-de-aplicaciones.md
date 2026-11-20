@@ -3,41 +3,45 @@ id: catalogo-de-aplicaciones
 title: Catálogo de integraciones
 sidebar_label: Catálogo de integraciones
 sidebar_position: 3
-description: El Catálogo de integraciones de ConsulPoint. Aplicaciones, conectores y habilidades ya hechos que la organización puede instalar, actualizar y desinstalar.
+description: El Catálogo de integraciones de ConsulPoint. Aplicaciones, conectores, habilidades y agentes ya hechos que la organización puede instalar, actualizar y desinstalar.
 ---
 
 # Catálogo de integraciones
 
-<PageMeta route="/store/apps">permiso sobre **Aplicaciones**, **Conectores** o **Habilidades**</PageMeta>
+<PageMeta route="/store">permiso sobre **Aplicaciones**, **Conectores**, **Habilidades** o **Estudio**</PageMeta>
 
-El **Catálogo de integraciones** reúne lo que la organización puede instalar sin construirlo desde cero: [aplicaciones integradas](/aplicaciones-integradas), [conectores](/organizacion/conectores) para los agentes y [habilidades](/control/estudio/habilidades). Se abre desde **Catálogo de integraciones**, en el menú lateral.
+El **Catálogo de integraciones** reúne lo que la organización puede instalar sin construirlo desde cero: [aplicaciones integradas](/aplicaciones-integradas), [conectores](/organizacion/conectores) para los agentes, [habilidades](/control/estudio/habilidades) y [agentes](/control/estudio/agentes-del-catalogo). Se abre desde **Catálogo de integraciones**, en el menú lateral.
 
 <Screenshot src="/img/catalogo/catalogo.png" alt="Pestaña Aplicaciones del Catálogo de integraciones" caption="Catálogo de integraciones → Aplicaciones (aplicaciones de ejemplo)" />
 
 ## Pestañas
 
-| Pestaña | Contenido | Se ve con permiso sobre |
-|---|---|---|
-| **Aplicaciones** | Aplicaciones integradas, con búsqueda y filtro por categoría | **Aplicaciones** |
-| **Conectores** | Conectores para los agentes, con búsqueda y filtro por categoría | **Conectores** |
-| **Habilidades** | Habilidades para la biblioteca del Estudio, con búsqueda | **Habilidades** |
-| **Instaladas** | Todo lo instalado en la organización | Cualquiera de los tres |
+| Pestaña | Ruta | Contenido | Se ve con permiso sobre |
+|---|---|---|---|
+| **Aplicaciones** | `/store/apps` | Aplicaciones integradas, con búsqueda y filtro por categoría | **Aplicaciones** |
+| **Conectores** | `/store/connectors` | Conectores para los agentes, con búsqueda y filtro por categoría | **Conectores** |
+| **Habilidades** | `/store/skills` | Habilidades para la biblioteca del Estudio, con búsqueda | **Habilidades** |
+| **Agentes** | `/store/agents` | Agentes ya hechos, con búsqueda. Ver [Agentes del catálogo](/control/estudio/agentes-del-catalogo) | **Estudio** |
+| **Instaladas** | `/store/installed` | Todo lo instalado en la organización | Cualquiera de los anteriores |
+
+`/store` abre la primera pestaña a la que se tiene acceso.
 
 Las destacadas aparecen primero, y después las que aún no están instaladas.
 
 ## Las tarjetas
 
-Cada tarjeta muestra el nombre, el tipo (en las aplicaciones: **Extensión**, **Visualizador** o **Filtro**; ver [Dónde aparecen](/aplicaciones-integradas/donde-aparecen)), una descripción y, a partir de 10, el número de organizaciones que lo han instalado. Algunas llevan además:
+Cada tarjeta muestra el nombre, el tipo (en las aplicaciones: **Extensión**, **Visualizador** o **Filtro**; ver [Dónde aparecen](/aplicaciones-integradas/donde-aparecen)), una descripción y, a partir de 10, el número de organizaciones que lo han instalado. Los agentes muestran además quién los publica (**De …**), su versión y qué incluyen. Algunas tarjetas llevan también:
 
 - **Destacada**: recomendada por ConsulPoint.
 - **Asignada a tu organización**: ConsulPoint la activó para la organización, fuera del catálogo.
+- **Asignado por tu distribuidor**: la distribuidora de la organización instaló el agente para ella.
 
 La tarjeta muestra una sola acción, según el estado:
 
 | Acción o texto | Cuándo |
 |---|---|
 | **Instalar** | No está instalada |
-| **Abrir** | Aplicación o habilidad instalada |
+| **Abrir** | Aplicación, habilidad o agente instalado |
 | **Configurar** | Conector instalado: lleva a **Configuración → Conectores** |
 | **Actualizar** | Hay una versión nueva (quien no puede actualizar ve **Actualización disponible**) |
 | **No disponible** | Se retiró del catálogo |
@@ -52,7 +56,9 @@ Al pulsar la tarjeta se abre el detalle: la versión, la fecha de instalación, 
 | **Actualizar** | Se revisan antes los recursos que cambian | Directo | Pide confirmación. Sustituye instrucciones y archivos; conserva nombre, estado y agentes |
 | **Desinstalar** | Pide confirmación y permite borrar también lo que creó | Pide confirmación. Los asignados a la organización no se pueden desinstalar | Pide confirmación. Se borra de la biblioteca y de los agentes que la usaban |
 
-Instalar y actualizar requieren permiso de crear sobre el módulo correspondiente; desinstalar, permiso de eliminar. El plan fija cuántas habilidades, conectores y recursos se pueden tener: al llegar al máximo, la plataforma lo indica antes de instalar. Ver [Créditos y límites](/organizacion/creditos-y-limites#límites-del-plan).
+Los agentes se instalan, actualizan y desinstalan como se explica en [Agentes del catálogo](/control/estudio/agentes-del-catalogo).
+
+Instalar y actualizar requieren permiso de crear sobre el módulo correspondiente (en los agentes, **Estudio**); desinstalar, permiso de eliminar. El plan fija cuántas habilidades, conectores y recursos se pueden tener: al llegar al máximo, la plataforma lo indica antes de instalar. Ver [Créditos y límites](/organizacion/creditos-y-limites#límites-del-plan).
 
 ## Instaladas
 
@@ -64,4 +70,4 @@ Cada fila tiene **Actualizar** (si hay versión nueva), un acceso directo para a
 
 Si quien publica un elemento lo retira del catálogo, sigue instalado y se puede desinstalar, pero ya no se puede reinstalar ni actualizar. Si además lo desactiva, una aplicación ya no se puede abrir.
 
-Los elementos del catálogo los publica ConsulPoint.
+Los elementos del catálogo los publica ConsulPoint. Los agentes también los pueden publicar las distribuidoras para sus organizaciones. Ver [Publicar agentes en el catálogo](/control/estudio/publicar-agentes).

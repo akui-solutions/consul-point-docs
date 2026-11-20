@@ -75,6 +75,8 @@ const sidebars: SidebarsConfig = {
         'control/estudio/crear-un-agente',
         'control/estudio/agentes',
         'control/estudio/memoria',
+        'control/estudio/agentes-del-catalogo',
+        'control/estudio/publicar-agentes',
         'control/estudio/especialistas',
         'control/estudio/microagentes',
         'control/estudio/habilidades',

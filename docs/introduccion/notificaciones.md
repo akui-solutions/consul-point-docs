@@ -47,7 +47,8 @@ Cada persona recibe solo los avisos que le corresponden por lo que hace o admini
 | **Correos procesados** | La [Bandeja Inteligente](/modulos/bandeja-inteligente) revisó correos y guardó sus archivos |
 | **Nuevo mensaje** | Alguien escribió en una conversación compartida |
 | **Supervisión solicitada** / **Conversación sin atender** | Una conversación de un canal pide atención humana, o lleva tiempo sin respuesta. Ver [Canales y atención humana](/conversaciones/canales-y-atencion-humana) |
-| **Nueva versión disponible** | Hay una actualización de una aplicación instalada. Ver [Catálogo de integraciones](/organizacion/catalogo-de-aplicaciones) |
+| **Nueva versión disponible** | Hay una actualización de una aplicación o de un agente instalados. Ver [Catálogo de integraciones](/organizacion/catalogo-de-aplicaciones) |
+| **Agente actualizado** | Para administradores: un agente del catálogo se actualizó solo a una versión nueva. Ver [Agentes del catálogo](/control/estudio/agentes-del-catalogo#actualizar) |
 | **Conector instalado** | Alguien instaló un conector en la organización |
 | **Conexión a punto de caducar** | Hay que renovar la conexión de un canal, como WhatsApp |
 | **Invitación enviada** / **Invitación aceptada** | Para administradores: se invitó a alguien a la organización, o ya forma parte de ella |
