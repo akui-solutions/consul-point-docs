@@ -40,6 +40,8 @@ When credits reach zero, a **short grace period** begins. Administrators receive
 | Knowledge Hub | Preparing files for agents | **There are no credits left to prepare this file.** |
 | Smart Inbox | AI analyses of emails | **Stopped because of insufficient credits.** |
 
+If the agent has [memory](/control/estudio/memoria#créditos), what it remembers about the person is sent with every message and is part of its usage.
+
 Agents that use the organization's **own model** keep responding, because those models do not consume credits.
 
 Credits come back with the next cycle's voucher or with an additional voucher assigned by ConsulPoint.

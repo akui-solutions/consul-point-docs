@@ -20,7 +20,7 @@ The form for creating an agent or a specialist, field by field. Micro-agents use
 ## The steps {#los-pasos}
 
 1. In the Studio, on the **Agents** tab, click **New agent** (or **New specialist** on its tab).
-2. **Configuration**: type, basic information, behavior, model, personalization and built-in functions.
+2. **Configuration**: type, basic information, behavior, model, capabilities and personalization.
 3. **Documents and access**: the agent's own documents and who can use it.
 4. Click **Create**.
 
@@ -96,19 +96,19 @@ How to choose the temperature:
 
 Some newer models adjust their own reasoning and ignore the temperature.
 
-### Personalization {#personalización}
+### Capabilities {#capacidades}
 
-Agents only.
+What the agent can do besides talking: the platform's **built-in functions** and [skills](/control/estudio/habilidades). You pick them with **Add capability**, in a window with a section for each type. The ones you pick appear together, each with its **Function** or **Skill** tag, and they're saved when you create the agent.
 
-- **Communication tone**: up to 3 of **Formal**, **Informal**, **Friendly**, **Technical** and **Professional**. You can't combine Formal with Informal, or Friendly with Technical.
-- **Conversation starters**: up to 5 suggested phrases at the start of a conversation, 3 to 150 characters each.
+If you don't have access to skills, you only see the functions, with **Add function**.
 
-### Built-in functions {#funciones-integradas}
+This section only appears when you create the agent: afterwards, you change functions and skills on the agent's [Capabilities](/control/estudio/agentes#capacidades) tab, and memory on its **Memory** tab.
 
-Platform functions the agent can use in its answers. You add them with **Add function**. This section only appears when you create the agent: afterwards, you change the functions on the agent's [Capabilities](/control/estudio/agentes#capacidades) tab.
+#### Built-in functions {#funciones-integradas}
 
 | Function | What it allows |
 |---|---|
+| **Memory** | Remember what matters about each person across conversations. See [Agent memory](/control/estudio/memoria) |
 | **Knowledge hub access** | Look up the documents in the Knowledge Hub. Without it, the agent doesn't appear when sharing folders with it |
 | **Web search** | Search the internet for up-to-date information. In Conversations, the **Web search** button appears, and the search is only used when it's turned on |
 | **Text to speech** | Read the answers aloud. Uses credits |
@@ -118,9 +118,18 @@ Platform functions the agent can use in its answers. You add them with **Add fun
 
 Specialists can only have **Knowledge hub access**. Micro-agents don't have built-in functions.
 
+When you pick **Memory**, **What this agent should remember** appears, to say what to keep about each person. It's optional: if left empty, the agent uses a platform template. See [What to remember](/control/estudio/memoria#qué-debe-recordar).
+
 :::warning The most common cause of generic answers
 An agent without **Knowledge hub access** doesn't look up documents, even if folders have been prepared for it.
 :::
+
+### Personalization {#personalización}
+
+Agents only.
+
+- **Communication tone**: up to 3 of **Formal**, **Informal**, **Friendly**, **Technical** and **Professional**. You can't combine Formal with Informal, or Friendly with Technical.
+- **Conversation starters**: up to 5 suggested phrases at the start of a conversation, 3 to 150 characters each.
 
 ## Step 2: Documents and access {#paso-2-documentos-y-acceso}
 

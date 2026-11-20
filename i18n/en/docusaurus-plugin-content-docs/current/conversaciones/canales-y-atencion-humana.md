@@ -73,3 +73,13 @@ These options only appear with permission on the integrations.
 ## Contacts {#contactos}
 
 In **More options**, **Assign contact** links the conversation to a contact in your directory, and **Remove assigned contact** unlinks it.
+
+## Contact memory {#memoria-del-contacto}
+
+If the agent has [memory](/control/estudio/memoria), it remembers what matters about each WhatsApp, Telegram or external app contact: their name, language, previous requests and what's pending. It uses it every time the contact writes to it. In Telegram groups it saves nothing.
+
+Administrators can check it from the conversation: in **More options**, **Agent memory**, or in **Conversation details**, **See what it remembers**. The **What it remembers about this contact** window shows the text and the date of the last update.
+
+**Delete memory** makes the agent forget everything it saved about the contact and start from scratch in their next conversation. It can't be undone. A contact's memory can't be edited.
+
+The agent only uses and updates memory when answering the contact, not with the team's messages.

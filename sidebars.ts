@@ -74,6 +74,7 @@ const sidebars: SidebarsConfig = {
       module('Estudio', 'control/estudio/estudio-overview', [
         'control/estudio/crear-un-agente',
         'control/estudio/agentes',
+        'control/estudio/memoria',
         'control/estudio/especialistas',
         'control/estudio/microagentes',
         'control/estudio/habilidades',

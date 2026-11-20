@@ -40,6 +40,8 @@ Cuando los créditos llegan a cero empieza un **periodo de gracia corto**. Los a
 | Centro de Conocimiento | Preparar archivos para los agentes | **No quedan créditos para preparar este archivo.** |
 | Bandeja Inteligente | Los análisis con IA de los correos | **Se detuvo por falta de créditos.** |
 
+Si el agente tiene [memoria](/control/estudio/memoria#créditos), lo que recuerda de la persona se envía con cada mensaje y forma parte de su consumo.
+
 Los agentes que usan un **modelo propio** de la organización siguen respondiendo, porque esos modelos no consumen créditos.
 
 Los créditos vuelven con el bono del siguiente ciclo o con un bono adicional asignado por ConsulPoint.

@@ -3,7 +3,7 @@ id: conversar-con-un-agente
 title: Conversar con un agente
 sidebar_label: Conversar con un agente
 sidebar_position: 2
-description: Cómo iniciar una conversación con un agente en ConsulPoint, adjuntar archivos, dictar, usar la búsqueda web, ver las fuentes de cada respuesta y probar un agente.
+description: Cómo iniciar una conversación con un agente en ConsulPoint, adjuntar archivos, dictar, usar la búsqueda web, ver las fuentes de cada respuesta, ver lo que recuerda el agente y probarlo.
 ---
 
 # Conversar con un agente
@@ -74,6 +74,7 @@ Encima de cada respuesta, una línea resume lo que hizo el agente para responder
 | **Consultó a "…"** | Consultó a un [especialista](/control/estudio/especialistas) |
 | **Usó la habilidad "…"**, **Leyó "…" de la habilidad "…"**, **Ejecutó "…" de la habilidad "…"** | Usó una [habilidad](/control/estudio/habilidades) |
 | **Revisó la disponibilidad de la agenda** / **Agendó "…"** | Usó Google Calendar |
+| **Guardó algo para recordar** | Actualizó su [memoria](#lo-que-recuerda-el-agente) |
 | **Derivó la conversación a una persona** | Pidió atención humana (ver [Canales y atención humana](/conversaciones/canales-y-atencion-humana)) |
 | **Usó una herramienta** | Usó un [conector](/organizacion/conectores) u otra herramienta |
 
@@ -108,6 +109,39 @@ Es la mejor forma de comprobar que el agente responde con los documentos de la o
 :::danger Eliminar un fragmento
 **Eliminar este fragmento** borra ese fragmento del conocimiento del agente, para todas las personas y todas las conversaciones. No se puede deshacer. Solo debe usarse para retirar información incorrecta. El documento original no cambia.
 :::
+
+## Lo que recuerda el agente
+
+Si el agente tiene [memoria](/control/estudio/memoria), recuerda lo relevante de cada persona de una conversación a otra. Solo en conversaciones a solas con él: en una conversación compartida no usa ni guarda nada.
+
+Cuando guarda algo, la respuesta lo indica debajo:
+
+| Marca | Qué significa |
+|---|---|
+| **Memoria actualizada** | Guardó algo para las próximas conversaciones |
+| **Memoria llena** | No pudo guardarlo porque la memoria llegó a su límite. Borrar lo que ya no sirva y pedírselo de nuevo |
+| **Memoria sin actualizar** | Intentó guardar algo y no pudo. Pedírselo de nuevo más tarde |
+
+### Qué recuerda de ti
+
+Cada persona puede ver lo que el agente guardó de ella, corregirlo o borrarlo. Se abre de tres formas:
+
+- En el menú de la cabecera, **Memoria del agente**.
+- En **Detalles de la conversación**, en **Capacidades**, **Qué recuerda de ti**.
+- Pulsando la marca de memoria de una respuesta.
+
+<Screenshot src="/img/conversaciones/que-recuerda-de-ti.png" alt="Ventana Qué recuerda de ti en Conversaciones de ConsulPoint" caption="Qué recuerda de ti" maxWidth={560} />
+
+| Acción | Qué hace |
+|---|---|
+| **Editar** | Corregir el texto, de hasta 8.000 caracteres. El agente usa los cambios en las próximas conversaciones |
+| **Borrar memoria** | El agente olvida todo lo que guardó de esa persona y empieza de cero. No se puede deshacer |
+
+Mientras el agente está respondiendo, **Editar** y **Borrar memoria** esperan a que termine, para no perder lo que guarde en esa respuesta. Si el agente guarda algo nuevo mientras se edita, la ventana lo avisa y ofrece **Cargar versión nueva**.
+
+Para que olvide solo una cosa, también se le puede pedir en la conversación.
+
+Lo que el agente recuerda de una persona no lo ve nadie más. Un administrador puede borrarlo, pero no leerlo. Ver [Quién puede ver y borrar la memoria](/control/estudio/memoria#quién-puede-ver-y-borrar-la-memoria).
 
 ## Ventana de contexto
 

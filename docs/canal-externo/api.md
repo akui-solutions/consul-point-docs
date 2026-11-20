@@ -114,6 +114,8 @@ Los adjuntos no viajan en el JSON: se envía una URL HTTPS pública desde la que
 
 Los mensajes del mismo `externalUserId` forman una conversación mientras no pase el **tiempo sin actividad** configurado en el canal (30 minutos por defecto). Pasado ese tiempo, el siguiente mensaje abre una conversación nueva. Si la conversación anterior estaba resuelta, un mensaje nuevo la reabre.
 
+Si el agente tiene [memoria](/control/estudio/memoria), el `externalUserId` también identifica al contacto para la memoria: lo que el agente recuerda de él se conserva de una conversación a otra. Por eso tiene que fijarlo el servidor del sistema externo a partir de su propia sesión, y no el navegador o la app de la persona. Un administrador puede ver y borrar esa memoria desde la conversación. Ver [Memoria del contacto](/conversaciones/canales-y-atencion-humana#memoria-del-contacto).
+
 ## Recibir las respuestas
 
 Cada vez que el agente o el equipo responde, ConsulPoint hace un `POST` a la URL de entrega, con la **API Key de entrega** en `x-api-key` y la firma en `x-signature` y `x-signature-timestamp`:

@@ -26,6 +26,26 @@ description: Solutions to the most common issues when creating and using agents,
 | The **Technical description** is vague or doesn't cover that case | Rewrite it saying precisely when to consult it. See [Specialists](/control/estudio/especialistas#crear-un-especialista) |
 | Several specialists have similar descriptions | Define each one's topic more clearly |
 
+## The agent doesn't remember what it was told {#el-agente-no-recuerda-lo-que-se-le-dijo}
+
+| Cause | Solution |
+|---|---|
+| The agent doesn't have memory turned on | Agent's **Memory** tab → **Turn on memory**. See [Agent memory](/control/estudio/memoria) |
+| The conversation is shared, a Telegram group or a team message in a channel | Memory is only used in direct conversations with a single person. See [Where it's used](/control/estudio/memoria#dónde-se-usa) |
+| It's a different agent | Each agent has its own memory of each person |
+| The fact isn't in **What to remember** or is passing | Add it to **What to remember** on the **Memory** tab |
+| The answer shows **Memory full** or **Memory not updated** | See [What the agent remembers](/conversaciones/conversar-con-un-agente#lo-que-recuerda-el-agente) |
+
+## The Memory tab doesn't appear or memory can't be turned on {#no-aparece-la-pestaña-memoria-o-no-se-puede-activar}
+
+| Cause | Solution |
+|---|---|
+| It's a specialist or a micro-agent | Only agents have memory |
+| It's a catalog agent | Memory is decided by whoever publishes it. See [Catalog agents](/control/estudio/memoria#agentes-del-catálogo) |
+| **Whoever manages the agent can turn it on.** appears | You need permission to edit **Studio** |
+| Turning it on or saving isn't allowed | On the agent you need the **Can edit** level or higher. An administrator grants it on the **Access** tab |
+| **Delete a person's memory…** doesn't appear | It's for administrators only |
+
 ## You can't create one {#no-se-puede-crear}
 
 | Symptom | Cause |

@@ -19,6 +19,11 @@ description: Soluciones a los problemas más habituales en Conversaciones de Con
 | **La respuesta se interrumpió** | Volver a enviar el mensaje |
 | **La ventana de contexto está casi llena** | Abrir una conversación nueva |
 | Los agentes dejan de responder | Se acabaron los créditos de la organización. Revisar el consumo |
+| No aparece **Memoria del agente** | El agente no tiene memoria, o la conversación está compartida con otras personas. Ver [Lo que recuerda el agente](/conversaciones/conversar-con-un-agente#lo-que-recuerda-el-agente) |
+| **Memoria llena** en una respuesta | Lo que recuerda el agente llegó a su límite. En **Memoria del agente**, **Editar** y borrar lo que ya no sirva |
+| **Memoria sin actualizar** en una respuesta | El agente no pudo guardar algo. Pedírselo de nuevo más tarde |
+| **La memoria de los agentes no está disponible en este momento** | Intentarlo más tarde |
+| **Este agente tiene la memoria desactivada, así que no se puede editar** | Quien administra el agente la desactivó. Lo que recuerda se puede seguir viendo y borrar |
 
 ## Archivos
 

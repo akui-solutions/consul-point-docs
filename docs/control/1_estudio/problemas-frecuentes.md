@@ -26,6 +26,26 @@ description: Soluciones a los problemas más habituales al crear y usar agentes,
 | La **Descripción técnica** es vaga o no cubre ese caso | Reescribirla indicando con precisión cuándo consultarlo. Ver [Especialistas](/control/estudio/especialistas#crear-un-especialista) |
 | Varios especialistas tienen descripciones parecidas | Delimitar mejor el tema de cada uno |
 
+## El agente no recuerda lo que se le dijo
+
+| Causa | Solución |
+|---|---|
+| El agente no tiene la memoria activada | Pestaña **Memoria** del agente → **Activar memoria**. Ver [Memoria de los agentes](/control/estudio/memoria) |
+| La conversación es compartida, un grupo de Telegram o un mensaje del equipo en un canal | La memoria solo se usa en conversaciones directas con una sola persona. Ver [Dónde se usa](/control/estudio/memoria#dónde-se-usa) |
+| Es otro agente | Cada agente tiene su propia memoria de cada persona |
+| El dato no figura en **Qué debe recordar** o es pasajero | Añadirlo a **Qué debe recordar** en la pestaña **Memoria** |
+| La respuesta muestra **Memoria llena** o **Memoria sin actualizar** | Ver [Lo que recuerda el agente](/conversaciones/conversar-con-un-agente#lo-que-recuerda-el-agente) |
+
+## No aparece la pestaña Memoria o no se puede activar
+
+| Causa | Solución |
+|---|---|
+| Es un especialista o un microagente | Solo los agentes tienen memoria |
+| Es un agente del catálogo | La memoria la decide quien lo publica. Ver [Agentes del catálogo](/control/estudio/memoria#agentes-del-catálogo) |
+| Aparece **Quien administra el agente puede activarla.** | Hace falta permiso de editar sobre el **Estudio** |
+| Al activarla o guardar, la plataforma no lo permite | En el agente hace falta el nivel **Puede editar** o superior. Lo da un administrador en la pestaña **Acceso** |
+| No aparece **Borrar la memoria de una persona…** | Es solo para administradores |
+
 ## No se puede crear
 
 | Síntoma | Causa |

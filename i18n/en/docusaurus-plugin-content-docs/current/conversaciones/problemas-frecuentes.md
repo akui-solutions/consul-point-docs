@@ -19,6 +19,11 @@ description: Solutions to the most common issues in ConsulPoint Conversations.
 | **The response was interrupted** | Send the message again |
 | **Context window is almost full** | Open a new conversation |
 | Agents stop answering | The organization has run out of credits. Check the usage |
+| **Agent memory** doesn't appear | The agent has no memory, or the conversation is shared with other people. See [What the agent remembers](/conversaciones/conversar-con-un-agente#lo-que-recuerda-el-agente) |
+| **Memory full** on an answer | What the agent remembers reached its limit. In **Agent memory**, **Edit** and delete what's no longer useful |
+| **Memory not updated** on an answer | The agent couldn't save something. Ask again later |
+| **Agent memory isn't available right now** | Try again later |
+| **This agent has memory turned off, so it can't be edited** | Whoever manages the agent turned it off. You can still see and delete what it remembers |
 
 ## Files {#archivos}
 

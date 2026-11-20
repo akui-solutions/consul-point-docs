@@ -3,7 +3,7 @@ id: conversar-con-un-agente
 title: Talking to an agent
 sidebar_label: Talking to an agent
 sidebar_position: 2
-description: How to start a conversation with a ConsulPoint agent, attach files, dictate, use web search, see each answer's sources and test an agent.
+description: How to start a conversation with a ConsulPoint agent, attach files, dictate, use web search, see each answer's sources, see what the agent remembers and test it.
 ---
 
 # Talking to an agent
@@ -74,6 +74,7 @@ Above each answer, a line sums up what the agent did to answer: **Took 3 actions
 | **Consulted "…"** | It consulted a [specialist](/control/estudio/especialistas) |
 | **Used the skill "…"**, **Read "…" from the skill "…"**, **Ran "…" from the skill "…"** | It used a [skill](/control/estudio/habilidades) |
 | **Checked the calendar availability** / **Scheduled "…"** | It used Google Calendar |
+| **Saved something to remember** | It updated its [memory](#lo-que-recuerda-el-agente) |
 | **Handed the conversation to a person** | It asked for human support (see [Channels and human support](/conversaciones/canales-y-atencion-humana)) |
 | **Used a tool** | It used a [connector](/organizacion/conectores) or another tool |
 
@@ -108,6 +109,39 @@ It is the best way to check that the agent answers with your organization's docu
 :::danger Deleting a fragment
 **Delete this fragment** removes that fragment from the agent's knowledge, for everyone and every conversation. It cannot be undone. Use it only to remove incorrect information. The original document does not change.
 :::
+
+## What the agent remembers {#lo-que-recuerda-el-agente}
+
+If the agent has [memory](/control/estudio/memoria), it remembers what matters about each person from one conversation to the next. Only in conversations alone with it: in a shared conversation it neither uses nor saves anything.
+
+When it saves something, the answer shows it underneath:
+
+| Mark | What it means |
+|---|---|
+| **Memory updated** | It saved something for the next conversations |
+| **Memory full** | It couldn't save it because the memory reached its limit. Delete what's no longer useful and ask again |
+| **Memory not updated** | It tried to save something and couldn't. Ask again later |
+
+### What it remembers about you {#qué-recuerda-de-ti}
+
+Each person can see what the agent saved about them, correct it or delete it. You open it in three ways:
+
+- In the header menu, **Agent memory**.
+- In **Conversation details**, under **Capabilities**, **What it remembers about you**.
+- By clicking an answer's memory mark.
+
+<Screenshot src="/img/en/conversaciones/que-recuerda-de-ti.png" alt="What it remembers about you window in ConsulPoint Conversations" caption="What it remembers about you" maxWidth={560} />
+
+| Action | What it does |
+|---|---|
+| **Edit** | Correct the text, up to 8,000 characters. The agent uses the changes in the next conversations |
+| **Delete memory** | The agent forgets everything it saved about that person and starts from scratch. It can't be undone |
+
+While the agent is answering, **Edit** and **Delete memory** wait for it to finish, so nothing it saves in that answer is lost. If the agent saves something new while you're editing, the window tells you and offers **Load new version**.
+
+To make it forget just one thing, you can also ask it in the conversation.
+
+What the agent remembers about a person isn't visible to anyone else. An administrator can delete it, but not read it. See [Who can see and delete memory](/control/estudio/memoria#quién-puede-ver-y-borrar-la-memoria).
 
 ## Context window {#ventana-de-contexto}
 

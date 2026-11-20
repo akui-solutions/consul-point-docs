@@ -114,6 +114,8 @@ Attachments do not travel in the JSON: you send a public HTTPS URL from which Co
 
 Messages from the same `externalUserId` form one conversation as long as the **inactivity time** configured in the channel (30 minutes by default) does not pass. After that time, the next message opens a new conversation. If the previous conversation was resolved, a new message reopens it.
 
+If the agent has [memory](/control/estudio/memoria), the `externalUserId` also identifies the contact for memory: what the agent remembers about them carries over from one conversation to the next. That's why the external system's server must set it from its own session, not the person's browser or app. An administrator can see and delete that memory from the conversation. See [Contact memory](/conversaciones/canales-y-atencion-humana#memoria-del-contacto).
+
 ## Receive the replies {#recibir-las-respuestas}
 
 Every time the agent or the team replies, ConsulPoint makes a `POST` to the delivery URL, with the **Delivery API Key** in `x-api-key` and the signature in `x-signature` and `x-signature-timestamp`:

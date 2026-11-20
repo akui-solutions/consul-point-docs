@@ -20,7 +20,7 @@ El formulario para crear un agente o un especialista, campo por campo. Los micro
 ## Los pasos
 
 1. En el Estudio, pestaña **Agentes**, pulsar **Nuevo agente** (o **Nuevo especialista** en su pestaña).
-2. **Configuración**: tipo, información básica, comportamiento, modelo, personalización y funciones integradas.
+2. **Configuración**: tipo, información básica, comportamiento, modelo, capacidades y personalización.
 3. **Documentos y acceso**: documentos propios del agente y quién puede usarlo.
 4. Pulsar **Crear**.
 
@@ -96,19 +96,19 @@ Criterio para la temperatura:
 
 Algunos modelos más recientes ajustan su razonamiento por sí mismos e ignoran la temperatura.
 
-### Personalización
+### Capacidades
 
-Solo para agentes.
+Lo que el agente puede hacer además de conversar: **funciones integradas** de la plataforma y [habilidades](/control/estudio/habilidades). Se eligen con **Agregar capacidad**, en una ventana con una sección para cada tipo. Las elegidas aparecen juntas, cada una con su etiqueta **Función** o **Habilidad**, y se guardan al crear el agente.
 
-- **Tono de comunicación**: hasta 3 entre **Formal**, **Informal**, **Amigable**, **Técnico** y **Profesional**. No se pueden combinar Formal con Informal, ni Amigable con Técnico.
-- **Iniciadores de conversación**: hasta 5 frases sugeridas al empezar una conversación, de 3 a 150 caracteres cada una.
+Quien no tiene acceso a las habilidades ve solo las funciones, con **Agregar función**.
 
-### Funciones integradas
+Esta sección solo aparece al crear el agente: después, las funciones y habilidades se cambian en la pestaña [Capacidades](/control/estudio/agentes#capacidades) del agente, y la memoria en su pestaña **Memoria**.
 
-Funciones de la plataforma que el agente puede usar en sus respuestas. Se añaden con **Agregar función**. Esta sección solo aparece al crear el agente: después, las funciones se cambian en la pestaña [Capacidades](/control/estudio/agentes#capacidades) del agente.
+#### Funciones integradas
 
 | Función | Qué permite |
 |---|---|
+| **Memoria** | Recordar lo relevante de cada persona entre conversaciones. Ver [Memoria de los agentes](/control/estudio/memoria) |
 | **Acceso al centro de conocimiento** | Consultar los documentos del Centro de Conocimiento. Sin ella, el agente no aparece para compartir carpetas con él |
 | **Buscar en la web** | Buscar información actualizada en internet. En Conversaciones aparece el botón **Búsqueda web**, y la búsqueda solo se usa cuando está activado |
 | **Texto a voz** | Leer en voz alta las respuestas. Consume créditos |
@@ -118,9 +118,18 @@ Funciones de la plataforma que el agente puede usar en sus respuestas. Se añade
 
 Los especialistas solo pueden tener **Acceso al centro de conocimiento**. Los microagentes no tienen funciones integradas.
 
+Al elegir **Memoria** aparece **Qué debe recordar este agente**, para indicar qué guardar de cada persona. Es opcional: vacío, el agente usa una plantilla de la plataforma. Ver [Qué debe recordar](/control/estudio/memoria#qué-debe-recordar).
+
 :::warning La causa más frecuente de respuestas genéricas
 Un agente sin **Acceso al centro de conocimiento** no consulta documentos, aunque haya carpetas preparadas para él.
 :::
+
+### Personalización
+
+Solo para agentes.
+
+- **Tono de comunicación**: hasta 3 entre **Formal**, **Informal**, **Amigable**, **Técnico** y **Profesional**. No se pueden combinar Formal con Informal, ni Amigable con Técnico.
+- **Iniciadores de conversación**: hasta 5 frases sugeridas al empezar una conversación, de 3 a 150 caracteres cada una.
 
 ## Paso 2: Documentos y acceso
 
