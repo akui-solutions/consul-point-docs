@@ -26,7 +26,7 @@ La memoria solo se usa en conversaciones directas entre el agente y una sola per
 | WhatsApp | Sí, la del contacto |
 | Telegram, chat privado | Sí, la del contacto |
 | Aplicación externa | Sí, la del contacto |
-| API de agentes, con un identificador del usuario final | Sí, la de ese usuario. Ver [API de agentes](/api-agentes) |
+| API de agentes, con un identificador del usuario final | Sí, la de ese usuario. Ver [API de agentes](/api-agentes#memoria-por-usuario-final) |
 | Conversación compartida con otras personas | No |
 | Grupo de Telegram | No |
 | Mensajes que escribe una persona del equipo al tomar el control de un canal | No |
@@ -92,7 +92,7 @@ Lo que el agente recuerda de una persona es privado.
 | Una persona de la organización | Solo esa persona | Ver, corregir y borrar | En la conversación, **Memoria del agente**. Ver [Lo que recuerda el agente](/conversaciones/conversar-con-un-agente#lo-que-recuerda-el-agente) |
 | Una persona de la organización, por un administrador | Nadie más: el administrador solo ve si existe y cuándo se actualizó | Borrar | Pestaña **Memoria** del agente → **Borrar la memoria de una persona…** |
 | Un contacto de un canal | Los administradores | Ver y borrar | En la conversación del canal, **Memoria del agente**. Ver [Canales y atención humana](/conversaciones/canales-y-atencion-humana#memoria-del-contacto) |
-| Un usuario de la API | Quien integra, con la clave de API | Ver y borrar | Ver [API de agentes](/api-agentes) |
+| Un usuario de la API | Quien integra, con la clave de API | Ver y borrar | Ver [API de agentes](/api-agentes#memoria-por-usuario-final) |
 
 ### Borrar la memoria de una persona
 

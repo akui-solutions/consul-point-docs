@@ -26,7 +26,7 @@ Memory is only used in direct conversations between the agent and a single perso
 | WhatsApp | Yes, the contact's |
 | Telegram, private chat | Yes, the contact's |
 | External app | Yes, the contact's |
-| Agents API, with an end-user identifier | Yes, that user's. See [Agents API](/api-agentes) |
+| Agents API, with an end-user identifier | Yes, that user's. See [Agents API](/api-agentes#memoria-por-usuario-final) |
 | Conversation shared with other people | No |
 | Telegram group | No |
 | Messages a team member writes after taking over a channel | No |
@@ -92,7 +92,7 @@ What the agent remembers about a person is private.
 | A person in the organization | Only that person | View, correct and delete | In the conversation, **Agent memory**. See [What the agent remembers](/conversaciones/conversar-con-un-agente#lo-que-recuerda-el-agente) |
 | A person in the organization, by an administrator | Nobody else: the administrator only sees whether it exists and when it was last updated | Delete | Agent's **Memory** tab → **Delete a person's memory…** |
 | A channel contact | Administrators | View and delete | In the channel conversation, **Agent memory**. See [Channels and human support](/conversaciones/canales-y-atencion-humana#memoria-del-contacto) |
-| An API user | The integrator, with the API key | View and delete | See [Agents API](/api-agentes) |
+| An API user | The integrator, with the API key | View and delete | See [Agents API](/api-agentes#memoria-por-usuario-final) |
 
 ### Delete a person's memory {#borrar-la-memoria-de-una-persona}
 
