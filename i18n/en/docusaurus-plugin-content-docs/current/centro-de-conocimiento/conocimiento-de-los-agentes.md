@@ -27,20 +27,20 @@ An agent always has **Read only** access: it consults the content but does not c
 
 ## Preparation {#preparación}
 
-Before an agent can read a file, the platform prepares it: it extracts the text (from PDFs, with the folder's [conversion service](/centro-de-conocimiento/carpetas-y-archivos#conversión-de-pdf)), splits it into chunks and indexes them so they can be searched by meaning and not only by exact words.
+Before an agent can read a file, the platform prepares it: it extracts the text (from PDFs, with the folder's [conversion service](/centro-de-conocimiento/carpetas-y-archivos#conversión-de-pdf)), splits it into passages and indexes them so they can be searched by meaning and not only by exact words. You adjust how it's split and what the agent receives in each search in [Agents' search](/centro-de-conocimiento/busqueda-de-los-agentes).
 
 Preparation starts on its own when you share the folder with an agent and when you upload files to a shared folder. It takes a few minutes per file; with many files, longer. If it fails, the platform sends a notification.
 
 ### Check whether a file is available {#comprobar-si-un-archivo-está-disponible}
 
-When you open a file, **Show information** tells you whether it is **Available to agents**:
+When you open a file, **Availability for agents** shows its status:
 
-| Indication | Meaning |
+| Status | Meaning |
 |---|---|
-| **Yes, up to date** | Agents read the current version |
-| **Yes, but an older version** | Agents read a version that has since changed. You should **Prepare again** |
+| **Available** | Agents read its current content |
+| **Available · Update pending** | Agents can read it, but with its previous content or the folder's previous settings. Below it you see the reason and what to do. See [Update the documents](/centro-de-conocimiento/actualizar-los-documentos#documentos-pendientes-en-la-lista) |
 | **Preparing…** | In progress |
-| **Not yet** | Agents have access to the folder, but cannot read this file yet |
+| **Not available yet** | Agents have access to the folder, but cannot read this file yet |
 
 ### Manual actions {#acciones-manuales}
 
@@ -49,14 +49,14 @@ From **Show information**, on a file in a folder shared with an agent:
 | Action | When to use it |
 |---|---|
 | **Prepare for agents** | The file was not prepared, for example because it failed |
-| **Prepare again** | The file changed or the folder's PDF conversion was changed. Agents read it again from scratch |
+| **Prepare again** | The file changed or the folder's search settings were changed. Agents read it again from scratch. If the PDF conversion changed, you first have to **Redo text version** |
 | **Withdraw from agents** | To have agents stop reading this specific file. The file is not deleted and the folder stays shared |
 
 Preparing a file manually uses the organization's credits. These actions are not available from a workspace.
 
 ## How the agent answers {#cómo-responde-el-agente}
 
-For each question, the agent searches the folders it has access to for the most related chunks and answers based on them. It does not read every document in full each time.
+For each question, the agent searches the folders it has access to for the most related passages and answers based on them. It does not read every document in full each time. You adjust how many passages it receives and how they're searched in [Agents' search](/centro-de-conocimiento/busqueda-de-los-agentes#resultados-de-búsqueda).
 
 :::info The agent respects the permissions of the person asking
 In [Conversations](/modulos/conversaciones), the agent only searches the folders shared with it **that the person in the conversation also has access to**. Two people can get different answers from the same agent if they have access to different folders.
@@ -65,7 +65,7 @@ In [Conversations](/modulos/conversaciones), the agent only searches the folders
 ## Best practices {#buenas-prácticas}
 
 :::tip Documents that are easy to understand
-- One topic per document and clear headings. This helps the search find the right chunk.
+- One topic per document and clear headings. This helps the search find the right passage.
 - For scanned PDFs or PDFs with complex tables, use the **Advanced** service and check the [text version](/centro-de-conocimiento/subir-documentos#versión-en-texto-de-los-pdf) before sharing.
 - Share with each agent only the folders on its topic. Less irrelevant content, better answers.
 :::

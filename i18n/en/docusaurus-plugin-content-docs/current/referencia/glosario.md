@@ -72,7 +72,8 @@ The terms that appear on the platform and in this documentation, in alphabetical
 
 ## P {#p}
 
-- **Prepare for agents**: action that turns a file into fragments the agents can search and read. See [Agent knowledge](/centro-de-conocimiento/conocimiento-de-los-agentes).
+- **Passage**: piece of a document that the platform splits it into so agents can search it. Some settings call it a *fragment*. For each question, the agent receives the most related passages, not the whole document. See [Agents' search](/centro-de-conocimiento/busqueda-de-los-agentes).
+- **Prepare for agents**: action that turns a file into passages the agents can search and read. See [Agent knowledge](/centro-de-conocimiento/conocimiento-de-los-agentes).
 
 ## R {#r}
 
@@ -80,6 +81,8 @@ The terms that appear on the platform and in this documentation, in alphabetical
 
 ## S {#s}
 
+- **Search agent**: micro-agent that searches the documents in folders using the organization's criteria and terminology. It's assigned to folders, not to agents. See [Search agent](/control/estudio/microagentes#agente-de-búsqueda).
+- **Search profile**: named search settings shared by several Knowledge Hub folders. See [Search profiles](/centro-de-conocimiento/perfiles-de-busqueda).
 - **Skill**: reusable procedure, with instructions and, if needed, files and scripts, that is assigned to agents and specialists. The agent uses it when it needs it. See [Skills](/control/estudio/habilidades).
 - **Smart Extract**: folder type that extracts structured data from each document uploaded. See [Smart Extract](/centro-de-conocimiento/extraccion-inteligente).
 - **Smart Inbox**: module that gathers the emails from connected accounts and brings their content into the Knowledge Hub. See [Smart Inbox](/modulos/bandeja-inteligente).

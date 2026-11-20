@@ -65,6 +65,6 @@ En una carpeta de [Extracción inteligente](/centro-de-conocimiento/extraccion-i
 Una versión en texto es una copia del PDF convertida a texto, que se guarda junto al original y se puede revisar y descargar. Es útil para comprobar cómo "ve" el documento un agente, sobre todo en escaneados o PDF con tablas.
 
 - Al subir PDF, la ventana ofrece **Convertir los PDF a texto**. Después pregunta si crear las versiones ahora.
-- Para un PDF ya subido: **Crear versión en texto** en su menú, o **Rehacer la versión en texto** si ya tiene una.
+- Para un PDF ya subido: **Crear versión en texto** en su menú, o **Rehacer la versión en texto** si ya tiene una. Rehacerla reemplaza la anterior, que no se puede recuperar. El PDF original no cambia.
 
 La conversión usa el servicio configurado en la carpeta, **Esencial** o **Avanzado** (ver [Conversión de PDF](/centro-de-conocimiento/carpetas-y-archivos#conversión-de-pdf)). **Avanzado** consume créditos.

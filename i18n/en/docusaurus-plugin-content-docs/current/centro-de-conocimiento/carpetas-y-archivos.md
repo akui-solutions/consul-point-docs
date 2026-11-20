@@ -41,6 +41,10 @@ In the same section, **Image describer** lets you choose an agent to describe th
 
 A subfolder uses the conversion of the nearest parent folder that has one configured. To change it, edit that folder.
 
+Changing the service doesn't redo the text versions already created: the new one is used for the next ones. In a folder shared with agents, its PDFs are left pending an update. See [Update the documents](/centro-de-conocimiento/actualizar-los-documentos).
+
+In a folder shared with an agent, **Edit folder** also shows, under **Advanced options**, the **Agents' search** row, with the settings in use and the documents pending an update. See [Agents' search](/centro-de-conocimiento/busqueda-de-los-agentes).
+
 ## Browse and find content {#navegar-y-encontrar-contenido}
 
 - **Views**: grid or list, with the buttons in the top bar. The list shows **Name**, **Owner**, **Shared with**, **Last modified** and **Size**.
@@ -65,7 +69,7 @@ Each folder and each file has an actions menu. Only the actions the user can per
 | **View details** | Folders | Location, dates, extraction settings and who has access |
 | **Delete** | Both | See below |
 
-When you open a file, its preview is shown. **Show information** tells you, among other things, whether it is **Available to agents** (see [Agent knowledge](/centro-de-conocimiento/conocimiento-de-los-agentes)).
+When you open a file, its preview is shown. **Show information** tells you, among other things, its **Availability for agents** (see [Agent knowledge](/centro-de-conocimiento/conocimiento-de-los-agentes)).
 
 ### Move content {#mover-contenido}
 
