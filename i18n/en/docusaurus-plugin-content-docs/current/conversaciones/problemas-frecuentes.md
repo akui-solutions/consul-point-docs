@@ -39,7 +39,7 @@ description: Solutions to the most common issues in ConsulPoint Conversations.
 
 | Symptom | Cause and solution |
 |---|---|
-| The **New conversation** button is disabled | The organization has no active plan, or your role does not allow creating conversations |
+| The **New conversation** button is disabled | The organization has no active subscription, or your role does not allow creating conversations |
 | **Share conversation** does not appear | The conversation has no messages yet, or your role does not allow editing it |
 | You cannot find a person when sharing | They do not have access to the conversation's agent |
 | A conversation disappeared from the list | It was deleted, or it is no longer shared with you |

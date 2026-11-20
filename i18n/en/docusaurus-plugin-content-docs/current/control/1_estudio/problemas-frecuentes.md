@@ -50,12 +50,12 @@ description: Solutions to the most common issues when creating and using agents,
 
 | Symptom | Cause |
 |---|---|
-| The **New agent** button is disabled or doesn't appear | There's no active plan, or the role doesn't have create permission on the Studio |
-| When creating, the platform warns that the plan limit has been reached | The plan has a maximum number of agents, which includes specialists and micro-agents. Delete the ones you don't use or upgrade the plan |
+| The **New agent** button is disabled or doesn't appear | There's no active subscription, or the role doesn't have create permission on the Studio |
+| When creating, the platform warns that the subscription limit has been reached | The subscription has a maximum number of agents, which includes specialists and micro-agents. Delete the ones you don't use or upgrade the subscription |
 | **An agent named "…" already exists in your organization** | The name is already used by another agent or micro-agent. Choose another |
 | The **Specific people and roles** option doesn't appear in access | It's only available for agents, not for specialists |
 | The **Schema library** tab doesn't appear | With the default roles, it's for administrators only |
-| **Your current plan doesn't include your own models** | The organization's own models (**Custom**) depend on the plan |
+| **Your current subscription doesn't include your own models** | The organization's own models (**Custom**) depend on the subscription |
 
 ## You can't delete one {#no-se-puede-eliminar}
 

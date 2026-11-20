@@ -18,7 +18,7 @@ Connectors aren't created by hand: they're installed from the [Integrations cata
 
 ConsulPoint can also activate a connector for the organization. Those appear as **Assigned to your organization** and can't be uninstalled from the catalog.
 
-The plan sets the maximum number of connectors for the organization. See [Credits and limits](/organizacion/creditos-y-limites#límites-del-plan).
+The subscription sets the maximum number of connectors for the organization. See [Credits and limits](/organizacion/creditos-y-limites#límites-de-la-suscripción).
 
 ## Configure and authorize {#configurar-y-autorizar}
 

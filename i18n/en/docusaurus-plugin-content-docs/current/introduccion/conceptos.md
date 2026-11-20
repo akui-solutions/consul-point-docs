@@ -61,7 +61,7 @@ An organization keeps its **knowledge** in folders. An **agent** consults it to 
     Optional functions turned on for each agent: searching the Knowledge Hub, searching the web, attaching files, voice…
   </ModuleCard>
   <ModuleCard icon="model" title="Model">
-    The AI engine each agent runs on: from Google, OpenAI or Anthropic, or the organization's own model if the plan includes it.
+    The AI engine each agent runs on: from Google, OpenAI or Anthropic, or the organization's own model if the subscription includes it.
   </ModuleCard>
 </ModuleGrid>
 

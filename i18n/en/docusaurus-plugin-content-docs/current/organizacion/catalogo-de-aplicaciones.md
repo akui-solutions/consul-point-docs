@@ -58,7 +58,7 @@ Clicking the card opens its details: the version, the installation date, the cat
 
 Agents are installed, updated and uninstalled as explained in [Catalog agents](/control/estudio/agentes-del-catalogo).
 
-Installing and updating require create permission on the corresponding module (for agents, **Studio**); uninstalling, delete permission. The plan sets how many skills, connectors and resources you can have: when you reach the maximum, the platform tells you before installing. See [Credits and limits](/organizacion/creditos-y-limites#límites-del-plan).
+Installing and updating require create permission on the corresponding module (for agents, **Studio**); uninstalling, delete permission. The subscription sets how many skills, connectors and resources you can have: when you reach the maximum, the platform tells you before installing. See [Credits and limits](/organizacion/creditos-y-limites#límites-de-la-suscripción).
 
 ## Installed {#instaladas}
 

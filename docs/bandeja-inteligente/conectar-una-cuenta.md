@@ -66,4 +66,4 @@ Cada cuenta conectada es:
 
 Se pueden conectar varias cuentas. En la Bandeja Inteligente, el selector de la cabecera cambia de cuenta; la plataforma recuerda la última elegida.
 
-El número de integraciones, sumando correo, WhatsApp, Telegram y demás conectores, depende del plan contratado.
+El número de integraciones, sumando correo, WhatsApp, Telegram y demás conectores, depende de la suscripción contratada.

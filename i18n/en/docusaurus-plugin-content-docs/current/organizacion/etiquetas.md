@@ -29,4 +29,4 @@ To see and choose tags you need the view permission on **Tags**.
 - **Edit** changes the name on every item that has it.
 - **Delete** removes it from everything it was assigned to. It cannot be undone.
 
-Each action requires the matching permission on **Tags**. The plan sets the maximum number of tags. See [Credits and limits](/organizacion/creditos-y-limites#límites-del-plan).
+Each action requires the matching permission on **Tags**. The subscription sets the maximum number of tags. See [Credits and limits](/organizacion/creditos-y-limites#límites-de-la-suscripción).

@@ -89,7 +89,7 @@ Each organization receives the version according to how improvements arrive:
 - **With notice**: their administrators get **New version available** and apply it when they want.
 - **Automatic**: it's applied on its own and they get **Agent updated**.
 
-If an automatic update fails in some organization (for example, because it exceeds a limit of its plan), the card says **The update failed for … organizations**. **Retry updates** tries again.
+If an automatic update fails in some organization (for example, because it exceeds a limit of its subscription), the card says **The update failed for … organizations**. **Retry updates** tries again.
 
 ## More actions {#más-acciones}
 

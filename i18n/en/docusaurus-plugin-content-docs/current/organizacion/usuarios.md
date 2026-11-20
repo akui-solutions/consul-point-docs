@@ -40,8 +40,8 @@ The person receives an email with a link to create their account and choose thei
 
 If the email already has a ConsulPoint account in another organization, the person is added directly as active and receives an email telling them they have joined a new organization. They log in with the password they already had.
 
-:::info Plan and user limit
-To invite people, the organization needs an active plan. The plan sets the maximum number of active users; pending invitations do not count. When you reach the maximum, the platform shows **You've reached your plan's limit** with the **Upgrade plan** option.
+:::info Subscription and user limit
+To invite people, the organization needs an active subscription. The subscription sets the maximum number of active users; pending invitations do not count. When you reach the maximum, the platform shows **You've reached your subscription's limit** with the **Upgrade subscription** option.
 :::
 
 ## Actions {#acciones}

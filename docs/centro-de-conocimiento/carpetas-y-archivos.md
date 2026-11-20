@@ -26,7 +26,7 @@ Cómo organizar el contenido del Centro de Conocimiento: crear carpetas, encontr
 
 <Screenshot src="/img/centro-de-conocimiento/crear-carpeta.png" alt="Ventana Crear nueva carpeta en el Centro de Conocimiento de ConsulPoint" caption="Crear nueva carpeta" maxWidth={640} />
 
-Las carpetas pueden contener subcarpetas sin límite de niveles. El número de carpetas y el espacio de almacenamiento dependen del plan contratado.
+Las carpetas pueden contener subcarpetas sin límite de niveles. El número de carpetas y el espacio de almacenamiento dependen de la suscripción contratada.
 
 ### Conversión de PDF
 

@@ -44,7 +44,7 @@ Al terminar aparece **Agente instalado**, y el agente ya está en el Estudio.
 | Situación | Qué pasa |
 |---|---|
 | Hay que elegir un modelo de IA | Solo un administrador puede hacerlo. Si no lo es, la ventana pide que lo haga un administrador |
-| La instalación supera un límite del plan | La ventana lo indica (**Se supera el límite de tu suscripción**) con lo que ocupa cada tipo de recurso. Los agentes, especialistas y microagentes cuentan como agentes. Ver [Créditos y límites](/organizacion/creditos-y-limites#límites-del-plan) |
+| La instalación supera un límite de la suscripción | La ventana lo indica (**Se supera el límite de tu suscripción**) con lo que ocupa cada tipo de recurso. Los agentes, especialistas y microagentes cuentan como agentes. Ver [Créditos y límites](/organizacion/creditos-y-limites#límites-de-la-suscripción) |
 | El agente usa conectores | Los conectores no vienen con el agente. Hay que instalarlos y conectarlos en la organización. Ver [Conectores](/organizacion/conectores) |
 
 ## En el Estudio

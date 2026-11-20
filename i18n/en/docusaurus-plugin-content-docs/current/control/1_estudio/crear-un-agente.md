@@ -82,7 +82,7 @@ The AI improve button rewrites the instructions and lets you choose the format: 
 
 | Field | Description |
 |---|---|
-| **Provider** | Google, OpenAI, Anthropic or **Custom** (the organization's own models, if the plan includes them) |
+| **Provider** | Google, OpenAI, Anthropic or **Custom** (the organization's own models, if the subscription includes them) |
 | **Model** | Required. The provider's recommended model is suggested |
 | **Temperature** | From 0 (**Precise**) to 1 (**Creative**). Default: 0. For agents, it's inside **Personalization** |
 

@@ -11,7 +11,7 @@ description: "Las secciones de Configuración de ConsulPoint: acceso y organizac
 
 <PageMeta route="/settings">depende de cada sección; varias son solo para administradores</PageMeta>
 
-Configuración reúne los ajustes de la organización: quién tiene acceso, el plan, los canales y modelos de IA, los datos de clasificación y las herramientas para desarrolladores. Se abre desde **Configuración**, al final del menú lateral.
+Configuración reúne los ajustes de la organización: quién tiene acceso, la suscripción, los canales y modelos de IA, los datos de clasificación y las herramientas para desarrolladores. Se abre desde **Configuración**, al final del menú lateral.
 
 <Screenshot src="/img/configuracion/configuracion.png" alt="Pantalla de Configuración en ConsulPoint, con el menú de secciones a la izquierda" caption="Configuración, sección Usuarios" />
 
@@ -19,7 +19,7 @@ Cada persona ve solo las secciones que su rol le permite, y al entrar se abre la
 
 ## Secciones
 
-Las secciones están agrupadas igual que en la plataforma. En la columna **Quién la ve**, «permiso sobre…» significa permiso de ver ese módulo en el rol; además, el módulo tiene que estar incluido en el plan de la organización. Ver [Matriz de permisos](/referencia/permisos).
+Las secciones están agrupadas igual que en la plataforma. En la columna **Quién la ve**, «permiso sobre…» significa permiso de ver ese módulo en el rol; además, el módulo tiene que estar incluido en la suscripción de la organización. Ver [Matriz de permisos](/referencia/permisos).
 
 ### Administración
 
@@ -29,13 +29,13 @@ Las secciones están agrupadas igual que en la plataforma. En la columna **Quié
 | **Acceso → Roles** | Definir qué puede hacer cada rol en cada módulo. Ver [Roles](/organizacion/roles) | Administradores |
 | **Acceso → Equipos** | Agrupar personas para asignarlas juntas, por ejemplo a una integración. Ver [Equipos](/organizacion/equipos) | Administradores con permiso sobre **Equipos** |
 | **Organización** | Nombre, logo y descripción de la organización. Ver [Organización](/organizacion/datos-de-la-organizacion) | Permiso sobre **Organización** |
-| **Suscripción** | El plan, los créditos y la solicitud de un plan nuevo. Ver [Suscripción](/organizacion/suscripcion) | Administradores |
+| **Suscripción** | La suscripción, los créditos y la solicitud de una suscripción nueva. Ver [Suscripción](/organizacion/suscripcion) | Administradores |
 
 ### IA e integraciones
 
 | Sección | Para qué sirve | Quién la ve |
 |---|---|---|
-| **Proveedores de IA** | Los modelos de IA disponibles y los propios de la organización, si el plan los incluye. Ver [Proveedores de IA](/organizacion/proveedores-de-ia) | Administradores |
+| **Proveedores de IA** | Los modelos de IA disponibles y los propios de la organización, si la suscripción los incluye. Ver [Proveedores de IA](/organizacion/proveedores-de-ia) | Administradores |
 | **Conectores** | Los canales (WhatsApp, Telegram, correo, aplicaciones externas) y las herramientas externas para los agentes. Ver [Integraciones y canales](/modulos/integraciones) y [Conectores](/organizacion/conectores) | Administradores |
 | **Reglas de correo** | Qué correos procesa la Bandeja Inteligente. Ver [Reglas de correo](/bandeja-inteligente/reglas-de-correo) | Permiso sobre **Bandeja Inteligente** |
 | **Aplicaciones** | Las aplicaciones integradas instaladas y las propias. Ver [Instalar y administrar](/aplicaciones-integradas/instalar-y-administrar) | Permiso sobre **Aplicaciones** |

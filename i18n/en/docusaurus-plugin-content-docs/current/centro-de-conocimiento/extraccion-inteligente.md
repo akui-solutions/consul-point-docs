@@ -64,7 +64,7 @@ When an extraction fails, hover over **Couldn't extract**, or look at the **Reas
 |---|---|
 | The extraction agent has no instructions | Add them in its settings and retry |
 | The extraction agent is not set up correctly | Check its type and model, and retry |
-| The plan does not include the agent's AI model | Choose another model or upgrade the plan |
+| The subscription does not include the agent's AI model | Choose another model or upgrade the subscription |
 | The file is too long | Try a shorter one |
 | The cause could not be identified | Retry and, if it keeps failing, contact support |
 

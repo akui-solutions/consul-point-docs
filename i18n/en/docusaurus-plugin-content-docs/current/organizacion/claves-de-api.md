@@ -37,7 +37,7 @@ Each key shows its **Name**, the **API Key** (only the last characters), its **S
 Copy it at that moment and store it like a password. Afterwards you only see its last characters; if you lose it, you have to regenerate it.
 :::
 
-The plan sets the maximum number of keys. See [Credits and limits](/organizacion/creditos-y-limites#límites-del-plan).
+The subscription sets the maximum number of keys. See [Credits and limits](/organizacion/creditos-y-limites#límites-de-la-suscripción).
 
 ## Actions {#acciones}
 

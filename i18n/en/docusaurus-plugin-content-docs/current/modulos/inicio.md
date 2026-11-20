@@ -28,7 +28,7 @@ Each user sees only the blocks for the modules they have access to. The dashboar
 ### Notices at the top {#avisos-en-la-parte-superior}
 
 - **New to ConsulPoint?** — a card with links to the getting started guide in this documentation (**Overview**, **Navigation**, **Concepts**). Close it with the **X** and it stops showing for that user in that browser.
-- **Free trial** — in organizations on a trial, a card shows how many days are left. Administrators also see a button that takes them to the available plans.
+- **Free trial** — in organizations on a trial, a card shows how many days are left. Administrators also see a button that takes them to the available subscriptions.
 
 ## Quick Access {#accesos}
 

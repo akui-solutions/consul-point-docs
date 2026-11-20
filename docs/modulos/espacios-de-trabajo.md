@@ -52,7 +52,7 @@ La lista muestra el **Nombre**, la **Descripción**, el **Administrador**, el **
 
 3. Pulsar **Crear**.
 
-El número de espacios de trabajo que se pueden crear depende del plan contratado.
+El número de espacios de trabajo que se pueden crear depende de la suscripción contratada.
 
 ## Detalle de un espacio
 
@@ -118,5 +118,5 @@ Cuando hay departamentos con necesidades distintas, marcas independientes o proy
 :::
 
 :::tip Empresas que trabajan con clientes
-Un espacio por cliente mantiene separados su conocimiento, sus conversaciones y sus agentes. Las personas del cliente se invitan como usuarios externos y solo acceden a su espacio. Los administradores de la organización siguen viendo todos los espacios, y el número de espacios disponibles depende del plan contratado.
+Un espacio por cliente mantiene separados su conocimiento, sus conversaciones y sus agentes. Las personas del cliente se invitan como usuarios externos y solo acceden a su espacio. Los administradores de la organización siguen viendo todos los espacios, y el número de espacios disponibles depende de la suscripción contratada.
 :::

@@ -52,4 +52,4 @@ When a conversation arrives through WhatsApp, Telegram or an external app, the p
 
 ## Limits {#límites}
 
-The plan sets the maximum number of people and entities. See [Credits and limits](/organizacion/creditos-y-limites#límites-del-plan).
+The subscription sets the maximum number of people and entities. See [Credits and limits](/organizacion/creditos-y-limites#límites-de-la-suscripción).

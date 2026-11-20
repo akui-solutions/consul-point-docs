@@ -75,7 +75,7 @@ Con los roles predeterminados:
 
 Además, cada agente tiene su propio [acceso](/control/estudio/agentes#acceso): un usuario solo ve y edita los agentes a los que tiene acceso. La **Biblioteca de esquemas** y los **Conectores** de los agentes son, por defecto, solo para administradores.
 
-El número de agentes que se pueden crear depende del plan contratado. Sin un plan activo, los botones de creación aparecen desactivados.
+El número de agentes que se pueden crear depende de la suscripción contratada. Sin una suscripción activa, los botones de creación aparecen desactivados.
 
 ## Por dónde empezar
 

@@ -89,7 +89,7 @@ Cada organización recibe la versión según cómo lleguen las mejoras:
 - **Con aviso**: sus administradores reciben **Nueva versión disponible** y la aplican cuando quieren.
 - **Automáticas**: se aplica sola y reciben **Agente actualizado**.
 
-Si una actualización automática falla en alguna organización (por ejemplo, porque supera un límite de su plan), la tarjeta avisa **No se pudo actualizar en … organizaciones**. **Reintentar actualizaciones** lo vuelve a intentar.
+Si una actualización automática falla en alguna organización (por ejemplo, porque supera un límite de su suscripción), la tarjeta avisa **No se pudo actualizar en … organizaciones**. **Reintentar actualizaciones** lo vuelve a intentar.
 
 ## Más acciones
 

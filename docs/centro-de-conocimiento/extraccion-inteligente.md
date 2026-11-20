@@ -64,7 +64,7 @@ Cuando una extracción falla, al pasar el ratón por **No se pudo extraer**, y e
 |---|---|
 | El agente de extracción no tiene instrucciones | Añadírselas en su configuración y reintentar |
 | El agente de extracción no está bien configurado | Revisar su tipo y su modelo, y reintentar |
-| El plan no incluye el modelo de IA del agente | Elegir otro modelo o mejorar el plan |
+| La suscripción no incluye el modelo de IA del agente | Elegir otro modelo o mejorar la suscripción |
 | El archivo es demasiado largo | Probar con uno más corto |
 | No se pudo identificar la causa | Reintentar y, si sigue fallando, contactar con soporte |
 

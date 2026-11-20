@@ -46,7 +46,7 @@ En coexistencia, WhatsApp puede compartir el **historial de conversaciones** al 
 | La cuenta se compartió sin un número de teléfono | Repetir eligiendo o registrando un número |
 | Este número ya está conectado | El número está en otra cuenta o como conexión manual; si es una conexión manual propia, eliminarla antes |
 | La persona a cargo o el agente elegido no son válidos | Elegir otros: la persona tiene que tener permiso para usar el agente |
-| Tu plan alcanzó el límite de integraciones | Mejorar el plan. Ver [Créditos y límites](/organizacion/creditos-y-limites) |
+| Tu suscripción alcanzó el límite de integraciones | Mejorar la suscripción. Ver [Créditos y límites](/organizacion/creditos-y-limites) |
 | Meta solo permite conectar desde una página segura | Conectar desde la plataforma publicada, no desde una copia local |
 
 ### Cuando la conexión caduca

@@ -66,4 +66,4 @@ Each connected account is:
 
 You can connect several accounts. In the Smart Inbox, the selector in the header switches accounts; the platform remembers the last one you chose.
 
-The number of integrations, counting email, WhatsApp, Telegram and other connectors, depends on your plan.
+The number of integrations, counting email, WhatsApp, Telegram and other connectors, depends on your subscription.

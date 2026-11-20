@@ -44,7 +44,7 @@ When it finishes, **Agent installed** appears, and the agent is already in Studi
 | Situation | What happens |
 |---|---|
 | An AI model has to be chosen | Only an administrator can do it. If you aren't one, the window asks an administrator to do it |
-| The install exceeds a plan limit | The window says so (**This exceeds your subscription limit**), with how much each resource type uses. Agents, specialists and micro-agents count as agents. See [Credits and limits](/organizacion/creditos-y-limites#límites-del-plan) |
+| The install exceeds a subscription limit | The window says so (**This exceeds your subscription limit**), with how much each resource type uses. Agents, specialists and micro-agents count as agents. See [Credits and limits](/organizacion/creditos-y-limites#límites-de-la-suscripción) |
 | The agent uses connectors | Connectors don't come with the agent. They have to be installed and connected in the organization. See [Connectors](/organizacion/conectores) |
 
 ## In Studio {#en-el-estudio}

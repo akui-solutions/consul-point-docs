@@ -69,7 +69,7 @@ Los términos que aparecen en la plataforma y en esta documentación, en orden a
 - **Memoria**: función integrada con la que un agente recuerda lo relevante de cada persona o contacto entre conversaciones. Ver [Memoria de los agentes](/control/estudio/memoria).
 - **Microagente**: agente que hace una tarea concreta, como leer una factura, y devuelve los datos con una estructura fija. No conversa. Ver [Microagentes](/control/estudio/microagentes).
 - **Modelo**: motor de IA con el que funciona cada agente, de Google, OpenAI o Anthropic. Ver [Modelo](/control/estudio/crear-un-agente#modelo).
-- **Modelo propio**: modelo de IA conectado con la cuenta de la propia organización, en **Configuración → Proveedores de IA**, si el plan lo incluye. Sus respuestas no consumen créditos.
+- **Modelo propio**: modelo de IA conectado con la cuenta de la propia organización, en **Configuración → Proveedores de IA**, si la suscripción lo incluye. Sus respuestas no consumen créditos.
 
 ## O
 
@@ -85,6 +85,10 @@ Los términos que aparecen en la plataforma y en esta documentación, en orden a
 - **Regla de correo**: regla de la Bandeja Inteligente que decide qué correos se procesan y cómo. Ver [Reglas de correo](/bandeja-inteligente/reglas-de-correo).
 - **Requiere atención**: marca de una conversación de canal que necesita a una persona. **Atender** la asigna a quien la toma y el agente deja de responder; **Marcar como resuelta** se la devuelve al agente. Ver [Atención humana](/conversaciones/canales-y-atencion-humana#atención-humana).
 - **Rol**: conjunto de permisos que define qué puede hacer cada persona en cada módulo. Ver [Roles](/organizacion/roles).
+
+## S
+
+- **Suscripción**: lo que la organización contrata con ConsulPoint: los créditos de cada ciclo y el máximo de cada recurso. Ver [Suscripción](/organizacion/suscripcion).
 
 ## T
 

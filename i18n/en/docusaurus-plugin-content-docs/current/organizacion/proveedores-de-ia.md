@@ -23,11 +23,11 @@ Each model shows its **Provider**, its **Type**, its default **Temperature** and
 | **ConsulPoint** | Models offered by the platform. They use credits |
 | **Own** | Models registered by the organization with its own key. They don't use credits |
 
-The **All** and **Own** tabs filter the list; they appear when the plan includes own models or one is already registered.
+The **All** and **Own** tabs filter the list; they appear when the subscription includes own models or one is already registered.
 
 ## Register an own model {#registrar-un-modelo-propio}
 
-The plan has to include **Own AI models**; if it doesn't, the screen says so with **Your plan doesn't include own AI models**. See [Credits and limits](/organizacion/creditos-y-limites#modelos-propios).
+The subscription has to include **Own AI models**; if it doesn't, the screen says so with **Your subscription doesn't include own AI models**. See [Credits and limits](/organizacion/creditos-y-limites#modelos-propios).
 
 1. Click **Register own model**.
 2. Fill in the fields:
@@ -63,4 +63,4 @@ ConsulPoint models have no actions.
 
 When you create or edit an agent, the own model appears under its provider with the **Your own model** label. See [Create an agent](/control/estudio/crear-un-agente#modelo).
 
-If the organization switches to a plan that doesn't include own models, the registered models are kept, but they can't be chosen in the agents until the plan includes them again.
+If the organization switches to a subscription that doesn't include own models, the registered models are kept, but they can't be chosen in the agents until the subscription includes them again.

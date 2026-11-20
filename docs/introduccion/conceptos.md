@@ -61,7 +61,7 @@ Una organización guarda su **conocimiento** en carpetas. Un **agente** lo consu
     Función opcional que se activa en cada agente: consultar el Centro de Conocimiento, buscar en la web, adjuntar archivos, voz…
   </ModuleCard>
   <ModuleCard icon="model" title="Modelo">
-    El motor de IA con el que funciona cada agente: de Google, OpenAI o Anthropic, o un modelo propio de la organización si el plan lo incluye.
+    El motor de IA con el que funciona cada agente: de Google, OpenAI o Anthropic, o un modelo propio de la organización si la suscripción lo incluye.
   </ModuleCard>
 </ModuleGrid>
 

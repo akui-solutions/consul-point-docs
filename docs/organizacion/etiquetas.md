@@ -29,4 +29,4 @@ Para ver y elegir etiquetas hace falta permiso de ver **Etiquetas**.
 - **Editar** cambia el nombre en todos los elementos que la tienen.
 - **Eliminar** la quita de todo lo que la tenía asignada. No se puede deshacer.
 
-Cada acción requiere el permiso correspondiente sobre **Etiquetas**. El plan fija el número máximo de etiquetas. Ver [Créditos y límites](/organizacion/creditos-y-limites#límites-del-plan).
+Cada acción requiere el permiso correspondiente sobre **Etiquetas**. La suscripción fija el número máximo de etiquetas. Ver [Créditos y límites](/organizacion/creditos-y-limites#límites-de-la-suscripción).

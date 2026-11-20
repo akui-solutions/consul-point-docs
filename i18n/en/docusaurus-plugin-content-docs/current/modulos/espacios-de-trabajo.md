@@ -52,7 +52,7 @@ The list shows each workspace's **Name**, **Description**, **Admin**, **Status**
 
 3. Click **Create**.
 
-The number of workspaces you can create depends on the plan.
+The number of workspaces you can create depends on the subscription.
 
 ## Workspace details {#detalle-de-un-espacio}
 
@@ -118,5 +118,5 @@ When there are departments with different needs, independent brands or projects 
 :::
 
 :::tip Companies that work with clients
-One workspace per client keeps their knowledge, conversations and agents separate. The client's people are invited as external users and only access their workspace. The organization's administrators still see all workspaces, and the number of workspaces available depends on the plan.
+One workspace per client keeps their knowledge, conversations and agents separate. The client's people are invited as external users and only access their workspace. The organization's administrators still see all workspaces, and the number of workspaces available depends on the subscription.
 :::

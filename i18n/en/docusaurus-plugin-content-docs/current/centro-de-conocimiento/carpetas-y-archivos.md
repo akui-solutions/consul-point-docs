@@ -26,7 +26,7 @@ How to organize the content of the Knowledge Hub: create folders, find files and
 
 <Screenshot src="/img/en/centro-de-conocimiento/crear-carpeta.png" alt="Create new folder window in the ConsulPoint Knowledge Hub" caption="Create new folder" maxWidth={640} />
 
-Folders can contain subfolders with no limit on levels. The number of folders and the storage space depend on your plan.
+Folders can contain subfolders with no limit on levels. The number of folders and the storage space depend on your subscription.
 
 ### PDF conversion {#conversión-de-pdf}
 

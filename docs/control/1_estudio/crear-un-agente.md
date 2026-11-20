@@ -82,7 +82,7 @@ El botón de mejora con IA reescribe las instrucciones y permite elegir el forma
 
 | Campo | Descripción |
 |---|---|
-| **Proveedor** | Google, OpenAI, Anthropic o **Custom** (modelos propios de la organización, si el plan los incluye) |
+| **Proveedor** | Google, OpenAI, Anthropic o **Custom** (modelos propios de la organización, si la suscripción los incluye) |
 | **Modelo** | Obligatorio. Se propone el recomendado del proveedor |
 | **Temperatura** | De 0 (**Precisa**) a 1 (**Creativa**). Por defecto, 0. En los agentes está dentro de **Personalización** |
 

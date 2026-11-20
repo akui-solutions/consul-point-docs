@@ -40,8 +40,8 @@ La persona recibe un correo con un enlace para crear su cuenta y elegir su contr
 
 Si el correo ya tiene una cuenta de ConsulPoint en otra organización, la persona se añade directamente como activa y recibe un correo que le avisa de que se ha unido a una organización nueva. Entra con la contraseña que ya tenía.
 
-:::info Plan y límite de usuarios
-Para invitar hace falta que la organización tenga un plan activo. El plan fija el número máximo de usuarios activos; las invitaciones pendientes no cuentan. Al llegar al máximo, la plataforma muestra **Llegaste al tope de tu plan** con la opción **Mejorar plan**.
+:::info Suscripción y límite de usuarios
+Para invitar hace falta que la organización tenga una suscripción activa. La suscripción fija el número máximo de usuarios activos; las invitaciones pendientes no cuentan. Al llegar al máximo, la plataforma muestra **Llegaste al tope de tu suscripción** con la opción **Mejorar suscripción**.
 :::
 
 ## Acciones

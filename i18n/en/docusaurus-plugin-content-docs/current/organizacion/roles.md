@@ -48,7 +48,7 @@ The role is only one part of access: each folder, agent or conversation also has
 3. Click **Next**. The role is created, still without permissions.
 4. In **Assign permissions**, turn on at least one permission and click **Save Permissions**.
 
-The plan sets the organization's maximum number of roles, and the three default roles count.
+The subscription sets the organization's maximum number of roles, and the three default roles count.
 
 ## Edit and delete {#editar-y-eliminar}
 

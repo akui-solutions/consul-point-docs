@@ -59,4 +59,4 @@ Para asignar habilidades hace falta permiso de ver **Habilidades**, permiso de e
 
 ## Quién puede hacer qué
 
-Con los roles predeterminados, el **Administrador** puede crear, editar y eliminar habilidades; **Miembro** y **Colaborador** solo verlas. El plan fija el número máximo de habilidades de la organización, contando las desactivadas y las del catálogo. Ver [Créditos y límites](/organizacion/creditos-y-limites#límites-del-plan).
+Con los roles predeterminados, el **Administrador** puede crear, editar y eliminar habilidades; **Miembro** y **Colaborador** solo verlas. La suscripción fija el número máximo de habilidades de la organización, contando las desactivadas y las del catálogo. Ver [Créditos y límites](/organizacion/creditos-y-limites#límites-de-la-suscripción).

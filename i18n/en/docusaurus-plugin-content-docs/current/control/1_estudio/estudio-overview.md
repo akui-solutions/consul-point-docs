@@ -75,7 +75,7 @@ With the default roles:
 
 In addition, each agent has its own [access](/control/estudio/agentes#acceso): a user only sees and edits the agents they have access to. The **Schema library** and the agents' **Connectors** are, by default, for administrators only.
 
-The number of agents you can create depends on your plan. Without an active plan, the create buttons appear disabled.
+The number of agents you can create depends on your subscription. Without an active subscription, the create buttons appear disabled.
 
 ## Where to start {#por-dónde-empezar}
 

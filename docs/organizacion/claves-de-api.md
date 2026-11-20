@@ -37,7 +37,7 @@ Cada clave muestra su **Nombre**, la **Clave API** (solo los últimos caracteres
 Hay que copiarla en ese momento y guardarla como una contraseña. Después solo se ven sus últimos caracteres; si se pierde, hay que regenerarla.
 :::
 
-El plan fija el número máximo de claves. Ver [Créditos y límites](/organizacion/creditos-y-limites#límites-del-plan).
+La suscripción fija el número máximo de claves. Ver [Créditos y límites](/organizacion/creditos-y-limites#límites-de-la-suscripción).
 
 ## Acciones
 

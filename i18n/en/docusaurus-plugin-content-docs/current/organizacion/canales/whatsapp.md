@@ -46,7 +46,7 @@ In coexistence, WhatsApp can share the **conversation history** when connecting.
 | The account was shared without a phone number | Repeat, choosing or registering a number |
 | This number is already connected | The number is in another account or connected manually; if it's your own manual connection, delete it first |
 | The chosen person in charge or agent isn't valid | Choose others: the person must have permission to use the agent |
-| Your plan reached the integrations limit | Upgrade the plan. See [Credits and limits](/organizacion/creditos-y-limites) |
+| Your subscription reached the integrations limit | Upgrade the subscription. See [Credits and limits](/organizacion/creditos-y-limites) |
 | Meta only allows connecting from a secure page | Connect from the published platform, not from a local copy |
 
 ### When the connection expires {#cuando-la-conexión-caduca}
