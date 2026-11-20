@@ -74,7 +74,6 @@ Nombres de módulos y conceptos, como los muestra la plataforma en inglés.
 | Contactos | Contacts |
 | Estudio | Studio |
 | Catálogo de integraciones | Integrations catalog |
-| Centro de Agentes de IA | AI Agents Center |
 | Auditoría y Reportes | Audit & Reports |
 | Configuración | Settings |
 | Espacio de trabajo | Workspace |

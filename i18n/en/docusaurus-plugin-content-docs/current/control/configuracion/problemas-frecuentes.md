@@ -88,6 +88,8 @@ What to do about the most common warnings and situations when administering an o
 | Something **Assigned to your organization** cannot be uninstalled | ConsulPoint turned it on for the organization, and it cannot be uninstalled from the catalog |
 | An item appears as **Unavailable** or retired | It was retired from the catalog: it stays installed, but it cannot be reinstalled or updated. See [Retired items](/organizacion/catalogo-de-aplicaciones#elementos-retirados) |
 | You cannot install another skill | The plan maximum has been reached. Uninstall or delete one, or request a bigger plan |
+| The catalog's **Agents** tab doesn't appear | You need view permission on **Studio** |
+| Installing an agent asks for an administrator to choose the model | Only administrators choose the AI model of a catalog agent |
 | The install or uninstall buttons do not appear | Installing and updating require the create permission on the module; uninstalling, the delete permission |
 | A change in an app's permissions does not take effect | It takes a few minutes to apply. See [Install and manage](/aplicaciones-integradas/instalar-y-administrar) |
 

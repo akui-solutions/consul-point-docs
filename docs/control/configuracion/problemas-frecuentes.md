@@ -88,6 +88,8 @@ Qué hacer ante los avisos y situaciones más habituales al administrar una orga
 | No se puede desinstalar algo **Asignado a tu organización** | Lo activó ConsulPoint para la organización y no se desinstala desde el catálogo |
 | Un elemento aparece como **No disponible** o retirado | Se retiró del catálogo: sigue instalado, pero no se puede reinstalar ni actualizar. Ver [Elementos retirados](/organizacion/catalogo-de-aplicaciones#elementos-retirados) |
 | No se puede instalar otra habilidad | Se alcanzó el máximo del plan. Desinstalar o eliminar alguna, o solicitar un plan mayor |
+| No aparece la pestaña **Agentes** del catálogo | Hace falta permiso de ver sobre **Estudio** |
+| Al instalar un agente se pide que un administrador elija el modelo | Solo los administradores eligen el modelo de IA de un agente del catálogo |
 | Los botones de instalar o desinstalar no aparecen | Instalar y actualizar piden permiso de crear sobre el módulo; desinstalar, de eliminar |
 | Un cambio en los permisos de una aplicación no se nota | Tarda unos minutos en aplicarse. Ver [Instalar y administrar](/aplicaciones-integradas/instalar-y-administrar) |
 

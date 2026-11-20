@@ -19,12 +19,6 @@ How to start a conversation, write, attach files, use the agent's tools and unde
 
 The agent is fixed once you send the first message: to talk to another agent, open a new conversation.
 
-### AI Agents Center {#centro-de-agentes-de-ia}
-
-In the agent menu in the conversation header, **Browse Agent Store** opens the **AI Agents Center**: every agent in the organization you have access to, with a search by name. Each agent shows its description and its model, and **Start conversation** opens a conversation with it.
-
-Clicking an agent shows its details: **Conversation starters**, built-in functions, **Model**, **Temperature** and **Integrated experts** (its [specialists](/control/estudio/especialistas)). **Chat with agent** starts the conversation.
-
 ## Writing {#escribir}
 
 - **Enter** sends and **Shift + Enter** adds a line break.

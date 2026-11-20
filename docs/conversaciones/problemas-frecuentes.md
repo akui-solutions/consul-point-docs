@@ -14,6 +14,7 @@ description: Soluciones a los problemas más habituales en Conversaciones de Con
 |---|---|
 | Responde de forma genérica, sin usar los documentos | Revisar **Ver fuentes**. Si no hay fuentes, ver [Problemas frecuentes del Estudio](/control/estudio/problemas-frecuentes#el-agente-responde-de-forma-genérica-sin-usar-los-documentos) |
 | No aparece un agente al iniciar la conversación | No se tiene acceso a él. Lo da un administrador, en la pestaña **Acceso** del agente |
+| **Este agente ya no está disponible** | Es un agente del catálogo que quien lo publica retiró y desactivó. El mensaje no se envía y la conversación solo se puede leer. Ver [Agentes del catálogo](/control/estudio/agentes-del-catalogo#si-lo-retiran-del-catálogo) |
 | No se puede cambiar de agente | El agente queda fijado con el primer mensaje. Abrir una conversación nueva |
 | No aparece **Búsqueda web**, **Adjuntar archivos** o **Dictar** | El agente no tiene esa función integrada. Se activa en el Estudio, en la pestaña **Capacidades** del agente |
 | **La respuesta se interrumpió** | Volver a enviar el mensaje |

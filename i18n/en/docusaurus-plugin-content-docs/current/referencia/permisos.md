@@ -21,7 +21,7 @@ On a role's permissions screen, each module has four permissions: **View**, **Cr
 | **Resources** | [Articles & Updates](/modulos/articulos-y-novedades) |
 | **Knowledge Hub** | [Knowledge Hub](/modulos/centro-de-conocimiento) |
 | **Smart Inbox** | [Smart Inbox](/modulos/bandeja-inteligente) and its [Email rules](/bandeja-inteligente/reglas-de-correo) |
-| **Studio** | [Studio](/modulos/estudio): agents, specialists and micro-agents |
+| **Studio** | [Studio](/modulos/estudio): agents, specialists and micro-agents, and the **Agents** tab of the Integrations catalog |
 | **Schema library** | The Studio's [Schema library](/control/estudio/esquemas-de-datos) |
 | **Skills** | The Studio's [Skills](/control/estudio/habilidades) and their tab in the Integrations catalog |
 | **Contacts** | [Contacts](/modulos/contactos) and [Contact types](/organizacion/tipos-de-contacto) |

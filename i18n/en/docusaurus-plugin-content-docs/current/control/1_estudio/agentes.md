@@ -12,7 +12,7 @@ description: What an agent is in ConsulPoint and how to manage it from its Studi
 
 An **agent** talks with people: in [Conversations](/modulos/conversaciones), in a connected channel such as WhatsApp, or through the API. It answers using its instructions, the documents it has access to and, if it has any, by consulting its [specialists](/control/estudio/especialistas).
 
-To create one, see [Create an agent](/control/estudio/crear-un-agente).
+To create one, see [Create an agent](/control/estudio/crear-un-agente). To install a ready-made one, see [Catalog agents](/control/estudio/agentes-del-catalogo).
 
 **Use cases:** customer service, support, internal documentation lookup, assistance for a specific team.
 

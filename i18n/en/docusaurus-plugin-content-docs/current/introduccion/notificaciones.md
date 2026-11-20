@@ -47,7 +47,8 @@ Each person only receives the notifications that apply to them based on what the
 | **Emails processed** | The [Smart Inbox](/modulos/bandeja-inteligente) checked emails and saved their files |
 | **New message** | Someone wrote in a shared conversation |
 | **Supervision requested** / **Conversation unattended** | A channel conversation needs a human, or has gone unanswered for a while. See [Channels and human support](/conversaciones/canales-y-atencion-humana) |
-| **New version available** | There is an update for an installed app. See [Integrations catalog](/organizacion/catalogo-de-aplicaciones) |
+| **New version available** | There is an update for an installed app or agent. See [Integrations catalog](/organizacion/catalogo-de-aplicaciones) |
+| **Agent updated** | For administrators: a catalog agent was updated to a new version on its own. See [Catalog agents](/control/estudio/agentes-del-catalogo#actualizar) |
 | **Connector installed** | Someone installed a connector in the organization |
 | **Connection about to expire** | A channel connection, such as WhatsApp, needs to be renewed |
 | **Invitation sent** / **Invitation accepted** | For administrators: someone was invited to the organization, or has joined it |
