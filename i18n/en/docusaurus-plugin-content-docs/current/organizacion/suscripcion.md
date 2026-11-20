@@ -32,7 +32,7 @@ It shows the current plan and its price, monthly or yearly. If a discount code w
 
 It also shows when the subscription renews. **View all** opens the details: the start and end of the period, the discount applied and, under **Includes**, the maximum for each resource in the plan (or **Unlimited**).
 
-Current usage against those maximums is shown in [Audit & Reports](/control/auditoria-y-reportes). What happens when you reach a maximum, or run out of credits, is explained in [Credits and limits](/organizacion/creditos-y-limites).
+Current usage against those maximums is shown in [Audit & Reports](/control/auditoria-y-reportes#límites). What happens when you reach a maximum, or run out of credits, is explained in [Credits and limits](/organizacion/creditos-y-limites).
 
 ### Credit vouchers {#bonos-de-crédito}
 

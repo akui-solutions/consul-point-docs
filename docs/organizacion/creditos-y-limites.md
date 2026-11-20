@@ -52,7 +52,7 @@ Cada plan fija un máximo para recursos como usuarios, roles, agentes, conversac
 
 Al llegar a un máximo solo se bloquea crear más; lo que ya existe se conserva. La plataforma muestra **Llegaste al tope de tu plan**, con la opción **Mejorar plan**, que lleva a [Planes](/organizacion/suscripcion#planes). Antes de llegar, los administradores reciben el aviso **Límite casi alcanzado**.
 
-El uso de cada recurso frente a su máximo se ve en [Auditoría y Reportes](/control/auditoria-y-reportes).
+El uso de cada recurso frente a su máximo se ve en [Auditoría y Reportes](/control/auditoria-y-reportes#límites).
 
 ### Modelos propios
 

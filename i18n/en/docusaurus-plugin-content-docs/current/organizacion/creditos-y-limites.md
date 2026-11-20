@@ -52,7 +52,7 @@ Each plan sets a maximum for resources such as users, roles, agents, conversatio
 
 When you reach a maximum, only creating more is blocked; what already exists is kept. The platform shows **You've reached your plan's limit**, with the **Upgrade plan** option, which takes you to [Plans](/organizacion/suscripcion#planes). Before you reach it, administrators receive the **Limit almost reached** notice.
 
-You can see each resource's usage against its maximum in [Audit & Reports](/control/auditoria-y-reportes).
+You can see each resource's usage against its maximum in [Audit & Reports](/control/auditoria-y-reportes#límites).
 
 ### Own models {#modelos-propios}
 

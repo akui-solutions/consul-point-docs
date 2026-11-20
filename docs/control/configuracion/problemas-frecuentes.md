@@ -43,7 +43,7 @@ Qué hacer ante los avisos y situaciones más habituales al administrar una orga
 | **Se necesita un plan activo**, botones de crear desactivados | La organización no tiene plan activo: la prueba terminó o la suscripción venció. Todo se puede consultar, nada se puede crear ni modificar. Solicitar un plan en [Suscripción](/organizacion/suscripcion). Ver [Sin plan activo](/organizacion/creditos-y-limites#sin-plan-activo) |
 | **Tu plan vence pronto** / **Plan vencido** | Renovar desde [Suscripción](/organizacion/suscripcion) antes de que termine el margen |
 | **Créditos agotados** | Hay un breve margen para recargar. Después, los agentes dejan de responder salvo los que usan un modelo propio. Ver [Sin créditos](/organizacion/creditos-y-limites#sin-créditos) |
-| **Llegaste al tope de tu plan** al crear algo | Se alcanzó el máximo de ese recurso. El uso de cada uno está en [Auditoría y Reportes](/control/auditoria-y-reportes#límites-de-tu-suscripción). Liberar espacio o solicitar un plan mayor |
+| **Llegaste al tope de tu plan** al crear algo | Se alcanzó el máximo de ese recurso. El uso de cada uno está en [Auditoría y Reportes](/control/auditoria-y-reportes#límites). Liberar espacio o solicitar un plan mayor |
 | No se libera espacio de contactos al desactivarlos | Los contactos inactivos también cuentan. Solo eliminarlos libera espacio |
 | **Ya tienes una solicitud pendiente…** | Cancelar la solicitud pendiente antes de pedir otra suscripción |
 | **Este código no es válido, ha caducado o ya no tiene usos disponibles.** | Revisar el código de descuento o solicitar el plan sin él |

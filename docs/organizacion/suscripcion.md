@@ -32,7 +32,7 @@ Muestra el plan actual y su precio, mensual o anual. Si se aplicó un código de
 
 También indica cuándo se renueva la suscripción. **Ver todo** abre el detalle: el inicio y el fin del periodo, el descuento aplicado y, en **Incluye**, el máximo de cada recurso del plan (o **Ilimitado**).
 
-El uso actual frente a esos máximos se consulta en [Auditoría y Reportes](/control/auditoria-y-reportes). Qué pasa al llegar a un máximo, o al quedarse sin créditos, se explica en [Créditos y límites](/organizacion/creditos-y-limites).
+El uso actual frente a esos máximos se consulta en [Auditoría y Reportes](/control/auditoria-y-reportes#límites). Qué pasa al llegar a un máximo, o al quedarse sin créditos, se explica en [Créditos y límites](/organizacion/creditos-y-limites).
 
 ### Bonos de crédito
 

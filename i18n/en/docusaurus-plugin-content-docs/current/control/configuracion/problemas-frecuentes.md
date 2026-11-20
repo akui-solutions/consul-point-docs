@@ -43,7 +43,7 @@ What to do about the most common warnings and situations when administering an o
 | **An active plan is required**, create buttons disabled | The organization has no active plan: the trial ended or the subscription expired. Everything can be viewed, nothing can be created or changed. Request a plan in [Subscription](/organizacion/suscripcion). See [No active plan](/organizacion/creditos-y-limites#sin-plan-activo) |
 | **Your plan expires soon** / **Plan expired** | Renew from [Subscription](/organizacion/suscripcion) before the grace period ends |
 | **Credits exhausted** | There is a short grace period to top up. After that, agents stop answering, except those that use an own model. See [No credits](/organizacion/creditos-y-limites#sin-créditos) |
-| **You've reached your plan's limit** when creating something | The maximum for that resource has been reached. The usage of each one is in [Audit & Reports](/control/auditoria-y-reportes#límites-de-tu-suscripción). Free up space or request a bigger plan |
+| **You've reached your plan's limit** when creating something | The maximum for that resource has been reached. The usage of each one is in [Audit & Reports](/control/auditoria-y-reportes#límites). Free up space or request a bigger plan |
 | Deactivating contacts does not free up space | Inactive contacts also count. Only deleting them frees up space |
 | **You already have a pending request…** | Cancel the pending request before requesting another subscription |
 | **This code is not valid, has expired, or has no uses left.** | Check the discount code or request the plan without it |
