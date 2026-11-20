@@ -41,6 +41,10 @@ En la misma sección, **Descriptor de imágenes** permite elegir un agente que d
 
 Una subcarpeta usa la conversión de la carpeta superior que la tenga configurada. Para cambiarla, se edita esa carpeta.
 
+Cambiar el servicio no rehace las versiones en texto ya creadas: el nuevo se usa en las siguientes. En una carpeta compartida con agentes, sus PDF quedan pendientes de actualizar. Ver [Actualizar los documentos](/centro-de-conocimiento/actualizar-los-documentos).
+
+En una carpeta compartida con un agente, **Editar carpeta** muestra además, en **Opciones avanzadas**, la fila **Búsqueda de los agentes**, con la configuración en uso y los documentos pendientes. Ver [Búsqueda de los agentes](/centro-de-conocimiento/busqueda-de-los-agentes).
+
 ## Navegar y encontrar contenido
 
 - **Vistas**: cuadrícula o lista, con los botones de la barra superior. La lista muestra **Nombre**, **Propietario**, **Compartido con**, **Última modificación** y **Tamaño**.
@@ -65,7 +69,7 @@ Cada carpeta y cada archivo tiene un menú de acciones. Solo se muestran las que
 | **Ver detalles** | Carpetas | Ubicación, fechas, configuración de extracción y quién tiene acceso |
 | **Eliminar** | Ambos | Ver más abajo |
 
-Al abrir un archivo se muestra su vista previa. **Mostrar información** indica, entre otras cosas, si está **Disponible para agentes** (ver [Conocimiento de los agentes](/centro-de-conocimiento/conocimiento-de-los-agentes)).
+Al abrir un archivo se muestra su vista previa. **Mostrar información** indica, entre otras cosas, su **Disponibilidad para agentes** (ver [Conocimiento de los agentes](/centro-de-conocimiento/conocimiento-de-los-agentes)).
 
 ### Mover contenido
 

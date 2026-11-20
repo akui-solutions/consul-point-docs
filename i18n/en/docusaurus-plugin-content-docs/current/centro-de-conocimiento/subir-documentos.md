@@ -65,6 +65,6 @@ In a [Smart Extract](/centro-de-conocimiento/extraccion-inteligente) folder, the
 A text version is a copy of the PDF converted to text, saved next to the original, that you can review and download. It is useful for checking how an agent "sees" the document, especially with scanned documents or PDFs with tables.
 
 - When you upload PDFs, the window offers **Convert the PDFs to text**. It then asks whether to create the versions now.
-- For a PDF that is already uploaded: **Create text version** in its menu, or **Redo text version** if it already has one.
+- For a PDF that is already uploaded: **Create text version** in its menu, or **Redo text version** if it already has one. Redoing it replaces the previous one, which can't be recovered. The original PDF doesn't change.
 
 The conversion uses the service configured on the folder, **Essential** or **Advanced** (see [PDF conversion](/centro-de-conocimiento/carpetas-y-archivos#conversión-de-pdf)). **Advanced** uses credits.

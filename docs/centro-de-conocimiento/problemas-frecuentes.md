@@ -13,13 +13,34 @@ description: Soluciones a los problemas más habituales del Centro de Conocimien
 | Causa | Cómo comprobarlo | Solución |
 |---|---|---|
 | La carpeta no está compartida con el agente | En la carpeta, **Ver detalles** → **Quién tiene acceso** | **Compartir** la carpeta con el agente |
-| El archivo aún se está preparando | **Mostrar información** → **Disponible para agentes**: **Preparándose…** | Esperar unos minutos |
-| La preparación falló | **Disponible para agentes**: **Todavía no** | **Preparar para agentes** |
-| El agente lee una versión anterior | **Disponible para agentes**: **Sí, pero una versión anterior** | **Volver a preparar** |
+| El archivo aún se está preparando | **Mostrar información** → **Disponibilidad para agentes**: **Preparándose…** | Esperar unos minutos |
+| La preparación falló | **Disponibilidad para agentes**: **No disponible todavía** | **Preparar para agentes** |
+| El agente lee una versión anterior | **Disponibilidad para agentes**: **Disponible · Actualización pendiente** | Seguir el paso que indica. Ver [Actualizar los documentos](/centro-de-conocimiento/actualizar-los-documentos) |
 | El formato no lo leen los agentes, como una imagen suelta | El tipo de archivo | Guardarlo como PDF y volver a subirlo |
 | Quien conversa no tiene acceso a esa carpeta | Los permisos de la carpeta | El agente solo usa carpetas a las que también tiene acceso la persona que conversa. Ver [Conocimiento de los agentes](/centro-de-conocimiento/conocimiento-de-los-agentes#cómo-responde-el-agente) |
 
 Si el documento está disponible y el agente sigue sin usarlo, el problema suele estar en la pregunta o en el documento: conviene preguntar con los términos que usa el documento y revisar su [versión en texto](/centro-de-conocimiento/subir-documentos#versión-en-texto-de-los-pdf).
+
+## Búsqueda de los agentes
+
+| Síntoma o mensaje | Causa | Solución |
+|---|---|---|
+| No aparece **Configurar búsqueda de agentes** | La carpeta no está compartida con ningún agente, es una subcarpeta (usa la configuración de la carpeta compartida), es multimedia, o no se puede editar | Abrirla en la carpeta compartida con el agente. Ver [A qué carpetas se aplica](/centro-de-conocimiento/busqueda-de-los-agentes#a-qué-carpetas-se-aplica) |
+| Se cambió la configuración y las respuestas no cambian | Los cambios de **Preparación de documentos** no se aplican solos | Actualizar los documentos pendientes. Ver [Actualizar los documentos](/centro-de-conocimiento/actualizar-los-documentos) |
+| Marca naranja **Documentos pendientes de actualizar** en una carpeta | Cambió su preparación, su perfil o su conversión de PDF | Pulsar la marca y **Actualizar documentos** |
+| Un PDF sigue pendiente después de **Volver a preparar** | Cambió la conversión de PDF y su versión en texto es la anterior | **Rehacer la versión en texto** y después **Volver a preparar**, o actualizar toda la carpeta |
+| La opción **Perfil** está desactivada | Todavía no hay perfiles en el espacio de trabajo | Crear uno con **Guardar como perfil**. Ver [Perfiles de búsqueda](/centro-de-conocimiento/perfiles-de-busqueda#crear-un-perfil) |
+| No aparece **Guardar como perfil** | El origen no es **Propia**, o no se creó la carpeta | Elegir **Propia**. Solo quien creó la carpeta puede crear perfiles desde ella |
+| **Describir las imágenes de los PDF** está desactivado | La carpeta no convierte los PDF con **Avanzado** y **Conservar las imágenes** | **Cambiar la conversión de PDF** |
+| **Tu rol no permite calcular el impacto, pero puedes guardar** | Falta el permiso de crear sobre el **Centro de conocimiento** | Guardar y pedir a alguien con ese permiso que aplique los cambios |
+| **No hay créditos disponibles para actualizar los documentos** | La organización no tiene créditos | Ver [Créditos y límites](/organizacion/creditos-y-limites) |
+| **Demasiadas solicitudes seguidas** | Se aplicaron cambios muchas veces en poco tiempo | Esperar un minuto |
+| **La configuración cambió mientras tanto** | Otra persona cambió la configuración | Revisar el impacto nuevo y volver a aplicar |
+| **Esta carpeta tiene demasiadas subcarpetas…** | La carpeta tiene más de 5.000 subcarpetas | Contactar con soporte |
+| **El agente elegido está desactivado** u otro aviso en **Agente de búsqueda** | El agente de búsqueda ya no se puede usar | Elegir otro o activarlo en el Estudio. Mientras tanto, se usa el **Agente predeterminado** |
+| **Lo usa … carpeta. Cámbiala a otra opción de búsqueda antes de eliminarlo.** | El perfil está en uso | Pasar esas carpetas a otro origen y volver a eliminarlo |
+| **Ya existe un perfil con ese nombre en este espacio.** | Nombre repetido | Elegir otro nombre |
+| **Solo quien creó el perfil puede…** | No se es quien creó el perfil | Pedírselo a esa persona |
 
 ## Al subir
 

@@ -24,6 +24,7 @@ Cada microagente tiene un **tipo**, que decide dónde se puede usar. El tipo se 
 | **Descriptor de imágenes** | Describe las imágenes de los PDF (gráficos, fotos, diagramas) para que los agentes puedan entenderlas | **Conversión de PDF** de las carpetas del Centro de Conocimiento (ver [Carpetas y archivos](/centro-de-conocimiento/carpetas-y-archivos#conversión-de-pdf)) |
 | **Analizador de conversaciones** | Analiza conversaciones para generar resumen, sentimiento, categoría y sugerencias de respuesta | Análisis de las conversaciones |
 | **Procesador de multimedia** | Analiza vídeos y audios de YouTube guardados en carpetas multimedia | Carpetas [Multimedia](/centro-de-conocimiento/multimedia) |
+| **Agente de búsqueda** | Busca en los documentos de las carpetas con los criterios y la terminología de la organización | **Búsqueda de los agentes** de las carpetas y los perfiles de búsqueda. Ver [Agente de búsqueda](#agente-de-búsqueda) |
 
 :::info Analizador de conversaciones
 La plataforma usa el **primer** analizador de conversaciones creado en la organización. Si hay varios, solo funciona ese.
@@ -43,7 +44,7 @@ La plataforma usa el **primer** analizador de conversaciones creado en la organi
 | **Tipo de microagente** | Obligatorio. Ver la tabla anterior. No se puede cambiar después |
 | **Nombre del microagente** | Obligatorio, entre 3 y 50 caracteres, sin repetir el de otro agente |
 | **Descripción** | Obligatoria, hasta 400 caracteres |
-| **Instrucciones del sistema** | Obligatorias, hasta 20.000 caracteres. El papel del microagente y las reglas generales |
+| **Instrucciones del sistema** | Obligatorias, hasta 50.000 caracteres. El papel del microagente y las reglas generales |
 | **Modelo** | Se ofrecen modelos de Google ligeros, adecuados para extracción. El **Descriptor de imágenes** necesita un modelo que lea imágenes |
 | **Temperatura** | De 0 a 1. Por defecto, 0. Para extraer datos conviene dejarla en 0 |
 
@@ -75,6 +76,24 @@ Ejemplo de instrucción de ejecución para un extractor de facturas:
 Lee la factura y devuelve el proveedor, su NIF, la fecha de emisión, el número de factura y el importe total con impuestos. Si un dato no aparece en el documento, devuélvelo vacío; no lo deduzcas.
 ```
 
+### Agente de búsqueda
+
+Un **Agente de búsqueda** reemplaza al agente de búsqueda predeterminado de la plataforma en las carpetas a las que se asigna. Sirve para que la búsqueda en los documentos tenga en cuenta el vocabulario de la organización.
+
+<Screenshot src="/img/estudio/microagente-busqueda.png" alt="Formulario de un microagente de tipo Agente de búsqueda en el Estudio" caption="Crear un microagente de tipo Agente de búsqueda" maxWidth={1117} />
+
+- No tiene **Esquema de respuesta** ni **Instrucción de ejecución**: solo **Instrucciones del sistema**.
+- En las instrucciones van solo los **criterios y la terminología** del dominio: qué es relevante, sinónimos y siglas. La plataforma ya decide cómo buscar y cómo responder, así que no hace falta explicarlo.
+- Se asigna a carpetas, no a agentes: en **Búsqueda de los agentes** de una carpeta o en un perfil, campo **Agente de búsqueda**. Ver [Búsqueda de los agentes](/centro-de-conocimiento/busqueda-de-los-agentes#agente-de-búsqueda).
+- Solo se pueden elegir los agentes de búsqueda activos.
+
+Ejemplo de instrucciones del sistema:
+
+```prompt
+En contratos, "adenda" y "modificación" significan lo mismo; prioriza siempre la versión vigente. "OT" es una orden de trabajo y "SAT" el servicio de asistencia técnica.
+```
+
+
 ## El detalle de un microagente
 
 | Pestaña | Contenido |
@@ -86,7 +105,7 @@ En la lista, la columna **Esquema** indica si usa uno de la **Biblioteca**, uno 
 
 ## Eliminar
 
-Si hay carpetas que usan el microagente, la plataforma lo avisa y pide escribir su nombre para confirmar. Un **Descriptor de imágenes** en uso por alguna carpeta no se puede eliminar: antes hay que cambiar el descriptor de esas carpetas.
+Si hay carpetas que usan el microagente, la plataforma lo avisa y pide escribir su nombre para confirmar. Un **Descriptor de imágenes** en uso por alguna carpeta no se puede eliminar: antes hay que cambiar el descriptor de esas carpetas. Lo mismo con un **Agente de búsqueda** que usan carpetas o perfiles: la plataforma indica cuántos y hay que asignarles otro agente de búsqueda primero.
 
 ## Buenas prácticas
 

@@ -61,6 +61,9 @@ Se elige al crear la carpeta y no se puede cambiar después.
 | Crear carpetas, buscar, mover o eliminar contenido | [Carpetas y archivos](/centro-de-conocimiento/carpetas-y-archivos) |
 | Subir documentos y saber qué formatos se admiten | [Subir documentos](/centro-de-conocimiento/subir-documentos) |
 | Que un agente responda con mis documentos | [Conocimiento de los agentes](/centro-de-conocimiento/conocimiento-de-los-agentes) |
+| Ajustar cómo buscan los agentes en una carpeta | [Búsqueda de los agentes](/centro-de-conocimiento/busqueda-de-los-agentes) |
+| Actualizar los documentos después de un cambio | [Actualizar los documentos](/centro-de-conocimiento/actualizar-los-documentos) |
+| Compartir la misma configuración de búsqueda entre carpetas | [Perfiles de búsqueda](/centro-de-conocimiento/perfiles-de-busqueda) |
 | Dar acceso a otras personas o a un espacio de trabajo | [Compartir y permisos](/centro-de-conocimiento/compartir-y-permisos) |
 | Sacar datos de facturas, albaranes o formularios | [Extracción inteligente](/centro-de-conocimiento/extraccion-inteligente) |
 | Trabajar con vídeos o audios de YouTube | [Multimedia](/centro-de-conocimiento/multimedia) |

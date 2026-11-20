@@ -28,8 +28,8 @@ flowchart LR
 
 1. **Upload** the file to a folder.
 2. **Share** the folder with the agent. The order of these two steps does not matter.
-3. The platform **prepares** each file so the agent can read it: it extracts the text, splits it into chunks and indexes it so it can be searched by meaning. This happens on its own and takes a few minutes.
-4. During a conversation, the agent **searches** that content for the chunks related to each question and answers with them.
+3. The platform **prepares** each file so the agent can read it: it extracts the text, splits it into passages and indexes it so it can be searched by meaning. This happens on its own and takes a few minutes.
+4. During a conversation, the agent **searches** that content for the passages related to each question and answers with them.
 
 :::warning Uploading is not enough
 A file in a folder that is not shared with any agent is stored, but no agent reads it. See [Agent knowledge](/centro-de-conocimiento/conocimiento-de-los-agentes).
@@ -61,6 +61,9 @@ You choose it when you create the folder, and it cannot be changed later.
 | Create folders, search, move or delete content | [Folders and files](/centro-de-conocimiento/carpetas-y-archivos) |
 | Upload documents and know which formats are supported | [Upload documents](/centro-de-conocimiento/subir-documentos) |
 | Have an agent answer with my documents | [Agent knowledge](/centro-de-conocimiento/conocimiento-de-los-agentes) |
+| Adjust how agents search a folder | [Agents' search](/centro-de-conocimiento/busqueda-de-los-agentes) |
+| Update the documents after a change | [Update the documents](/centro-de-conocimiento/actualizar-los-documentos) |
+| Share the same search settings across folders | [Search profiles](/centro-de-conocimiento/perfiles-de-busqueda) |
 | Give access to other people or to a workspace | [Sharing and permissions](/centro-de-conocimiento/compartir-y-permisos) |
 | Get data from invoices, delivery notes or forms | [Smart Extract](/centro-de-conocimiento/extraccion-inteligente) |
 | Work with YouTube videos or audio | [Multimedia](/centro-de-conocimiento/multimedia) |

@@ -13,6 +13,7 @@ Los términos que aparecen en la plataforma y en esta documentación, en orden a
 ## A
 
 - **Agente**: asistente de IA que conversa con las personas, en la plataforma o en un canal conectado. Ver [Agentes](/control/estudio/agentes).
+- **Agente de búsqueda**: microagente que busca en los documentos de las carpetas con los criterios y la terminología de la organización. Se asigna a carpetas, no a agentes. Ver [Agente de búsqueda](/control/estudio/microagentes#agente-de-búsqueda).
 - **Agente del catálogo**: agente ya hecho que la organización instala desde el Catálogo de integraciones. Se usa, pero no se edita. Ver [Agentes del catálogo](/control/estudio/agentes-del-catalogo).
 - **Aplicación integrada**: aplicación con pantalla propia que se muestra dentro de ConsulPoint y trabaja con los datos de la organización. Según su origen, es **Instalada** (del catálogo) o **Propia**; según su tipo, **Extensión**, **Visualizador** o **Filtro**. Ver [Aplicaciones integradas](/aplicaciones-integradas).
 - **Artículos y novedades**: módulo para publicar contenido para la organización, como comunicados o guías internas. Ver [Artículos y novedades](/modulos/articulos-y-novedades).
@@ -49,6 +50,7 @@ Los términos que aparecen en la plataforma y en esta documentación, en orden a
 
 ## F
 
+- **Fragmento**: trozo de un documento en que la plataforma lo divide para que los agentes busquen en él. En cada pregunta, el agente recibe los fragmentos más relacionados, no el documento entero. Ver [Búsqueda de los agentes](/centro-de-conocimiento/busqueda-de-los-agentes).
 - **Fuentes certificadas**: función integrada que permite al agente usar fuentes de información verificadas. Se activa en cada conversación. Ver [Funciones integradas](/control/estudio/crear-un-agente#funciones-integradas).
 - **Fuentes del mensaje**: la información que se consultó para generar una respuesta: documentos del Centro de Conocimiento o páginas web. Se ve con **Ver fuentes**. Ver [Fuentes del mensaje](/conversaciones/conversar-con-un-agente#fuentes-del-mensaje).
 
@@ -77,6 +79,7 @@ Los términos que aparecen en la plataforma y en esta documentación, en orden a
 
 ## P
 
+- **Perfil de búsqueda**: configuración de búsqueda con nombre que comparten varias carpetas del Centro de Conocimiento. Ver [Perfiles de búsqueda](/centro-de-conocimiento/perfiles-de-busqueda).
 - **Plantilla de WhatsApp**: mensaje aprobado por WhatsApp. Es la única forma de escribir primero a un contacto por WhatsApp. Ver [Iniciar una conversación por WhatsApp o Telegram](/conversaciones/canales-y-atencion-humana#iniciar-una-conversación-por-whatsapp-o-telegram).
 - **Preparar para agentes**: acción que convierte un archivo en fragmentos que los agentes pueden buscar y leer. Ver [Conocimiento de los agentes](/centro-de-conocimiento/conocimiento-de-los-agentes).
 

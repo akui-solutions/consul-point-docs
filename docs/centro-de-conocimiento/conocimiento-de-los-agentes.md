@@ -27,20 +27,20 @@ Un agente siempre tiene acceso de **Solo lectura**: consulta el contenido, pero 
 
 ## Preparación
 
-Antes de que un agente pueda leer un archivo, la plataforma lo prepara: extrae el texto (de los PDF, con el [servicio de conversión](/centro-de-conocimiento/carpetas-y-archivos#conversión-de-pdf) de la carpeta), lo divide en fragmentos y los indexa para poder buscar por significado y no solo por palabras exactas.
+Antes de que un agente pueda leer un archivo, la plataforma lo prepara: extrae el texto (de los PDF, con el [servicio de conversión](/centro-de-conocimiento/carpetas-y-archivos#conversión-de-pdf) de la carpeta), lo divide en fragmentos y los indexa para poder buscar por significado y no solo por palabras exactas. Cómo se divide y qué recibe el agente en cada búsqueda se ajusta en [Búsqueda de los agentes](/centro-de-conocimiento/busqueda-de-los-agentes).
 
 La preparación empieza sola al compartir la carpeta con un agente y al subir archivos a una carpeta compartida. Tarda unos minutos por archivo; con muchos archivos, más. Si falla, la plataforma avisa con una notificación.
 
 ### Comprobar si un archivo está disponible
 
-Al abrir un archivo, **Mostrar información** indica si está **Disponible para agentes**:
+Al abrir un archivo, **Disponibilidad para agentes** indica su estado:
 
-| Indicación | Significado |
+| Estado | Significado |
 |---|---|
-| **Sí, al día** | Los agentes leen la versión actual |
-| **Sí, pero una versión anterior** | Los agentes leen una versión que ya cambió. Conviene **Volver a preparar** |
+| **Disponible** | Los agentes leen su contenido actual |
+| **Disponible · Actualización pendiente** | Los agentes lo consultan, pero con su contenido o la configuración anterior de la carpeta. Debajo se indica el motivo y qué hacer. Ver [Actualizar los documentos](/centro-de-conocimiento/actualizar-los-documentos#documentos-pendientes-en-la-lista) |
 | **Preparándose…** | En curso |
-| **Todavía no** | Los agentes tienen acceso a la carpeta, pero aún no pueden leer este archivo |
+| **No disponible todavía** | Los agentes tienen acceso a la carpeta, pero aún no pueden leer este archivo |
 
 ### Acciones manuales
 
@@ -49,14 +49,14 @@ Desde **Mostrar información**, en un archivo de una carpeta compartida con un a
 | Acción | Cuándo usarla |
 |---|---|
 | **Preparar para agentes** | El archivo no se preparó, por ejemplo porque falló |
-| **Volver a preparar** | El archivo cambió o se cambió la conversión de PDF de la carpeta. Los agentes lo leen de nuevo desde cero |
+| **Volver a preparar** | El archivo cambió o se cambió la configuración de búsqueda de la carpeta. Los agentes lo leen de nuevo desde cero. Si cambió la conversión de PDF, antes hay que **Rehacer la versión en texto** |
 | **Retirar de los agentes** | Que los agentes dejen de leer este archivo concreto. El archivo no se borra y la carpeta sigue compartida |
 
 Preparar un archivo manualmente consume créditos de la organización. Estas acciones no están disponibles desde un espacio de trabajo.
 
 ## Cómo responde el agente
 
-En cada pregunta, el agente busca en las carpetas a las que tiene acceso los fragmentos más relacionados y responde a partir de ellos. No lee todos los documentos enteros cada vez.
+En cada pregunta, el agente busca en las carpetas a las que tiene acceso los fragmentos más relacionados y responde a partir de ellos. No lee todos los documentos enteros cada vez. Cuántos fragmentos recibe y cómo se buscan se ajusta en [Búsqueda de los agentes](/centro-de-conocimiento/busqueda-de-los-agentes#resultados-de-búsqueda).
 
 :::info El agente respeta los permisos de quien pregunta
 En [Conversaciones](/modulos/conversaciones), el agente solo busca en las carpetas compartidas con él **a las que también tiene acceso la persona que conversa**. Dos personas pueden obtener respuestas distintas del mismo agente si tienen acceso a carpetas distintas.
