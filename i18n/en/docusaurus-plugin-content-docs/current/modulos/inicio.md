@@ -23,7 +23,7 @@ Each user sees only the blocks for the modules they have access to. The dashboar
 | **Featured Article** | Carousel with the 3 most recent active articles from [Articles & Updates](/modulos/articulos-y-novedades). It moves on by itself every few seconds; clicking an article opens it in full | The user has access to Articles & Updates and there are active articles |
 | **Calendar** | The current month and the next two. The arrows move forward or back a month, and the button next to them switches between **Grid view** and **Linear view** | Always |
 | **Quick Access** | The organization's apps (**My Applications**) and the user's personal links (**Quick Links**) | The user has access to the apps or to the quick links |
-| **Recent Conversations** | The user's last 5 conversations. Clicking one opens it in [Conversations](/modulos/conversaciones); if there are more, **View all conversations** takes you to the full list | The user has access to Conversations |
+| **Recent Conversations** | The user's last 5 conversations, with the **Agent unavailable** or **Group** badge when relevant. Clicking one opens it in [Conversations](/modulos/conversaciones); if there are more, **View all conversations** takes you to the full list | The user has access to Conversations |
 
 ### Notices at the top {#avisos-en-la-parte-superior}
 

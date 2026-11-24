@@ -17,7 +17,7 @@ Workspaces do not appear in the side menu. You use and manage them from the sele
 
 <Screenshot src="/img/en/modulos/espacios-de-trabajo-selector.png" alt="Organization and workspace selector in ConsulPoint" caption="Top bar selector" maxWidth={320} />
 
-- **Switch workspace**: click the workspace's name in the list. **Main** takes you back to the organization.
+- **Switch workspace**: click the workspace's name in the list. **Main** takes you back to the organization. The list only appears if your role has access to **Workspaces**; without it, the selector only offers the organization.
 - **Manage workspaces**: click the gear next to the organization's name (**Manage workspaces**). It only shows when you are in the main organization, not inside a workspace.
 - **Favorite organization**: the star (**Mark as favorite**) highlights an organization, for people who belong to several.
 

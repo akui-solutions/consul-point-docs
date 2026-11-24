@@ -8,11 +8,11 @@ description: How to install a ready-made agent from the ConsulPoint Integrations
 
 # Catalog agents
 
-<PageMeta route="/store/agents">view on **Studio** to see them; create to install and update them; delete to uninstall them</PageMeta>
+<PageMeta route="/store/agents">view on **Studio** to see them; create to install and update them; edit to turn them on or off; delete to uninstall them</PageMeta>
 
 Besides building its own agents, the organization can install **ready-made agents** from the **Agents** tab of the [Integrations catalog](/organizacion/catalogo-de-aplicaciones). They're published by ConsulPoint and, if the organization works with a distributor, also by that distributor.
 
-A catalog agent arrives ready to use: with its instructions, documents, specialists and skills. The organization uses it but doesn't edit it: whoever publishes it maintains it and sends new versions.
+A catalog agent arrives ready to use: with its instructions, documents, specialists and skills. The organization uses it and can turn it on or off, but doesn't edit it: whoever publishes it maintains it and sends new versions.
 
 **Use cases:** a customer service agent the distributor prepared for all its organizations; an assistant specialized in a regulation, with its documentation included.
 
@@ -37,7 +37,7 @@ Clicking the card opens the detail, with the version, the category, **To get sta
 2. In **Install agent**, review what will be created: **This agent**, its specialists, micro-agents, skills and data schemas. The ones marked **Optional** can be removed.
 3. If a name already exists in the organization, another one is proposed, which you can change.
 4. Pick the **AI model** the agent will answer with. By default, the one the publisher chose.
-5. Click **Install agent**.
+5. Click **Install agent** (**Install agent and … more**, if other resources are installed too).
 
 When it finishes, **Agent installed** appears, and the agent is already in Studio.
 
@@ -49,7 +49,7 @@ When it finishes, **Agent installed** appears, and the agent is already in Studi
 
 ## In Studio {#en-el-estudio}
 
-An installed agent shows in Studio with the **From the catalog** mark: you can use it, but not edit it.
+In the Studio list, an installed agent shows **From the catalog** in the **Origin** column: you can use it, but not edit it. The **Status** column shows whether it's **Active** or **Inactive**, and shows **New version** when one hasn't been applied yet.
 
 <Screenshot src="/img/en/estudio/agente-del-catalogo.png" alt="Detail of a catalog agent in ConsulPoint Studio" caption="A catalog agent in Studio" />
 
@@ -59,12 +59,13 @@ An installed agent shows in Studio with the **From the catalog** mark: you can u
 | Decide who uses it, on the **Access** tab | See its instructions or the content of its documents |
 | Turn its skills on or off | Edit its skills or see their content |
 | Share [Knowledge Hub](/centro-de-conocimiento/conocimiento-de-los-agentes) folders with it and assign connectors | Change its model, its specialists or its memory |
+| [Turn it on or off](#activar-y-desactivar) | |
 
 The agent's detail has fewer tabs:
 
 | Tab | Contents |
 |---|---|
-| **General** | The agent's information, **Installed by**, the **What it can do** card (its functions, specialists and skills) and **Documents**, with names only |
+| **General** | The agent's information, **Installed by**, the **What it can do** card (its functions, specialists and skills) and the **From the catalog** card: **Published by**, the installed **Version** (and the new one, if there is one), **Updates** (**Updates itself**, if versions are applied on their own) and the **Documents**, with names only |
 | **Connectors** | The external tools it can use |
 | **Access** | Who uses it. The only level is **Can use** |
 | **API queries** | Queries made with an [API key](/organizacion/claves-de-api) |
@@ -72,6 +73,12 @@ The agent's detail has fewer tabs:
 **View in catalog** takes you to its entry on the catalog's **Installed** tab, where it's updated and uninstalled.
 
 Skills that come with the agent show the notice **This skill comes with an agent from the catalog**: you can turn them on or off, but their content is protected. They're updated and removed together with the agent.
+
+### Turn on and off {#activar-y-desactivar}
+
+In the detail header, **Turn off** stops the agent from answering in conversations, integrations and the API until you click **Turn on**. Before turning it off, the platform asks you to confirm. While it's off, the agent shows **Inactive**, and its conversations show **This agent is no longer available**: you can read them, but not write.
+
+You need edit permission on **Studio** and, on the agent, the **Can edit** level or higher. With the access the agent is installed with, only administrators have it.
 
 ### In conversations {#en-las-conversaciones}
 
@@ -92,7 +99,7 @@ When the publisher sends a new version, it arrives in one of two ways, depending
 | With notice | Administrators get the **New version available** notification, and the card shows **Update**. The organization decides when |
 | Automatic | The version is applied on its own, and administrators get **Agent updated** |
 
-To update manually, click **Update** in the catalog and review the changes in **Update agent**.
+To update manually, click **Update** in the catalog, or **Update to …** on the agent's **From the catalog** card, and review the changes in **Update agent**.
 
 :::warning The whole version is applied
 Updating replaces the agent's model with the new version's and removes the specialists and skills it no longer includes. Its name, who uses it, its workspaces and the folders shared with it are kept.
@@ -100,11 +107,12 @@ Updating replaces the agent's model with the new version's and removes the speci
 
 ## Uninstall {#desinstalar}
 
-On the catalog's **Installed** tab, or in the agent's detail, **⋯** menu → **Uninstall**.
+On the catalog's **Installed** tab, or in the agent's detail, **⋯** menu → **Uninstall**. If the agent answers in integrations (WhatsApp, Telegram or others), the window warns that it will stop doing so.
 
 - The agent is deleted from Studio along with its specialists, micro-agents and skills: they only work while the agent is installed.
-- The data schemas it created are kept, unless you mark them for deletion.
-- If the agent has conversations, it's kept in Studio so you can read them, but it no longer receives new versions.
+- The folders and data schemas it created are kept, unless you mark them for deletion.
+- If the agent has conversations, it isn't deleted but archived: it leaves Studio and can no longer be used, but its conversations stay readable.
+- If you install it again, the archived agent comes back with the same name and its conversations (the install window marks it **Restored**), and it doesn't count toward the subscription limit.
 
 ## If it's withdrawn from the catalog {#si-lo-retiran-del-catálogo}
 

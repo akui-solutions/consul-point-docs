@@ -33,7 +33,7 @@ It's determined by how you finish the connection in the Meta window, and you can
 
 | Mode | What it means |
 |---|---|
-| **Coexistence (WhatsApp Business app)** | The number is still used from the WhatsApp Business app as well. If someone replies from the app, the AI turns off in that chat |
+| **Coexistence (WhatsApp Business app)** | The number is still used from the WhatsApp Business app as well. If someone replies from the app, the AI turns off in that conversation |
 | **Cloud API** | The number only works in ConsulPoint |
 
 In coexistence, WhatsApp can share the **conversation history** when connecting. The details show its status (**Requested**, **Importing…**, **Imported**, **Not shared** or **Error**); the history is only sent once, and to retry you have to connect the number again.

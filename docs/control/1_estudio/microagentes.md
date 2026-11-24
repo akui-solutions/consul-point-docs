@@ -101,7 +101,7 @@ En contratos, "adenda" y "modificación" significan lo mismo; prioriza siempre l
 | **General** | Tipo, descripción, origen, modelo, temperatura, fechas, propietario, instrucciones del sistema e instrucción de ejecución |
 | **Esquema de respuesta** | La estructura que devuelve, propia o de la biblioteca (con su versión) |
 
-En la lista, la columna **Esquema** indica si usa uno de la **Biblioteca**, uno **Personalizado** o ninguno. Los microagentes que instala una aplicación del catálogo muestran **De la aplicación** y su nombre.
+En la lista, el tipo aparece debajo del nombre, y los microagentes que instala una aplicación del catálogo muestran en **Origen** **De la aplicación** y su nombre.
 
 ## Eliminar
 

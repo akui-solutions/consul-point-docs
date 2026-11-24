@@ -10,7 +10,7 @@ description: Cómo conectar un bot de Telegram a ConsulPoint para que un agente 
 
 <PageMeta route="/settings/connectors">administrador</PageMeta>
 
-Un bot de Telegram conectado a ConsulPoint recibe los mensajes de quien le escriba, los responde con un agente y los muestra en [Conversaciones](/modulos/conversaciones).
+Un bot de Telegram conectado a ConsulPoint recibe los mensajes de quien le escriba, los responde con un agente y los muestra en [Conversaciones](/modulos/conversaciones). También se puede añadir a grupos: ver [Grupos de Telegram](/conversaciones/canales-y-atencion-humana#grupos-de-telegram).
 
 ## Antes de empezar: crear el bot
 
@@ -44,4 +44,4 @@ Si se regenera el token en @BotFather, lo más seguro es eliminar la integració
 
 ## Iniciar una conversación
 
-En Telegram, un bot no puede escribir primero a quien nunca le ha escrito. En [Conversaciones](/modulos/conversaciones), **Iniciar conversación de Telegram** permite escribir a un **Contacto existente** o a un **ID de chat de Telegram** (el contacto puede obtenerlo escribiendo a @userinfobot). Si el contacto aún no ha iniciado el bot, la plataforma lo indica.
+En Telegram, un bot no puede escribir primero a quien nunca le ha escrito. En [Conversaciones](/modulos/conversaciones), **Iniciar conversación de Telegram** permite escribir a un **Contacto existente** o a un **ID de chat de Telegram** (el contacto puede obtenerlo escribiendo a @userinfobot). Si el contacto aún no ha iniciado el bot, la plataforma lo indica. Un ID negativo corresponde a un grupo, y la conversación se crea como grupo.

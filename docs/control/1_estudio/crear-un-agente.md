@@ -155,7 +155,7 @@ Con **Permisos personalizados** hay que añadir al menos una persona y elegir el
 
 | Nivel | Qué permite |
 |---|---|
-| **Puede usar** | Conversar con el agente y adjuntar documentos en el chat |
+| **Puede usar** | Conversar con el agente y adjuntarle documentos |
 | **Puede editar** | Además, cambiar su configuración y compartirlo. No puede eliminarlo |
 | **Puede administrar** | Todo, incluido eliminarlo, exportarlo e importarlo |
 

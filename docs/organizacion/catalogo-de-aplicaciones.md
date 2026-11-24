@@ -56,7 +56,7 @@ Al pulsar la tarjeta se abre el detalle: la versión, la fecha de instalación, 
 | **Actualizar** | Se revisan antes los recursos que cambian | Directo | Pide confirmación. Sustituye instrucciones y archivos; conserva nombre, estado y agentes |
 | **Desinstalar** | Pide confirmación y permite borrar también lo que creó | Pide confirmación. Los asignados a la organización no se pueden desinstalar | Pide confirmación. Se borra de la biblioteca y de los agentes que la usaban |
 
-Los agentes se instalan, actualizan y desinstalan como se explica en [Agentes del catálogo](/control/estudio/agentes-del-catalogo).
+Los agentes se instalan, actualizan y desinstalan como se explica en [Agentes del catálogo](/control/estudio/agentes-del-catalogo). Un agente desinstalado que tenía conversaciones se recupera al volver a instalarlo.
 
 Instalar y actualizar requieren permiso de crear sobre el módulo correspondiente (en los agentes, **Estudio**); desinstalar, permiso de eliminar. La suscripción fija cuántas habilidades, conectores y recursos se pueden tener: al llegar al máximo, la plataforma lo indica antes de instalar. Ver [Créditos y límites](/organizacion/creditos-y-limites#límites-de-la-suscripción).
 

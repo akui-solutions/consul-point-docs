@@ -58,10 +58,10 @@ In a skill's detail:
 
 | Action | What it does |
 |---|---|
-| **Edit** | Changes the details and the instructions. The changes apply to every agent that has it assigned. **Own** skills only |
+| **Edit** | Changes the details and the instructions. The changes apply to every agent that has it assigned. **From the organization** skills only |
 | **Activate** / **Deactivate** | A deactivated skill stays assigned, but no agent uses it |
 | **Export** | Downloads the .zip package |
-| **Delete** | Removes it from the library and from the agents. It can't be undone. **Own** skills only |
+| **Delete** | Removes it from the library and from the agents. It can't be undone. **From the organization** skills only |
 
 The usage card shows how many times the skill has been used, when it was last used and the results of its scripts.
 

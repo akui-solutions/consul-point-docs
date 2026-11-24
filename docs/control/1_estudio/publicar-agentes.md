@@ -8,7 +8,7 @@ description: Cómo una organización distribuidora publica sus agentes en el Cat
 
 # Publicar agentes en el catálogo
 
-<PageMeta route="/studio/assistant/details/general/:id">organización distribuidora; crear sobre **Estudio** para publicar, editar para configurar o retirar</PageMeta>
+<PageMeta route="/studio/assistant/details/general/:id">organización distribuidora; crear sobre **Estudio** para publicar, editar para configurar o retirar, eliminar para borrarlo del catálogo</PageMeta>
 
 Una **distribuidora** es una organización que lleva a otras organizaciones de ConsulPoint, sus clientes. Puede preparar un agente una vez y **publicarlo en el catálogo** para que esas organizaciones lo instalen listo para usar, sin ver sus instrucciones ni sus documentos. Cuando lo mejora, publica una versión nueva y les llega a todas.
 
@@ -76,7 +76,7 @@ Una vez publicado, la pestaña **General** del agente tiene la tarjeta **Publica
 | **No aprobado** | No se aprobó que sea público. Las organizaciones de la distribuidora siguen pudiendo instalarlo. La tarjeta muestra el **Motivo** |
 | **Retirado** | Ya no se puede instalar. Según cómo se retiró, sigue funcionando donde estaba instalado o se desactivó |
 
-La tarjeta muestra la **Versión** publicada y su fecha, **Quién puede instalarlo**, cómo llegan las **Mejoras** y cuántas organizaciones lo tienen instalado, con las que aún no tienen la última versión.
+La tarjeta muestra la **Versión** publicada (por ejemplo, `v2.0.0`) y su fecha, **Quién puede instalarlo**, cómo llegan las **Mejoras** y cuántas organizaciones lo tienen instalado, con las que aún no tienen la última versión.
 
 ## Publicar una versión nueva
 
@@ -91,6 +91,12 @@ Cada organización recibe la versión según cómo lleguen las mejoras:
 
 Si una actualización automática falla en alguna organización (por ejemplo, porque supera un límite de su suscripción), la tarjeta avisa **No se pudo actualizar en … organizaciones**. **Reintentar actualizaciones** lo vuelve a intentar.
 
+### Versiones publicadas
+
+**Ver versiones**, debajo de la versión en la tarjeta o en su menú, abre **Versiones publicadas**: todas las versiones, de la más reciente a la más antigua, con su fecha, quién la publicó y cuántos documentos tenía. **Actual** marca la que ofrece el catálogo; si el agente está retirado, esa marca dice **Última publicada**. Al elegir una versión se ve qué incluía.
+
+<Screenshot src="/img/estudio/versiones-publicadas.png" alt="Ventana Versiones publicadas de un agente en el Estudio de ConsulPoint" caption="Versiones publicadas" maxWidth={560} />
+
 ## Más acciones
 
 En el menú de la tarjeta:
@@ -99,7 +105,11 @@ En el menú de la tarjeta:
 |---|---|
 | **Configurar** | Cambiar quién puede instalarlo y cómo llegan las mejoras. Se aplica enseguida, sin publicar una versión nueva. El cambio en las mejoras rige desde la próxima versión |
 | **Hacerlo público** | Pedir que todas las organizaciones de ConsulPoint puedan instalarlo. Lo revisa ConsulPoint; mientras tanto queda **En revisión** y se recibe un aviso al terminar la revisión |
+| **Ver versiones** | Ver [Versiones publicadas](#versiones-publicadas) |
 | **Retirar del catálogo** | Ninguna organización podrá instalarlo a partir de ese momento. Ver más abajo |
+| **Borrar del catálogo** | Borra la publicación y deja el agente en el Estudio. Ver más abajo |
+
+Si una opción está desactivada, debajo se explica por qué. Con el agente retirado, el menú solo ofrece **Ver versiones** y **Borrar del catálogo**.
 
 ### Retirar y reactivar
 
@@ -111,6 +121,14 @@ Al retirar un agente que ya está instalado, hay que elegir qué pasa con esas i
 | **Desactivarlo** | Deja de responder en esas organizaciones |
 
 Retirarlo cancela también una solicitud para hacerlo público. Para volver a ofrecerlo, **Reactivar en el catálogo**: las organizaciones pueden volver a instalarlo, y las que se quedaron con una versión anterior reciben la última según cómo lleguen las mejoras.
+
+### Borrar del catálogo
+
+:::danger Se borra para siempre
+**Borrar del catálogo** borra la publicación con su historial de versiones y sus documentos. No se puede deshacer. El agente sigue en el Estudio y se puede volver a publicar.
+:::
+
+Se confirma escribiendo el nombre del agente. Solo se puede borrar si no está instalado en ninguna organización: mientras lo esté, la opción aparece desactivada e indica en cuántas. Hace falta permiso de eliminar sobre el **Estudio** y, en el agente, el nivel **Puede administrar**.
 
 ### Eliminar un agente publicado
 

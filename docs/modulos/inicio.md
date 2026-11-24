@@ -23,7 +23,7 @@ Cada usuario ve solo los bloques de los módulos a los que tiene acceso. El pane
 | **Artículo Destacado** | Carrusel con los 3 artículos activos más recientes de [Artículos y novedades](/modulos/articulos-y-novedades). Avanza solo cada pocos segundos; al pulsar un artículo se abre completo | El usuario tiene acceso a Artículos y novedades y hay artículos activos |
 | **Calendario** | El mes actual y los dos siguientes. Las flechas avanzan o retroceden de mes, y el botón junto a ellas cambia entre **Vista cuadrícula** y **Vista lineal** | Siempre |
 | **Accesos** | Las aplicaciones de la organización (**Mis aplicaciones**) y los enlaces personales del usuario (**Accesos Rápidos**) | El usuario tiene acceso a las aplicaciones o a los accesos rápidos |
-| **Conversaciones Recientes** | Las 5 últimas conversaciones del usuario. Al pulsar una se abre en [Conversaciones](/modulos/conversaciones); si hay más, **Ver todas las conversaciones** lleva al listado completo | El usuario tiene acceso a Conversaciones |
+| **Conversaciones Recientes** | Las 5 últimas conversaciones del usuario, con la marca **Agente no disponible** o **Grupo** cuando corresponde. Al pulsar una se abre en [Conversaciones](/modulos/conversaciones); si hay más, **Ver todas las conversaciones** lleva al listado completo | El usuario tiene acceso a Conversaciones |
 
 ### Avisos en la parte superior
 

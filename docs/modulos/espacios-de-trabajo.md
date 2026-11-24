@@ -17,7 +17,7 @@ Los espacios de trabajo no aparecen en el menú lateral. Se usan y se gestionan 
 
 <Screenshot src="/img/modulos/espacios-de-trabajo-selector.png" alt="Selector de organización y espacios de trabajo en ConsulPoint" caption="Selector de la barra superior" maxWidth={320} />
 
-- **Cambiar de espacio**: pulsar el nombre del espacio en la lista. **Principal** vuelve a la organización.
+- **Cambiar de espacio**: pulsar el nombre del espacio en la lista. **Principal** vuelve a la organización. La lista solo aparece si el rol tiene acceso a **Espacios de trabajo**; sin él, el selector ofrece solo la organización.
 - **Gestionar los espacios**: pulsar el engranaje junto al nombre de la organización (**Gestionar espacios de trabajo**). Solo se muestra cuando se está en la organización principal, no dentro de un espacio.
 - **Organización favorita**: la estrella (**Marcar como favorita**) destaca una organización, para quien pertenece a varias.
 

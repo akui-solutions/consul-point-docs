@@ -20,6 +20,8 @@ A schema can be linked to:
 
 A micro-agent can also have its own structure, defined in its form. The library is useful when several items share the same structure or when an app depends on it.
 
+In the library list, the **Origin** column shows whether the schema is **From the organization** or was created by an app when it was installed (**From application …**).
+
 ## Create a schema {#crear-un-esquema}
 
 1. In the Studio, on the **Schema library** tab, click **New schema**.

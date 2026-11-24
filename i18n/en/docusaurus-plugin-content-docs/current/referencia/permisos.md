@@ -39,6 +39,8 @@ On a role's permissions screen, each module has four permissions: **View**, **Cr
 | **Organization** | [Organization](/organizacion/datos-de-la-organizacion) |
 | **Audit & Reports** | [Audit & Reports](/control/auditoria-y-reportes) |
 
+In **Studio**, some actions also require an [access](/control/estudio/agentes#acceso) level on the agent itself: editing it, turning a catalog agent on or off, and deleting a published agent from the catalog.
+
 ## Administrator-only sections {#secciones-solo-para-administradores}
 
 Only the **Administrator** role sees these Settings sections, even if another role has permissions on the module:

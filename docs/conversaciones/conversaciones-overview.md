@@ -35,7 +35,24 @@ Esta sección no requiere conocimientos de programación.
 | **Telegram** | Las que llegan por un bot de Telegram conectado |
 | **Otras integraciones** | Las que llegan desde aplicaciones externas conectadas por API |
 
-Cada conversación muestra el agente o el contacto, la fecha del último mensaje y, si los hay, un punto de **no leídos** y el estado de **atención humana** (**Requiere atención**, **La estás atendiendo**, **La atiende…**).
+Las pestañas solo aparecen si la suscripción de la organización incluye las integraciones.
+
+### Buscar y filtrar
+
+- **Buscar conversación...** busca por título.
+- El embudo abre **Filtrar por agente**: un clic en un agente filtra la lista, y **Quitar filtro** la muestra completa. El agente elegido queda como un chip en el buscador, que se quita con la ✕.
+- Si nada coincide, la lista lo indica y ofrece **Quitar filtros**.
+
+### Cada conversación de la lista
+
+Muestra el agente o el contacto, la fecha del último mensaje y, si corresponde:
+
+| Marca | Significado |
+|---|---|
+| Punto de **no leídos** | Hay mensajes sin leer |
+| **Requiere atención**, **La estás atendiendo**, **La atiende…** | Estado de la [atención humana](/conversaciones/canales-y-atencion-humana#atención-humana) |
+| **Agente no disponible** | El agente ya no está disponible: la conversación se puede leer, pero no continuar. Ver [Conversar con un agente](/conversaciones/conversar-con-un-agente#si-el-agente-ya-no-está-disponible) |
+| **Grupo** | Es un grupo de Telegram. El título es el nombre del grupo |
 
 ## Qué conversaciones ve cada persona
 

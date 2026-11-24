@@ -32,11 +32,11 @@ If you edit, deactivate or remove a skill, the change applies to new conversatio
 
 ## The library {#la-biblioteca}
 
-In the Studio, the **Skills** tab brings together your organization's skills, with their **Status**, their **Usage** (how many times agents have used them) and their **Source**:
+In the Studio, the **Skills** tab brings together your organization's skills, with their **Status**, their **Usage** (how many times agents have used them and, if any failed, how many runs of their scripts ended with an error; hover to see the last use) and their **Source**:
 
 | Source | Meaning |
 |---|---|
-| **Own** | Created or imported by the organization. It can be edited and deleted |
+| **From the organization** | Created or imported by the organization. It can be edited and deleted |
 | **From the catalog** | Installed from the [Integrations catalog](/organizacion/catalogo-de-aplicaciones). It can be activated or deactivated, but not edited; to remove it, you uninstall it from the catalog |
 
 You can search the list by name or tag and filter it by **Status** and **Source**. An **Inactive** skill stays assigned to its agents, but none of them uses it until it's activated again.
