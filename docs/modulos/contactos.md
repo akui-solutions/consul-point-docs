@@ -40,7 +40,7 @@ Al crear un contacto, si se parece a otro ya existente, la plataforma avisa con 
 Al abrir un contacto se ven dos pestañas:
 
 - **Datos**: documento, responsable, tipos de contacto y etiquetas; datos de contacto; canales de mensajería; entidades a las que pertenece; direcciones y notas. Cada bloque se edita por separado.
-- **Actividad**: las conversaciones del contacto, con su canal (**Interno**, **WhatsApp**, **Telegram** o **Aplicación externa**) y su estado (**Pendiente**, **En atención** o **Resuelto**), y los equipos que lo atienden.
+- **Actividad**: las conversaciones del contacto, con su canal (**Interno**, **WhatsApp**, **Telegram** o **Aplicación externa**; **Telegram · Grupo** si es un grupo) y su estado (**Pendiente**, **En atención** o **Resuelto**), y los equipos que lo atienden.
 
 <Screenshot src="/img/contactos/ficha.png" alt="Ficha de un contacto" caption="Ficha de un contacto → Datos" />
 
@@ -48,7 +48,7 @@ La ficha de una entidad muestra sus **Datos** y sus **Miembros**. Al eliminar un
 
 ## Contactos y conversaciones
 
-Cuando llega una conversación por WhatsApp, Telegram o una aplicación externa, la plataforma intenta reconocer al contacto. Si encuentra uno parecido, la conversación muestra **¿Es …?** con **Sí, es esta persona** o **Ahora no**. Desde la cabecera de la conversación también se puede asociar con **Asignar**. Ver [Canales y atención humana](/conversaciones/canales-y-atencion-humana#contactos).
+Cuando llega una conversación por WhatsApp, Telegram o una aplicación externa, la plataforma intenta reconocer al contacto. Si encuentra uno parecido, la conversación muestra **¿Es …?** con **Sí, es esta persona** o **Ahora no**. Desde **Más opciones**, en la cabecera de la conversación, también se puede asociar con **Asignar contacto**. Los grupos de Telegram no se asocian a ningún contacto. Ver [Canales y atención humana](/conversaciones/canales-y-atencion-humana#contactos).
 
 ## Límites
 

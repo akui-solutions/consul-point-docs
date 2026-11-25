@@ -45,9 +45,11 @@ El tipo se elige al crear el agente y no se puede cambiar después.
 |---|---|
 | **Agentes** | Los agentes de la organización |
 | **Especialistas** | Los especialistas disponibles para asignar a agentes |
-| **Microagentes** | Los microagentes, con su tipo y su esquema |
+| **Microagentes** | Los microagentes, con su tipo |
 | **Habilidades** | Procedimientos reutilizables que se asignan a agentes y especialistas. Ver [Habilidades](/control/estudio/habilidades) |
 | **Biblioteca de esquemas** | Estructuras de datos reutilizables por microagentes, carpetas y aplicaciones. Solo aparece con permiso sobre la biblioteca |
+
+En las listas de agentes, especialistas y microagentes, la columna **Origen** indica de dónde viene cada uno (**De la organización**, **Del catálogo** o **De la aplicación …**) y **Estado**, si está **Activo** o **Inactivo**. Solo los elementos del catálogo pueden estar inactivos. Ver [Agentes del catálogo](/control/estudio/agentes-del-catalogo#activar-y-desactivar).
 
 En cada pestaña, el botón de la esquina crea un elemento de ese tipo (**Nuevo agente**, **Nuevo especialista**, **Nuevo microagente** o **Nuevo esquema**). Las listas se filtran por nombre y por modelo; la de microagentes, también por tipo.
 

@@ -33,7 +33,7 @@ Lo decide cómo se termina la conexión en la ventana de Meta, y se ve en el det
 
 | Modo | Qué implica |
 |---|---|
-| **Coexistencia (app de WhatsApp Business)** | El número sigue usándose también desde la app de WhatsApp Business. Si alguien responde desde la app, la IA se apaga en ese chat |
+| **Coexistencia (app de WhatsApp Business)** | El número sigue usándose también desde la app de WhatsApp Business. Si alguien responde desde la app, la IA se apaga en esa conversación |
 | **Cloud API** | El número solo funciona en ConsulPoint |
 
 En coexistencia, WhatsApp puede compartir el **historial de conversaciones** al conectar. El detalle muestra su estado (**Solicitado**, **Importando…**, **Importado**, **No compartido** o **Error**); el historial solo se envía una vez, y para reintentarlo hay que volver a conectar el número.

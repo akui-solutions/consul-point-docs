@@ -24,7 +24,7 @@ En **Configuración → Conectores**, pulsar **Agregar integración → Aplicaci
 |---|---|
 | **Nombre de la integración** | Obligatorio, entre 3 y 100 caracteres |
 | **Descripción** | Opcional; si se rellena, entre 10 y 500 caracteres |
-| **Tiempo sin actividad antes de abrir un chat nuevo (minutos)** | Obligatorio, de 1 a 10.080. Por defecto, 30. Si el usuario no escribe durante ese tiempo, su próximo mensaje abre una conversación nueva |
+| **Tiempo sin actividad antes de abrir una conversación nueva (minutos)** | Obligatorio, de 1 a 10.080. Por defecto, 30. Si el usuario no escribe durante ese tiempo, su próximo mensaje abre una conversación nueva |
 | **Exigir firma a la plataforma externa** | Si se activa, el otro sistema tiene que firmar cada mensaje que envía, además de usar la API key |
 
 Pulsar **Crear canal**.
@@ -61,7 +61,7 @@ El otro sistema necesita, además de la API key, el identificador de este canal 
 
 ## Después de crearlo
 
-El detalle de la integración muestra **Chat nuevo tras inactividad**, la **URL de respuestas**, si hay **Secreto de firma** y si la **Firma obligatoria** está activada.
+El detalle de la integración muestra **Conversación nueva tras inactividad**, la **URL de respuestas**, si hay **Secreto de firma** y si la **Firma obligatoria** está activada.
 
 | Acción | Qué hace |
 |---|---|

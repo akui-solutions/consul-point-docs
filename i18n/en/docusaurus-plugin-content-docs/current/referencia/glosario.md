@@ -23,7 +23,7 @@ The terms that appear on the platform and in this documentation, in alphabetical
 ## C {#c}
 
 - **Capabilities**: agent tab that brings together its **built-in functions** and its **skills**. See [Agents](/control/estudio/agentes#capacidades).
-- **Catalog agent**: ready-made agent the organization installs from the Integrations catalog. It's used, but not edited. See [Catalog agents](/control/estudio/agentes-del-catalogo).
+- **Catalog agent**: ready-made agent the organization installs from the Integrations catalog. It's used and can be turned on or off, but not edited. See [Catalog agents](/control/estudio/agentes-del-catalogo).
 - **Certified sources**: built-in function that lets the agent use verified information sources. It is turned on in each conversation. See [Built-in functions](/control/estudio/crear-un-agente#funciones-integradas).
 - **Connector**: connection to an external tool that agents can use during a conversation. It is installed from the [Integrations catalog](/organizacion/catalogo-de-aplicaciones). It is not the same as an **integration**. See [Connectors](/organizacion/conectores).
 - **Contact**: person or entity the organization deals with, for example someone who writes through WhatsApp or Telegram. Contacts are classified with **contact types** and **tags**. See [Contacts](/modulos/contactos).

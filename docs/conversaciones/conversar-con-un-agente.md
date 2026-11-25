@@ -13,11 +13,17 @@ Cómo iniciar una conversación, escribir, adjuntar archivos, usar las herramien
 ## Iniciar una conversación
 
 1. Pulsar **Nueva conversación** en la lista.
-2. Elegir **Chat interno** (las opciones **WhatsApp** y **Telegram** inician una conversación con un contacto externo; ver [Canales y atención humana](/conversaciones/canales-y-atencion-humana)).
-3. Elegir un agente. **Ver todas las opciones** abre un buscador con todos los agentes a los que se tiene acceso.
+2. Elegir **Conversación interna** (las opciones **WhatsApp** y **Telegram** inician una conversación con un contacto externo; ver [Canales y atención humana](/conversaciones/canales-y-atencion-humana#iniciar-una-conversación-por-whatsapp-o-telegram)).
+3. Elegir un agente. **Ver todos los agentes** abre un buscador con todos los agentes a los que se tiene acceso.
 4. Escribir la primera pregunta, o pulsar uno de los **iniciadores de conversación** que ofrece el agente.
 
 El agente queda fijado al enviar el primer mensaje: para hablar con otro agente se abre una conversación nueva.
+
+### Si el agente ya no está disponible
+
+Un agente del [catálogo](/control/estudio/agentes-del-catalogo) deja de estar disponible cuando quien lo publica lo retira, o cuando la organización lo desinstala o lo desactiva. Sus conversaciones quedan marcadas con **Agente no disponible** y, en lugar del cuadro de mensaje, aparece **Este agente ya no está disponible. Puedes leer la conversación, pero no enviar mensajes.**
+
+**Nueva conversación** abre una conversación nueva para elegir otro agente. Si un mensaje llegó a enviarse justo cuando el agente dejó de estar disponible, se marca con **No enviado: agente no disponible**.
 
 ## Escribir
 
@@ -53,9 +59,11 @@ Las herramientas activas se muestran como chips sobre el cuadro de mensaje y se 
 
 Las respuestas pueden incluir texto con formato, tablas, diagramas (con **Descargar SVG** y **Ver en pantalla completa**), datos CSV (**Descargar CSV**), imágenes y figuras de los documentos del Centro de Conocimiento.
 
+Una imagen se amplía al pulsarla (**Ampliar imagen**) y se descarga con **Descargar imagen**. Las imágenes de otros sitios web no se cargan solas: aparece **Imagen externa de…** con el nombre del sitio, y se muestran al pulsar **Mostrar**.
+
 ### Qué hizo el agente
 
-Encima de cada respuesta, una línea resume lo que hizo el agente para responder: **Realizó 3 acciones**, o la acción misma si fue solo una. Mientras responde, la línea muestra en directo lo que está haciendo (**Buscando en los documentos…**). Al pulsarla se ven los pasos y, en cada uno, la **Consulta** y el **Resultado**; en las búsquedas web, las **Páginas consultadas**.
+Encima de cada respuesta, una línea resume lo que hizo el agente para responder: **Realizó 3 acciones**, o la acción misma si fue solo una. Mientras responde, la línea muestra en directo lo que está haciendo (**Buscando en los documentos…**), y debajo se indica la etapa: **Pensando...**, **Revisando las fuentes…** mientras lee lo que encontró, **Generando imagen...** o **Generando audio...**. Al pulsarla se ven los pasos y, en cada uno, la **Consulta** y el **Resultado**; en las búsquedas web, las **Páginas consultadas**.
 
 | Acción | Cuándo aparece |
 |---|---|
@@ -94,15 +102,18 @@ Si un mensaje no se envía, **Reintentar mensaje** lo vuelve a intentar.
 | Tipo | Qué es |
 |---|---|
 | **Centro de conocimiento** / **Base de conocimiento interna** | Fragmentos de documentos, con su porcentaje de relevancia y la búsqueda con la que se encontraron |
-| **Fuente web** | Páginas de internet consultadas |
+| **Fuente web** | Páginas de internet consultadas. Se abren en una pestaña nueva |
 | **Fuente certificada Cala AI** | Fuentes certificadas |
 | **Recurso multimedia** | Transcripciones de vídeos o audios |
+| **Documentos procesados** | Datos extraídos de documentos con [extracción inteligente](/centro-de-conocimiento/extraccion-inteligente) |
 
 Es la mejor forma de comprobar que el agente responde con los documentos de la organización y no con conocimiento general del modelo.
 
 :::danger Eliminar un fragmento
-**Eliminar este fragmento** borra ese fragmento del conocimiento del agente, para todas las personas y todas las conversaciones. No se puede deshacer. Solo debe usarse para retirar información incorrecta. El documento original no cambia.
+**Eliminar este fragmento** borra ese fragmento del conocimiento, para todas las personas y todas las conversaciones. Si viene del Centro de Conocimiento, deja de usarlo cualquier agente que consulte ese documento. No se puede deshacer. Solo debe usarse para retirar información incorrecta. El documento original no cambia.
 :::
+
+**Eliminar este fragmento** solo aparece con permiso de edición sobre el módulo del que viene la fuente: el **Centro de Conocimiento** para las fuentes **Centro de conocimiento**, y el **Estudio** para las demás.
 
 ## Lo que recuerda el agente
 

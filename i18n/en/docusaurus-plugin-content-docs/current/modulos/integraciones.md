@@ -59,7 +59,7 @@ The details requested depend on the channel:
 | **Telegram** | **Integration name**, **Description** (optional) and **Bot token** | **Owner** and **AI agent**, required |
 | **Gmail and Microsoft** | **Integration name**, **Description** (optional) and **Visibility**: **Private** or **Global**. The account is authorized with the provider | Not assigned |
 | **IMAP** | **Integration name**, **Description** (optional), **Email provider**, **Email address**, **Password**, **IMAP server**, **Port** and **Secure connection** | Not assigned |
-| **External app** | **Integration name**, **Description** (optional), **Time without activity before a new chat (minutes)** (30 by default) and **Require partner signature**. Optionally, in **Configure delivery**: **Reply delivery URL** and **Delivery API Key** | In the **Team** step: **Owner**, **AI agent** and team or people. Optional |
+| **External app** | **Integration name**, **Description** (optional), **Time without activity before starting a new conversation (minutes)** (30 by default) and **Require partner signature**. Optionally, in **Configure delivery**: **Reply delivery URL** and **Delivery API Key** | In the **Team** step: **Owner**, **AI agent** and team or people. Optional |
 
 The name can be up to 50 characters long and the description, if filled in, between 10 and 255.
 

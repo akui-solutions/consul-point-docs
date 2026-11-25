@@ -36,7 +36,7 @@ Click **New webhook** and fill in:
 | **URL** | Required. The address of the external system that will receive the notifications |
 | **Type** | **Synchronous**, **Asynchronous** or **Queue**. By default, **Asynchronous**. See [Types](#tipos) |
 | **Events** | The occurrences that trigger the notification. See the table below |
-| **Chat** | Only with **Specific Conversation Updated**: the conversation that triggers it |
+| **Conversation** | Only with **Specific Conversation Updated**: the conversation that triggers it |
 
 New webhooks are created active. The subscription sets the maximum number of webhooks. See [Credits and limits](/organizacion/creditos-y-limites#límites-de-la-suscripción).
 
@@ -47,7 +47,7 @@ New webhooks are created active. The subscription sets the maximum number of web
 | **User Updated** | When a user's details are changed |
 | **User Deleted** | When an administrator deletes a user |
 | **All Conversations Updated** | When an agent replies in **any conversation of the person who creates the webhook**. It does not include other people's conversations |
-| **Specific Conversation Updated** | When an agent replies in the conversation chosen in **Chat** (one belonging to the person who creates the webhook) |
+| **Specific Conversation Updated** | When an agent replies in the conversation chosen in **Conversation** (one belonging to the person who creates the webhook) |
 
 ## What is sent {#qué-se-envía}
 

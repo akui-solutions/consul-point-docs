@@ -35,7 +35,24 @@ This section requires no programming knowledge.
 | **Telegram** | Those that come in through a connected Telegram bot |
 | **Other integrations** | Those that come in from external apps connected through the API |
 
-Each conversation shows the agent or the contact, the date of the last message and, if any, an **unread** dot and the **human support** status (**Needs attention**, **You're handling this**, **Handled by…**).
+The tabs only appear if the organization's subscription includes integrations.
+
+### Searching and filtering {#buscar-y-filtrar}
+
+- **Search conversation...** searches by title.
+- The funnel opens **Filter by agent**: clicking an agent filters the list, and **Remove filter** shows it in full again. The chosen agent stays as a chip in the search box, which you remove with the ✕.
+- If nothing matches, the list says so and offers **Clear filters**.
+
+### Each conversation in the list {#cada-conversación-de-la-lista}
+
+It shows the agent or the contact, the date of the last message and, when relevant:
+
+| Mark | Meaning |
+|---|---|
+| **Unread** dot | There are unread messages |
+| **Needs attention**, **You're handling this**, **Handled by…** | The [human support](/conversaciones/canales-y-atencion-humana#atención-humana) status |
+| **Agent unavailable** | The agent is no longer available: you can read the conversation, but not continue it. See [Talking to an agent](/conversaciones/conversar-con-un-agente#si-el-agente-ya-no-está-disponible) |
+| **Group** | It's a Telegram group. The title is the group's name |
 
 ## Which conversations each person sees {#qué-conversaciones-ve-cada-persona}
 

@@ -155,7 +155,7 @@ With **Custom permissions** you have to add at least one person and choose the l
 
 | Level | What it allows |
 |---|---|
-| **Can use** | Talk with the agent and attach documents in the chat |
+| **Can use** | Talk with the agent and attach documents to it |
 | **Can edit** | Also change its configuration and share it. Can't delete it |
 | **Can manage** | Everything, including deleting, exporting and importing it |
 

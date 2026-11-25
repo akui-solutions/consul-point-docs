@@ -8,7 +8,7 @@ description: How a distributor organization publishes its agents to the ConsulPo
 
 # Publish agents to the catalog
 
-<PageMeta route="/studio/assistant/details/general/:id">distributor organization; create on **Studio** to publish, edit to configure or withdraw</PageMeta>
+<PageMeta route="/studio/assistant/details/general/:id">distributor organization; create on **Studio** to publish, edit to configure or withdraw, delete to delete it from the catalog</PageMeta>
 
 A **distributor** is an organization that manages other ConsulPoint organizations, its clients. It can build an agent once and **publish it to the catalog** so those organizations install it ready to use, without seeing its instructions or documents. When it improves the agent, it publishes a new version and it reaches all of them.
 
@@ -76,7 +76,7 @@ Once published, the agent's **General** tab has the **Catalog publication** card
 | **Not approved** | Making it public wasn't approved. The distributor's organizations can still install it. The card shows the **Reason** |
 | **Withdrawn** | It can't be installed anymore. Depending on how it was withdrawn, it keeps working where it was installed or it was turned off |
 
-The card shows the published **Version** and its date, **Who can install it**, how **Improvements** arrive and how many organizations have it installed, including those still without the latest version.
+The card shows the published **Version** (for example, `v2.0.0`) and its date, **Who can install it**, how **Improvements** arrive and how many organizations have it installed, including those still without the latest version.
 
 ## Publish a new version {#publicar-una-versión-nueva}
 
@@ -91,6 +91,12 @@ Each organization receives the version according to how improvements arrive:
 
 If an automatic update fails in some organization (for example, because it exceeds a limit of its subscription), the card says **The update failed for … organizations**. **Retry updates** tries again.
 
+### Published versions {#versiones-publicadas}
+
+**View versions**, under the version on the card or in its menu, opens **Published versions**: every version, newest first, with its date, who published it and how many documents it had. **Current** marks the one the catalog offers; if the agent is withdrawn, that mark says **Latest published**. Pick a version to see what it included.
+
+<Screenshot src="/img/en/estudio/versiones-publicadas.png" alt="Published versions window for an agent in ConsulPoint Studio" caption="Published versions" maxWidth={560} />
+
 ## More actions {#más-acciones}
 
 In the card's menu:
@@ -99,7 +105,11 @@ In the card's menu:
 |---|---|
 | **Configure** | Change who can install it and how improvements arrive. It applies right away, without publishing a new version. The change to improvements applies from the next version |
 | **Make it public** | Ask for every ConsulPoint organization to be able to install it. ConsulPoint reviews it; meanwhile it stays **In review** and you get a notice when the review is done |
+| **View versions** | See [Published versions](#versiones-publicadas) |
 | **Withdraw from the catalog** | No organization will be able to install it from then on. See below |
+| **Delete from catalog** | Deletes the publication and leaves the agent in Studio. See below |
+
+If an option is disabled, the reason is shown under it. Once the agent is withdrawn, the menu only offers **View versions** and **Delete from catalog**.
 
 ### Withdraw and reactivate {#retirar-y-reactivar}
 
@@ -111,6 +121,14 @@ When you withdraw an agent that's already installed, you choose what happens to 
 | **Turn it off** | It stops answering in those organizations |
 
 Withdrawing also cancels a request to make it public. To offer it again, **Reactivate in the catalog**: organizations can install it again, and those left on an earlier version receive the latest according to how improvements arrive.
+
+### Delete from catalog {#borrar-del-catálogo}
+
+:::danger Deleted for good
+**Delete from catalog** deletes the publication with its version history and its documents. It can't be undone. The agent stays in Studio and can be published again.
+:::
+
+You confirm by typing the agent's name. It can only be deleted if no organization has it installed: while one does, the option is disabled and says how many. You need delete permission on **Studio** and, on the agent, the **Can manage** level.
 
 ### Delete a published agent {#eliminar-un-agente-publicado}
 

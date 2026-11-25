@@ -75,6 +75,7 @@ A deleted agent can't be recovered. Its own documents and its image are deleted 
 :::
 
 - You can't delete an agent that already has conversations: the button appears disabled and shows how many it has.
+- Nor one published in the catalog, until it's withdrawn. See [Delete a published agent](/control/estudio/publicar-agentes#eliminar-un-agente-publicado).
 - If the agent has documents or specialists assigned, you have to type its name to confirm.
 - With the default roles, only administrators can delete agents.
 

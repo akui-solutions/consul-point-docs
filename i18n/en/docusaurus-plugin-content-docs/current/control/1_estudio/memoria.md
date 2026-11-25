@@ -22,7 +22,7 @@ Memory is only used in direct conversations between the agent and a single perso
 
 | Conversation | Uses memory |
 |---|---|
-| Internal chat of a person alone with the agent | Yes, that person's |
+| Internal conversation of a person alone with the agent | Yes, that person's |
 | WhatsApp | Yes, the contact's |
 | Telegram, private chat | Yes, the contact's |
 | External app | Yes, the contact's |

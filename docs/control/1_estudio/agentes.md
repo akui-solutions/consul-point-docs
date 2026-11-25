@@ -75,6 +75,7 @@ Un agente eliminado no se recupera. Se borran también sus documentos propios y 
 :::
 
 - No se puede eliminar un agente que ya tiene conversaciones: el botón aparece desactivado e indica cuántas tiene.
+- Tampoco uno publicado en el catálogo, hasta retirarlo. Ver [Eliminar un agente publicado](/control/estudio/publicar-agentes#eliminar-un-agente-publicado).
 - Si el agente tiene documentos o especialistas asignados, hay que escribir su nombre para confirmar.
 - Con los roles predeterminados, solo los administradores pueden eliminar agentes.
 

@@ -59,7 +59,7 @@ Los datos que se piden cambian según el canal:
 | **Telegram** | **Nombre de la integración**, **Descripción** (opcional) y **Token del bot** | **Responsable** y **Agente de IA**, obligatorios |
 | **Gmail y Microsoft** | **Nombre de la integración**, **Descripción** (opcional) y **Visibilidad**: **Privada** o **Global**. La cuenta se autoriza con el proveedor | No se asignan |
 | **IMAP** | **Nombre de la integración**, **Descripción** (opcional), **Proveedor de correo**, **Correo electrónico**, **Contraseña**, **Servidor IMAP**, **Puerto** y **Conexión segura** | No se asignan |
-| **Aplicación externa** | **Nombre de la integración**, **Descripción** (opcional), **Tiempo sin actividad antes de abrir un chat nuevo (minutos)** (30 por defecto) y **Exigir firma a la plataforma externa**. Opcionalmente, en **Configurar salida**: **URL de entrega de respuestas** y **API Key de entrega** | En el paso **Equipo**: **Responsable**, **Agente de IA** y equipo o personas. Opcionales |
+| **Aplicación externa** | **Nombre de la integración**, **Descripción** (opcional), **Tiempo sin actividad antes de abrir una conversación nueva (minutos)** (30 por defecto) y **Exigir firma a la plataforma externa**. Opcionalmente, en **Configurar salida**: **URL de entrega de respuestas** y **API Key de entrega** | En el paso **Equipo**: **Responsable**, **Agente de IA** y equipo o personas. Opcionales |
 
 El nombre admite hasta 50 caracteres y la descripción, si se rellena, entre 10 y 255.
 

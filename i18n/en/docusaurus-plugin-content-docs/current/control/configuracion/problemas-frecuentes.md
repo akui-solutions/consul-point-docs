@@ -68,7 +68,7 @@ What to do about the most common warnings and situations when administering an o
 | WhatsApp: error when connecting | See the table in [If something fails](/organizacion/canales/whatsapp#si-algo-falla). If **Meta did not respond**, wait a few minutes and try again |
 | **Number created without assignment** | Assign an agent or a team to the number from the integration details. Without an assignment, nobody answers |
 | WhatsApp: the number does not send or receive | The PIN is missing. Use **Enter PIN** in the integration |
-| WhatsApp: the AI stopped answering in a chat | Someone replied from the WhatsApp Business app: the AI turns off in that chat. See [Number mode](/organizacion/canales/whatsapp#modo-del-número) |
+| WhatsApp: the AI stopped answering in a conversation | Someone replied from the WhatsApp Business app: the AI turns off in that conversation. See [Number mode](/organizacion/canales/whatsapp#modo-del-número) |
 | Telegram: **Could not create bot** | The token is not correct. Copy it again from BotFather. If it was regenerated there, delete the integration and create it again. See [Telegram](/organizacion/canales/telegram) |
 | Telegram: you cannot write to a contact | The contact has to write to the bot first |
 | External app: **Not connected** | The delivery URL is missing. Use **Edit** and fill it in. See [External app](/organizacion/canales/aplicacion-externa) |
@@ -112,6 +112,6 @@ What to do about the most common warnings and situations when administering an o
 | **You've reached your subscription's limit** when creating a workspace | Inactive workspaces also count. See [Workspaces](/modulos/espacios-de-trabajo#crear-un-espacio) |
 | **Unable to send invitation** | The person is already a member of the workspace, or there was a one-off problem. Check the **Users** tab |
 | An invitation appears as **Expired** | 7 days have passed. Use **Resend** from the menu on its row |
-| A workspace does not appear in the selector | It is inactive. Activate it from the list of workspaces |
+| A workspace does not appear in the selector | It is inactive: activate it from the list of workspaces. If the selector shows no workspaces at all, the role does not have access to **Workspaces** |
 | The **Manage workspaces** gear icon does not appear | It only shows in the main organization, not inside a workspace |
 | An agent or an app cannot be unlinked | Only the workspace's **Admin** can do it |

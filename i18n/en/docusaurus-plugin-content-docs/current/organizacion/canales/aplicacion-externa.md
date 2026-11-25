@@ -24,7 +24,7 @@ In **Settings → Connectors**, click **Add integration → External app**. **Co
 |---|---|
 | **Integration name** | Required, between 3 and 100 characters |
 | **Description** | Optional; if filled in, between 10 and 500 characters |
-| **Time without activity before a new chat (minutes)** | Required, from 1 to 10,080. Default: 30. If the user doesn't write for that long, their next message opens a new conversation |
+| **Time without activity before starting a new conversation (minutes)** | Required, from 1 to 10,080. Default: 30. If the user doesn't write for that long, their next message opens a new conversation |
 | **Require partner signature** | If turned on, the other system has to sign every message it sends, in addition to using the API key |
 
 Click **Create channel**.
@@ -61,7 +61,7 @@ Besides the API key, the other system needs this channel's identifier to send th
 
 ## After creating it {#después-de-crearlo}
 
-The integration details show **New chat after inactivity**, the **Replies URL**, whether there's a **Signing secret** and whether **Signature required** is on.
+The integration details show **New conversation after inactivity**, the **Replies URL**, whether there's a **Signing secret** and whether **Signature required** is on.
 
 | Action | What it does |
 |---|---|

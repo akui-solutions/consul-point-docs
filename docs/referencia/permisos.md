@@ -39,6 +39,8 @@ En la pantalla de permisos de un rol, cada módulo tiene cuatro permisos: **Ver*
 | **Organización** | [Organización](/organizacion/datos-de-la-organizacion) |
 | **Auditoría y reportes** | [Auditoría y Reportes](/control/auditoria-y-reportes) |
 
+En el **Estudio**, algunas acciones exigen además un nivel de [acceso](/control/estudio/agentes#acceso) en el propio agente: editarlo, activar o desactivar un agente del catálogo y borrar del catálogo un agente publicado.
+
 ## Secciones solo para administradores
 
 Estas secciones de Configuración solo las ve el rol **Administrador**, aunque otro rol tenga permisos sobre el módulo:

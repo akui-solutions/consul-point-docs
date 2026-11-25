@@ -14,12 +14,15 @@ description: Solutions to the most common issues in ConsulPoint Conversations.
 |---|---|
 | It answers generically, without using the documents | Check **View sources**. If there are no sources, see [Common issues in Studio](/control/estudio/problemas-frecuentes#el-agente-responde-de-forma-genérica-sin-usar-los-documentos) |
 | An agent does not appear when starting the conversation | You do not have access to it. An administrator grants it, in the agent's **Access** tab |
-| **This agent is no longer available** | It's a catalog agent its publisher withdrew and turned off. The message isn't sent and the conversation can only be read. See [Catalog agents](/control/estudio/agentes-del-catalogo#si-lo-retiran-del-catálogo) |
+| **This agent is no longer available** or **Agent unavailable** | It's a catalog agent its publisher withdrew, or that your organization uninstalled or deactivated. The conversation can only be read; **New conversation** opens another one with an available agent. See [If the agent is no longer available](/conversaciones/conversar-con-un-agente#si-el-agente-ya-no-está-disponible) |
+| **Agents could not be loaded.** | Loading failed. Click **Retry** |
 | You cannot switch agents | The agent is fixed with the first message. Open a new conversation |
 | **Web search**, **Attach files** or **Dictate** does not appear | The agent does not have that built-in function. It is turned on in Studio, in the agent's **Capabilities** tab |
 | **The response was interrupted** | Send the message again |
 | **Context window is almost full** | Open a new conversation |
 | Agents stop answering | The organization has run out of credits. Check the usage |
+| An image in the answer shows **External image from…** | It comes from another website and doesn't load on its own. Click **Show** |
+| **Delete this fragment** doesn't appear in the sources | You need edit permission on the Knowledge Hub or Studio, depending on where the source comes from |
 | **Agent memory** doesn't appear | The agent has no memory, or the conversation is shared with other people. See [What the agent remembers](/conversaciones/conversar-con-un-agente#lo-que-recuerda-el-agente) |
 | **Memory full** on an answer | What the agent remembers reached its limit. In **Agent memory**, **Edit** and delete what's no longer useful |
 | **Memory not updated** on an answer | The agent couldn't save something. Ask again later |
@@ -39,6 +42,9 @@ description: Solutions to the most common issues in ConsulPoint Conversations.
 
 | Symptom | Cause and solution |
 |---|---|
+| **The conversations couldn't be loaded.** | Loading failed. Click **Retry** |
+| **No conversation matches your search.** | The search or the agent filter finds nothing. **Clear filters** shows the full list |
+| The tabs by channel don't appear | The organization's subscription doesn't include integrations |
 | The **New conversation** button is disabled | The organization has no active subscription, or your role does not allow creating conversations |
 | **Share conversation** does not appear | The conversation has no messages yet, or your role does not allow editing it |
 | You cannot find a person when sharing | They do not have access to the conversation's agent |
@@ -50,6 +56,12 @@ description: Solutions to the most common issues in ConsulPoint Conversations.
 | Symptom | Cause and solution |
 |---|---|
 | You cannot see the conversations of a WhatsApp or Telegram | You are not part of that integration's team |
-| **You don't have a … connection set up yet** | There is no integration for that channel. See [Integrations and channels](/modulos/integraciones) |
+| **Connect … to see its conversations here.** | There is no integration for that channel. **Go to Connectors** takes you to create it. See [Integrations and channels](/modulos/integraciones) |
+| **WhatsApp** or **Telegram** doesn't appear in **New conversation** | There is no active connection for that channel (or the WhatsApp one expired), or your role has no permission on the integrations |
+| A WhatsApp template shows as **Can't be sent from here yet** | It uses a format the platform doesn't send yet. See [Starting a conversation on WhatsApp or Telegram](/conversaciones/canales-y-atencion-humana#iniciar-una-conversación-por-whatsapp-o-telegram) |
+| **This connection has no approved templates.** | Create and approve a template in Meta Business Manager |
+| **This connection has no agent assigned.** or **…has no user or team…** | Complete the integration in [Integrations and channels](/modulos/integraciones) |
+| **Assign contact** or **Remove assigned contact** doesn't appear | You need permission to create or delete in **Contacts**, and the subscription has to include it. In Telegram groups no contact is assigned |
+| The agent doesn't answer in a Telegram group | By default, Telegram only delivers to the bot the messages that mention it or reply to it. See [Telegram groups](/conversaciones/canales-y-atencion-humana#grupos-de-telegram) |
 | You cannot write in a conversation | Someone else is handling it |
 | The agent does not answer on a channel | Someone took control or the conversation is being handled. **Activate agent** or **Mark as resolved** |
