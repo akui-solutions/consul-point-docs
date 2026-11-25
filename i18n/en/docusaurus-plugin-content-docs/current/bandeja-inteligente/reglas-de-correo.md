@@ -70,16 +70,33 @@ Each attachment can be up to 25 MB.
 
 **Analyze with AI**
 
+When you turn it on, two fields are asked for, in this order:
+
 | Field | Description |
 |---|---|
-| **Micro-agent (optional)** | A [micro-agent](/control/estudio/microagentes) of type **Mail Reader** or **Email to Markdown**. Empty: no analysis |
-| **Summaries folder** | Only with a **Mail Reader**. A summary file is saved here for each analyzed email, in monthly subfolders |
+| **Results folder** | Required. One file per analyzed email is saved here, in monthly subfolders |
+| **Mail reader** | Required. A [Mail Reader](/control/estudio/microagentes#lector-de-correo). It is chosen after the folder, because the folder decides which readers can be used |
 
-Analysis uses credits. See [AI analysis](/bandeja-inteligente/analisis-con-ia) for the difference between the two types.
+<Screenshot src="/img/bandeja-inteligente/analizar-con-ia.png" alt="Analyze with AI card of an email rule, with the results folder and the list of mail readers grouped by result" caption="Analyze with AI: first the folder, then the reader" />
 
-:::info Summaries folder requirements
-It must be a folder you can write to and that is not a [Smart Extract](/centro-de-conocimiento/extraccion-inteligente) folder. The micro-agent must use a Google model.
+Readers are grouped by their result, **Structured data** or **Summary**. The ones that do not fit the folder are shown disabled, with the reason:
+
+| Reason | Why |
+|---|---|
+| **This folder has a schema: it only accepts structured data readers** | The folder has a [schema](/control/estudio/esquemas-de-datos) assigned |
+| **This folder already holds summaries** / **This folder already holds structured data** | A folder holds a single kind of result, and another rule already uses it with the other one |
+
+Analysis uses credits. See [AI analysis](/bandeja-inteligente/analisis-con-ia).
+
+:::info Results folder requirements
+It must be a folder you can write to and that is not a [Smart Extract](/centro-de-conocimiento/extraccion-inteligente) folder.
 :::
+
+:::warning Rules without a folder
+A rule with a Mail Reader and no results folder does not analyze emails. The rule list marks it with **No folder**, and editing it asks you to choose one.
+:::
+
+When you change a rule's folder, if its reader no longer fits the new folder, you have to choose another reader before saving.
 
 ## Save attachments from existing emails {#guardar-los-adjuntos-de-correos-que-ya-existen}
 

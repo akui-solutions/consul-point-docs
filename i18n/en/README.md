@@ -86,7 +86,8 @@ Nombres de módulos y conceptos, como los muestra la plataforma en inglés.
 | Habilidad | Skill |
 | Biblioteca de esquemas | Schema library |
 | Extracción inteligente | Smart Extract |
-| Reglas de correo / Carpeta de resúmenes | Email rules / Summaries folder |
+| Reglas de correo / Carpeta para los resultados | Email rules / Results folder |
+| Lector de correo / Resultado (Datos estructurados, Resumen) | Mail Reader / Result (Structured data, Summary) |
 | Mis documentos / Compartidos conmigo | My documents / Shared with me |
 | Disponible para agentes | Available to agents |
 | Atención humana | Human support |

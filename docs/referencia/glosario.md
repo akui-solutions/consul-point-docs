@@ -66,6 +66,10 @@ Los términos que aparecen en la plataforma y en esta documentación, en orden a
 - **Instrucciones del sistema**: texto que define el papel de un agente, sus límites y cómo responde. Es lo que más influye en la calidad de sus respuestas. Ver [Instrucciones del sistema](/control/estudio/crear-un-agente#comportamiento-instrucciones-del-sistema).
 - **Integración**: conexión de un canal con la plataforma: WhatsApp, Telegram, una cuenta de correo o una aplicación externa. Ver [Integraciones y canales](/modulos/integraciones).
 
+## L
+
+- **Lector de correo**: microagente que lee los correos de una regla de la Bandeja Inteligente y guarda en la carpeta de la regla datos estructurados o un resumen, según el **Resultado** elegido al crearlo. Ver [Lector de correo](/control/estudio/microagentes#lector-de-correo).
+
 ## M
 
 - **Memoria**: función integrada con la que un agente recuerda lo relevante de cada persona o contacto entre conversaciones. Ver [Memoria de los agentes](/control/estudio/memoria).

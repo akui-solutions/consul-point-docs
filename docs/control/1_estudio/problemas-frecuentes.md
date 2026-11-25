@@ -71,7 +71,8 @@ description: Soluciones a los problemas más habituales al crear y usar agentes,
 | Síntoma | Causa y solución |
 |---|---|
 | El microagente no aparece al configurar una carpeta de extracción | Solo se ofrecen los de tipo **Extractor de documentos**. El tipo no se puede cambiar: crear uno nuevo del tipo correcto |
-| El microagente no aparece en las reglas de la Bandeja Inteligente | Solo se ofrecen los de tipo **Lector de correo** y **Email a Markdown** |
+| El microagente no aparece en las reglas de la Bandeja Inteligente | Solo se ofrecen los de tipo **Lector de correo**, y solo los que encajan con la carpeta de la regla |
+| No se puede cambiar el **Resultado** de un lector de correo | Se elige al crearlo y queda fijo. Para otro resultado, crear otro lector |
 | Los datos extraídos salen incompletos o con avisos | Revisar la instrucción de ejecución y las descripciones de los campos del esquema. Ver [Microagentes](/control/estudio/microagentes#buenas-prácticas) |
 | Se creó un segundo analizador de conversaciones y no se usa | La plataforma usa el primero creado en la organización |
 | No se puede editar una versión de un esquema | Está en uso. Crear una **Nueva versión** |

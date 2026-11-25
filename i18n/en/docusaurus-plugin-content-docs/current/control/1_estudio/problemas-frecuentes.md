@@ -71,7 +71,8 @@ description: Solutions to the most common issues when creating and using agents,
 | Symptom | Cause and solution |
 |---|---|
 | The micro-agent doesn't appear when setting up an extraction folder | Only **Document Extractor** micro-agents are offered. The type can't be changed: create a new one of the right type |
-| The micro-agent doesn't appear in Smart Inbox rules | Only **Mail Reader** and **Email to Markdown** micro-agents are offered |
+| The micro-agent doesn't appear in Smart Inbox rules | Only **Mail Reader** micro-agents are offered, and only those that fit the rule's folder |
+| The **Result** of a Mail Reader can't be changed | It is chosen when it is created and stays fixed. For another result, create another reader |
 | The extracted data is incomplete or has warnings | Review the execution instruction and the descriptions of the schema fields. See [Micro-agents](/control/estudio/microagentes#buenas-prácticas) |
 | A second conversation analyzer was created and isn't used | The platform uses the first one created in the organization |
 | A schema version can't be edited | It's in use. Create a **New version** |
