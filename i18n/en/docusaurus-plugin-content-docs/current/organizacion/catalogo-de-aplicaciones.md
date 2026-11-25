@@ -56,7 +56,7 @@ Clicking the card opens its details: the version, the installation date, the cat
 | **Update** | The resources that change are reviewed first | Direct | Asks for confirmation. Replaces instructions and files; keeps name, status and agents |
 | **Uninstall** | Asks for confirmation and lets you also delete what it created | Asks for confirmation. Those assigned to the organization can't be uninstalled | Asks for confirmation. It's deleted from the library and from the agents that used it |
 
-Agents are installed, updated and uninstalled as explained in [Catalog agents](/control/estudio/agentes-del-catalogo).
+Agents are installed, updated and uninstalled as explained in [Catalog agents](/control/estudio/agentes-del-catalogo). An uninstalled agent that had conversations comes back when you install it again.
 
 Installing and updating require create permission on the corresponding module (for agents, **Studio**); uninstalling, delete permission. The subscription sets how many skills, connectors and resources you can have: when you reach the maximum, the platform tells you before installing. See [Credits and limits](/organizacion/creditos-y-limites#límites-de-la-suscripción).
 

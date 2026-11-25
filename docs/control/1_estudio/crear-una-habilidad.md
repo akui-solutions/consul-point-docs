@@ -58,10 +58,10 @@ En el detalle de una habilidad:
 
 | Acción | Qué hace |
 |---|---|
-| **Editar** | Cambia los datos y las instrucciones. Los cambios se aplican a todos los agentes que la tienen asignada. Solo en habilidades **Propia** |
+| **Editar** | Cambia los datos y las instrucciones. Los cambios se aplican a todos los agentes que la tienen asignada. Solo en habilidades **De la organización** |
 | **Activar** / **Desactivar** | Una habilidad desactivada sigue asignada, pero ningún agente la usa |
 | **Exportar** | Descarga el paquete .zip |
-| **Eliminar** | La elimina de la biblioteca y de los agentes. No se puede deshacer. Solo en habilidades **Propia** |
+| **Eliminar** | La elimina de la biblioteca y de los agentes. No se puede deshacer. Solo en habilidades **De la organización** |
 
 La tarjeta de uso muestra cuántas veces se ha usado la habilidad, cuándo fue la última y los resultados de sus scripts.
 

@@ -45,9 +45,11 @@ You choose the type when you create the agent, and you can't change it later.
 |---|---|
 | **Agents** | Your organization's agents |
 | **Specialists** | The specialists available to assign to agents |
-| **Micro-agents** | The micro-agents, with their type and schema |
+| **Micro-agents** | The micro-agents, with their type |
 | **Skills** | Reusable procedures you assign to agents and specialists. See [Skills](/control/estudio/habilidades) |
 | **Schema library** | Data structures that micro-agents, folders and apps can reuse. It only appears if you have permission on the library |
+
+In the agent, specialist and micro-agent lists, the **Origin** column shows where each one comes from (**From the organization**, **From the catalog** or **From application …**) and **Status**, whether it's **Active** or **Inactive**. Only catalog items can be inactive. See [Catalog agents](/control/estudio/agentes-del-catalogo#activar-y-desactivar).
 
 On each tab, the button in the corner creates an item of that type (**New agent**, **New specialist**, **New micro-agent** or **New schema**). You can filter the lists by name and by model; the micro-agents list, by type as well.
 

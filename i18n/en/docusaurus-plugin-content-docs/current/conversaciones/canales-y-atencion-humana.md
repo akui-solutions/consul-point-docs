@@ -16,7 +16,7 @@ To connect a channel, see [Integrations and channels](/modulos/integraciones).
 
 The integration's owner and its team, set up in the integration, see them. If the team changes, who sees the conversations changes too.
 
-In the header, the title is the contact's name, and below it you see the channel and the agent that answers.
+In the header, the title is the contact's name, and below it you see the channel and the agent that answers. In a [Telegram group](#grupos-de-telegram), the title is the group's name.
 
 ## Taking control {#tomar-el-control}
 
@@ -27,7 +27,7 @@ In channel conversations, who is answering is shown above the message box:
 | **… is responding automatically** | The agent answers on its own | **Take control** |
 | **Manual mode: you're responding directly to the channel** | What you write reaches the contact as is, without the agent | **Activate agent** |
 
-The conversation's owner can also turn the agent on or off in **More options** → **Agent responses**.
+The agent icon, next to the message box, does the same. Anyone taking part in the conversation can use it. While the agent is off, the header shows **Agent disabled**.
 
 ## Human support {#atención-humana}
 
@@ -68,15 +68,36 @@ From **New conversation** you can also write to a contact first:
 | **WhatsApp** | **WhatsApp connection**, **Phone number**, **Contact name (optional)** and an **Approved template**, with its variables. WhatsApp only allows starting conversations with approved templates |
 | **Telegram** | An **Existing contact** or their **Telegram chat ID**, and the **Message** |
 
-These options only appear with permission on the integrations.
+Each option only appears with permission on the integrations and with at least one active connection for that channel (on WhatsApp, also not expired). You can only choose active connections.
+
+Some WhatsApp templates can't be sent from the platform yet and show as **Can't be sent from here yet**: those with an image, a video, a document or a location in the header, variables in the header, or buttons that carry their own data (copy a code, a verification code, a catalog or a link with a variable). You can use the ones with only text, variables in the body and fixed buttons.
 
 ## Contacts {#contactos}
 
+When a conversation comes in from someone who isn't linked to any contact, the platform looks for a similar one. If it finds one, the conversation shows **Is this …?**, with the detail that matches, and the buttons **Yes, that is them** or **Not now**.
+
 In **More options**, **Assign contact** links the conversation to a contact in your directory, and **Remove assigned contact** unlinks it.
+
+| Action | What you need |
+|---|---|
+| See the **Is this …?** suggestion | Permission to view and create in **Contacts** |
+| **Assign contact** | Permission to create in **Contacts** |
+| **Remove assigned contact** | Permission to delete in **Contacts** |
+
+In every case, the subscription has to include Contacts. In Telegram groups, no contact is suggested or assigned.
+
+## Telegram groups {#grupos-de-telegram}
+
+A connected Telegram bot can also be added to a group. Each group is a single conversation in the platform:
+
+- In the list, on Home and in the header it shows with the group's name and the **Group** badge. If the group has no name, it shows **Telegram group**.
+- The agent answers the group messages the bot receives. By default, Telegram only delivers the messages that mention the bot or reply to it; for it to receive all of them, turn off the bot's privacy mode in @BotFather or make it an administrator of the group.
+- A group isn't linked to a contact, because several people write in it. In **Conversation Details**, the **Group name** appears under **Conversation Information**. If the group was linked to a contact before, it shows as **Assigned contact** and you can remove it with **Remove assigned contact**.
+- The agent doesn't keep [memory](/control/estudio/memoria) of a group.
 
 ## Contact memory {#memoria-del-contacto}
 
-If the agent has [memory](/control/estudio/memoria), it remembers what matters about each WhatsApp, Telegram or external app contact: their name, language, previous requests and what's pending. It uses it every time the contact writes to it. In Telegram groups it saves nothing.
+If the agent has [memory](/control/estudio/memoria), it remembers what matters about each WhatsApp, Telegram or external app contact: their name, language, previous requests and what's pending. It uses it every time the contact writes to it.
 
 Administrators can check it from the conversation: in **More options**, **Agent memory**, or in **Conversation details**, **See what it remembers**. The **What it remembers about this contact** window shows the text and the date of the last update.
 

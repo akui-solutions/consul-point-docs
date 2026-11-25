@@ -32,11 +32,11 @@ Si se edita, desactiva o quita una habilidad, el cambio se aplica a las conversa
 
 ## La biblioteca
 
-En el Estudio, la pestaña **Habilidades** reúne las habilidades de la organización, con su **Estado**, su **Uso** (cuántas veces la han usado los agentes) y su **Origen**:
+En el Estudio, la pestaña **Habilidades** reúne las habilidades de la organización, con su **Estado**, su **Uso** (cuántas veces la han usado los agentes y, si alguno falló, cuántas ejecuciones de sus scripts terminaron con error; el último uso se ve al pasar el cursor) y su **Origen**:
 
 | Origen | Significado |
 |---|---|
-| **Propia** | Creada o importada por la organización. Se puede editar y eliminar |
+| **De la organización** | Creada o importada por la organización. Se puede editar y eliminar |
 | **Del catálogo** | Instalada desde el [Catálogo de integraciones](/organizacion/catalogo-de-aplicaciones). Se puede activar o desactivar, pero no editar; para quitarla, se desinstala desde el catálogo |
 
 La lista se puede buscar por nombre o etiqueta y filtrar por **Estado** y **Origen**. Una habilidad **Desactivada** sigue asignada a sus agentes, pero ninguno la usa hasta que se vuelva a activar.

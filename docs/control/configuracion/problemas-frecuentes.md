@@ -68,7 +68,7 @@ Qué hacer ante los avisos y situaciones más habituales al administrar una orga
 | WhatsApp: error al conectar | Ver la tabla de [Si algo falla](/organizacion/canales/whatsapp#si-algo-falla). Si **Meta no respondió**, esperar unos minutos e intentarlo de nuevo |
 | **Número creado sin asignar** | Asignar un agente o un equipo al número desde los detalles de la integración. Sin asignar, nadie responde |
 | WhatsApp: el número no envía ni recibe | Falta el PIN. **Introducir PIN** en la integración |
-| WhatsApp: la IA dejó de responder en un chat | Alguien respondió desde la app WhatsApp Business: la IA se apaga en ese chat. Ver [Modo del número](/organizacion/canales/whatsapp#modo-del-número) |
+| WhatsApp: la IA dejó de responder en una conversación | Alguien respondió desde la app WhatsApp Business: la IA se apaga en esa conversación. Ver [Modo del número](/organizacion/canales/whatsapp#modo-del-número) |
 | Telegram: **No se pudo crear el bot** | El token no es correcto. Copiarlo de nuevo desde BotFather. Si se regeneró allí, eliminar la integración y crearla otra vez. Ver [Telegram](/organizacion/canales/telegram) |
 | Telegram: no se puede escribir a un contacto | El contacto tiene que escribir primero al bot |
 | Aplicación externa: **Sin conectar** | Falta la URL de entrega. **Editar** y completarla. Ver [Aplicación externa](/organizacion/canales/aplicacion-externa) |
@@ -112,6 +112,6 @@ Qué hacer ante los avisos y situaciones más habituales al administrar una orga
 | **Llegaste al tope de tu suscripción** al crear un espacio | Los espacios inactivos también cuentan. Ver [Espacios de trabajo](/modulos/espacios-de-trabajo#crear-un-espacio) |
 | **No se pudo enviar la invitación** | La persona ya es miembro del espacio, o hubo un problema puntual. Revisar la pestaña **Usuarios** |
 | Una invitación aparece **Expirada** | Pasaron 7 días. **Reenviar** desde el menú de su fila |
-| Un espacio no aparece en el selector | Está inactivo. Activarlo desde la lista de espacios |
+| Un espacio no aparece en el selector | Está inactivo: activarlo desde la lista de espacios. Si el selector no muestra ningún espacio, el rol no tiene acceso a **Espacios de trabajo** |
 | No aparece el engranaje **Gestionar espacios de trabajo** | Solo se muestra en la organización principal, no dentro de un espacio |
 | No se puede desvincular un agente o una aplicación | Solo puede hacerlo el **Administrador** del espacio |

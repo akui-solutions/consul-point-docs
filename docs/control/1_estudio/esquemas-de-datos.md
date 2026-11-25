@@ -20,6 +20,8 @@ Un esquema se puede vincular a:
 
 Un microagente también puede tener una estructura propia, definida en su formulario. La biblioteca conviene cuando la misma estructura la comparten varios elementos o cuando una aplicación depende de ella.
 
+En la lista de la biblioteca, la columna **Origen** indica si el esquema es **De la organización** o lo creó una aplicación al instalarse (**De la aplicación …**).
+
 ## Crear un esquema
 
 1. En el Estudio, pestaña **Biblioteca de esquemas**, pulsar **Nuevo esquema**.

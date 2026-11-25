@@ -62,9 +62,18 @@ description: Solutions to the most common issues when creating and using agents,
 
 | Symptom | Cause and solution |
 |---|---|
-| **Delete** is disabled on an agent | The agent already has conversations. Agents with conversations can't be deleted |
+| **Delete** is disabled on an agent | The agent already has conversations: agents with conversations can't be deleted. Or it's published in the catalog (**It's published in the catalog. Withdraw it from the catalog before deleting it.**): withdraw it first. See [Publish agents](/control/estudio/publicar-agentes#eliminar-un-agente-publicado) |
 | **Delete** doesn't appear | With the default roles, only administrators delete agents |
 | An image describer can't be deleted | A folder uses it in its **PDF conversion**. First change the describer of those folders |
+| **Delete from catalog** is disabled | The published agent is installed in some organization; the option says how many. You can delete it once no organization has it installed |
+
+## Catalog agents {#agentes-del-catálogo}
+
+| Symptom | Cause and solution |
+|---|---|
+| The agent shows **Inactive** and doesn't answer | It was turned off in the organization. Click **Turn on** in its detail header. See [Turn on and off](/control/estudio/agentes-del-catalogo#activar-y-desactivar) |
+| Its conversations show **This agent is no longer available** | The agent is turned off, was uninstalled, or the publisher withdrew it and turned it off. See [Catalog agents](/control/estudio/agentes-del-catalogo) |
+| **Turn on** and **Turn off** don't appear | They only exist on catalog agents. You need edit permission on **Studio** and the **Can edit** level or higher on the agent; with the access it's installed with, only administrators |
 
 ## Micro-agents {#microagentes}
 

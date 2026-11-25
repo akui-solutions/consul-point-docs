@@ -13,11 +13,17 @@ How to start a conversation, write, attach files, use the agent's tools and unde
 ## Starting a conversation {#iniciar-una-conversación}
 
 1. Click **New conversation** in the list.
-2. Choose **Internal chat** (the **WhatsApp** and **Telegram** options start a conversation with an external contact; see [Channels and human support](/conversaciones/canales-y-atencion-humana)).
-3. Choose an agent. **View all options** opens a search box with every agent you have access to.
+2. Choose **Internal conversation** (the **WhatsApp** and **Telegram** options start a conversation with an external contact; see [Channels and human support](/conversaciones/canales-y-atencion-humana#iniciar-una-conversación-por-whatsapp-o-telegram)).
+3. Choose an agent. **See all agents** opens a search box with every agent you have access to.
 4. Write your first question, or click one of the **conversation starters** the agent offers.
 
 The agent is fixed once you send the first message: to talk to another agent, open a new conversation.
+
+### If the agent is no longer available {#si-el-agente-ya-no-está-disponible}
+
+An agent from the [catalog](/control/estudio/agentes-del-catalogo) stops being available when its publisher withdraws it, or when your organization uninstalls or deactivates it. Its conversations are marked **Agent unavailable** and, instead of the message box, you see **This agent is no longer available. You can read the conversation, but not send messages.**
+
+**New conversation** opens a new conversation so you can choose another agent. If a message was sent just as the agent stopped being available, it is marked **Not sent: agent unavailable**.
 
 ## Writing {#escribir}
 
@@ -53,9 +59,11 @@ Active tools are shown as chips above the message box and are removed by clickin
 
 Answers can include formatted text, tables, diagrams (with **Download SVG** and **View fullscreen**), CSV data (**Download CSV**), images and figures from the Knowledge Hub documents.
 
+Click an image to enlarge it (**View larger image**) and download it with **Download image**. Images from other websites don't load on their own: you see **External image from…** with the site's name, and they show when you click **Show**.
+
 ### What the agent did {#qué-hizo-el-agente}
 
-Above each answer, a line sums up what the agent did to answer: **Took 3 actions**, or the action itself if there was only one. While it answers, the line shows live what it is doing (**Searching the documents…**). Clicking it shows the steps and, for each one, the **Query** and the **Result**; for web searches, the **Pages consulted**.
+Above each answer, a line sums up what the agent did to answer: **Took 3 actions**, or the action itself if there was only one. While it answers, the line shows live what it is doing (**Searching the documents…**), and below it the stage is shown: **Thinking...**, **Reviewing sources…** while it reads what it found, **Generating image...** or **Generating audio...**. Clicking it shows the steps and, for each one, the **Query** and the **Result**; for web searches, the **Pages consulted**.
 
 | Action | When it appears |
 |---|---|
@@ -94,15 +102,18 @@ If a message is not sent, **Retry message** tries again.
 | Type | What it is |
 |---|---|
 | **Knowledge hub** / **Internal knowledge base** | Fragments of documents, with their relevance percentage and the search that found them |
-| **Web source** | Internet pages consulted |
+| **Web source** | Internet pages consulted. They open in a new tab |
 | **Verified source Cala AI** | Certified sources |
 | **Multimedia resource** | Video or audio transcripts |
+| **Processed documents** | Data extracted from documents with [Smart Extract](/centro-de-conocimiento/extraccion-inteligente) |
 
 It is the best way to check that the agent answers with your organization's documents and not with the model's general knowledge.
 
 :::danger Deleting a fragment
-**Delete this fragment** removes that fragment from the agent's knowledge, for everyone and every conversation. It cannot be undone. Use it only to remove incorrect information. The original document does not change.
+**Delete this fragment** removes that fragment from the knowledge, for everyone and every conversation. If it comes from the Knowledge Hub, any agent that consults that document stops using it. It cannot be undone. Use it only to remove incorrect information. The original document does not change.
 :::
+
+**Delete this fragment** only appears with edit permission on the module the source comes from: the **Knowledge Hub** for **Knowledge hub** sources, and **Studio** for the rest.
 
 ## What the agent remembers {#lo-que-recuerda-el-agente}
 

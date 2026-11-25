@@ -14,7 +14,7 @@ Los términos que aparecen en la plataforma y en esta documentación, en orden a
 
 - **Agente**: asistente de IA que conversa con las personas, en la plataforma o en un canal conectado. Ver [Agentes](/control/estudio/agentes).
 - **Agente de búsqueda**: microagente que busca en los documentos de las carpetas con los criterios y la terminología de la organización. Se asigna a carpetas, no a agentes. Ver [Agente de búsqueda](/control/estudio/microagentes#agente-de-búsqueda).
-- **Agente del catálogo**: agente ya hecho que la organización instala desde el Catálogo de integraciones. Se usa, pero no se edita. Ver [Agentes del catálogo](/control/estudio/agentes-del-catalogo).
+- **Agente del catálogo**: agente ya hecho que la organización instala desde el Catálogo de integraciones. Se usa y se puede activar o desactivar, pero no se edita. Ver [Agentes del catálogo](/control/estudio/agentes-del-catalogo).
 - **Aplicación integrada**: aplicación con pantalla propia que se muestra dentro de ConsulPoint y trabaja con los datos de la organización. Según su origen, es **Instalada** (del catálogo) o **Propia**; según su tipo, **Extensión**, **Visualizador** o **Filtro**. Ver [Aplicaciones integradas](/aplicaciones-integradas).
 - **Artículos y novedades**: módulo para publicar contenido para la organización, como comunicados o guías internas. Ver [Artículos y novedades](/modulos/articulos-y-novedades).
 

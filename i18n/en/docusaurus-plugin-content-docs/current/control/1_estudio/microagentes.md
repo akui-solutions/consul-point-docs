@@ -112,7 +112,7 @@ In contracts, "addendum" and "amendment" mean the same thing; always prioritize 
 | **General** | Type, description, origin, model, temperature, dates, owner, system instructions and execution instruction |
 | **Response schema** | The structure it returns, its own or from the library (with its version) |
 
-In the list, the **Schema** column shows whether it uses one from the **Library**, a **Custom** one, or none. Micro-agents installed by an app from the catalog show **From application** and the app's name.
+In the list, the type shows under the name, and micro-agents installed by an app from the catalog show **From application** and the app's name under **Origin**.
 
 ## Delete {#eliminar}
 

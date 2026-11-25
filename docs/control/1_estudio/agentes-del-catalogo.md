@@ -8,11 +8,11 @@ description: Cómo instalar un agente ya hecho desde el Catálogo de integracion
 
 # Agentes del catálogo
 
-<PageMeta route="/store/agents">ver sobre **Estudio** para verlos; crear para instalarlos y actualizarlos; eliminar para desinstalarlos</PageMeta>
+<PageMeta route="/store/agents">ver sobre **Estudio** para verlos; crear para instalarlos y actualizarlos; editar para activarlos o desactivarlos; eliminar para desinstalarlos</PageMeta>
 
 Además de crear agentes propios, la organización puede instalar **agentes ya hechos** desde la pestaña **Agentes** del [Catálogo de integraciones](/organizacion/catalogo-de-aplicaciones). Los publican ConsulPoint y, si la organización trabaja con una distribuidora, también esa distribuidora.
 
-Un agente del catálogo llega listo para usar: con sus instrucciones, sus documentos, sus especialistas y sus habilidades. La organización lo usa, pero no lo edita: quien lo publica lo mantiene y envía las versiones nuevas.
+Un agente del catálogo llega listo para usar: con sus instrucciones, sus documentos, sus especialistas y sus habilidades. La organización lo usa y puede activarlo o desactivarlo, pero no lo edita: quien lo publica lo mantiene y envía las versiones nuevas.
 
 **Casos de uso:** un agente de atención al cliente preparado por la distribuidora para todas sus organizaciones; un asistente especializado en una normativa, con su documentación incluida.
 
@@ -37,7 +37,7 @@ Al pulsar la tarjeta se abre el detalle, con la versión, la categoría, **Para 
 2. En **Instalar agente**, revisar lo que se va a crear: **Este agente**, sus especialistas, microagentes, habilidades y esquemas de datos. Los marcados **Opcional** se pueden quitar.
 3. Si un nombre ya existe en la organización, se propone otro, que se puede cambiar.
 4. Elegir el **Modelo de IA** con el que responderá el agente. Por defecto, el que eligió quien lo publica.
-5. Pulsar **Instalar agente**.
+5. Pulsar **Instalar agente** (**Instalar agente y … más**, si se instalan también otros recursos).
 
 Al terminar aparece **Agente instalado**, y el agente ya está en el Estudio.
 
@@ -49,7 +49,7 @@ Al terminar aparece **Agente instalado**, y el agente ya está en el Estudio.
 
 ## En el Estudio
 
-Un agente instalado aparece en el Estudio con la marca **Del catálogo**: se puede usar, pero no editar.
+En la lista del Estudio, un agente instalado aparece como **Del catálogo** en la columna **Origen**: se puede usar, pero no editar. La columna **Estado** indica si está **Activo** o **Inactivo**, y muestra **Nueva versión** cuando hay una sin aplicar.
 
 <Screenshot src="/img/estudio/agente-del-catalogo.png" alt="Detalle de un agente del catálogo en el Estudio de ConsulPoint" caption="Un agente del catálogo en el Estudio" />
 
@@ -59,12 +59,13 @@ Un agente instalado aparece en el Estudio con la marca **Del catálogo**: se pue
 | Decidir quién lo usa, en la pestaña **Acceso** | Ver sus instrucciones ni el contenido de sus documentos |
 | Activar o desactivar sus habilidades | Editar sus habilidades ni ver su contenido |
 | Compartir con él carpetas del [Centro de Conocimiento](/centro-de-conocimiento/conocimiento-de-los-agentes) y asignarle conectores | Cambiar su modelo, sus especialistas ni su memoria |
+| [Activarlo o desactivarlo](#activar-y-desactivar) | |
 
 El detalle del agente tiene menos pestañas:
 
 | Pestaña | Contenido |
 |---|---|
-| **General** | La información del agente, **Instalado por**, la tarjeta **Qué puede hacer** (sus funciones, especialistas y habilidades) y **Documentos**, solo con los nombres |
+| **General** | La información del agente, **Instalado por**, la tarjeta **Qué puede hacer** (sus funciones, especialistas y habilidades) y la tarjeta **Del catálogo**: **Publicado por**, la **Versión** instalada (y la nueva, si la hay), **Actualizaciones** (**Se actualiza solo**, si las versiones se aplican solas) y los **Documentos**, solo con los nombres |
 | **Conectores** | Las herramientas externas que puede usar |
 | **Acceso** | Quién lo usa. El único nivel es **Puede usar** |
 | **Consultas por API** | Las consultas hechas con una [clave de API](/organizacion/claves-de-api) |
@@ -72,6 +73,12 @@ El detalle del agente tiene menos pestañas:
 **Ver en el catálogo** lleva a su ficha en la pestaña **Instaladas** del catálogo, donde se actualiza y se desinstala.
 
 Las habilidades que vienen con el agente muestran el aviso **Esta habilidad viene con un agente del catálogo**: se pueden activar o desactivar, pero su contenido está protegido. Se actualizan y se quitan junto con el agente.
+
+### Activar y desactivar
+
+En la cabecera del detalle, **Desactivar** deja al agente sin responder en las conversaciones, las integraciones y la API hasta que se pulse **Activar**. Antes de desactivarlo, la plataforma pide confirmación. Mientras está desactivado, el agente muestra **Inactivo**, y en sus conversaciones aparece **Este agente ya no está disponible**: se pueden leer, pero no escribir.
+
+Hace falta permiso de editar sobre el **Estudio** y, en el agente, el nivel **Puede editar** o superior. Con el acceso con el que se instala el agente, solo lo tienen los administradores.
 
 ### En las conversaciones
 
@@ -92,7 +99,7 @@ Cuando quien publica envía una versión nueva, llega de una de dos formas, seg�
 | Con aviso | Los administradores reciben la notificación **Nueva versión disponible**, y la tarjeta muestra **Actualizar**. La organización decide cuándo |
 | Automática | La versión se aplica sola, y los administradores reciben **Agente actualizado** |
 
-Para actualizar a mano, pulsar **Actualizar** en el catálogo y revisar los cambios en **Actualizar agente**.
+Para actualizar a mano, pulsar **Actualizar** en el catálogo, o **Actualizar a …** en la tarjeta **Del catálogo** del agente, y revisar los cambios en **Actualizar agente**.
 
 :::warning Se aplica la versión completa
 Actualizar reemplaza el modelo del agente por el de la versión nueva y quita los especialistas y habilidades que ya no trae. Se conservan su nombre, quién lo usa, los espacios de trabajo y las carpetas compartidas con él.
@@ -100,11 +107,12 @@ Actualizar reemplaza el modelo del agente por el de la versión nueva y quita lo
 
 ## Desinstalar
 
-En la pestaña **Instaladas** del catálogo, o en el detalle del agente, menú **⋯** → **Desinstalar**.
+En la pestaña **Instaladas** del catálogo, o en el detalle del agente, menú **⋯** → **Desinstalar**. Si el agente responde en integraciones (WhatsApp, Telegram u otras), la ventana avisa de que dejará de hacerlo.
 
 - El agente se borra del Estudio junto con sus especialistas, microagentes y habilidades: solo funcionan mientras el agente está instalado.
-- Los esquemas de datos que haya creado se conservan, salvo que se marquen para borrarlos.
-- Si el agente tiene conversaciones, se conserva en el Estudio para poder consultarlas, pero deja de recibir versiones nuevas.
+- Las carpetas y los esquemas de datos que haya creado se conservan, salvo que se marquen para borrarlos.
+- Si el agente tiene conversaciones, no se borra, sino que se archiva: sale del Estudio y ya no se puede usar, pero sus conversaciones se siguen pudiendo leer.
+- Al volver a instalarlo, el agente archivado se recupera con el mismo nombre y sus conversaciones (la ventana de instalación lo marca **Recuperado**), y no cuenta para el límite de la suscripción.
 
 ## Si lo retiran del catálogo
 

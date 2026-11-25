@@ -10,7 +10,7 @@ description: How to connect a Telegram bot to ConsulPoint so an agent handles it
 
 <PageMeta route="/settings/connectors">administrator</PageMeta>
 
-A Telegram bot connected to ConsulPoint receives the messages from whoever writes to it, replies to them with an agent and shows them in [Conversations](/modulos/conversaciones).
+A Telegram bot connected to ConsulPoint receives the messages from whoever writes to it, replies to them with an agent and shows them in [Conversations](/modulos/conversaciones). You can also add it to groups: see [Telegram groups](/conversaciones/canales-y-atencion-humana#grupos-de-telegram).
 
 ## Before you start: create the bot {#antes-de-empezar-crear-el-bot}
 
@@ -44,4 +44,4 @@ If you regenerate the token in @BotFather, the safest option is to delete the in
 
 ## Start a conversation {#iniciar-una-conversación}
 
-In Telegram, a bot can't write first to someone who has never written to it. In [Conversations](/modulos/conversaciones), **Start Telegram conversation** lets you write to an **Existing contact** or to a **Telegram chat ID** (the contact can get it by writing to @userinfobot). If the contact hasn't started the bot yet, the platform tells you.
+In Telegram, a bot can't write first to someone who has never written to it. In [Conversations](/modulos/conversaciones), **Start Telegram conversation** lets you write to an **Existing contact** or to a **Telegram chat ID** (the contact can get it by writing to @userinfobot). If the contact hasn't started the bot yet, the platform tells you. A negative ID belongs to a group, and the conversation is created as a group.

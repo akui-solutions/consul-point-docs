@@ -40,7 +40,7 @@ When you create a contact, if it looks like an existing one, the platform warns 
 When you open a contact you see two tabs:
 
 - **Details**: ID document, owner, contact types and tags; contact details; messaging channels; entities they belong to; addresses and notes. Each block is edited separately.
-- **Activity**: the contact's conversations, with their channel (**Internal**, **WhatsApp**, **Telegram** or **External app**) and their status (**Pending**, **In progress** or **Resolved**), and the teams handling them.
+- **Activity**: the contact's conversations, with their channel (**Internal**, **WhatsApp**, **Telegram** or **External app**; **Telegram · Group** if it is a group) and their status (**Pending**, **In progress** or **Resolved**), and the teams handling them.
 
 <Screenshot src="/img/en/contactos/ficha.png" alt="A contact's record" caption="A contact's record → Details" />
 
@@ -48,7 +48,7 @@ An entity's record shows its **Details** and its **Members**. When you delete an
 
 ## Contacts and conversations {#contactos-y-conversaciones}
 
-When a conversation arrives through WhatsApp, Telegram or an external app, the platform tries to recognize the contact. If it finds a similar one, the conversation shows **Is this …?** with **Yes, that is them** or **Not now**. You can also link it from the conversation header with **Assign**. See [Channels and human support](/conversaciones/canales-y-atencion-humana#contactos).
+When a conversation arrives through WhatsApp, Telegram or an external app, the platform tries to recognize the contact. If it finds a similar one, the conversation shows **Is this …?** with **Yes, that is them** or **Not now**. You can also link it with **Assign contact**, in **More options** in the conversation header. Telegram groups are not linked to any contact. See [Channels and human support](/conversaciones/canales-y-atencion-humana#contactos).
 
 ## Limits {#límites}
 

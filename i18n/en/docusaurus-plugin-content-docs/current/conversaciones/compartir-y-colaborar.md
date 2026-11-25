@@ -25,6 +25,10 @@ Everyone with access to a shared conversation can see it and write in it, with t
 
 In the list, shared conversations show a mark on the avatar, and the header shows the participants' avatars.
 
+### Pausing the agent {#pausar-al-agente}
+
+In a shared conversation, the agent icon next to the message box pauses it (**Take control**) so people can talk to each other without it answering, and **Activate agent** turns it back on. Any participant can use it. It doesn't appear in a conversation with just you and the agent.
+
 ## Second conversation {#segunda-conversación}
 
 Opens another conversation next to the current one, for example to compare how two agents answer the same question.
@@ -33,7 +37,9 @@ Opens another conversation next to the current one, for example to compare how t
 2. Choose **Second Conversation**.
 3. Start a **New conversation** or continue an existing one.
 
-Drag the divider between the two to resize them. A message can be sent from one conversation to the other. **Close second conversation** removes it from the panel.
+Drag the divider between the two, or move it with the arrow keys, to resize them; double-click it to go back to half and half. A message can be sent from one conversation to the other, unless its files are no longer available. **Close second conversation** removes it from the panel.
+
+On a phone, the side panel takes up the whole screen and closes with **Close**.
 
 ## Apps in the side panel {#aplicaciones-en-el-panel-auxiliar}
 
@@ -45,9 +51,9 @@ Clicking the conversation title opens its details:
 
 | Section | Content |
 |---|---|
-| **Agent Information** | Its specialists, features and connectors |
-| **Conversation Information** | Type, channel, participants, who created it and when |
-| **Contact Information** | In channel conversations: the number or identifier and the linked contact |
+| **Agent Information** | Its model, its **Capabilities**, **Specialists** and **Connectors**. If the agent is no longer available, it says so |
+| **Conversation Information** | Type, channel, participants, who created it and when. In a Telegram group, also the **Group name** |
+| **Contact information** | In channel conversations: the number or identifier and the linked contact. **View contact** only appears with permission to view **Contacts**. It doesn't appear in Telegram groups |
 | **Files shared in this conversation** | The attached files, to download them |
 
 ## Deleting a conversation {#eliminar-una-conversación}

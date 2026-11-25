@@ -22,7 +22,7 @@ La memoria solo se usa en conversaciones directas entre el agente y una sola per
 
 | Conversación | Usa memoria |
 |---|---|
-| Chat interno de una persona a solas con el agente | Sí, la de esa persona |
+| Conversación interna de una persona a solas con el agente | Sí, la de esa persona |
 | WhatsApp | Sí, la del contacto |
 | Telegram, chat privado | Sí, la del contacto |
 | Aplicación externa | Sí, la del contacto |

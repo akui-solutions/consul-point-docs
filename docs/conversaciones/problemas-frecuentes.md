@@ -14,12 +14,15 @@ description: Soluciones a los problemas más habituales en Conversaciones de Con
 |---|---|
 | Responde de forma genérica, sin usar los documentos | Revisar **Ver fuentes**. Si no hay fuentes, ver [Problemas frecuentes del Estudio](/control/estudio/problemas-frecuentes#el-agente-responde-de-forma-genérica-sin-usar-los-documentos) |
 | No aparece un agente al iniciar la conversación | No se tiene acceso a él. Lo da un administrador, en la pestaña **Acceso** del agente |
-| **Este agente ya no está disponible** | Es un agente del catálogo que quien lo publica retiró y desactivó. El mensaje no se envía y la conversación solo se puede leer. Ver [Agentes del catálogo](/control/estudio/agentes-del-catalogo#si-lo-retiran-del-catálogo) |
+| **Este agente ya no está disponible** o **Agente no disponible** | Es un agente del catálogo que quien lo publica retiró, o que la organización desinstaló o desactivó. La conversación solo se puede leer; **Nueva conversación** abre otra con un agente disponible. Ver [Si el agente ya no está disponible](/conversaciones/conversar-con-un-agente#si-el-agente-ya-no-está-disponible) |
+| **No se pudieron cargar los agentes.** | Falló la carga. Pulsar **Reintentar** |
 | No se puede cambiar de agente | El agente queda fijado con el primer mensaje. Abrir una conversación nueva |
 | No aparece **Búsqueda web**, **Adjuntar archivos** o **Dictar** | El agente no tiene esa función integrada. Se activa en el Estudio, en la pestaña **Capacidades** del agente |
 | **La respuesta se interrumpió** | Volver a enviar el mensaje |
 | **La ventana de contexto está casi llena** | Abrir una conversación nueva |
 | Los agentes dejan de responder | Se acabaron los créditos de la organización. Revisar el consumo |
+| Una imagen de la respuesta muestra **Imagen externa de…** | Viene de otro sitio web y no se carga sola. Pulsar **Mostrar** |
+| No aparece **Eliminar este fragmento** en las fuentes | Hace falta permiso de edición sobre el Centro de Conocimiento o el Estudio, según de dónde venga la fuente |
 | No aparece **Memoria del agente** | El agente no tiene memoria, o la conversación está compartida con otras personas. Ver [Lo que recuerda el agente](/conversaciones/conversar-con-un-agente#lo-que-recuerda-el-agente) |
 | **Memoria llena** en una respuesta | Lo que recuerda el agente llegó a su límite. En **Memoria del agente**, **Editar** y borrar lo que ya no sirva |
 | **Memoria sin actualizar** en una respuesta | El agente no pudo guardar algo. Pedírselo de nuevo más tarde |
@@ -39,6 +42,9 @@ description: Soluciones a los problemas más habituales en Conversaciones de Con
 
 | Síntoma | Causa y solución |
 |---|---|
+| **No se pudieron cargar las conversaciones.** | Falló la carga. Pulsar **Reintentar** |
+| **Ninguna conversación coincide con tu búsqueda.** | La búsqueda o el filtro por agente no encuentra nada. **Quitar filtros** muestra la lista completa |
+| No aparecen las pestañas por canal | La suscripción de la organización no incluye las integraciones |
 | El botón **Nueva conversación** está desactivado | La organización no tiene una suscripción activa, o el rol no permite crear conversaciones |
 | No aparece **Compartir conversación** | La conversación todavía no tiene mensajes, o el rol no permite editarla |
 | No se encuentra a una persona al compartir | No tiene acceso al agente de la conversación |
@@ -50,6 +56,12 @@ description: Soluciones a los problemas más habituales en Conversaciones de Con
 | Síntoma | Causa y solución |
 |---|---|
 | No se ven las conversaciones de un WhatsApp o Telegram | No se forma parte del equipo de esa integración |
-| **No tienes ninguna conexión de** ese canal | No hay ninguna integración de ese canal. Ver [Integraciones y canales](/modulos/integraciones) |
+| **Conecta … para ver sus conversaciones aquí.** | No hay ninguna integración de ese canal. **Ir a Conectores** lleva a crearla. Ver [Integraciones y canales](/modulos/integraciones) |
+| No aparece **WhatsApp** o **Telegram** en **Nueva conversación** | No hay ninguna conexión activa de ese canal (o la de WhatsApp venció), o el rol no tiene permiso sobre las integraciones |
+| Una plantilla de WhatsApp aparece como **Todavía no se puede enviar desde aquí** | Usa un formato que la plataforma aún no envía. Ver [Iniciar una conversación por WhatsApp o Telegram](/conversaciones/canales-y-atencion-humana#iniciar-una-conversación-por-whatsapp-o-telegram) |
+| **Esta conexión no tiene plantillas aprobadas.** | Crear y aprobar una plantilla en Meta Business Manager |
+| **Esta conexión no tiene un agente asignado.** o **…no tiene un usuario o equipo…** | Completar la integración en [Integraciones y canales](/modulos/integraciones) |
+| No aparece **Asignar contacto** o **Quitar contacto asignado** | Hace falta permiso para crear o eliminar en **Contactos**, y que la suscripción lo incluya. En los grupos de Telegram no se asigna contacto |
+| El agente no responde en un grupo de Telegram | Por defecto, Telegram solo entrega al bot los mensajes que lo mencionan o le responden. Ver [Grupos de Telegram](/conversaciones/canales-y-atencion-humana#grupos-de-telegram) |
 | No se puede escribir en una conversación | La está atendiendo otra persona |
 | El agente no responde en un canal | Alguien tomó el control o la conversación está atendida. **Activar agente** o **Marcar como resuelta** |

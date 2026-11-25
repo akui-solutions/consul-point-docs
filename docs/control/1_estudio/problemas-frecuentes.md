@@ -62,9 +62,18 @@ description: Soluciones a los problemas más habituales al crear y usar agentes,
 
 | Síntoma | Causa y solución |
 |---|---|
-| **Eliminar** está desactivado en un agente | El agente ya tiene conversaciones. Los agentes con conversaciones no se pueden eliminar |
+| **Eliminar** está desactivado en un agente | El agente ya tiene conversaciones: los agentes con conversaciones no se pueden eliminar. O está publicado en el catálogo (**Está publicado en el catálogo. Retíralo del catálogo antes de eliminarlo.**): retirarlo primero. Ver [Publicar agentes](/control/estudio/publicar-agentes#eliminar-un-agente-publicado) |
 | No aparece **Eliminar** | Con los roles predeterminados, solo los administradores eliminan agentes |
 | Un descriptor de imágenes no se deja eliminar | Alguna carpeta lo usa en su **Conversión de PDF**. Cambiar antes el descriptor de esas carpetas |
+| **Borrar del catálogo** está desactivado | El agente publicado está instalado en alguna organización; la opción indica en cuántas. Se puede borrar cuando ya no esté instalado en ninguna |
+
+## Agentes del catálogo
+
+| Síntoma | Causa y solución |
+|---|---|
+| El agente muestra **Inactivo** y no responde | Se desactivó en la organización. Pulsar **Activar** en la cabecera de su detalle. Ver [Activar y desactivar](/control/estudio/agentes-del-catalogo#activar-y-desactivar) |
+| En sus conversaciones aparece **Este agente ya no está disponible** | El agente está desactivado, se desinstaló, o quien lo publica lo retiró y lo desactivó. Ver [Agentes del catálogo](/control/estudio/agentes-del-catalogo) |
+| No aparecen **Activar** ni **Desactivar** | Solo existen en los agentes del catálogo. Hace falta permiso de editar sobre el **Estudio** y el nivel **Puede editar** o superior en el agente; con el acceso con el que se instala, solo los administradores |
 
 ## Microagentes
 

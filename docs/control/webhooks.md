@@ -36,7 +36,7 @@ Pulsar **Nuevo webhook** y completar:
 | **URL** | Obligatoria. La dirección del sistema externo que recibirá los avisos |
 | **Tipo** | **Síncrono**, **Asíncrono** o **Cola**. Por defecto, **Asíncrono**. Ver [Tipos](#tipos) |
 | **Eventos** | Los sucesos que disparan el aviso. Ver la tabla siguiente |
-| **Chat** | Solo con **Conversación específica actualizada**: la conversación que lo dispara |
+| **Conversación** | Solo con **Conversación específica actualizada**: la conversación que lo dispara |
 
 Los webhooks nuevos se crean activos. La suscripción fija el número máximo de webhooks. Ver [Créditos y límites](/organizacion/creditos-y-limites#límites-de-la-suscripción).
 
@@ -47,7 +47,7 @@ Los webhooks nuevos se crean activos. La suscripción fija el número máximo de
 | **Usuario actualizado** | Cuando se modifican los datos de un usuario |
 | **Usuario eliminado** | Cuando un administrador elimina un usuario |
 | **Todas las conversaciones actualizadas** | Cuando un agente responde en **cualquier conversación de quien crea el webhook**. No incluye las conversaciones de otras personas |
-| **Conversación específica actualizada** | Cuando un agente responde en la conversación elegida en **Chat** (una de quien crea el webhook) |
+| **Conversación específica actualizada** | Cuando un agente responde en la conversación elegida en **Conversación** (una de quien crea el webhook) |
 
 ## Qué se envía
 
