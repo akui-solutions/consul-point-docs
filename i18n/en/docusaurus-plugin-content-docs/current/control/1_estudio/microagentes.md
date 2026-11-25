@@ -19,8 +19,7 @@ Each micro-agent has a **type**, which decides where it can be used. You choose 
 | Type | What it does | Where it's used |
 |---|---|---|
 | **Document Extractor** | Extracts text and data from images, PDFs and scanned documents | [Smart Extract](/centro-de-conocimiento/extraccion-inteligente) folders |
-| **Mail Reader** | Processes and analyzes the content of emails and extracts their data | [Smart Inbox](/modulos/bandeja-inteligente) rules |
-| **Email to Markdown** | Turns an email into a text document ready to save in the Knowledge Hub | [Smart Inbox](/modulos/bandeja-inteligente) rules |
+| **Mail Reader** | Reads Smart Inbox emails and saves data or a summary. See [Mail Reader](#lector-de-correo) | [Smart Inbox](/modulos/bandeja-inteligente) rules |
 | **Image Describer** | Describes the images in PDFs (charts, photos, diagrams) so agents can understand them | **PDF conversion** of Knowledge Hub folders (see [Folders and files](/centro-de-conocimiento/carpetas-y-archivos#conversión-de-pdf)) |
 | **Conversation Analyzer** | Analyzes conversations to produce a summary, sentiment, category and suggested replies | Conversation analysis |
 | **Multimedia Processor** | Analyzes YouTube videos and audio saved in multimedia folders | [Multimedia](/centro-de-conocimiento/multimedia) folders |
@@ -34,7 +33,7 @@ The platform uses the **first** conversation analyzer created in the organizatio
 
 1. In the Studio, on the **Micro-agents** tab, click **New micro-agent**.
 2. **Configuration**: micro-agent type, name, description, system instructions and model.
-3. **Schema and instruction**: the structure of the response and the execution instruction. The **Email to Markdown** and **Image Describer** types don't have this step: the platform sets their output, and the execution instruction is written in step 1.
+3. **Schema and instruction**: the structure of the response and the execution instruction. The **Image Describer** and the **Mail Reader** with result **Summary** don't have this step: their output has no schema, and the execution instruction is written in step 1.
 4. Click **Create**.
 
 ### Configuration {#configuración}
@@ -42,10 +41,11 @@ The platform uses the **first** conversation analyzer created in the organizatio
 | Field | Description |
 |---|---|
 | **Micro-agent type** | Required. See the table above. It can't be changed later |
+| **Result** | Only for the **Mail Reader**, and required: **Structured data** or **Summary**. It can't be changed later |
 | **Micro-agent name** | Required, between 3 and 50 characters, not repeating the name of another agent |
 | **Description** | Required, up to 400 characters |
 | **System instructions** | Required, up to 50,000 characters. The micro-agent's role and the general rules |
-| **Model** | Lightweight Google models suited to extraction are offered. The **Image Describer** needs a model that can read images |
+| **Model** | Lightweight Google models suited to extraction are offered. The **Mail Reader** can use any available provider, including the organization's own models. The **Image Describer** needs a model that can read images |
 | **Temperature** | From 0 to 1. Default: 0. For extracting data it's best to leave it at 0 |
 
 ### Schema and instruction {#esquema-e-instrucción}
@@ -75,6 +75,17 @@ Example of an execution instruction for an invoice extractor:
 ```prompt
 Read the invoice and return the supplier, their tax ID, the issue date, the invoice number and the total amount including taxes. If a piece of data doesn't appear in the document, return it empty; don't infer it.
 ```
+
+### Mail Reader {#lector-de-correo}
+
+It reads the emails a [Smart Inbox rule](/bandeja-inteligente/reglas-de-correo) captures and saves the result to the rule's folder. The **Result** is chosen when it is created and stays fixed:
+
+| Result | What it saves | Schema step |
+|---|---|---|
+| **Structured data** | The fields of a schema, always in the same format | Yes |
+| **Summary** | A text document with what matters in the email | No |
+
+A folder holds a single kind of result, and a folder with a schema only accepts **Structured data**. See [AI analysis](/bandeja-inteligente/analisis-con-ia).
 
 ### Search agent {#agente-de-búsqueda}
 

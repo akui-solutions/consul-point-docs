@@ -57,6 +57,7 @@ The terms that appear on the platform and in this documentation, in alphabetical
 
 ## M {#m}
 
+- **Mail Reader**: micro-agent that reads the emails of a Smart Inbox rule and saves structured data or a summary to the rule's folder, depending on the **Result** chosen when it was created. See [Mail Reader](/control/estudio/microagentes#lector-de-correo).
 - **Memory**: built-in function that lets an agent remember what matters about each person or contact across conversations. See [Agent memory](/control/estudio/memoria).
 - **Message sources**: the information consulted to generate an answer: Knowledge Hub documents or web pages. You see it with **View sources**. See [Message sources](/conversaciones/conversar-con-un-agente#fuentes-del-mensaje).
 - **Micro-agent**: agent that does one specific task, such as reading an invoice, and returns the data in a fixed structure. It does not hold conversations. See [Micro-agents](/control/estudio/microagentes).

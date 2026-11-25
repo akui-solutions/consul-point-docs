@@ -70,16 +70,33 @@ Cada adjunto puede ocupar hasta 25 MB.
 
 **Analizar con IA**
 
+Al activarlo, se piden dos campos, en este orden:
+
 | Campo | Descripción |
 |---|---|
-| **Micro-agente (opcional)** | Un [microagente](/control/estudio/microagentes) de tipo **Lector de correo** o **Email a Markdown**. Vacío: sin análisis |
-| **Carpeta de resúmenes** | Solo con un **Lector de correo**. Aquí se guarda un archivo de resumen por cada correo analizado, en subcarpetas por mes |
+| **Carpeta para los resultados** | Obligatoria. Aquí se guarda un archivo por cada correo analizado, en subcarpetas por mes |
+| **Lector de correo** | Obligatorio. Un [lector de correo](/control/estudio/microagentes#lector-de-correo). Se elige después de la carpeta, porque la carpeta decide qué lectores se pueden usar |
 
-El análisis consume créditos. Ver [Análisis con IA](/bandeja-inteligente/analisis-con-ia) para la diferencia entre los dos tipos.
+<Screenshot src="/img/bandeja-inteligente/analizar-con-ia.png" alt="Tarjeta Analizar con IA de una regla de correo, con la carpeta para los resultados y la lista de lectores de correo agrupados por resultado" caption="Analizar con IA: primero la carpeta, después el lector" />
 
-:::info Requisitos de la carpeta de resúmenes
-Debe ser una carpeta en la que se pueda escribir y que no sea de [Extracción inteligente](/centro-de-conocimiento/extraccion-inteligente). El microagente debe usar un modelo de Google.
+Los lectores aparecen agrupados por su resultado, **Datos estructurados** o **Resumen**. Los que no encajan con la carpeta se muestran deshabilitados, con el motivo:
+
+| Motivo | Por qué |
+|---|---|
+| **Esta carpeta tiene un esquema: solo admite lectores de datos estructurados** | La carpeta tiene un [esquema](/control/estudio/esquemas-de-datos) asignado |
+| **Esta carpeta ya guarda resúmenes** / **Esta carpeta ya guarda datos estructurados** | Una carpeta guarda un solo tipo de resultado, y otra regla ya la usa con el otro |
+
+El análisis consume créditos. Ver [Análisis con IA](/bandeja-inteligente/analisis-con-ia).
+
+:::info Requisitos de la carpeta para los resultados
+Debe ser una carpeta en la que se pueda escribir y que no sea de [Extracción inteligente](/centro-de-conocimiento/extraccion-inteligente).
 :::
+
+:::warning Reglas sin carpeta
+Una regla con lector de correo y sin carpeta para los resultados no analiza correos. La lista de reglas la marca con **Sin carpeta**, y al editarla se pide elegir una.
+:::
+
+Al cambiar la carpeta de una regla, si su lector ya no encaja con la nueva carpeta, hay que elegir otro lector antes de guardar.
 
 ## Guardar los adjuntos de correos que ya existen
 
